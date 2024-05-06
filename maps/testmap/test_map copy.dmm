@@ -1,17 +1,13 @@
-"aa" = (/obj/effect/map_effect/portal/line/side_a,/turf/simulated/floor,/area/space)
 "ab" = (/turf/simulated/wall,/area/space)
 "ac" = (/turf/simulated/floor,/area/space)
 "ad" = (/obj/machinery/shieldwallgen,/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/turf/simulated/floor,/area/space)
 "ae" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor,/area/space)
 "af" = (/obj/structure/multiz/ladder{icon_state = "ladderup"},/turf/simulated/floor,/area/testing/first)
 "ag" = (/obj/structure/multiz/ladder,/turf/simulated/floor,/area/testing/first)
-"ah" = (/obj/effect/map_effect/portal/master/side_a,/turf/simulated/floor,/area/space)
-"ai" = (/obj/effect/map_effect/portal/line/side_b{dir = 1},/turf/space,/area/space)
 "aj" = (/obj/machinery/light{dir = 1},/turf/simulated/floor,/area/testing/first)
 "ak" = (/obj/machinery/autolathe/excelsior,/turf/simulated/floor,/area/testing/first)
 "al" = (/obj/machinery/complant_maker,/turf/simulated/floor,/area/testing/first)
 "am" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/mob/living/carbon/human/dummy,/turf/simulated/floor,/area/testing/first)
-"an" = (/obj/effect/map_effect/portal/master/side_b{dir = 1},/turf/space,/area/space)
 "ao" = (/obj/item/implantcase/excelsior,/turf/simulated/floor,/area/testing/first)
 "ap" = (/obj/item/implant/adrenaline,/turf/simulated/floor,/area/testing/first)
 "aq" = (/obj/item/implant/compressed,/turf/simulated/floor,/area/testing/first)
@@ -187,7 +183,7 @@ bebebebebebebebebebebebebebeabacacacacacacacacacabbebebebebebebebebebebebebebebe
 bebebebebebebebebebebebebebeabacacacacacacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 bebebebebebebebebebebebebebeabacacacacadacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 bebebebebebebebebebebebebebeabacacacacaeacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
-bebebebebeababababababababababacaaaaahaaaaacacacabbebebebebebebebebebebebebebeaiaianaiaibebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebeababababababababababacacacacaeacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 bebebebebeabafagaTaTajakalamabacacacacaeacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 bebebebebeabaTaoaTapaqarasatacacacacacaeacacacacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 bebebebebeabaoaoaubWavawaxayazaAaBaAaAaCaAaAaBacabbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
