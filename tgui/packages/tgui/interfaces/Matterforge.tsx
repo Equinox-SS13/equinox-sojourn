@@ -40,7 +40,7 @@ export const LoadedMaterials = (props: MaterialData) => {
       buttons={
         <Button
           icon="arrow-up"
-          tooltip="Load Materials From Hand"
+          tooltip="Toggle Recycle State"
           onClick={() => act('insert_material')}
         />
       }

@@ -68,6 +68,7 @@
 	var/max_efficiency = 0.5
 
 	var/list/selectively_recycled_types = list()	// Allows recycling of specified types if have_recycling = FALSE
+	var/direct_recycle = FALSE // Allows direct click recycling to be enabled.
 
 	var/list/unsuitable_materials = list(MATERIAL_BIOMATTER)
 	var/list/suitable_materials //List that limits autolathes to eating mats only in that list.
@@ -256,10 +257,15 @@
 	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
 		insert_disk(user, I)
 
-	// Some item types are consumed by default
-	if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
+	// A override that can be activated
+	if(direct_recycle)
 		eat(user, I)
 		return
+	else
+	// Some item types are consumed by default
+		if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
+			eat(user, I)
+			return
 
 	if(istype(I, /obj/item/reagent_containers/glass))
 		insert_beaker(user, I)
@@ -304,7 +310,14 @@
 			. = TRUE
 
 		if("insert_material")
-			eat(usr)
+			if(eat(usr) == FALSE)
+				direct_recycle = !direct_recycle
+				flick("[initial(icon_state)]_start", src)
+				update_icon()
+				if(direct_recycle)
+					to_chat(usr, SPAN_WARNING("Direct item recycling enabled!"))
+				else
+					to_chat(usr, SPAN_WARNING("Direct item recycling disabled!"))
 			. = TRUE
 
 		if("eject_material")
@@ -761,6 +774,11 @@
 
 	if(stat & NOPOWER)
 		icon_state = "[initial(icon_state)]_off"
+
+	if(direct_recycle) // if direct recycle is active, gives temporary animation
+		add_overlay(image(icon, "[initial(icon_state)]_recycle"))
+		icon_state = "[initial(icon_state)]_work"
+		return
 
 	if(working) // if paused, work animation looks awkward.
 		if(paused || error)
