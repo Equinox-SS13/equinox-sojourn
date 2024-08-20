@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/omnirifle
 	name = "\"OMNI\" battle rifle"
-	desc = "The \"M13A\" is versatile, reliable battle rifle chambered in 8.6x70mm - most commonly seen in the hands of SolFed infantrymen. It's especially hard to control without servos or a static mount."
+	desc = "The \"M13A\" is a versatile, reliable battle rifle chambered in 8.6x70mm - most commonly seen in the hands of SolFed infantrymen. It's especially hard to control without servos or a static mount."
 	icon = 'icons/obj/guns/projectile/Omnirifle.dmi'
 	icon_state = "omnirifle"
 	item_state = "omnirifle"
