@@ -262,10 +262,9 @@
 		eat(user, I)
 		return
 	// Some item types are consumed by default
-	else
-		if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
-			eat(user, I)
-			return
+	else if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
+		eat(user, I)
+		return
 
 	if(istype(I, /obj/item/reagent_containers/glass))
 		insert_beaker(user, I)
