@@ -258,6 +258,19 @@ var/global/list/wings_icon_cache = list()
 	if(stand_icon)
 		qdel(stand_icon)
 
+	//EQUINOX EDIT START - Copies bodymarkings to relevant limbs. Placed here rather than copy_to during new character creation as losing a limb then regrowing it would make you permanently lose the markings on it.
+	for(var/N in organs_by_name)
+		var/obj/item/organ/external/O = organs_by_name[N]
+		O.markings.Cut()
+	for(var/M in body_markings)
+		var/datum/sprite_accessory/marking/mark_datum = GLOB.body_marking_list[M]
+		var/mark_color = "[body_markings[M]]"
+		for(var/BP in mark_datum.body_parts)
+			var/obj/item/organ/external/O = organs_by_name[BP]
+			if(O)
+				O.markings[M] = list("color" = mark_color, "datum" = mark_datum)
+	//EQUINOX EDIT END
+
 	if(!appearance_test.build_body)
 		stand_icon = new('icons/mob/human.dmi', "human_[(gender == MALE) ? "m" : "f"]")
 		appearance_test.Log("Sprite generation is disabled.")
@@ -336,7 +349,7 @@ var/global/list/wings_icon_cache = list()
 		stand_icon.Blend(base_icon,ICON_OVERLAY)
 
 	//ears, wings and tail
-	update_marking(0)
+	//update_marking(0)	Equinox edit - Switching body markings to per-limb system
 	update_ears(0)
 	update_tail(0)
 	update_wings(0)
@@ -598,7 +611,7 @@ var/global/list/wings_icon_cache = list()
 		var/icon/extra_overlay = icon(tailtype.icon, (tailtype.extra_overlay ? tailtype.extra_overlay : tailtype.icon_state)+"[(i-1)]")
 		extra_overlay.Blend(tail_colors[i], tailtype.blend)
 		tail_icon.Blend(extra_overlay, ICON_OVERLAY)
-	//if(istype(tailtype, /datum/sprite_accessory/tail/taur)) return image(tail_icon, "pixel_x" = -16)
+	if(istype(tailtype, /datum/sprite_accessory/tail/taur)) return image(tail_icon, "pixel_x" = -16) //Equinox edit, part of enabling taurs
 
 	var/tail_image = image(tail_icon)
 	tail_icon_cache[cache_key] = tail_image
