@@ -40,7 +40,7 @@
 	post_pen_mult			= 1
 	)
 
-	visible_message("Attack ! [damage]")
+	message_admins("Attack ! [damage]")
 
 	if(armor_pen <= 0)
 		armor_pen = 0.1 // if HYBRID armour system were to be chosen armour penetration of 0 could fuck up some calculations, negative one ... well I am expecting out of artists
@@ -53,7 +53,7 @@
 	var/total_dmg = 0
 	for(var/dmg_type in dmg_types)
 		total_dmg += dmg_types[dmg_type]
-
+		message_admins("[used_weapon] VS [src] | [dmg_types[dmg_type]] : [dmg_type]")
 	if(!total_dmg)
 		return FALSE
 	
@@ -67,7 +67,7 @@
 	var/armor = getarmor(def_zone, attack_flag)
 	var/guaranteed_damage_red = armor * ARMOR_GDR_COEFFICIENT
 	var/armor_effectiveness = max(0, ((armor * armor_times_mod) - armor_pen) * RELATIVE_ARMOR_EFFICIENCY)
-	var/absolute_armor = max(0, ((((armor+1) * armor_times_mod) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)
+	var/absolute_armor = max(0, ((((armor) * armor_times_mod) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)
 
 	var/ablative_armor = getarmorablative(def_zone, attack_flag) * (100 - armor_penetration) / 100
 
@@ -77,6 +77,8 @@
 		if(dmg)
 			if(armor_effectiveness == 0)//No armor? Damage as usual
 				apply_damage(dmg * post_pen_mult, dmg_type, def_zone, 1, wounding_multiplier, sharp, edge)
+				final_damage+=dmg * post_pen_mult
+				message_admins("[used_weapon] VS [src] | dmg=[dmg] | dmg_type=[dmg_type] | post_pen_mult=[post_pen_mult]")
 				if(ishuman(src) && def_zone)
 					var/mob/living/carbon/human/H = src
 					var/obj/item/organ/external/o = H.get_organ(def_zone)
@@ -95,7 +97,7 @@
 
 				//Actual part of the damage that passed through armor
 				var/actual_damage = max(0,round ( ( dmg * ( 100 - armor_effectiveness ) ) / 100 - absolute_armor))
-				message_admins("actual_damage=[actual_damage]")
+				message_admins("[used_weapon] VS [src] | dmg=[dmg] | dmg_type=[dmg_type] | post_pen_mult=[post_pen_mult] | actual_damage=[actual_damage]")
 				apply_damage(actual_damage * post_pen_mult, dmg_type, def_zone, used_weapon, sharp, edge)
 				if(ishuman(src) && def_zone && actual_damage >= 20)
 					var/mob/living/carbon/human/H = src
@@ -111,7 +113,7 @@
 
 
 
-	var/effective_armor = (final_damage / total_dmg) * 100
+	var/effective_armor = 100 - (final_damage / total_dmg) * 100
 
 
 	//Feedback
@@ -127,11 +129,14 @@
 		if(49 to 74)
 			armor_message(SPAN_NOTICE("[src] armor absorbs most of the damage!"),
 							SPAN_NOTICE("Your armor protects you from the impact!"))
+		if(24 to 39)
+			armor_message(SPAN_NOTICE("[src] armor absorbs fair bit of the damage!"),
+							SPAN_NOTICE("Your armor reduced the impact!"))
 		if(-INFINITY to 24)
 			armor_message(SPAN_NOTICE("[src] armor reduces the impact by a little."),
 							SPAN_NOTICE("Your armor reduced the impact a little."))
 
-	visible_message("total_dmg=[total_dmg] | final_dmg=[final_damage] | armor_effectiveness=[armor_effectiveness] | absolute_armor=[absolute_armor]")
+	message_admins("[used_weapon] VS [src] | def_zone=[def_zone] | total_dmg=[total_dmg] | final_dmg=[final_damage] | armor=[armor] | absolute_armor=[absolute_armor] | armor_pen=[armor_pen] | armor_effectiveness=[armor_effectiveness] | effective_armor=[effective_armor]")
 
 
 
@@ -321,32 +326,34 @@
 	shake_animation(damage)
 
 
-/mob/living/bullet_act(var/obj/item/projectile/P, var/def_zone)
+ // return PROJECTILE_CONTINUE if bullet should continue flying
+/mob/living/bullet_act(obj/item/projectile/P, var/def_zone_hit)
+	message_admins("Bullet is acting !")
 	var/hit_dir = get_dir(P, src)
 
-	if (P.is_hot() >= HEAT_MOBIGNITE_THRESHOLD && (!(P.testing)))
+	if (P.is_hot() >= HEAT_MOBIGNITE_THRESHOLD)
 		IgniteMob()
 
 	//Being hit while using a deadman switch
-	if(istype(get_active_hand(),/obj/item/device/assembly/signaler) && (!(P.testing)))
+	if(istype(get_active_hand(),/obj/item/device/assembly/signaler))
 		var/obj/item/device/assembly/signaler/signaler = get_active_hand()
 		if(signaler.deadman && prob(80))
 			log_and_message_admins("has triggered a signaler deadman's switch")
 			src.visible_message(SPAN_WARNING("[src] triggers their deadman's switch!"))
 			signaler.signal()
 
+	var/agony = P.damage_types[HALLOSS] ? P.damage_types[HALLOSS] : 0
 	//Stun Beams
 	if(P.taser_effect)
-		if (!(P.testing))
-			stun_effect_act(0, P.agony, def_zone, P)
-			to_chat(src, SPAN_WARNING("You have been hit by [P]!"))
-		else
-			P.on_impact(src, TRUE) //not sure if this will work
+		stun_effect_act(0, agony, def_zone_hit, P)
+		to_chat(src, SPAN_WARNING("You have been hit by [P]!"))
 		qdel(P)
 		return TRUE
 
-	if(P.knockback && hit_dir && (!(P.testing)))
+	if(P.knockback && hit_dir)
 		throw_at(get_edge_target_turf(src, hit_dir), P.knockback, P.knockback)
+
+	P.on_hit(src, def_zone_hit)
 
 	//Armor and damage
 	if(!P.nodamage)
@@ -355,24 +362,15 @@
 		for(var/damage_type in P.damage_types)
 			var/damage = P.damage_types[damage_type]
 			var/dmult = 1
-			if(LAZYLEN(P.effective_faction))
-				if(faction in P.effective_faction)
-					dmult += P.damage_mult
-			if(LAZYLEN(P.supereffective_types))
-				if(is_type_in_list(src, P.supereffective_types, TRUE))
-					dmult += P.supereffective_mult
+			if(faction in P.effective_faction)
+				dmult += P.damage_mult
+			if(is_type_in_list(src, P.supereffective_types, TRUE))
+				dmult += P.supereffective_mult
 			damage *= dmult
-			if (!(P.testing))
-				damage_through_armor(damage, damage_type, def_zone, P.check_armour, armor_pen = P.armor_penetration, used_weapon = P, sharp=is_sharp(P), edge=has_edge(P), post_pen_mult = P.post_penetration_dammult)
+		hit_impact(P.get_structure_damage(), hit_dir)
+		return damage_through_armor(def_zone = def_zone_hit, attack_flag = P.check_armour, armor_pen = P.armor_penetration, used_weapon = P, sharp = is_sharp(P), edge = has_edge(P), wounding_multiplier = P.wounding_mult, dmg_types = P.damage_types, return_continuation = TRUE)
 
-
-	if(P.agony > 0 && istype(P,/obj/item/projectile/bullet))
-		if (!(P.testing))
-			hit_impact(P.agony, hit_dir)
-			damage_through_armor(P.agony, HALLOSS, def_zone, P.check_armour, armor_pen = P.armor_penetration, used_weapon = P, sharp = is_sharp(P), edge = has_edge(P))
-
-	..()
-	return TRUE
+	return PROJECTILE_CONTINUE
 
 //Handles the effects of "stun" weapons
 /mob/living/proc/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone, var/used_weapon=null)
@@ -394,6 +392,7 @@
 		apply_damage(agony_amount * armor_coefficient, HALLOSS, def_zone, 0, used_weapon)
 		apply_effect(STUTTER, agony_amount * armor_coefficient)
 		apply_effect(EYE_BLUR, agony_amount * armor_coefficient)
+		SEND_SIGNAL(src, COMSIG_LIVING_STUN_EFFECT)
 
 /mob/living/proc/electrocute_act(var/shock_damage, var/obj/source, var/siemens_coeff = 1.0)
 	  return 0 //only carbon liveforms have this proc
@@ -409,7 +408,7 @@
 
 //Called when the mob is hit with an item in combat.
 /mob/living/proc/hit_with_weapon(obj/item/I, mob/living/user, var/effective_force, var/hit_zone)
-	visible_message(SPAN_DANGER("[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"] with [I.name] by [user]!"))
+	visible_message(SPAN_DANGER("[src] has been [LAZYPICK(I.attack_verb) || "attacked"] with [I.name] by [user]!"))
 
 	standard_weapon_hit_effects(I, user, effective_force, hit_zone)
 
@@ -509,7 +508,7 @@
 	O.forceMove(src)
 	src.embedded += O
 	src.visible_message(SPAN_DANGER("\The [O] embeds in the [src]!"))
-	src.verbs += /mob/proc/yank_out_object
+	add_verb(src, /mob/proc/yank_out_object)
 	O.on_embed(src)
 
 //This is called when the mob is thrown into a dense turf
@@ -536,10 +535,17 @@
 
 	if(!damage || !istype(user))
 		return
-	if(damagetype == BRUTE)
-		adjustBruteLoss(damage)
-	else
-		adjustFireLoss(damage)
+
+	var/used_penetration = 1
+	if(isliving(user))
+		var/mob/living/L = user
+		used_penetration = L.armor_penetration
+	var/attack_BP = BP_CHEST
+	if(prob(20))
+		attack_BP = pick(list(BP_L_LEG, BP_R_LEG, BP_R_ARM, BP_L_ARM, BP_GROIN, BP_HEAD))
+
+	damage_through_armor(damage, damagetype, attack_BP, ARMOR_MELEE, used_penetration, sharp=sharp, edge=edge)
+
 	user.attack_log += text("\[[time_stamp()]\] <font color='red'>attacked [src.name] ([src.ckey])</font>")
 	src.attack_log += text("\[[time_stamp()]\] <font color='orange'>was attacked by [user.name] ([user.ckey])</font>")
 	src.visible_message(SPAN_DANGER("[user] has [attack_message] [src]!"))
@@ -561,9 +567,10 @@
 		update_fire()
 
 /mob/living/proc/update_fire()
-	cut_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Standing"))
-	if(on_fire)
-		add_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Standing"))
+	return
+//	cut_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Standing"))
+//	if(on_fire)
+//		add_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Standing"))
 
 /mob/living/proc/adjust_fire_stacks(add_fire_stacks) //Adjusting the amount of fire_stacks we have on person
     fire_stacks = CLAMP(fire_stacks + add_fire_stacks, FIRE_MIN_STACKS, FIRE_MAX_STACKS)
@@ -637,7 +644,7 @@
 						I.action.arguments = I.action_button_arguments
 			I.action.Grant(src)
 	return
-
+/*
 /mob/living/update_action_buttons()
 	if(!hud_used) return
 	if(!client) return
@@ -690,3 +697,4 @@
 			hud_used.hide_actions_toggle.screen_loc = hud_used.ButtonNumberToScreenCoords(button_number+1)
 			//hud_used.SetButtonCoords(hud_used.hide_actions_toggle,button_number+1)
 		client.screen += hud_used.hide_actions_toggle*/
+*/

@@ -231,8 +231,14 @@
 		return FALSE
 	return TRUE
 
-/obj/item/projectile/proc/get_structure_damage()
-	return ((damage_types[BRUTE] + damage_types[BURN]) * structure_damage_factor)
+///obj/item/projectile/proc/get_structure_damage()
+//	return ((damage_types[BRUTE] + damage_types[BURN]) * structure_damage_factor)
+
+/obj/item/projectile/proc/get_structure_damage(var/injury_type)
+	if(!injury_type) // Assume homogenous
+		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(INJURY_TYPE_HOMOGENOUS, wounding_mult, edge, sharp) * 2
+	else
+		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(injury_type, wounding_mult, edge, sharp) * 2
 
 /obj/item/projectile/proc/get_ricochet_modifier()
 	return (ricochet_mod - (armor_penetration * 0.01)) //Return ricochet mod(default 1) modified by AP. E.G 1 - (AP(10) * 0.01) = 0.1. Thus 10% less likely to bounce per 10ap.
