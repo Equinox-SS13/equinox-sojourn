@@ -263,18 +263,15 @@ uniquic_armor_act
 		return FALSE//should be prevented by attacked_with_item() but for sanity.
 
 
-	visible_message("<span class='danger'>[src] has been [LAZYPICK(I.attack_verb) || "attacked"] in the  [affecting.name] with [I.name] by [user]!</span>")
+	visible_message("<span class='danger'>|[I.name]|[src]|[user]| has been [LAZYPICK(I.attack_verb) || "attacked"] in the  [affecting.name] with [I.name] by [user]!</span>")
 
 	var/EF = unique_armor_check(I, user, effective_force)
 	if(EF)
 		effective_force = EF
-
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		H.stop_blocking()
-
 	standard_weapon_hit_effects(I, user, effective_force, hit_zone)
-
 	return TRUE
 
 /mob/living/carbon/human/standard_weapon_hit_effects(obj/item/I, mob/living/user, var/effective_force, var/hit_zone)
@@ -372,8 +369,10 @@ uniquic_armor_act
 					adjustOxyLoss(10)
 					adjustHalLoss(5)
 
-
-	return TRUE
+	if (damage_through_armor(effective_force, I.damtype, hit_zone, ARMOR_MELEE, I.armor_penetration, used_weapon = I, sharp = is_sharp(I), edge = has_edge(I), post_pen_mult = I.post_penetration_dammult))
+		return TRUE
+	else
+		return FALSE
 
 /mob/living/carbon/human/proc/attack_joint(var/obj/item/organ/external/organ, var/obj/item/W)
 	if(!organ || (organ.nerve_struck == 2) || (organ.nerve_struck == -1))

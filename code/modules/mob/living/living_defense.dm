@@ -40,7 +40,6 @@
 	post_pen_mult			= 1
 	)
 
-	message_admins("Attack ! [damage]")
 
 	if(armor_pen <= 0)
 		armor_pen = 0.1 // if HYBRID armour system were to be chosen armour penetration of 0 could fuck up some calculations, negative one ... well I am expecting out of artists
@@ -53,7 +52,6 @@
 	var/total_dmg = 0
 	for(var/dmg_type in dmg_types)
 		total_dmg += dmg_types[dmg_type]
-		message_admins("[used_weapon] VS [src] | [dmg_types[dmg_type]] : [dmg_type]")
 	if(!total_dmg)
 		return FALSE
 	
@@ -78,7 +76,6 @@
 			if(armor_effectiveness == 0)//No armor? Damage as usual
 				apply_damage(dmg * post_pen_mult, dmg_type, def_zone, 1, wounding_multiplier, sharp, edge)
 				final_damage+=dmg * post_pen_mult
-				message_admins("[used_weapon] VS [src] | dmg=[dmg] | dmg_type=[dmg_type] | post_pen_mult=[post_pen_mult]")
 				if(ishuman(src) && def_zone)
 					var/mob/living/carbon/human/H = src
 					var/obj/item/organ/external/o = H.get_organ(def_zone)
@@ -97,7 +94,6 @@
 
 				//Actual part of the damage that passed through armor
 				var/actual_damage = max(0,round ( ( dmg * ( 100 - armor_effectiveness ) ) / 100 - absolute_armor))
-				message_admins("[used_weapon] VS [src] | dmg=[dmg] | dmg_type=[dmg_type] | post_pen_mult=[post_pen_mult] | actual_damage=[actual_damage]")
 				apply_damage(actual_damage * post_pen_mult, dmg_type, def_zone, used_weapon, sharp, edge)
 				if(ishuman(src) && def_zone && actual_damage >= 20)
 					var/mob/living/carbon/human/H = src
@@ -125,7 +121,7 @@
 							SPAN_NOTICE("Your armor absorbed the impact!"))
 		if(74 to 90)
 			armor_message(SPAN_NOTICE("[src] armor easily absorbs the blow!"),
-							SPAN_NOTICE("Your armor reduced the impact greatly!"))
+							SPAN_NOTICE("Your armor greatly reduced the impact!"))
 		if(49 to 74)
 			armor_message(SPAN_NOTICE("[src] armor absorbs most of the damage!"),
 							SPAN_NOTICE("Your armor protects you from the impact!"))
@@ -136,7 +132,7 @@
 			armor_message(SPAN_NOTICE("[src] armor reduces the impact by a little."),
 							SPAN_NOTICE("Your armor reduced the impact a little."))
 
-	message_admins("[used_weapon] VS [src] | def_zone=[def_zone] | total_dmg=[total_dmg] | final_dmg=[final_damage] | armor=[armor] | absolute_armor=[absolute_armor] | armor_pen=[armor_pen] | armor_effectiveness=[armor_effectiveness] | effective_armor=[effective_armor]")
+	//message_admins("[used_weapon] VS [src] | def_zone=[def_zone] | total_dmg=[total_dmg] | final_dmg=[final_damage] | armor=[armor] | absolute_armor=[absolute_armor] | armor_pen=[armor_pen] | armor_effectiveness=[armor_effectiveness] | effective_armor=[effective_armor]")
 
 
 
@@ -328,7 +324,6 @@
 
  // return PROJECTILE_CONTINUE if bullet should continue flying
 /mob/living/bullet_act(obj/item/projectile/P, var/def_zone_hit)
-	message_admins("Bullet is acting !")
 	var/hit_dir = get_dir(P, src)
 
 	if (P.is_hot() >= HEAT_MOBIGNITE_THRESHOLD)
@@ -422,10 +417,9 @@
 /mob/living/proc/standard_weapon_hit_effects(obj/item/I, mob/living/user, var/effective_force, var/hit_zone)
 	if(!effective_force)
 		return FALSE
-
 	//Hulk modifier
-	if(HULK in user.mutations)
-		effective_force *= 2
+//	if(HULK in user.mutations)
+//		effective_force *= 2
 
 	//Apply weapon damage
 	if (damage_through_armor(effective_force, I.damtype, hit_zone, ARMOR_MELEE, I.armor_penetration, used_weapon = I, sharp = is_sharp(I), edge = has_edge(I), post_pen_mult = I.post_penetration_dammult))
