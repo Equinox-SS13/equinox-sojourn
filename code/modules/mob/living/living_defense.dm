@@ -40,6 +40,8 @@
 	post_pen_mult			= 1
 	)
 
+	visible_message("Attack ! [damage]")
+
 	if(armor_pen <= 0)
 		armor_pen = 0.1 // if HYBRID armour system were to be chosen armour penetration of 0 could fuck up some calculations, negative one ... well I am expecting out of artists
 		log_debug("[used_weapon] applied damage to [name] with a nonpositive armor penetration !!")
@@ -129,7 +131,7 @@
 			armor_message(SPAN_NOTICE("[src] armor reduces the impact by a little."),
 							SPAN_NOTICE("Your armor reduced the impact a little."))
 
-	message_admins("total_dmg=[total_dmg] | final_dmg=[final_damage] | armor_effectiveness=[armor_effectiveness] | absolute_armor=[absolute_armor]")
+	visible_message("total_dmg=[total_dmg] | final_dmg=[final_damage] | armor_effectiveness=[armor_effectiveness] | absolute_armor=[absolute_armor]")
 
 
 
