@@ -40,10 +40,10 @@
 	post_pen_mult			= 1
 	)
 
-
 	if(armor_pen <= 0)
 		armor_pen = 0.1 // if HYBRID armour system were to be chosen armour penetration of 0 could fuck up some calculations, negative one ... well I am expecting out of artists
-		log_debug("[used_weapon] applied damage to [name] with a nonpositive armor penetration !!")
+		//log_debug("[used_weapon] applied damage to [name] with a nonpositive armor penetration !!")
+		//this will flood logs until we change armour pen to be above 0
 
 	if(damage) // If damage is defined, we add it to the list
 		if(!dmg_types[damagetype])
@@ -67,9 +67,21 @@
 	var/armor_effectiveness = max(0, ((armor * armor_times_mod) - armor_pen) * RELATIVE_ARMOR_EFFICIENCY)
 	var/absolute_armor = max(0, ((((armor) * armor_times_mod) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)
 
-	var/ablative_armor = getarmorablative(def_zone, attack_flag) * (100 - armor_penetration) / 100
+	var/ablative_armor = getarmorablative(def_zone, attack_flag) * (100 - armor_pen) / 100
 
 	var/final_damage = 0 //final summary of damage after all the calculations, for armour message
+
+	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/)) //PVE extra damages
+		if(armor + 1 < armor_pen) //overpen damage
+			for(var/dmg_type in dmg_types)
+				dmg_types[dmg_type] += (armor_pen - armor) / dmg_types.len
+		if(dmg_types[HALLOSS]>0)
+			if(dmg_types.len <= 1) //if we have no other damage types other than HALLOSS we doin BRUTE, TODO: give every weapon with just HALLOSS a secondary damage type set to 0
+				dmg_types[BRUTE]=0
+			for(var/dmg_type in dmg_types)
+				dmg_types[dmg_type] += dmg_types[HALLOSS] / dmg_types.len-1
+			dmg_types[HALLOSS] = 0
+
 	for(var/dmg_type in dmg_types)
 		var/dmg = dmg_types[dmg_type]
 		if(dmg)
@@ -452,7 +464,7 @@
 		if(isitem(O))
 			var/obj/item/thingytocheck = O
 			ppd = thingytocheck.post_penetration_dammult
-		damage_through_armor(throw_damage, dtype, null, ARMOR_MELEE, null, used_weapon = O, sharp = is_sharp(O), edge = has_edge(O), post_pen_mult = ppd)
+		damage_through_armor(throw_damage, dtype, null, ARMOR_MELEE, null, used_weapon = O, armor_pen = O.armor_penetration, sharp = is_sharp(O), edge = has_edge(O), post_pen_mult = ppd)
 
 		O.throwing = 0		//it hit, so stop moving
 
