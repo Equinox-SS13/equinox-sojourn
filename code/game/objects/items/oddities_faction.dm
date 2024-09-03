@@ -2,7 +2,6 @@
 /obj/item/biosyphon
 	name = "Biosiphon Anomaly"
 	desc = "An exceedingly rare bluespace anomaly discovered by a marshal ranger outside the colony. After weeks of study it was determined its only purpose was duplicating boxes of donuts. Soteria's disappointment was so great they gave the item to security for safe keeping. Months after its discovery it began to create refined cases of incredibly tasty donuts filled with long-lasting effective stimulants every 30 minutes."
-"
 = 'icons/obj/device.dmi'
 	icon_state = "biosyphon"
 	item_state = "biosyphon"
