@@ -13,7 +13,7 @@
 	suitable_cell = /obj/item/cell/medium/neotheology
 	projectile_type = /obj/item/projectile/plasma/light
 	force = WEAPON_FORCE_BRUTAL
-	armor_divisor = ARMOR_PEN_MASSIVEcds
+	armor_divisor = ARMOR_PEN_MASSIVE
 	fire_delay = 10
 	charge_cost = 60 // 10 shots out of a 600M
 	sharp = TRUE // It's a halberd with a cannon.
