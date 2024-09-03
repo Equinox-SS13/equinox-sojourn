@@ -318,7 +318,7 @@
 	recoil = 14
 
 /obj/item/projectile/bullet/kurtz_50/hv
-	name = "AV bullet"
+	name = "HV bullet"
 	damage_types = list(BRUTE = 27)
 	armor_divisor = 1.4
 	penetrating = 2
@@ -1089,7 +1089,7 @@
 
 /obj/item/projectile/bullet/cap
 	name = "cap"
-	damage_types = list(HALLOS = 0)
+	damage_types = list(HALLOSS = 0)
 	nodamage = TRUE
 	embed = FALSE
 	sharp = FALSE

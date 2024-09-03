@@ -420,7 +420,7 @@
 	name = "sink"
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "sink"
-	desc = "A HV-11 sink. Used for washing the hands and face."
+	desc = "A HV-11 sink used for washing hands and face."
 	anchored = 1
 	reagent_flags = OPENCONTAINER
 	var/busy = 0 	//Something's being washed at the moment

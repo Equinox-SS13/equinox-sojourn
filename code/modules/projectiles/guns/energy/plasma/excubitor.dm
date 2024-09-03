@@ -13,12 +13,13 @@
 	suitable_cell = /obj/item/cell/medium/neotheology
 	projectile_type = /obj/item/projectile/plasma/light
 	force = WEAPON_FORCE_BRUTAL
-	armor_divisor = ARMOR_PEN_MASSIVE
+	armor_divisor = ARMOR_PEN_MASSIVEcds
 	fire_delay = 10
 	charge_cost = 60 // 10 shots out of a 600M
+	sharp = TRUE // It's a halberd with a cannon.
 	init_recoil = HANDGUN_RECOIL(1)
 	price_tag = 1500
-	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
+	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE, GUN_BAYONET)
 	init_firemodes = list(
 		list(mode_name="rapid fire", mode_desc="Light rapid plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF"),
 		list(mode_name="grenade", mode_desc="fires a frag biomatter-shell", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),

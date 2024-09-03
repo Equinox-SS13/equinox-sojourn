@@ -604,6 +604,17 @@
 	options["lemniscate helmet"] = "lemniscate_helmet"
 	options["divisor helmet"] = "divisor_helmet"
 	options["monomial helmet"] = "monomial_helmet"
+	options["divisor plate greathelm"] = "divisor_plate_greathelm"
+	options["divisor guard helmet"] = "divisor_guardsmen_helmet"
+	options["tessellate veil"] = "tessellate_veil"
+	options["tessellate maskheadgear"] = "tessellate_maskheadgear"
+	options["factorial powerhood"] = "factorial_powerhood"
+	options["factorial vessel shlemofon"] = "factorial_vesselcrew_shlemofon"
+	options["divisor plate greathelm_alt"] = "divisor_plate_greathelm_alt"
+	options["divisor guardsmen helmet snout"] = "divisor_guardsmen_helmet_alt"
+	options["tessellate veil snout"] = "tessellate_veil_alt"
+	options["tessellate maskheadgear snout"] = "tessellate_maskheadgear_alt"
+	options["factorial powerhood snout"] = "factorial_powerhood_alt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -839,7 +850,9 @@
 	if(src && choice && !M.incapacitated() && Adjacent(M))
 		icon_state = options[choice]
 		if(choice == "prime saint")
-			flags_inv = HIDEEARS
+			flags_inv = 0
+		if(choice == "prime paladin")
+			flags_inv = BLOCKHAIR
 		else
 			flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 		to_chat(M, "You adjusted your helmet's style into [choice] mode.")
@@ -1659,8 +1672,8 @@
 	name = "altyn helmet"
 	desc = "A titanium helmet of serbian origin. Still widely used despite being discontinued."
 	icon_state = "altyn"
-	armor_up = list(melee = 5, bullet = 4, energy = 0, bomb = 15, bio = 0, rad = 0)
-	armor_list = list(melee = 2, bullet = 3, energy = 2, bomb = 35, bio = 0, rad = 0)
+	armor_up = list(melee = 2, bullet = 3, energy = 0, bomb = 15, bio = 0, rad = 0)
+	armor_list = list(melee = 5, bullet = 4, energy = 2, bomb = 35, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	up = TRUE
 

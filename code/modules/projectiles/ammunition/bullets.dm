@@ -236,7 +236,7 @@
 	amount = 10
 
 /obj/item/ammo_casing/rifle_75/hv
-	desc = "A 7.62mm high-velocity bullet casing."
+	desc = "A 7.62mm high-velocity APDS bullet casing."
 	icon_state = "srifle_c_hv"
 	spent_icon = "srifle_c_hv-spent"
 	shell_color = "hv"
@@ -311,7 +311,7 @@
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/practice
 
 /obj/item/ammo_casing/heavy_rifle_408/hv
-	desc = "A 8.6mm high-velocity bullet casing."
+	desc = "A 8.6mm high-velocity SLAP bullet casing."
 	icon_state = "lrifle_c_hv"
 	spent_icon = "lrifle_c_hv-spent"
 	shell_color = "hv"
@@ -495,7 +495,7 @@
 
 /obj/item/ammo_casing/antim/lethal
 	name = "\"Red-Nose\" shell casing"
-	desc = "A SA 14.5mm Anti-Materiel \"Red-Nose\" shell."
+	desc = "A SA 14.5mm Anti-Materiel \"Red-Nose\" shell, punches organics harder than the standard round."
 	icon_state = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/lethal
@@ -505,7 +505,7 @@
 
 /obj/item/ammo_casing/antim/ion
 	name = "\"Off-Switch\" shell casing"
-	desc = "A SA 14.5mm Anti-Materiel \"Off-Switch\" shell."
+	desc = "A SA 14.5mm Anti-Materiel \"Off-Switch\" Ion shell, causes EMP burst on impact."
 	icon_state = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/ion
@@ -514,7 +514,8 @@
 	amount = 5
 
 /obj/item/ammo_casing/antim/incend
-	desc = "\"Willy Pete\" shell casing"
+	name = "\"Willy Pete\" shell casing"
+	desc = "A SA 14.5mm Anti-Materiel \"Willy Pete\" White Phosphorous incendiary round."
 	shell_color = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/incend

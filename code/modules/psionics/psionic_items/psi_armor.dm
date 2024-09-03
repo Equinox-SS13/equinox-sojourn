@@ -277,7 +277,7 @@
 	icon = 'icons/obj/psionic/occicon.dmi'
 	icon_override = 'icons/obj/psionic/occmob.dmi'
 
-	desc = "A set of experimental cloths made of rare materials and silk, allowing psionic users to more effectively channel psionic essence."
+	desc = "A set of experimental clothing made of rare materials and silk, allowing psionic users to more effectively channel psionic essence."
 	matter = list(MATERIAL_SILK = 5)
 	var/cognitive_potential = 0.1 //cube sink
 

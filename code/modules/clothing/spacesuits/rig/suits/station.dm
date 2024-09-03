@@ -32,7 +32,7 @@
 /obj/item/rig/industrial
 	name = "industrial suit control module"
 	suit_type = "industrial hardsuit" //Credit for sprites go to Près de l'oiseau over at Eris
-	desc = "A heavy, powerful rig used by construction crews and mining corporations. The soft plating can protect the wearer from unexpected hazards, but is not reliable in prolonged combat."
+	desc = "A heavy, powerful rig used by construction crew and mining corporations. The soft plating can protect the wearer from unexpected hazards, but is not reliable in prolonged combat."
 	icon_state = "engineering_rig"
 	armor_list = list(
 		melee = 10,
@@ -81,7 +81,7 @@
 /obj/item/rig/eva
 	name = "EVA suit control module"
 	suit_type = "EVA hardsuit"
-	desc = "A light RIG for performing minute repairs and maintenance on low-pressure environments."
+	desc = "A light RIG suit for performing minute repairs and maintenance on low-pressure environments."
 	icon_state = "eva_rig"
 	armor_list = list(
 		melee = 5,
@@ -126,7 +126,7 @@ Advanced Voidsuit: Guild Master
 /obj/item/rig/ce
 	name = "advanced hardsuit control module"
 	suit_type = "advanced hardsuit"
-	desc = "An advanced hardsuit that protects against hazardous, low pressure environments. Shines with a high polish."
+	desc = "An advanced hardsuit that protects against hazardous, low pressure environments. Shines with high polish."
 	icon_state = "ce_rig"
 	armor_list = list(
 		melee = 10,
@@ -296,7 +296,7 @@ Technomancer RIG
 	name = "Advanced AMI control module"
 	suit_type = "advanced hazmat hardsuit"
 	desc = "An Anomalous Material Interaction hardsuit that protects against the strangest energies the universe can throw at it. \
-	This advanced verson is made with speed in mind as well better armor plates at the cost of power."
+	This advanced version is made with speed in mind as well better armor plates at the cost of power."
 	icon_state = "science_ami_rig"
 	armor_list = list(
 		melee = 8,
@@ -387,7 +387,7 @@ Technomancer RIG
 /obj/item/rig/recovery_suit
 	name = "recovery team suit control module"
 	suit_type = "Recovery Team hardsuit"
-	desc = "An upgraded hardsuit designed by the Soteria for their Recovery Team division. While not as heavily armored as a proper hardsuit, the inbuilt medical systems make it highly prized. \
+	desc = "An upgraded hardsuit designed by the Soteria for their Recovery Team division. While not as heavily armored as a proper hardsuit, the built-in medical systems make it highly prized. \
 	It is best suited for surviving and combating wild life, but has reasonably decent kevlar plating and impact pads to absorb bullets and energy blasts."
 	icon_state = "response_team"
 	armor_list = list(
@@ -426,8 +426,8 @@ Technomancer RIG
 /obj/item/rig/cmo
 	name = "SI 'Medtek' control module"
 	suit_type = "SI 'Medtek"
-	desc = "An upgraded and updated Soteria 'Retainer' RIGsuit made for field surgery in dangerous locations, this suit has undergone a series of upgrades to improve its utility \
-	for Soteria's resident overworked Chief Biolab Overseer.  Improved servos are paired with neural-mnemonic sensors allowing the user unmatched speed and dexterity- one can easily forget that they are even wearing the suit."
+	desc = "An upgraded and updated Soteria 'Retainer' RIG suit made for field surgery in dangerous locations, this suit has undergone a series of upgrades to improve its utility. \
+	for Soteria's resident overworked Chief Biolab Overseer.  Improved servos are paired with neural-mnemonic sensors allowing the user unmatched speed and dexterity. One can easily forget that they are even wearing the suit."
 	icon_state = "cmo_rig"
 	armor_list = list(
 		melee = 0,
@@ -492,7 +492,7 @@ Technomancer RIG
 		)
 /obj/item/rig/hazard/steward
 	name = "stewards hardsuit control module"
-	desc = "A modification of the traditional combat rig built for equal parts utility and defense. Marked with a seal of two Armstrong rifles crossing each other in a X at the base of the neck."
+	desc = "A modification of the traditional combat RIG built for equal parts utility and defense. Marked with a seal of two Armstrong rifles crossing each other in a X at the base of the neck."
 	icon_state = "security_rig"
 	suit_type = "stewards hardsuit"
 	armor_list = list(
