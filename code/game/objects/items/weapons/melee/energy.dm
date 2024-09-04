@@ -5,7 +5,7 @@
 	var/active_w_class
 	sharp = 0
 	edge = 0
-	armor_divisor = ARMOR_PEN_MASSIVE
+	armor_penetration = ARMOR_PEN_MASSIVE
 	flags = NOBLOODY
 	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
 	heat = 3800
@@ -111,12 +111,11 @@
 	desc = "May the Force be with you."
 	icon_state = "sword0"
 	icon = 'icons/obj/weapons.dmi'
-	active_force = WEAPON_FORCE_LETHAL // Go forth and slay, padawan
-	active_throwforce = WEAPON_FORCE_LETHAL
+	active_force = WEAPON_FORCE_BRUTAL // Go forth and slay, padawan
+	active_throwforce = WEAPON_FORCE_BRUTAL
 	active_w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_HARMLESS
 	throwforce = WEAPON_FORCE_HARMLESS
-	no_double_tact = TRUE
 	throw_speed = 1
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
@@ -187,8 +186,6 @@
 	name = "energy cutlass"
 	desc = "Arrrr matey."
 	icon_state = "cutlass0"
-	active_force =  WEAPON_FORCE_ROBUST
-	active_throwforce =  WEAPON_FORCE_ROBUST
 
 /obj/item/melee/energy/sword/sabre
 	name = "laser saber"
@@ -201,8 +198,7 @@
 	blade_color = "green"
 	name = "laser dagger"
 	desc = "A much smaller but still useful energy based short blade."
-	clickdelay_offset = FAST_WEAPON_COOLDOWN
-	armor_divisor = ARMOR_PEN_EXTREME
+	armor_penetration = ARMOR_PEN_EXTREME
 	active_force =  WEAPON_FORCE_DANGEROUS
 	active_throwforce =  WEAPON_FORCE_DANGEROUS
 	icon_state = "dagger0"
@@ -232,7 +228,6 @@
 	throwforce = WEAPON_FORCE_PAINFUL // Not gonna matter since it will turn off on throwing, thank you psions can't have shit in Nadezhda
 	throw_speed = 3 // Same as normal spear
 	throw_range = 7
-	extended_reach = TRUE
 	w_class = ITEM_SIZE_HUGE // It's a long spear
 	slot_flags = SLOT_BACK
 	flags = CONDUCT // It's a metal pole, you're a literal lightning rod while holding it
@@ -278,7 +273,7 @@
 	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
 	icon_state = "blade"
 	icon = 'icons/obj/weapons.dmi'
-	armor_divisor = 2
+	armor_penetration = 30
 	sharp = 1
 	edge = 1
 	force = WEAPON_FORCE_BRUTAL
@@ -286,7 +281,7 @@
 	throwforce = 1  //Throwing or dropping the item deletes it.
 	throw_speed = 1
 	throw_range = 1
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_BULKY//So you can't hide it in your pocket or some such.
 	flags = NOBLOODY
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	tool_qualities = list(QUALITY_CUTTING = 30,  QUALITY_WIRE_CUTTING = 20, QUALITY_LASER_CUTTING = 20, QUALITY_WELDING = 10, QUALITY_CAUTERIZING = 10)

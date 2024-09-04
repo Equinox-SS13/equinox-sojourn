@@ -6,14 +6,11 @@
 	item_state = null
 	worksound = WORKSOUND_HARD_SLASH
 	hitsound = 'sound/weapons/heavyslash.ogg'
-	force = WEAPON_FORCE_BRUTAL
-	sharp = TRUE
-	edge = TRUE
-	clickdelay_offset = FAST_WEAPON_COOLDOWN
+	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_WEAK
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("stabbed", "chopped", "cut")
-	armor_divisor = ARMOR_PEN_MODERATE
+	armor_penetration = ARMOR_PEN_MODERATE
 	tool_qualities = list(QUALITY_CUTTING = 20)
 
 /obj/item/organ_module/active/simple/proc/get_scanner_name()
@@ -34,7 +31,6 @@
 	icon_state = "wolverine"
 	name = "claws"
 	desc = "A set of claws deployed from the tips of your fingers. Great for cutting people into ribbons."
-	clickdelay_offset = 0 //No bonus speed.
 
 /obj/item/organ_module/active/simple/wolverine
 	name = "embedded claws"
@@ -97,7 +93,7 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_WEAK
-	armor_divisor = ARMOR_PEN_MODERATE
+	armor_penetration = ARMOR_PEN_MODERATE
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "reaped")
 	tool_qualities = list(QUALITY_CUTTING = 30)
@@ -123,7 +119,7 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_WEAK
-	armor_divisor = ARMOR_PEN_MODERATE
+	armor_penetration = ARMOR_PEN_MODERATE
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "reaped")
 	tool_qualities = list(QUALITY_CUTTING = 30)
