@@ -352,7 +352,8 @@
 	var/agony = P.damage_types[HALLOSS] ? P.damage_types[HALLOSS] : 0
 	//Stun Beams
 	if(P.taser_effect)
-		stun_effect_act(0, agony, def_zone_hit, P)
+		stun_effect_act(0, agony, def_zone_hit, P, armor_pen = P.armor_penetration, damage_already_applied = TRUE)
+		damage_through_armor(def_zone = def_zone_hit, attack_flag = P.check_armour, armor_pen = P.armor_penetration, used_weapon = P, sharp = is_sharp(P), edge = has_edge(P), wounding_multiplier = P.wounding_mult, dmg_types = P.damage_types)
 		to_chat(src, SPAN_WARNING("You have been hit by [P]!"))
 		qdel(P)
 		return TRUE
@@ -380,11 +381,12 @@
 	return PROJECTILE_CONTINUE
 
 //Handles the effects of "stun" weapons
-/mob/living/proc/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone, var/used_weapon=null)
+/mob/living/proc/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone, var/used_weapon=null, var/armor_pen=1, var/damage_already_applied=FALSE)
 	flash_pain()
 
 	//For not bloating damage_through_armor here is simple armor calculation for stun time
 	var/armor_coefficient = max(0, 1 - getarmor(def_zone, ARMOR_ENERGY) / 100)
+	var/armor_absolut=max(0, (((getarmor(def_zone, ARMOR_ENERGY) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)) // TODO use it
 
 	//If armor is 100 or more, we just skeeping it
 	if (stun_amount && armor_coefficient)
@@ -394,9 +396,11 @@
 		apply_effect(STUTTER, stun_amount * armor_coefficient)
 		apply_effect(EYE_BLUR, stun_amount * armor_coefficient)
 
+//	if (agony_amount && armor_coefficient && agony_amount * armor_coefficient > armor_absolut)
 	if (agony_amount && armor_coefficient)
+		if(damage_already_applied == FALSE)
+			apply_damage(agony_amount * armor_coefficient - armor_absolut, HALLOSS, def_zone, 0, used_weapon)
 
-		apply_damage(agony_amount * armor_coefficient, HALLOSS, def_zone, 0, used_weapon)
 		apply_effect(STUTTER, agony_amount * armor_coefficient)
 		apply_effect(EYE_BLUR, agony_amount * armor_coefficient)
 		SEND_SIGNAL(src, COMSIG_LIVING_STUN_EFFECT)
