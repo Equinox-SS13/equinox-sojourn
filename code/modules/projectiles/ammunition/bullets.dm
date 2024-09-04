@@ -285,7 +285,7 @@
 //// 8.6mm heavy rifle////
 
 /obj/item/ammo_casing/heavy_rifle_408
-	desc = "A 8.6mm bullet casing."
+	desc = "An 8.6mm bullet casing."
 	icon_state = "lrifle_c_l"
 	spent_icon = "lrifle_c_l-spent"
 	shell_color = "l"
@@ -297,32 +297,32 @@
 	amount = 10
 
 /obj/item/ammo_casing/heavy_rifle_408/rubber
-	desc = "A 8.6mm rubber bullet casing."
+	desc = "An 8.6mm rubber bullet casing."
 	icon_state = "lrifle_c_r"
 	spent_icon = "lrifle_c_r-spent"
 	shell_color = "r"
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/rubber
 
 /obj/item/ammo_casing/heavy_rifle_408/practice
-	desc = "A 8.6mm training bullet casing."
+	desc = "An 8.6mm training bullet casing."
 	icon_state = "lrifle_c_p"
 	spent_icon = "lrifle_c_p-spent"
 	shell_color = "p"
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/practice
 
 /obj/item/ammo_casing/heavy_rifle_408/hv
-	desc = "A 8.6mm high-velocity SLAP bullet casing."
+	desc = "An 8.6mm high-velocity SLAP bullet casing."
 	icon_state = "lrifle_c_hv"
 	spent_icon = "lrifle_c_hv-spent"
 	shell_color = "hv"
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/hv
 
 /obj/item/ammo_casing/heavy_rifle_408/lethal
-	desc = "A 8.6mm bullet casing."
+	desc = "An 8.6mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/lethal
 
 /obj/item/ammo_casing/heavy_rifle_408/incend
-	desc = "A 8.6mm incendiary bullet casing."
+	desc = "An 8.6mm incendiary bullet casing."
 	shell_color = "l"
 	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/incend
 
@@ -340,7 +340,7 @@
 	amount = 10
 
 /obj/item/ammo_casing/heavy_rifle_408/laser
-	desc = "A 8.6mm laser casing."
+	desc = "An 8.6mm laser casing."
 	projectile_type = /obj/item/projectile/beam/weak/heavy_rifle_408
 
 /obj/item/ammo_casing/heavy_rifle_408/spent
@@ -495,7 +495,7 @@
 
 /obj/item/ammo_casing/antim/lethal
 	name = "\"Red-Nose\" shell casing"
-	desc = "A SA 14.5mm Anti-Materiel \"Red-Nose\" shell, punches organics harder than the standard round."
+	desc = "An SA 14.5mm Anti-Materiel \"Red-Nose\" shell, punches organics harder than the standard round."
 	icon_state = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/lethal
@@ -505,7 +505,7 @@
 
 /obj/item/ammo_casing/antim/ion
 	name = "\"Off-Switch\" shell casing"
-	desc = "A SA 14.5mm Anti-Materiel \"Off-Switch\" Ion shell, causes EMP burst on impact."
+	desc = "An SA 14.5mm Anti-Materiel \"Off-Switch\" Ion shell, causes EMP burst on impact."
 	icon_state = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/ion
@@ -515,7 +515,7 @@
 
 /obj/item/ammo_casing/antim/incend
 	name = "\"Willy Pete\" shell casing"
-	desc = "A SA 14.5mm Anti-Materiel \"Willy Pete\" White Phosphorous incendiary round."
+	desc = "An SA 14.5mm Anti-Materiel \"Willy Pete\" White Phosphorous incendiary round."
 	shell_color = "atmr_red"
 	spent_icon = "atmr_red-spent"
 	projectile_type = /obj/item/projectile/bullet/antim/incend

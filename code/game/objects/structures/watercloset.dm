@@ -2,7 +2,7 @@
 
 /obj/structure/toilet
 	name = "toilet"
-	desc = "A HT-451 toilet. A torque rotation-based waste disposal unit for small matter."
+	desc = "An HT-451 toilet. A torque rotation-based waste disposal unit for small matter."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "toilet00"
 	density = 0
@@ -121,7 +121,7 @@
 
 /obj/structure/urinal
 	name = "urinal"
-	desc = "A HU-452 urinal. Don't stand too far away."
+	desc = "An HU-452 urinal. Don't stand too far away."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "urinal"
 	density = 0
@@ -157,7 +157,7 @@
 
 /obj/machinery/shower
 	name = "shower"
-	desc = "A HS-451 shower unit. Has a bolted temperature dial."
+	desc = "An HS-451 shower unit. Has a bolted temperature dial."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "shower"
 	density = 0
@@ -420,7 +420,7 @@
 	name = "sink"
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "sink"
-	desc = "A HV-11 sink used for washing hands and face."
+	desc = "An HV-11 sink used for washing hands and face."
 	anchored = 1
 	reagent_flags = OPENCONTAINER
 	var/busy = 0 	//Something's being washed at the moment
@@ -602,7 +602,7 @@
 
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
-	desc = "A HV-11B sink. Used for washing the hands and face, and utensils."
+	desc = "An HV-11B sink. Used for washing the hands and face, and utensils."
 	icon_state = "sink_alt"
 
 /obj/structure/sink/puddle	//splishy splashy ^_^
