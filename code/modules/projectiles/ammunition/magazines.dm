@@ -757,7 +757,7 @@
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/lethal
 
 /obj/item/ammo_magazine/heavy_rifle_408_drum/rubber
-	name = "heavy rifle drum magazine (baton)"
+	name = "heavy rifle drum magazine (rubber)"
 	icon_state = "hdrumltl"
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/rubber
 

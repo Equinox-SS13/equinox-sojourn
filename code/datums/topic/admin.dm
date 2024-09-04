@@ -1051,14 +1051,14 @@
 		return
 
 	if(BSACooldown)
-		to_chat(source.owner, "Standby!  Reload cycle in progress!  Gunnary crews ready in five seconds!")
+		to_chat(source.owner, "Standby! Reload cycle in progress! Gunnery crew ready in five seconds!")
 		return
 
 	BSACooldown = TRUE
 	spawn(50)
 		BSACooldown = FALSE
 
-	to_chat(M, "You've been hit by bluespace artillery!")
+	to_chat(M, "You've been hit by Bluespace Artillery!")
 	log_admin("[key_name(M)] has been hit by Bluespace Artillery fired by [source.owner]")
 	message_admins("[key_name(M)] has been hit by Bluespace Artillery fired by [source.owner]")
 
