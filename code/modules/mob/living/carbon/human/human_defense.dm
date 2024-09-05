@@ -68,7 +68,7 @@ uniquic_armor_act
 			step(src, pick(cardinal - hit_dirs))
 			visible_message(SPAN_WARNING("[src] stumbles around."))
 
-/mob/living/carbon/human/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone)
+/mob/living/carbon/human/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone, var/armor_pen, var/damage_already_applied)
 
 	var/obj/item/organ/external/affected = get_organ(check_zone(def_zone))
 
