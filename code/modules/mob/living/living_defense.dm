@@ -54,7 +54,7 @@
 		total_dmg += dmg_types[dmg_type]
 	if(!total_dmg)
 		return FALSE
-	
+
 	//Used for simple/super mobs do to their armor being checked twice
 	var/armor_times_mod = 1
 
@@ -545,17 +545,10 @@
 
 	if(!damage || !istype(user))
 		return
-
-	var/used_penetration = 1
-	if(isliving(user))
-		var/mob/living/L = user
-		used_penetration = L.armor_penetration
-	var/attack_BP = BP_CHEST
-	if(prob(20))
-		attack_BP = pick(list(BP_L_LEG, BP_R_LEG, BP_R_ARM, BP_L_ARM, BP_GROIN, BP_HEAD))
-
-	damage_through_armor(damage, damagetype, attack_BP, ARMOR_MELEE, used_penetration, sharp=sharp, edge=edge)
-
+	if(damagetype == BRUTE)
+		adjustBruteLoss(damage)
+	else
+		adjustFireLoss(damage)
 	user.attack_log += text("\[[time_stamp()]\] <font color='red'>attacked [src.name] ([src.ckey])</font>")
 	src.attack_log += text("\[[time_stamp()]\] <font color='orange'>was attacked by [user.name] ([user.ckey])</font>")
 	src.visible_message(SPAN_DANGER("[user] has [attack_message] [src]!"))
