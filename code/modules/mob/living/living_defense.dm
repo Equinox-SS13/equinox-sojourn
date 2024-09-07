@@ -58,8 +58,8 @@
 	//Used for simple/super mobs do to their armor being checked twice
 	var/armor_times_mod = 1
 
-	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/))
-		armor_times_mod = 0.5 // a thing from the past . . . why do we have this ?
+//	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/))
+//		armor_times_mod = 0.5 // a thing from the past . . . why do we have this ?
 
 	//GDR - guaranteed damage reduction. It's a value that deducted from damage before all calculations
 	var/armor = getarmor(def_zone, attack_flag)
