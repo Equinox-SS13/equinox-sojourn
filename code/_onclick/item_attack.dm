@@ -285,7 +285,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 			if(!i==0)
 				T = get_step(T, get_dir(user, A))
 				force = force * 0.8 //20% less damage each step forwards
-				armor_penetration -= 10 //Lower AD a little, per tile
+				armor_penetration -= 10 //Lower AP a little, per tile
 			//else
 				//message_admins("0th tile bypassed")
 
