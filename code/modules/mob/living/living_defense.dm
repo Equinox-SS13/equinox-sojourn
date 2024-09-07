@@ -59,11 +59,10 @@
 	var/armor_times_mod = 1
 
 	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/))
-		armor_times_mod = 0.5
+		armor_times_mod = 0.5 // a thing from the past . . . why do we have this ?
 
 	//GDR - guaranteed damage reduction. It's a value that deducted from damage before all calculations
 	var/armor = getarmor(def_zone, attack_flag)
-	var/guaranteed_damage_red = armor * ARMOR_GDR_COEFFICIENT
 	var/armor_effectiveness = max(0, ((armor * armor_times_mod) - armor_pen) * RELATIVE_ARMOR_EFFICIENCY)
 	var/absolute_armor = max(0, ((((armor) * armor_times_mod) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)
 
@@ -71,15 +70,26 @@
 
 	var/final_damage = 0 //final summary of damage after all the calculations, for armour message
 
+//this will trigger with EVERY ATTACK, kill NPC's via debug verbs
+//	message_admins("##########################################")
+//	for(var/dmg_type in dmg_types)
+//		message_admins("dmg_type [dmg_type] = dmg [dmg_types[dmg_type]]")
+
 	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/)) //PVE extra damages
 		if(armor + 1 < armor_pen) //overpen damage
 			for(var/dmg_type in dmg_types)
-				dmg_types[dmg_type] += (armor_pen - armor) / dmg_types.len
-		if(dmg_types[HALLOSS]>0)
-			if(dmg_types.len <= 1) //if we have no other damage types other than HALLOSS we doin BRUTE, TODO: give every weapon with just HALLOSS a secondary damage type set to 0
-				dmg_types[BRUTE]=0
-			for(var/dmg_type in dmg_types)
-				dmg_types[dmg_type] += dmg_types[HALLOSS] / dmg_types.len-1
+				dmg_types[dmg_type] += (armor_pen - armor) / dmg_types.len //we split overpen damage into other damage types equally, this might need adjustment if we chose to have a more ABSOLUTE heavy armor system
+		if(dmg_types[HALLOSS]>0) //PvE hallos damage
+			var/agony_armor_effectiveness = max(0, ((armor * armor_times_mod) - armor_pen) * RELATIVE_ARMOR_EFFICIENCY)
+			var/agony_absolute_armor = max(0, (((armor * armor_times_mod) - armor_pen) * ABSOLUTE_ARMOR_EFFICIENCY) / armor_pen)
+			var/mob_agony_gamage = max(dmg_types[HALLOSS] * ARMOR_GDR_COEFFICIENT,round ( ( dmg_types[HALLOSS] * ( 100 - agony_armor_effectiveness ) ) / 100 - agony_absolute_armor))
+			adjustHalLoss(mob_agony_gamage)
+			final_damage+=mob_agony_gamage
+//	alternative way of doing it similiar to overpen above
+//			if(dmg_types.len <= 1) //if we have no other damage types other than HALLOSS we doin BRUTE, TODO: give every weapon with just HALLOSS a secondary damage type set to 0
+//				dmg_types[BRUTE]=0
+//			for(var/dmg_type in dmg_types)
+//				dmg_types[dmg_type] += dmg_types[HALLOSS] / dmg_types.len-1
 			dmg_types[HALLOSS] = 0
 
 	for(var/dmg_type in dmg_types)
@@ -101,11 +111,11 @@
 				//Pain part of the damage, meaning that it is the pain caused by brute/burn/etc, that simulates impact from armor absorbtion
 				//For balance purposes, it's lowered by ARMOR_HALLOS_COEFFICIENT
 				if(!(dmg_type == HALLOSS))
-					var/agony_gamage = max(0,round( ( dmg * armor_effectiveness * ARMOR_HALLOS_COEFFICIENT * clamp((get_specific_organ_efficiency(OP_NERVE, def_zone) / 100), 0.5, 1.5) / 100) - absolute_armor * ARMOR_HALLOS_COEFFICIENT))
+					var/agony_gamage = max(dmg * ARMOR_GDR_COEFFICIENT * ARMOR_HALLOS_COEFFICIENT,round( ( dmg * armor_effectiveness * ARMOR_HALLOS_COEFFICIENT * clamp((get_specific_organ_efficiency(OP_NERVE, def_zone) / 100), 0.5, 1.5) / 100) - absolute_armor * ARMOR_HALLOS_COEFFICIENT))
 					adjustHalLoss(agony_gamage)
 
 				//Actual part of the damage that passed through armor
-				var/actual_damage = max(0,round ( ( dmg * ( 100 - armor_effectiveness ) ) / 100 - absolute_armor))
+				var/actual_damage = max(dmg * ARMOR_GDR_COEFFICIENT,round ( ( dmg * ( 100 - armor_effectiveness ) ) / 100 - absolute_armor))
 				apply_damage(actual_damage * post_pen_mult, dmg_type, def_zone, used_weapon, sharp, edge)
 				if(ishuman(src) && def_zone && actual_damage >= 20)
 					var/mob/living/carbon/human/H = src
@@ -128,188 +138,28 @@
 	//In order to show both target and everyone around that armor is actually working, we are going to send message for both of them
 	//Goon/tg chat should take care of spam issue on this one
 	switch(effective_armor)
-		if(90 to INFINITY)
+		if(89 to INFINITY)
 			armor_message(SPAN_NOTICE("[src] armor absorbs the blow!"),
 							SPAN_NOTICE("Your armor absorbed the impact!"))
-		if(74 to 90)
+		if(74 to 89)
 			armor_message(SPAN_NOTICE("[src] armor easily absorbs the blow!"),
 							SPAN_NOTICE("Your armor greatly reduced the impact!"))
 		if(49 to 74)
 			armor_message(SPAN_NOTICE("[src] armor absorbs most of the damage!"),
 							SPAN_NOTICE("Your armor protects you from the impact!"))
-		if(24 to 39)
+		if(24 to 49)
 			armor_message(SPAN_NOTICE("[src] armor absorbs fair bit of the damage!"),
 							SPAN_NOTICE("Your armor reduced the impact!"))
-		if(-INFINITY to 24)
+		if(10 to 24)
 			armor_message(SPAN_NOTICE("[src] armor reduces the impact by a little."),
 							SPAN_NOTICE("Your armor reduced the impact a little."))
+		if(-INFINITY to 10)
+			armor_message(SPAN_NOTICE("[src] armor was pierced !"),
+							SPAN_NOTICE("Your armor didn't affect the impact at all !"))
 
-	//message_admins("[used_weapon] VS [src] | def_zone=[def_zone] | total_dmg=[total_dmg] | final_dmg=[final_damage] | armor=[armor] | absolute_armor=[absolute_armor] | armor_pen=[armor_pen] | armor_effectiveness=[armor_effectiveness] | effective_armor=[effective_armor]")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-	if(istype(src,/mob/living/simple_animal/) || istype(src,/mob/living/carbon/superior_animal/)) //overpen damage, relative armour not modified by armour effectiveness TODO fix it ???
-		var/mob_brute_armor = src.getarmor(def_zone, "bullet") //All brute over-pen checks bullet rather then melee for simple mobs to keep melee viable
-		var/mob_laser_armor = src.getarmor(def_zone, "energy")
-		var/mob_agony_armor = src.getarmor(def_zone, "agony")
-
-		//message_admins("mob_brute_armor = [mob_brute_armor]!")
-		//message_admins("mob_laser_armor = [mob_laser_armor]!")
-		//message_admins("mob_agony_armor = [mob_agony_armor]!")
-
-		//We take the armor pen and baseline armor for calulating the armor pen rather then the reduction so that we get correct values
-		var/burns_armor_overpenetration = armor_pen - mob_laser_armor
-		var/brute_armor_overpenetration = armor_pen - mob_brute_armor
-
-		//This is put here rather then above over-pen as we want to keep over-pen being with baseline armor rather then halfed.
-		mob_brute_armor = mob_brute_armor * armor_times_mod
-		mob_laser_armor = mob_laser_armor * armor_times_mod
-
-		//message_admins("brute_armor_overpenetration = [brute_armor_overpenetration]!")
-		//message_admins("burns_armor_overpenetration = [burns_armor_overpenetration]!")
-
-		//message_admins("overpen_dmg = [overpen_dmg]!")
-
-		if(damagetype == HALLOSS)
-			overpen_dmg =  max(0,round(overpen_dmg - mob_agony_armor) - absolute_armor * ARMOR_HALLOS_COEFFICIEN)
-
-		if(brute_armor_overpenetration > 0 && damagetype == BRUTE)
-			overpen_dmg += max(0,round(brute_armor_overpenetration) - absolute_armor * ARMOR_HALLOS_COEFFICIEN)
-
-		if(burns_armor_overpenetration > 0 && damagetype == BURN)
-			overpen_dmg += max(0,round(burns_armor_overpenetration) - absolute_armor * ARMOR_HALLOS_COEFFICIEN)
-
-		//message_admins("post math mob overpen overpen_dmg = [overpen_dmg]!")
-*/
-
-
-
-
-
-
-
-/*
-	var/remaining_armor = armor
-	var/remaining_ablative = ablative_armor
-
-	for(var/dmg_type in dmg_types)
-		var/dmg = dmg_types[dmg_type]
-		if(dmg)
-			var/used_armor = 0 // Used for agony calculation, as well as reduction in armour before follow-up attacks
-
-			if(dmg_type in list(BRUTE, BURN, TOX, BLAST)) // Some damage types do not help penetrate armor
-				if(remaining_armor)
-					var/dmg_armor_difference = dmg - remaining_armor
-					var/is_difference_positive = dmg_armor_difference > 0
-					used_armor += is_difference_positive ? dmg - dmg_armor_difference : dmg
-					remaining_armor = is_difference_positive ? 0 : -dmg_armor_difference
-					dmg = is_difference_positive ? dmg_armor_difference : 0
-				if(remaining_ablative && dmg)
-					var/ablative_difference
-					ablative_difference = dmg - remaining_ablative
-					var/is_difference_positive = ablative_difference > 0
-					used_armor += is_difference_positive ? dmg - ablative_difference : dmg
-					remaining_ablative = is_difference_positive ? 0 : -ablative_difference
-					dmg = is_difference_positive ? ablative_difference : 0
-			else
-				dmg = max(dmg - remaining_armor - remaining_ablative, 0)
-
-
-
-
-			dmg_types[dmg_type] = dmg // Finally, we adjust the damage passing through
-			if(dmg)
-				dealt_damage += dmg
-
-				if(dmg_type == HALLOSS && ishuman(src)) //We already did this for mobs
-					dmg = round(dmg * clamp((get_specific_organ_efficiency(OP_NERVE, def_zone) / 100), 0.5, 1.5))
-					var/pain_armor = max(0, (src.getarmor(def_zone, "bullet") +  src.getarmor(def_zone, "melee") / armor_divisor))//All brute over-pen checks bullet rather then melee for simple mobs to keep melee viable
-					var/pain_no_matter_what = (dmg * 0.15) //we deal 15% of are pain, this is to stop rubbers being *completely* uses with basic armor - Its not perfect in melee
-					dmg = max(pain_no_matter_what, (dmg - pain_armor))
-					if(ishuman(src))
-						var/mob/living/carbon/human/victim = src
-						if(prob(25 + (dmg * 2)))
-							if(!victim.stat && !(victim.has_shield()))
-								if(victim.headcheck(def_zone))
-									//Harder to score a stun but if you do it lasts a bit longer
-									if(prob(dmg))
-										visible_message(SPAN_DANGER("[src] [victim.form.knockout_message]"))
-										apply_effect(5, PARALYZE, getarmor(def_zone, ARMOR_MELEE) )
-								else
-									//Easier to score a stun but lasts less time
-									if(prob(dmg + 10))
-										visible_message(SPAN_DANGER("[src] has been knocked down!"))
-										apply_effect(1, WEAKEN, getarmor(def_zone, ARMOR_MELEE) )
-
-				if(dmg_type == BRUTE)
-
-					if ( (sharp || edge) && prob ( (1 - dmg / dmg_types[dmg_type]) * 100 ) ) // If enough of the brute damage is blocked, sharpness is lost from all followup attacks, this converts damage into crushing as well
-						if(wounding_multiplier)
-							wounding_multiplier = step_wounding_double(wounding_multiplier) // Implied piercing damage, degrade by two steps (prevents damage duping from <1 multiplier)
-						else
-							wounding_multiplier = 1 // Crushing multiplier forced
-						sharp = FALSE
-						edge = FALSE
-						armor_message(SPAN_NOTICE("[src] armor deflected the strike!"), // No cut (strike), only bash
-										SPAN_NOTICE("Your armor deflects the strike!"))
-
-				apply_damage(dmg, dmg_type, def_zone, armor_divisor, wounding_multiplier, sharp, edge, used_weapon)
-				if(ishuman(src) && def_zone && dmg >= 20)
-					var/mob/living/carbon/human/H = src
-					var/obj/item/organ/external/o = H.get_organ(def_zone)
-					if (o && o.status & ORGAN_SPLINTED)
-						visible_message(SPAN_WARNING("The splints break off [src] after being hit!"),
-								SPAN_WARNING("Your splints break off after being hit!"))
-						o.status &= ~ORGAN_SPLINTED
-	var/effective_armor = (1 - dealt_damage / total_dmg) * 100
-
-
-
-
-
-*/
-
-
-
-
-/*	else//shelving this for a moment, will most likely shufffle it around
-
-		if(damagetype == HALLOSS)
-			//First we get the nervs!
-			effective_damage = round(effective_damage * clamp((get_specific_organ_efficiency(OP_NERVE, def_zone) / 100), 0.5, 1.5))
-			var/pain_armor = max(0, (src.getarmor(def_zone, "bullet") +  src.getarmor(def_zone, "melee") - armor_pen))//All brute over-pen checks bullet rather then melee for simple mobs to keep melee viable
-			var/pain_no_matter_what = (effective_damage * 0.15) //we deal 15% of are pain, this is to stop rubbers being *completely* uses with basic armor - Its not perfect in melee
-			effective_damage = max(pain_no_matter_what, (effective_damage - pain_armor))
-			if(ishuman(src))
-				var/mob/living/carbon/human/victim = src
-				if(prob(25 + (effective_damage * 2)))
-					if(!victim.stat && !(victim.has_shield()))
-						if(victim.headcheck(def_zone))
-							//Harder to score a stun but if you do it lasts a bit longer
-							if(prob(effective_damage))
-								visible_message(SPAN_DANGER("[src] [victim.form.knockout_message]"))
-								apply_effect(5, PARALYZE, getarmor(def_zone, ARMOR_MELEE) )
-						else
-							//Easier to score a stun but lasts less time
-							if(prob(effective_damage + 10))
-								visible_message(SPAN_DANGER("[src] has been knocked down!"))
-								apply_effect(1, WEAKEN, getarmor(def_zone, ARMOR_MELEE) )
-*/
-
-
+//this will trigger with EVERY ATTACK, kill NPC's via debug verbs
+//	message_admins("[used_weapon] VS [src] | def_zone=[def_zone] | total_dmg=[total_dmg] | final_dmg=[final_damage] | armor=[armor] | absolute_armor=[absolute_armor] | armor_pen=[armor_pen] | armor_effectiveness=[armor_effectiveness] | effective_armor=[effective_armor]")
+//	message_admins("##########################################")
 
 
 //if null is passed for def_zone, then this should return something appropriate for all zones (e.g. area effect damage)
@@ -399,7 +249,7 @@
 //	if (agony_amount && armor_coefficient && agony_amount * armor_coefficient > armor_absolut)
 	if (agony_amount && armor_coefficient)
 		if(damage_already_applied == FALSE)
-			apply_damage(agony_amount * armor_coefficient - armor_absolut, HALLOSS, def_zone, 0, used_weapon)
+			apply_damage(max(agony_amount * ARMOR_GDR_COEFFICIENT , agony_amount * armor_coefficient - armor_absolut), HALLOSS, def_zone, 0, used_weapon)
 
 		apply_effect(STUTTER, agony_amount * armor_coefficient)
 		apply_effect(EYE_BLUR, agony_amount * armor_coefficient)
