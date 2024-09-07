@@ -16,22 +16,6 @@
 	var/no_attack_log = 0			//If it's an item we don't want to log attack_logs with, set this to 1
 	pass_flags = PASSTABLE
 
-	//The cool stuff for melee
-	var/screen_shake = FALSE 		//If a weapon can shake the victim's camera on hit.
-	var/forced_broad_strike = FALSE //If a weapon is forced to always perform broad strikes.
-	//Mostly used for spears when wielded, but can be placed on any item
-	//Any value above 1 adds extra tiles it checks for reach
-	//Also used in holsters and sheaths, code for handing is in item_attack.dm with "fancy_ranged_melee_attack"
-	var/extended_reach = FALSE
-	var/ready = FALSE					//All weapons that are ITEM_SIZE_BULKY or bigger have double tact, meaning you have to click twice.
-	var/no_double_tact = FALSE			//for when you,  for some inconceivable reason, want a huge item to not have double tact
-	var/double_tact_required = FALSE	//for when you,  you want smaller then huge items to have double tact - note no_double_tact removes this affect
-
-	var/no_swing = FALSE            //for when you do not want an item to swing-attack
-	var/push_attack = FALSE			//Hammers and spears can push the victim away on hit when you aim groin.
-	//Why are we using vars instead of defines or anything else?
-	//Because we need them to be shown in the tool info UI.
-
 	var/obj/item/master = null
 	var/list/origin_tech = null   //Used by R&D to determine what research bonuses it grants.
 	var/list/attack_verb = null //Used in attackby() to say how something was attacked "[x] has been [LAZYPICK(z.attack_verb) || "attacked"] by [y] with [z]"
@@ -97,6 +81,7 @@
 	var/embed_mult = 1 //Multiplier for the chance of embedding in mobs. Set to zero to completely disable embedding
 	var/structure_damage_factor = STRUCTURE_DAMAGE_NORMAL	//Multiplier applied to the damage when attacking structures and machinery
 
+	var/post_penetration_dammult = 1 //how much damage do we do post-armor-penetation
 	//Does not affect damage dealt to mobs
 	//var/attack_distance = 1
 
@@ -688,7 +673,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/proc/refresh_upgrades()
 	damtype = initial(damtype)
 	force = initial(force)
-	armor_divisor = initial(armor_divisor)
+	armor_penetration = initial(armor_penetration)
 	item_flags = initial(item_flags)
 	name = initial(name)
 	max_upgrades = initial(max_upgrades)
@@ -750,7 +735,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/proc/alt_mode_activeate_two()
 	damtype = alt_mode_damagetype
 	force = force *= alt_mode_lossrate
-	armor_divisor= armor_divisor *= alt_mode_lossrate
+	armor_penetration = armor_penetration *= alt_mode_lossrate
 	attack_verb = LAZYCOPY(alt_mode_verbs)
 	sharp = alt_mode_sharp
 	flags |= NOBLOODY

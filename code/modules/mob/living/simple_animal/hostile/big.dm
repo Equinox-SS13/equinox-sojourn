@@ -42,12 +42,12 @@
 
 	mob_size = MOB_LARGE
 
-	maxHealth = 550 * MEGAFAUNA_HEALTH_MOD
-	health = 550 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 550
+	health = 550
 	melee_damage_lower = 35
 	melee_damage_upper = 40
 
-	armor = list(melee = 10, bullet = 14, energy = 12, bomb = 5, bio = 10, agony = 10, rad = 25)
+	armor = list(melee = 35, bullet = 30, energy = 25, bomb = 5, bio = 10, rad = 25)
 
 	old_x = -16
 	old_y = 0
@@ -91,8 +91,8 @@
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "chunks"
 	icon_dead = "deathclaw_dead"
-	maxHealth = 500 * MEGAFAUNA_HEALTH_MOD
-	health = 500 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 500
+	health = 500
 	melee_damage_lower = 30
 	melee_damage_upper = 40
 	meat_amount = 8
@@ -126,7 +126,7 @@
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
 	mob_size = MOB_LARGE
-	armor = list(melee = 6, bullet = 2, energy = 0, bomb = 5, bio = 10, rad = 25)
+	armor = list(melee = 25, bullet = 10, energy = 0, bomb = 5, bio = 10, rad = 25)
 	inherent_mutations = list(MUTATION_CAT_EYES, MUTATION_GIGANTISM, MUTATION_RAND_UNSTABLE)
 
 /mob/living/simple_animal/hostile/retaliate/gaslamp
@@ -205,8 +205,8 @@
 	icon_dead = "arachnid_dead"
 	melee_damage_lower = 30
 	melee_damage_upper = 35
-	maxHealth = 300 * MEGAFAUNA_HEALTH_MOD
-	health = 300 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 300
+	health = 300
 	move_to_delay = 2
 	turns_per_move = 2
 	vision_range = 5
@@ -223,8 +223,9 @@
 	has_rare_parts = TRUE
 	special_parts = list(/obj/item/animal_part/stalker_chitin)
 	rare_parts = list(/obj/item/animal_part/stalker_spur)
-	armor = list(melee = 5, bullet = 7, energy = 1, bomb = 5, bio = 10, agony = 20, rad = 25)
+
 	mob_size = MOB_LARGE
+	armor = list(melee = 15, bullet = 30, energy = 35, bomb = 5, bio = 10, rad = 25)
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_CLUMSY, MUTATION_COUGHING, MUTATION_NERVOUSNESS, MUTATION_CLOAKING)
 
 /mob/living/simple_animal/hostile/nightmare/dream_daemon
@@ -236,13 +237,13 @@
 	icon_dead = "arachnid_daemon_dead"
 	melee_damage_lower = 40
 	melee_damage_upper = 60
-	maxHealth = 450 * MEGAFAUNA_HEALTH_MOD
-	health = 450 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 450
+	health = 450
 	move_to_delay = 4
 	turns_per_move = 4
 	vision_range = 8
 	aggro_vision_range = 20
-	armor = list(melee = 5, bullet = 14, energy = 12, bomb = 5, bio = 10, agony = 10, rad = 25)
+	armor = list(melee = 20, bullet = 30, energy = 5, bomb = 5, bio = 10, rad = 25) //Lost its laser armor do to being a darker colour
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_CLUMSY, MUTATION_COUGHING, MUTATION_NERVOUSNESS, MUTATION_GREATER_CLOAKING)
 
 /mob/living/simple_animal/hostile/nightmare/MoveToTarget()
@@ -276,8 +277,8 @@
 	icon_dead = "leaper_dead"
 	melee_damage_lower = 50
 	melee_damage_upper = 60
-	maxHealth = 600 * MEGAFAUNA_HEALTH_MOD
-	health = 600 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 600
+	health = 600
 	move_to_delay = 4
 	turns_per_move = 4
 	vision_range = 16
@@ -328,8 +329,8 @@
 	icon_dead = "hellpig_dead"
 	melee_damage_lower = 30
 	melee_damage_upper = 45
-	maxHealth = 750 * MEGAFAUNA_HEALTH_MOD
-	health = 750 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 750
+	health = 750
 	move_to_delay = 4
 	turns_per_move = 4
 	vision_range = 16
@@ -347,7 +348,7 @@
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/hell_hide)
 	mob_size = MOB_LARGE
-	armor = list(melee = 8, bullet = 6, energy = 10, bomb = 5, bio = 10, agony = 10, rad = 25)
+	armor = list(melee = 25, bullet = 10, energy = 20, bomb = 5, bio = 10, rad = 25)
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_CLUMSY, MUTATION_BLINDNESS, MUTATION_NO_PAIN, MUTATION_HYPERION, MUTATION_BLOOD_BANK)
 
 /mob/living/simple_animal/hostile/hell_pig/wendigo
@@ -359,14 +360,14 @@
 	icon_dead = "wendigo_dead"
 	melee_damage_lower = 25
 	melee_damage_upper = 35
-	maxHealth = 600 * MEGAFAUNA_HEALTH_MOD
-	health = 600 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 600
+	health = 600
 	move_to_delay = 2
 	turns_per_move = 6
 	speak_emote = list("snarls!", "jerks erratically.")
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/cannibal_tooth)
-	armor = list(melee = 8, bullet = 10, energy = 3, bomb = 5, bio = 10, agony = 10, rad = 25)
+	armor = list(melee = 35, bullet = 20, energy = 0, bomb = 5, bio = 10, rad = 25)
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_CLUMSY, MUTATION_IMBECILE, MUTATION_RAND_UNSTABLE, MUTATION_HYPERION)
 
 
@@ -381,8 +382,8 @@
 	icon_dead = "slepnir_dead"
 	melee_damage_lower = 30
 	melee_damage_upper = 35
-	maxHealth = 350 * MEGAFAUNA_HEALTH_MOD
-	health = 350 * MEGAFAUNA_HEALTH_MOD
+	maxHealth = 550
+	health = 550
 	vision_range = 8
 	aggro_vision_range = 16
 	move_to_delay = 1
@@ -390,5 +391,5 @@
 	speak_emote = list("stomps its hooves!", "whinnies!")
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/slepnir_hoof,/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
-	armor = list(melee = 8, bullet = 4, energy = 4, bomb = 5, bio = 10, agony = 10, rad = 25)
+	armor = list(melee = 25, bullet = 10, energy = 10, bomb = 5, bio = 10, rad = 25)
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_CLUMSY, MUTATION_IMBECILE, MUTATION_RAND_UNSTABLE, MUTATION_HYPERION, MUTATION_BLOOD_BANK)

@@ -81,9 +81,7 @@
 	var/hand_blood_color
 
 	var/gunshot_residue
-	var/holding_back // Are you trying not to hurt your opponent?
-	var/blocking = FALSE //ready to block melee attacks?
-	var/dodging = TRUE // are you dodging those shots?
+	var/pulling_punches // Are you trying not to hurt your opponent?
 
 	mob_bump_flag = HUMAN
 	mob_push_flags = ~HEAVY

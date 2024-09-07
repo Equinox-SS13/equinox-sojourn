@@ -9,7 +9,7 @@
 	var/flash_range = 10
 	var/heat_damage = 40
 	var/fire_stacks = TRUE
-	var/penetration = 1
+	var/penetration = 0
 
 
 /obj/item/grenade/heatwave/prime()
