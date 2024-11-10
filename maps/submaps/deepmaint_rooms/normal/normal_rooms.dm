@@ -58,10 +58,10 @@
 	desc = "freezer"
 	mappath = 'maps/submaps/deepmaint_rooms/normal/freezer.dmm'
 
-/datum/map_template/deepmaint_template/room/anomalysci
-	name = "anomalysci"
-	desc = "anomalysci"
-	mappath = 'maps/submaps/deepmaint_rooms/normal/anomalysci.dmm'
+/datum/map_template/deepmaint_template/room/anomaliesci
+	name = "anomaliesci"
+	desc = "anomaliesci"
+	mappath = 'maps/submaps/deepmaint_rooms/normal/anomaliesci.dmm'
 
 /datum/map_template/deepmaint_template/room/hydro
 	name = "hydro"
