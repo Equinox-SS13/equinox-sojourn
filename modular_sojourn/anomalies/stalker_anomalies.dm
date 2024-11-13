@@ -619,7 +619,7 @@
 
 /obj/structure/anomalies_diet/razer
 	name = "Razer"
-	"A field of floating red lasers. There is a distinct smell of iron in the area around them."
+	desc = "A field of floating red lasers. There is a distinct smell of iron in the area around them."
 	icon_state = "razer"
 	item_state = "razer"
 	density = FALSE
