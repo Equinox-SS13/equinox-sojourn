@@ -526,7 +526,7 @@
 	delay_adder = clamp(delay_adder, 0, 8)
 //	message_admins("2ogre: safty_math [safty_math] safty_health [safty_health]  delay_adder [delay_adder]")
 	real_mod += -safty_math
-	real_mod *= 0.5 //insanely op
+	real_mod *= 0.5 //Insanely op
 
 //	message_admins("3ogre: safty_math [safty_math] safty_health [safty_health]  delay_adder [delay_adder]")
 //	message_admins("4ogre: armor_divisor [armor_divisor]")
