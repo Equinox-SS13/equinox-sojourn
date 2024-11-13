@@ -395,7 +395,7 @@
 	required_tech_levels = list()
 	cost = 500
 
-	unlocks_designs = list("rigsimpleai", "rigflash", "righealthscanner", "riganomaliescanner", "rigorescanner", "rigextinguisher", "rigmetalfoamspray", "rigcoolingunit")
+	unlocks_designs = list("rigsimpleai", "rigflash", "righealthscanner", "riganomalyscanner", "rigorescanner", "rigextinguisher", "rigmetalfoamspray", "rigcoolingunit")
 
 /datum/technology/advanced_hardsuit_modules
 	name = "Advanced Hardsuit Modules"

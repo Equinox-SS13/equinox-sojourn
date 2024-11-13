@@ -23,7 +23,7 @@
 
 /obj/item/stalker_hand_anomaly/pillar
 	name = "The pillar"
-	desc = "A smooth pilar made of black stone, It is well polished and seems very strong."
+	desc = "A smooth pilar made of black stone. It is well polished and seems very strong."
 	var/blood_difference = 60
 	var/punch_increase = 25 //IDK
 
@@ -131,7 +131,7 @@
 
 /obj/item/stalker_hand_anomaly/dice
 	name = "The dice"
-	desc = "A smooth die, made of black stone, It is well polished and has no markings on its faces."
+	desc = "A smooth die, made of black stone. It is well polished and has no markings on its faces."
 	icon_state = "d201"
 	item_state = "d201"
 	var/rng_to_win = 50

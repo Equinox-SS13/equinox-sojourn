@@ -130,8 +130,8 @@
 	var/starting_culter = TRUE
 	var/is_growing = TRUE
 	var/spread_range = 1
-	var/spread_speed_slow = 100		// Minium amount of time it takes for a grown crystal to spread
-	var/spread_speed_high = 280		// Maxium amount of time it takes for a grown crystal to spread
+	var/spread_speed_slow = 100		// Minimum amount of time it takes for a grown crystal to spread
+	var/spread_speed_high = 280		// Maximum amount of time it takes for a grown crystal to spread
 	light_power = 1
 	light_range = 2
 	light_color = "#F5B31E"
@@ -178,7 +178,7 @@
 	if(turf_list.len)
 		var/turf/T = pick(turf_list)
 
-		spidersilk = /obj/structure/anomalies_diet/spidersilk // We spread are basic type
+		spidersilk = /obj/structure/anomalies_diet/spidersilk // We spread our basic type
 
 		if(is_growing)
 			spidersilk = /obj/structure/anomalies_diet/spidersilk/spreaded
@@ -629,8 +629,8 @@
 	var/starting_culter = TRUE
 	var/is_growing = TRUE
 	var/spread_range = 1
-	var/spread_speed_slow = 100		// Minium amount of time it takes for a grown crystal to spread
-	var/spread_speed_high = 280		// Maxium amount of time it takes for a grown crystal to spread
+	var/spread_speed_slow = 100		// Minimum amount of time it takes for a grown crystal to spread
+	var/spread_speed_high = 280		// Maximum amount of time it takes for a grown crystal to spread
 
 	var/blade_runner = 100
 	var/blade_sharpness_aka_damage_per_running_on_it = 5
@@ -683,7 +683,7 @@
 	if(turf_list.len)
 		var/turf/T = pick(turf_list)
 
-		spidersilk = /obj/structure/anomalies_diet/razer // We spread are basic type
+		spidersilk = /obj/structure/anomalies_diet/razer // We spread our basic type
 
 		if(is_growing)
 			spidersilk = /obj/structure/anomalies_diet/razer/spreaded

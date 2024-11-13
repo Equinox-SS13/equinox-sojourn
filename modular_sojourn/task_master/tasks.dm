@@ -68,9 +68,9 @@
 	forwards_refence.stats.changeStat(STAT_BIO, 2) //so its actually valuable
 
 /datum/task_master/task/vendor_e_shopper
-	name = "Vender Point Shopper"
+	name = "Vendor Point Shopper"
 	key = "VENDOR_E_SHOPPER"
-	desc = "Paper bills, coins they all suck! The Card with your bank account attached to it is clearly the best way to shop!"
+	desc = "Paper bills? Coins? They all suck! The Card with your bank account attached to it is clearly the best way to shop!"
 	gain_text = "Shopping with an Ecard sure is the way to go."
 	level_thresholds = 10 //So people dont game this as easy
 
@@ -88,7 +88,7 @@
 
 /datum/task_master/task/return_to_sender/activate_affect()
 	forwards_refence.max_nutrition += (level * 15) //415 level 1 -> 445 level 2 -> 490 level 3 ect ect
-	forwards_refence.stats.changeStat(STAT_VIV, (level + 2)) //Extremely miner: 3 level 1 -> 7 level 2 -> 13 level 3 ect ect
+	forwards_refence.stats.changeStat(STAT_VIV, (level + 2)) //Extremely minor: 3 level 1 -> 7 level 2 -> 13 level 3 ect ect
 
 //Huskification
 /datum/task_master/task/rebound_case

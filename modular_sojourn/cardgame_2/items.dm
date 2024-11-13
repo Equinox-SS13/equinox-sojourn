@@ -67,13 +67,13 @@
 
 /obj/item/bone_counter/AltClick(mob/user)
 	tally -= 1
-	user.visible_message(SPAN_NOTICE("[user] adds a tally into \the [src], making it [tally]."), SPAN_NOTICE("You put a tally into \the [src], making it [tally]."))
+	user.visible_message(SPAN_NOTICE("[user] removes a tally from \the [src], making it [tally]."), SPAN_NOTICE("You remove a tally from \the [src], making it [tally]."))
 	update_icon()
 	return
 
 /obj/item/bone_counter/CtrlShiftClick(mob/user)
 	tally += 1
-	user.visible_message(SPAN_NOTICE("[user] adds a tally into \the [src]."), SPAN_NOTICE("You put a tally into \the [src]."))
+	user.visible_message(SPAN_NOTICE("[user] adds a tally into \the [src], making it [tally]."), SPAN_NOTICE("You put a tally into \the [src], making it [tally]."))
 	update_icon()
 	return
 

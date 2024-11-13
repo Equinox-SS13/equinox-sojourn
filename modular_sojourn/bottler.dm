@@ -10,7 +10,7 @@
 
 /obj/item/bottle_kit/examine(mob/user)
 	..()
-	to_chat(user, "<span class='info'>Current glass Bottle Printing Type: [fake_glass_name].</span>")
+	to_chat(user, "<span class='info'>Current glass bottle printing type: [fake_glass_name].</span>")
 
 
 /obj/item/bottle_kit/attack_self(mob/user as mob)
