@@ -1,5 +1,5 @@
 /obj/item/bottle_kit
-	name = "bottling Kit"
+	name = "bottling kit"
 	desc = "A box that holds glasses fabricators, labels, caps and quarks ready for home brewing and bottling."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "bottler_box"

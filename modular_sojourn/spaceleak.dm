@@ -1,6 +1,6 @@
 
 /obj/item/bluespace_leak
-	name = "leaking bluespace"
+	name = "Leaking Bluespace"
 	desc = "It looks like some kind of waterfall made out of space, seemingly endlessly flowing in place. Best not to get close to it."
 	icon = 'modular_sojourn/spaceleak.dmi'
 	icon_state = "coder_sprite"

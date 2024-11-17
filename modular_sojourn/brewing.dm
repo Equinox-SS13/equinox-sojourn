@@ -1,5 +1,5 @@
 /obj/structure/fermentation_keg
-	name = "fermentation Keg"
+	name = "fermentation keg"
 	desc = "A simple keg that is meant for making booze."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "barrel_tapless_open"
