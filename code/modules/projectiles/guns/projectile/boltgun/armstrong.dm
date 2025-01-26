@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/boltgun/lever
 	name = "\"Armstrong\" repeating rifle"
-	desc = "Weapon for hunting, or endless open plains. Perfect for horseback!"
+	desc = "A lever-action rifle usually employed in frontier space for it's low cost and ease of use. Chambered in 10mm."
 	icon = 'icons/obj/guns/projectile/lever.dmi'
 	icon_state = "lever"
 	item_state = "lever"
@@ -33,8 +33,7 @@
 
 /obj/item/gun/projectile/boltgun/lever/custer
 	name = "\"Custer\" repeating rifle"
-	desc = "This sized-up version of the \"Armstrong\" sports a few improvements compared to its predecessor. \
-			Made to compete with modern bolt actions in hunting, this repeating rifle sports a heavy bore rifle cartridge to pack an extra punch!"
+	desc = "A heavy duty lever-action rifle usually employed in frontier space for it's low cost and ease of use. Chambered in 8.6mm, designed to stop rogue synthetics and megafauna."
 	icon = 'icons/obj/guns/projectile/custer.dmi'
 	icon_state = "custer"
 	item_state = "custer"

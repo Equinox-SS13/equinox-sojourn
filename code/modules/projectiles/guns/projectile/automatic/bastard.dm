@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/bastard
 	name = "\"Bastard\" light machine gun"
-	desc = "A compact machine gun carefully pieced together with what one could only assume is scrap and leftover parts. Chambered in 6.5mm."
+	desc = "A compact and unreliable machine gun carefully pieced together with a solyanka of scrap and leftover parts. Chambered in 6.5mm."
 	icon = 'icons/obj/guns/projectile/bastard.dmi'
 	icon_state = "bastard"
 	item_state = "bastard"

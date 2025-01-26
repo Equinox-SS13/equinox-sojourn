@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/duty
 	name = "\"Duty\" carbine"
-	desc = "A versatile rifle proprietary to the colony - the result of Blackshield working in tandem with the Marshals. Features a bayonet, and the ability to feed from both a magazine and stripper clips. Chambered in 6.5mm."
+	desc = "A versatile infantry rifle proprietary to the colony, able to load from magazines and stripper clips. Chambered in 6.5mm."
 	icon = 'icons/obj/guns/projectile/duty.dmi'
 	icon_state = "duty"
 	item_state = "duty"

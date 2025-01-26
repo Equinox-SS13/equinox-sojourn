@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/luger
-	name = "\"Vintovka Lyugera\" SMG"
-	desc = "An old-world pistol mutilated and modified into an SMG of sorts. Reliable, well crafted but bulky. Amazingly it... works! The look is hard to describe... a mix between 'jury rigged' and 'amazing'. \
-	While able to take all kinds of 9mm pistol and SMG magazines, it features only two modes: Semiauto, and uncontrollable automatic fire."
+	name = "\"Lemun\" SMG"
+	desc = "A cheap submachine gun born from a commercial parts kit for an equally cheap pistol. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/luger.dmi'
 	icon_state = "luger"
 	item_state = "luger"
@@ -40,9 +39,8 @@
 	set_item_state(itemstring)
 
 /obj/item/part/gun/frame/luger
-	name = "Luger frame"
-	desc = "A frame that looks like an AK yet it's an SMG, its magwell located where the grip should go. \
-			Why is this mangled monstruosity called a Luger anyways...?"
+	name = "Lemun frame"
+	desc = "A frame for the Lemun SMG."
 	icon_state = "frame_luger"
 	result = /obj/item/gun/projectile/automatic/luger
 	gripvars = list(/obj/item/part/gun/grip/wood)

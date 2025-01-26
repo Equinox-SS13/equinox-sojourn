@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/boltgun/sa
-	name = "\"Novakovic\" boltgun"
-	desc = "Weapon for hunting, or endless trench warfare. \
-			If you're on a budget, it's a darn good rifle for just about everything. \
-			This copy, in fact, is a reverse-engineered poor-quality copy of a more perfect copy of an ancient rifle"
+	name = "\"Militia\" bolt-action rifle"
+	desc = "A simple bolt-action rifle made to meet modern combat standards. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/boltgun_wood.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
@@ -15,7 +13,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle/steel = 1)
 
 /obj/item/gun/projectile/boltgun/sawn/sa
-	name = "\"obrez\" boltgun"
+	name = "\"Obrez\" bolt-action pistol"
+	desc = "A Militia bolt-action rifle with most of it's barrel and furniture removed. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/boltgun_wood.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"

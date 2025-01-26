@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/sts
 	name = "\"STS\" carbine"
-	desc = "A proven and reliable carbine patented by Héristal Factory, chambered in 6.5mm Carbine."
+	desc = "A proven and reliable carbine patented by Héristal Systems, chambered in 6.5mm Carbine."
 	icon = 'icons/obj/guns/projectile/sts25.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -13,7 +13,7 @@
 	mag_well = MAG_WELL_RIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 12)
 	price_tag = 850
-	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
+	fire_sound = 'sound/weapons/guns/fire/NM_PARA.ogg' // Notable edit. Sound ripped from the STS PARA. Check comment on line 175.
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -55,7 +55,7 @@
 
 /obj/item/gun/projectile/automatic/sts/sawn // Skeleton one for code reasons
 	name = "short-barreled \"STS\" carbine"
-	desc = "A proven and reliable carbine patented by Héristal Factory, chambered in 6.5mm Carbine. This one has had its stock lopped off and its barrel shortened, rendering it rather impractical to use."
+	desc = "A proven and reliable carbine patented by Héristal Systems, chambered in 6.5mm Carbine. This one has had its stock lopped off and its barrel shortened, rendering it rather impractical to use."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts25.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -72,7 +72,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle
 	name = "\"STS\" battle rifle"
-	desc = "A dated, yet legendary battle rifle patented by Héristal Factory - seen in the hands of almost every side of history, and chambered in 7.62mm. Pacifier, Sentinel, Stalwart friend." //Never add any type of reference to Rhodesia here ever again.
+	desc = "A dated, yet legendary battle rifle patented by Héristal Systems - seen in the hands of almost every side of history, and chambered in 7.62mm. Pacifier, Sentinel, Stalwart friend." //Never add any type of reference to Rhodesia here ever again.
 	icon = 'icons/obj/guns/projectile/sts30.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -98,7 +98,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/sawn
 	name = "short-barreled \"STS\" battle rifle"
-	desc = "A dated, yet legendary battle rifle patented by Héristal Factory - seen in the hands of almost every side of history, and chambered in 7.62mm. This one has been shortened as much as possible while still able to function."
+	desc = "A dated, yet legendary battle rifle patented by Héristal Systems - seen in the hands of almost every side of history, and chambered in 7.62mm. This one has been shortened as much as possible while still able to function."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts30.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -121,7 +121,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/heavy
 	name = "\"STS\" heavy rifle"
-	desc = "A recent conversion of the Héristal Factory STS, chambered for 8.6x70mm heavy rifle rounds. Lacks a fire selector."
+	desc = "A recent conversion of the Héristal Systems STS, chambered for 8.6x70mm heavy rifle rounds. Lacks a fire selector."
 	icon = 'icons/obj/guns/projectile/sts40.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -144,7 +144,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/heavy/sawn
 	name = "sawn down \"STS\" heavy rifle"
-	desc = "A recent conversion of the Héristal Factory STS, chambered for 8.6x70mm heavy rifle rounds. This one has been shortened as much as possible while still able to function."
+	desc = "A recent conversion of the Héristal Systems STS, chambered for 8.6x70mm heavy rifle rounds. This one has been shortened as much as possible while still able to function."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts40.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -161,9 +161,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/blackshield
 	name = "\"STS PARA\" Blackshield rifle"
-	desc = "A paratrooper variant of the STS battle rifle chambered in 7.62mm, shedding wartime wood for modern plastic polymer. \
-	The lightweight polymer, skeletal stock, and shortened barrel make this rifle optimal for close quarters and quick deployments. \
-	Two stamps are pressed into the side of the receiver: A 'M&C' logo and a blackshield logo."
+	desc = "A shortened lightweight variant of the STS battle rifle designed for airborne infantry. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/sts35.dmi'
 	icon_state = "stspara"
 	item_state = "stspara"

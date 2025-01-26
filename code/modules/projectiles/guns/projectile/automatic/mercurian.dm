@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/mercu
-	name = "Mercurian Anti-Atmos Rifle"
-	desc = "An attempt to bring an old design to a more modern era, the classic Sol Fed design but revamped for a contemporary cartridge and a custom big bore rifle intended to breach through tough windows on shuttle craft, station exteriors, or faceshields before laying down a hail of 10x24. Any growing pirate or marine's dream for EVA and boarding operations."
+	name = "\"Colt\" caseless infantry rifle"
+	desc = "An extremely outdated rifle pattern used in reserve EVA units. Re-chambered to 10x24mm, it has an underbarrel rifle and the ejection port has been repurposed for heat dissipation."
 	icon = 'icons/obj/guns/projectile/mercurian.dmi'
 	icon_state = "mercu"
 	item_state = "mercu"

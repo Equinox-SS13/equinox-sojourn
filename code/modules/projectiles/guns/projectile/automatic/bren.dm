@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/bren
 	name = "\"Bren\" light machine gun"
-	desc = "A select-fire top-loaded light machine gun chambered in 6.5mm. At a closer inspection, it seems to be the gruesome result of mental illness and a Kalashnikov rifle."
+	desc = "A select-fire top-loaded light machine gun chambered in 6.5mm. At a closer inspection, it seems to be the gruesome result of mental illness and an AK-pattern rifle."
 	icon = 'icons/obj/guns/projectile/bren.dmi'
 	icon_state = "bren"
 	item_state = "bren"

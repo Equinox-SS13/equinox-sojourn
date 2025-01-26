@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/boltgun
-	name = "\"Kardashev-Mosin\" boltgun"
-	desc = "Weapon for hunting or endless trench warfare. \
-			If you're on a budget, it's a darn good rifle for just about everything."
+	name = "\"Leonard\" bolt-action rifle"
+	desc = "A reliable bolt-action trench rifle made to meet modern combat standards, specialty-made for longevity. Chambered in 7.62mm, fitted with a folding bayonet."
 	icon = 'icons/obj/guns/projectile/boltgun.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
@@ -40,8 +39,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/boltgun/sawn //subtype for code
-	name = "\"obrez\" mosin boltgun"
-	desc = "A crudly mangled and sawn-down 7.62mm bolt action rifle. The rifle was fine."
+	name = "\"Leo\" bolt-action pistol"
+	desc = "A Leonard trench rifle sawn-down to the bare minimum standards of use. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/boltgun.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"

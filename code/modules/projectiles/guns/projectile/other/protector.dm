@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/grenade
-	name = "OT GL \"Protector\""
-	desc = "A bulky pump-action grenade launcher, produced by the Old Testament. Holds up to 6 grenade shells in a revolving magazine."
+	name = "\"Protector\" grenade launcher"
+	desc = "A pump-action grenade launcher with a revolving six-shott internal magazine. Uses grenades."
 	icon = 'icons/obj/guns/launcher/riotgun.dmi'
 	icon_state = "riotgun"
 	item_state = "riotgun"

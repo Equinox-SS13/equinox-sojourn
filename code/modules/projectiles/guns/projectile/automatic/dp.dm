@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/dp
-	name = "\"Pulemyot Degtyaryova\" light machinegun"
-	desc = "A cruedly made yet reliable top-loading machine gun manufactured by the local Nadezhda Marshals. It appears to have specifically been made to use spare pan-magazines from Maxims."
+	name = "\"Degtyaryov\" light machine gun"
+	desc = "An extremely outdated top-loading machine gun of relatively simple construction and design. Feeds from pan magazines."
 	icon = 'icons/obj/guns/projectile/dp.dmi'
 	icon_state = "dp"
 	item_state = "dp"
@@ -49,8 +49,8 @@ obj/item/gun/projectile/automatic/dp/update_icon()
 	return
 
 /obj/item/part/gun/frame/dp27
-	name = "DP27 frame"
-	desc = "A DP27 frame. A gravity-operated machinegun fed by pan-mags."
+	name = "Degtyaryov frame"
+	desc = "The frame of a gravity-operated machine gun fed by pan mags."
 	icon_state = "frame_dp27"
 	result = /obj/item/gun/projectile/automatic/dp
 	resultvars = list(/obj/item/gun/projectile/automatic/dp)

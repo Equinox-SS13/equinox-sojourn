@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/bulldog
 	name = "\"Bulldog\" carbine"
-	desc = "An economy-class carbine manufactured by Seinemetall Defense GmbH and used as a common carry gun for security and police far and wide, though also popular with various adventurous sorts as a semi-disposable option in the bush. Compact and reliable. Uses 6.5mm Carbine rounds."
+	desc = "An economy-class carbine manufactured by S.D. GmbH and used as a common rifle for security and police forces across the universe. Chambered in 6.5mm Carbine."
 	icon = 'icons/obj/guns/projectile/bulldog.dmi'
 	icon_state = "bulldog"
 	item_state = "bulldog"
@@ -45,7 +45,7 @@
 
 /obj/item/part/gun/frame/bulldog
 	name = "K9-series frame"
-	desc = "A K9-series frame. Predecesor to the Wind-series, remains largely popular with low budget security firms. Can be assembled into a Bulldog or older Z7 Model."
+	desc = "A K9-series frame. Predecesor to the Wind-series, remains largely popular with low budget security firms. Can be assembled into a Bulldog or a Pitbull."
 	icon_state = "frame_bull"
 	result = /obj/item/gun/projectile/automatic/bulldog
 	resultvars = list(/obj/item/gun/projectile/automatic/bulldog, /obj/item/gun/projectile/automatic/pitbull)
@@ -54,8 +54,8 @@
 	barrelvars = list(/obj/item/part/gun/barrel/srifle)
 
 /obj/item/gun/projectile/automatic/bulldog/rds
-	name = "\"Bulldog Red\" carbine"
-	desc = "A common carry gun manufactured by Seinemetall Defense GmbH for security and police far and wide. Compact and reliable. Uses 6.5mm Carbine rounds. This one comes with red dot sight."
+	name = "\"Bulldog Tactical\" carbine"
+	desc = "An economy-class carbine manufactured by S.D. GmbH, fitted with an aftermarket holographic sight for improved target acquisition. Chambered in 6.5mm Carbine."
 	icon = 'icons/obj/guns/projectile/bulldog_rds.dmi'
 	icon_state = "bulldog_rds"
 	item_state = "bulldog_rds"

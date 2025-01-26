@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/mac
-	name = "\"MAC\" SMG"
-	desc = "A conceptual replica of an old and incredibly simple SMG. However, ergonomics were never good on the original, and recoil is rather significant. Essentially disposable. Uses 9mm."
+	name = "\"Mako\" SMG"
+	desc = "A very simple open-bolt SMG often used by criminals and two-bit wannabe gangsters. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/mac.dmi'
 	icon_state = "mac"
 	item_state = "mac"
@@ -49,7 +49,7 @@
 	update_icon()
 
 ///not for typical use: it WILL cause lag
-/obj/item/gun/projectile/automatic/mac/croon
+/* /obj/item/gun/projectile/automatic/mac/croon
 	name = "\"Croon\" mini-chaingun"
 	desc = "Essentially a box with a motor, this ultra-simple SMG is technically a chaingun. The markings are in strange runes, the only ledgible parts reading \"Croon HS-010 9mm\" and the selector switch seems to be fully automatic in both directions."
 	icon = 'icons/obj/guns/projectile/hs010.dmi'
@@ -89,3 +89,4 @@
 /obj/item/gun/projectile/automatic/mac/croon/Initialize()
 	. = ..()
 	update_icon()
+ */
