@@ -49,9 +49,9 @@
 	update_icon()
 
 ///not for typical use: it WILL cause lag
-/* /obj/item/gun/projectile/automatic/mac/croon
-	name = "\"Croon\" mini-chaingun"
-	desc = "Essentially a box with a motor, this ultra-simple SMG is technically a chaingun. The markings are in strange runes, the only ledgible parts reading \"Croon HS-010 9mm\" and the selector switch seems to be fully automatic in both directions."
+/obj/item/gun/projectile/automatic/mac/croon
+	name = "\"Croon\" SMG"
+	desc = "A motor-driven submachine gun. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/hs010.dmi'
 	icon_state = "croon"
 	item_state = "croon"
