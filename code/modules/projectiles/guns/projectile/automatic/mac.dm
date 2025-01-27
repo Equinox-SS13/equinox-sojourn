@@ -89,4 +89,3 @@
 /obj/item/gun/projectile/automatic/mac/croon/Initialize()
 	. = ..()
 	update_icon()
- */
