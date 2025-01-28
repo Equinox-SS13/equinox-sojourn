@@ -1,10 +1,10 @@
 /obj/item/gun/projectile/boltgun/zatvor
-	name = "homemade \"Zatvor Kalashnikov\" rifle"
-	desc = "A mangeled mess of a boltgun and a Kalashnikov rifle combined into one with a soldered internal magazine; saving on production cost, thanks to copious amounts of booze."
+	name = "homemade \"Zatvor\" bolt action rifle"
+	desc = "A cruel combination of an AK-pattern rifle and a bolt-action rifle. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/zatvor.dmi'
 	icon_state = "zatvor"
 	item_state = "zatvor"
-	fire_sound = 'sound/weapons/guns/fire/ak.ogg' // It's still an AK
+	fire_sound = 'sound/weapons/guns/fire/ak.ogg'
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
 	caliber = CAL_RIFLE

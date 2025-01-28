@@ -55,7 +55,7 @@
 
 /obj/item/gun/projectile/automatic/sts/sawn // Skeleton one for code reasons
 	name = "short-barreled \"STS\" carbine"
-	desc = "A proven and reliable carbine patented by Héristal Systems, chambered in 6.5mm Carbine. This one has had its stock lopped off and its barrel shortened, rendering it rather impractical to use."
+	desc = "A proven and reliable carbine patented by Héristal Systems, chambered in 6.5mm Carbine. This one has had it's stock lopped off and it's barrel shortened."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts25.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -72,7 +72,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle
 	name = "\"STS\" battle rifle"
-	desc = "A dated, yet legendary battle rifle patented by Héristal Systems - seen in the hands of almost every side of history, and chambered in 7.62mm. Pacifier, Sentinel, Stalwart friend." //Never add any type of reference to Rhodesia here ever again.
+	desc = "A dated, yet legendary battle rifle patented by Héristal Systems - seen in the hands of almost every side of history. Chambered in 7.62mm - Pacifier, Sentinel, Stalwart friend." //Never add any type of reference to Rhodesia here ever again.
 	icon = 'icons/obj/guns/projectile/sts30.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -144,7 +144,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/heavy/sawn
 	name = "sawn down \"STS\" heavy rifle"
-	desc = "A recent conversion of the Héristal Systems STS, chambered for 8.6x70mm heavy rifle rounds. This one has been shortened as much as possible while still able to function."
+	desc = "A recent conversion of the Héristal Systems STS, chambered for 8.6x70mm heavy rifle rounds. This one has a short barrel and no buttstock."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts40.dmi'
 	icon_state = "sts"
 	item_state = "sts"
@@ -192,7 +192,7 @@
 
 /obj/item/gun/projectile/automatic/sts/rifle/blackshield/sawn
 	name = "short-barreled Blackshield \"STS PARA\" rifle"
-	desc = "A paratrooper variant of the STS battle rifle chambered in 7.62mm. This one has been shortened as much as possible while still able to function."
+	desc = "A paratrooper variant of the STS battle rifle chambered in 7.62mm. This one has a short barrel and no buttstock."
 	icon = 'icons/obj/guns/projectile/sawnoff/sts35.dmi'
 	icon_state = "stspara"
 	item_state = "stspara"

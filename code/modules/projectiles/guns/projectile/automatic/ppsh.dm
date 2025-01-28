@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/ppsh
 	name = "Excelsior \"Shpagin\" assault SMG"
-	desc = "\"We are spiritual wanderers, poor in spirit. What do we live on? We live from the pure hatred we feel. We cannot love anyone. We destroy things, we shout them, we burn them.\"\nAn experimental sub-machine gun design made for urban combat with a built in silencer and chambered in 9mm. For the union, for the future."
+	desc = "An outdated submachine gun made for urban assault teams. Chambered in 9mm - for the union, for the future."
 	icon = 'icons/obj/guns/projectile/ppsh.dmi'
 	icon_state = "ppsh"
 	item_state = "ppsh"
@@ -34,7 +34,7 @@
 
 /obj/item/gun/projectile/automatic/ppsh/NM_colony
 	name = "\"Ekaterina\" assault SMG"
-	desc = "An experimental sub-machine gun design made for urban combat with a built in silencer and chambered in 9mm.\nThis model of the \"Shpagin\" assault SMG has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	desc = "An in-colony outdated submachine gun made for urban assault teams. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/ppsh_bs.dmi'
 	icon_state = "ppsh_bs"
 	item_state = "ppsh_bs"
@@ -56,8 +56,7 @@
 
 /obj/item/gun/projectile/automatic/ppsh/ppv
 	name = "\"Semyonovich\" assault SMG"
-	desc = "Some madmans bastardized yet idealized version of the past; improved yet its meaning and worth lost to time. \
-		 An experimental sub-machine gun design made for urban combat with a built in silencer and chambered in 9mm." // Don't add communist spiel on de-excelsiored guns for consistency, please.
+	desc = "An outdated submachine gun made for urban assault teams. Chambered in 9mm." // Don't add communist spiel on de-excelsiored guns for consistency, please.
 	icon = 'icons/obj/guns/projectile/ppv.dmi'
 	icon_state = "ppv"
 	item_state = "ppv"
@@ -88,8 +87,8 @@
 	set_item_state(itemstring)
 
 /obj/item/part/gun/frame/ppsh
-	name = "PPSH frame"
-	desc = "A PPSH SMG frame. A worker's best friend."
+	name = "Shpagin frame"
+	desc = "A Shpagin SMG frame."
 	icon_state = "frame_ppsh"
 	result = /obj/item/gun/projectile/automatic/ppsh
 	gripvars = list(/obj/item/part/gun/grip/excel, /obj/item/part/gun/grip/rubber, /obj/item/part/gun/grip/black)

@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/olivaw
-	name = "\"Olivaw\" burst pistol"
-	desc = "The second most popular model of civilian pistols produced by H&S. This one seems to have a two-round burst-fire mode. Uses 9mm."
+	name = "\"Oliwka\" pistol"
+	desc = "A commercial two round burst-fire pistol. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/olivawcivil.dmi'
 	icon_state = "olivawcivil"
 	item_state = "pistol"

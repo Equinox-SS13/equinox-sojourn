@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/revolver/hornet
 	name = "\"Hornet\" heavy revolver"
-	desc = "A heavy pistol of custom make with a built-in PainMaker, its heavy round allowing it to still be able to penetrate through basic armor and flesh alike when necessary. \
-	Used primarily by either vigilantes, or during hostages situations where taking some lives may be needed. Uses 12mm rounds."
+	desc = "A high-caliber revolver with an integrated red dot sight and a proprietary chemical system that coats munitions in irritants. Chambered in 12mm."
 	icon = 'icons/obj/guns/projectile/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"

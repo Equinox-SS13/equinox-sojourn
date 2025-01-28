@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver/longboi
 	name = "\"Long\" revolver"
-	desc = "A novelty revolver made by the Lonestar with a stupidly long barrel favored by those with less sense than style, its extended barrel gives it incredible recoil control but loses stopping power and penetration. Uses 12mm."
+	desc = "A custom-made revolver with an extremely long barrel. Chambered in 12mm, it's awkward to hold."
 	icon = 'icons/obj/guns/projectile/Long_Revolver.dmi'
 	icon_state = "longRevolver"
 	fire_sound = 'sound/weapons/guns/fire/12mm_revolver.ogg'

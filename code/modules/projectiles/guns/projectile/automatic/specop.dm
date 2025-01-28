@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/specop
-	name = "\"Spec-Op\" caseless Carbine"
-	desc = "The aptly named \"Spec Op\" is a 10x24 hard hitting, compact carbine perfect for operators preferring stealth. While limited in range, operators remark the weapon as nearly silent, leaving behind no signs of a fight besides targets riddled with lead."
+	name = "\"Spec-Ops\" SMG"
+	desc = "A heavy submachine gun specialty made for infiltration teams in need of a compact, hard-hitting weapon. Chambered in 10x24mm."
 	icon_state = "specop"
 	item_state = "specop"
 	icon = 'icons/obj/guns/projectile/specop.dmi'
@@ -53,7 +53,7 @@
 	update_icon()
 
 /obj/item/part/gun/frame/specop
-	name = "Specop SMG frame"
+	name = "Spec-Ops SMG frame"
 	desc = "A Spec-Op SMG frame. For the most talented urban assassin."
 	icon_state = "frame_specop"
 	matter = list(MATERIAL_PLASTEEL = 8)

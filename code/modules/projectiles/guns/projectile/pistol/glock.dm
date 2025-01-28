@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/glock
 	name = "\"Sky\" pistol"
-	desc = "The Seinemetall Defense GmbH sky pistol, a weapon bearing a close resemblance to the traditional police high grade glock, modified for semi-auto, burst, auto-eject mags and coming with a fitting for a silencer. Uses 9mm."
+	desc = "A modern polymer automatic pistol on a plasteel frame with a tilting barrel. Chambered in 9mm, with barrel threads."
 	icon = 'icons/obj/guns/projectile/glock.dmi'
 	icon_state = "glock"
 	item_state = "glock"
@@ -48,7 +48,7 @@
 
 /obj/item/part/gun/frame/glock
 	name = "Sky frame"
-	desc = "A Sky pistol frame. An ugly, blocky piece of shit."
+	desc = "A Sky pistol frame."
 	icon_state = "frame_glock"
 	result = /obj/item/gun/projectile/glock
 	resultvars = list(/obj/item/gun/projectile/glock)

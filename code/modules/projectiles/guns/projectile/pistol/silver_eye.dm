@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/silvereye
 	name = "\"Silver-Eye\" heavy pistol"
-	desc = "A silver plated Basilisk heavy pistol, customized with specialized counterweights to assist with recoil handling. Gifted to the Foreman by Over-Boss Jeremiah Hogg in exchange for their wrangling of the prospector team. This model is capable of literally atomising its rounds to fire a short-range blast of fire. Shiny, powerful and barely legal - just like all the best loot. Uses 12mm rounds."
+	desc = "An in-colony customized Basilisk pistol made for the Foreman. Chambered in 12mm."
 	icon = 'icons/obj/guns/projectile/silvereye.dmi'
 	icon_state = "silvereye"
 	item_state = "silvereye"

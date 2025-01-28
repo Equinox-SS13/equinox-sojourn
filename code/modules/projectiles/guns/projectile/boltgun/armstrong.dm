@@ -23,7 +23,7 @@
 
 /obj/item/part/gun/frame/armstrong
 	name = "Armstrong frame"
-	desc = "A Armstrong lever rifle. If death is our destination this will surely bring it."
+	desc = "An Armstrong lever rifle. If death is our destination this will surely bring it."
 	icon_state = "frame_armstrong"
 	result = /obj/item/gun/projectile/boltgun/lever
 	resultvars = list(/obj/item/gun/projectile/boltgun/lever, /obj/item/gun/projectile/boltgun/lever/custer)

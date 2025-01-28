@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/giskard
 	name = "\"Giskard\" pistol"
-	desc = "That's the most popular handgun produced by Holland & Sullivan. Can even fit into a pocket! Uses 9mm."
+	desc = "An extremely common, run of the mill compact pistol. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/giskard.dmi'
 	icon_state = "giskard"
 	item_state = "pistol"
