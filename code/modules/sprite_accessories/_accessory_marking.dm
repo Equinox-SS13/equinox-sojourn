@@ -483,25 +483,25 @@
 		name = "Modular Longsock (Right Arm)"
 		icon_state = "osocks"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_R_ARM)
+		body_parts = list(BP_R_ARM, BP_R_HAND)
 
 	osocks_larm
 		name = "Modular Longsock (Left Arm)"
 		icon_state = "osocks"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_ARM)
+		body_parts = list(BP_L_ARM, BP_L_HAND)
 
 	osocks_rleg
 		name = "Modular Longsock (Right Leg)"
 		icon_state = "osocks"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_R_LEG)
+		body_parts = list(BP_R_LEG, BP_R_FOOT)
 
 	osocks_lleg
 		name = "Modular Longsock (Left Leg)"
 		icon_state = "osocks"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG)
+		body_parts = list(BP_L_LEG, BP_L_FOOT)
 
 	monoeye
 		name = "Monoeye"
@@ -1911,4 +1911,43 @@
 		name = "Zeng-Hu Prosthetic Left Leg, Female"
 		icon_state = "zeng_l_leg_f"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG)
+		body_parts = list(BP_L_LEG, BP_L_FOOT)
+
+//Skullmasks
+
+	skull_mask_full
+		name = "Skull Mask, Full"
+		icon_state = "skull_full"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
+	skull_mask_full_kintsugi
+		name = "Skull Mask, Full Kintsugi"
+		icon_state = "skull_full_kintsugi"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
+	skull_mask_half
+		name = "Skull Mask, Half"
+		icon_state = "skull_half"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
+	skull_mask_half_kintsugi
+		name = "Skull Mask, Half Kintsugi"
+		icon_state = "skull_half_kintsugi"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
+	skull_mask_quarter
+		name = "Skull Mask, Quarter"
+		icon_state = "skull_quarter"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
+	skull_mask_quarter_kintsugi
+		name = "Skull Mask, Quarter Kintsugi"
+		icon_state = "skull_quarter_kintsugi"
+		blend = ICON_ADD
+		body_parts = list(BP_HEAD)
+
