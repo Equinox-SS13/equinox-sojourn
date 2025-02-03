@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/duty
 	name = "\"Duty\" carbine"
-	desc = "A versatile infantry rifle proprietary to the colony, able to load from magazines and stripper clips. Chambered in 6.5mm."
+	desc = "A versatile mag-fed infantry rifle proprietary to the colony. Chambered in 6.5mm, fitted with a stripper clip guide."
 	icon = 'icons/obj/guns/projectile/duty.dmi'
 	icon_state = "duty"
 	item_state = "duty"
