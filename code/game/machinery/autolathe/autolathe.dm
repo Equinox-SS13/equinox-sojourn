@@ -63,6 +63,7 @@
 	var/have_reagents = TRUE
 	var/have_materials = TRUE
 	var/have_recycling = FALSE //Also dictates auto-input
+	var/direct_recycling = FALSE //Dictates direct input
 	var/have_design_selector = TRUE
 
 	var/max_efficiency = 0.5
@@ -256,8 +257,12 @@
 	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
 		insert_disk(user, I)
 
+	// Override allowing direct input of items without need for 'load from hand'
+	if(direct_recycling)
+		eat(user, I)
+		return
 	// Some item types are consumed by default
-	if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
+	else if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
 		eat(user, I)
 		return
 
@@ -519,7 +524,7 @@
 		return FALSE
 
 	if(istype(eating, /obj/item/stack/ore))
-		to_chat(user, SPAN_WARNING("\The [eating] can not be accepted do to being unprocessed."))
+		to_chat(user, SPAN_WARNING("\The [eating] can not be accepted due to being unprocessed."))
 		return FALSE
 
 	if(istype(eating, /obj/item/computer_hardware/hard_drive/portable))
@@ -767,6 +772,9 @@
 			icon_state = "[icon_state]_pause"
 		else
 			icon_state = "[icon_state]_work"
+
+	if(direct_recycling)
+		add_overlay(image(icon, "[initial(icon_state)]_recycle"))
 
 //Procs for handling print animation
 /obj/machinery/autolathe/proc/print_pre()
@@ -1113,3 +1121,19 @@
 		var/atom/movable/A = loc
 		A.vis_contents -= src
 	return ..()
+
+/obj/machinery/autolathe/verb/toggle_direct_recycling() // Verb designed to toggle Direct Recycling
+	set name = "Direct Recycling"
+	set category = "Object"
+	set src in view(1)
+
+	if(!direct_recycling)
+		direct_recycling = TRUE
+		to_chat(usr, SPAN_NOTICE("Direct Recycling has been enabled."))
+		update_icon()
+		return
+	else
+		direct_recycling = FALSE
+		to_chat(usr, SPAN_NOTICE("Direct recycling has been disabled."))
+		update_icon()
+		return

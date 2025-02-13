@@ -8,13 +8,12 @@
 	question = "End Shift?"
 	time = 90
 	choice_types = list(/datum/vote_choice/restart, /datum/vote_choice/countinue_round)
-	next_vote = 255 MINUTES //Minimum round length before it can be called for the first time
+	next_vote = 150 MINUTES //Minimum round length before it can be called for the first time
 	cooldown = 15 MINUTES //Cooldown is set to 15 mins as 1 hour is a bit much when things change so much in so little time + maxium 8 hour rounds means we should be a bit more forgiven.
 
 	// Overriden by implementation of IsAdminOnly
 	//only_admin = TRUE
 
-	multiple_votes = TRUE //Duel votes are fun
 	can_revote = TRUE
 	can_unvote = TRUE //In case you heck up
 
@@ -317,6 +316,30 @@
 /datum/vote_choice/no_chaos_level
 	text = "We have enough chaos already!"
 
+
+/datum/poll/power
+	name = "Power the Colony"	// Equinox edit: simple edit to keep the lights on during engineerless lowpop rounds.
+	question = "No engineers? Have no fear! Simply vote here and all your problems will go away (not really)."
+	time = 60
+	choice_types = list(/datum/vote_choice/power, /datum/vote_choice/nopower)
+	minimum_voters = 0
+	only_admin = FALSE
+
+	multiple_votes = FALSE
+	can_revote = TRUE
+	can_unvote = TRUE
+	cooldown = 30 MINUTES
+	next_vote = 5 MINUTES	//Have to wait 5 minutes after roundstart before doing it
+	see_votes = TRUE
+
+/datum/vote_choice/power
+	text = "Power to the people!"
+
+/datum/vote_choice/power/on_win()
+	power_restore()
+
+/datum/vote_choice/nopower
+	text = "Don't ruin my immersion."
 
 
 /datum/poll/custom
