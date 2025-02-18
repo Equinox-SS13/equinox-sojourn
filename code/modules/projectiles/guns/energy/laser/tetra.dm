@@ -1,7 +1,6 @@
 /obj/item/gun/energy/tetra
 	name = "\"Tetra\" laser SMG"
-	desc = "A overengineered, complex laser SMG. Mounts both a visible-light laser emitter and a near-infrared laser emitter, allowing it to fire both regular, moderate-power beams and quieter, lower-power invisible beams.\
-	This variant has a basic optic fitted."
+	desc = "An over-engineered laser gun that can cycle through different lenses and emitters. Fires both normal lasers and invisible IR lasers."
 	icon = 'icons/obj/guns/energy/tetra.dmi'
 	icon_state = "tetra"
 	w_class = ITEM_SIZE_BULKY

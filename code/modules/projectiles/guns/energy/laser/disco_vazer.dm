@@ -1,6 +1,6 @@
 /obj/item/gun/energy/lasersmg
 	name = "\"Disco Vazer\" laser pistol"
-	desc = "A uniquely constructed laser machine pistol built on a Texan SMG frame. Slots medium cells from the bottom."
+	desc = "A uniquely constructed laser machine pistol built on an SMG frame. Slots medium cells from the bottom."
 	icon = 'icons/obj/guns/energy/lasersmg-1.dmi'
 	icon_state = "lasersmg"
 	item_state = "lasersmg"

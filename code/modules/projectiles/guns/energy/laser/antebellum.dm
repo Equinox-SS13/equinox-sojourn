@@ -17,8 +17,8 @@
 	price_tag = 1250
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	init_firemodes = list(
-		list(mode_name="plasma rifle", mode_desc="Light plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/burn.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF"),
-		list(mode_name="grenade", mode_desc="Superheated metal shavings", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
+		list(mode_name="plasma rifle", mode_desc="Plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/burn.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF"),
+		list(mode_name="grenade", mode_desc="Metal fragments", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
 	)
 	twohanded = FALSE
 	var/consume_cell = TRUE
