@@ -206,7 +206,7 @@
 	name_change = "mercenary's pilot suit"
 	icon_change = 'icons/fluff/fluff_items.dmi'
 	vars_change = list(
-		"desc" = "A black composite suit made with pliable ballistic fibers and thin plating at the shoulders, chest, thighs, wrists, and neeck, designed for mech pilots. It leaves little to the imagination. It was tailored for a rather tall woman, judging from the rounded chestplate. This one has a few 3mm holes along the neck and lower spine. opening up access to several connection ports. The grey chestplate is inscribed with a red sun and two black wings. The throat plate has 'XPAT' crudely written on it, next to a scannable identifier.",
+		"desc" = "A black composite suit made of pliable ballistic fibers with thin plating at the shoulders, chest, thighs, wrists, and neck. It leaves little to the imagination. It was tailored for a rather tall woman, judging from the rounded chestplate. This one has a few 3mm holes along the neck and the spine's plating. opening up access to several connection ports. The gray chestplate is inscribed with a crimson red sun and two black wings. The throat plate has 'XPAT' crudely written on it, next to a scannable identifier.",
 		"icon_override" = 'icons/fluff/clothing_mob.dmi',
 		"item_state" = "mercpilot"
 	)
