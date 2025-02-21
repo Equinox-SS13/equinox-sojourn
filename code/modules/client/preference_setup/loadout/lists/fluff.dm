@@ -190,3 +190,23 @@
 		"base_icon_state" = "runed_sheath",
 		"base_item_state" = "runed_sheath"
 	)
+
+// EQUINOX STARTS HERE vvvv
+
+// DRAGONFRUTS
+/datum/gear/fluff/fruits_mercpilot
+	ckey_whitelist = list("investigator77")
+	display_name = "ICARUS pilot suit"
+	path = /obj/item/fluff_conversion_kit/mercpilot
+
+// DRAGONFRUTS
+/obj/item/fluff_conversion_kit/mercpilot
+	name = "Remnant's pilot suit kit"
+	target_type = /obj/item/clothing/under/skintight 
+	name_change = "mercenary's pilot suit"
+	icon_change = 'icons/fluff/fluff_items.dmi'
+	vars_change = list(
+		"desc" = "A black composite suit made with pliable ballistic fibers and thin plating at the shoulders, chest, thighs, wrists, and neeck, designed for mech pilots. It leaves little to the imagination. It was tailored for a rather tall woman, judging from the rounded chestplate. This one has a few 3mm holes along the neck and lower spine. opening up access to several connection ports. The grey chestplate is inscribed with a red sun and two black wings. The throat plate has 'XPAT' crudely written on it, next to a scannable identifier.",
+		"icon_override" = 'icons/fluff/clothing_mob.dmi',
+		"item_state" = "mercpilot"
+	)
