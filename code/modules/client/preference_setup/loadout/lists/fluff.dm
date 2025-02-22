@@ -235,5 +235,5 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
-	}
+
 	)
