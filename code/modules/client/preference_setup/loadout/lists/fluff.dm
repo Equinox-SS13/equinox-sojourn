@@ -208,7 +208,7 @@
 	icon_state = "mercpilot"
 	item_state = "mpilot_b"
 
-/obj/item/clothing/under/skintight/mercpilot/verb/toggle_style()			//This might be a messy way of doing it (mostly porting it straight from the parent's code), might consider eventually creating a dedicated file for fluff items that add straight up new items.
+/* /obj/item/clothing/under/skintight/mercpilot/verb/toggle_style()			//I'll fix this another day
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
@@ -235,3 +235,4 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
+*/
