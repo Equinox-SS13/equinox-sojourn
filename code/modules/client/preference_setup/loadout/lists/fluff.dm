@@ -197,16 +197,42 @@
 /datum/gear/fluff/fruits_mercpilot
 	ckey_whitelist = list("investigator77")
 	display_name = "ICARUS pilot suit"
-	path = /obj/item/fluff_conversion_kit/mercpilot
+	path = /obj/item/clothing/under/skintight/mercpilot
 
 // DRAGONFRUTS
-/obj/item/fluff_conversion_kit/mercpilot
-	name = "Remnant's pilot suit kit"
-	target_type = /obj/item/clothing/under/skintight 
-	name_change = "mercenary's pilot suit"
-	icon_change = 'icons/fluff/fluff_items.dmi'
-	vars_change = list(
-		"desc" = "A black composite suit made of pliable ballistic fibers with thin plating at the shoulders, chest, thighs, wrists, and neck. It leaves little to the imagination. It was tailored for a rather tall woman, judging from the rounded chestplate. This one has a few 3mm holes along the neck and the spine's plating. opening up access to several connection ports. The gray chestplate is inscribed with a crimson red sun and two black wings. The throat plate has 'XPAT' crudely written on it, next to a scannable identifier.",
-		"icon_override" = 'icons/fluff/clothing_mob.dmi',
-		"item_state" = "mercpilot"
+/obj/item/clothing/under/skintight/mercpilot
+	name = "mercenary's pilot suit"
+	desc = "A black composite suit made of pliable ballistic fibers with thin plating at the shoulders, chest, thighs, wrists, and neck. It leaves little to the imagination. It was tailored for a rather tall woman, judging from the rounded chestplate. This one has a few 3mm holes along the neck and the spine's plating. opening up access to several connection ports. \
+			The gray chestplate is inscribed with a crimson red sun and two black wings. The throat plate has 'XPAT' crudely written on it, next to a scannable identifier."
+	icon = 'icons/fluff/fluff_items.dmi'
+	icon_state = "mercpilot"
+	item_state = "mpilot_b"
+
+/obj/item/clothing/under/skintight/mercpilot/verb/toggle_style()			//This might be a messy way of doing it (mostly porting it straight from the parent's code), might consider eventually creating a dedicated file for fluff items that add straight up new items.
+	set name = "Adjust Style"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["zip the suit back up."] = ""
+	options["roll the sleeves up."] = "_sleeves"
+	options["pull the suit down."] = "_rolled"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		var/base = initial(icon_state)
+		base += options[choice]
+		icon_state = base
+		item_state = base
+		item_state_slots = null
+		to_chat(M, "You [choice].")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
 	)
