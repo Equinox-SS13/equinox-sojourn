@@ -776,7 +776,7 @@ var/global/list/robot_modules = list(
 /obj/item/robot_module/security/enforcement
 	health = 440 //Very tanky!
 	speed_factor = 1.15 //Kinda slow
-	power_efficiency = 1.0
+	power_efficiency = 1.55
 
 	desc = "Focused on keeping the peace and ensuring colony law is maintained, the enforcement module is a \
 	heavily armored, though lightly armed security unit."
