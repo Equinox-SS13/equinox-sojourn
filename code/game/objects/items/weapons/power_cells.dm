@@ -611,6 +611,7 @@
 
 /obj/item/device/manual_charger/MouseDrop(over_object)
 	if((src.loc == usr) && istype(over_object, /obj/screen/inventory/hand) && eject_item(cell, usr))
+		cell.update_icon()
 		cell = null
 
 /obj/item/device/manual_charger/attack_self(mob/user)
