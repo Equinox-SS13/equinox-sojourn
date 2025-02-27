@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/c20r
 	name = "\"C-20r\" SMG"
-	desc = "A bullpup submachine gun that could be chambered in either .35 Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads."
+	desc = "A bullpup submachine gun that could be chambered in either 9mm Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads."
 	icon = 'icons/obj/guns/projectile/cr20.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -38,7 +38,7 @@
 
 /obj/item/part/gun/frame/c20r
 	name = "C20r frame"
-	desc = "A C20r SMG frame. It can be chambered in either .35 Auto or 10mm Magnum."
+	desc = "A C20r SMG frame. It can be chambered in either 9mm Auto or 10mm Magnum."
 	icon_state = "frame_syndi"
 	nra = FALSE
 	result = /obj/item/gun/projectile/automatic/c20r
@@ -62,7 +62,7 @@
 
 /obj/item/gun/projectile/automatic/c20r/sci
 	name = "Soteria \"C20-m\" SMG"
-	desc = "A bullpup submachine gun that could be chambered in either .35 Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads. This one seems to be a colony-made reproduction."
+	desc = "A bullpup submachine gun that could be chambered in either 9mm Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads. This one seems to be a colony-made reproduction."
 	icon = 'icons/obj/guns/projectile/si_cr20.dmi'
 	damage_multiplier = 1.1
 	penetration_multiplier = 1.3
@@ -78,7 +78,7 @@
 
 /obj/item/part/gun/frame/c20r/sci
 	name = "C20m frame"
-	desc = "A reverse engineered C-20r frame. It can be chambered in either .35 Auto or 10mm Magnum."
+	desc = "A reverse engineered C-20r frame. It can be chambered in either 9mm Auto or 10mm Magnum."
 	icon_state = "frame_sci"
 	result = /obj/item/gun/projectile/automatic/c20r/sci
 	resultvars = list(/obj/item/gun/projectile/automatic/c20r/sci)
