@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/boltgun/lever
-	name = "\"Armstrong\" repeating rifle"
+	name = "\"Model 2184\" lever-action rifle"
 	desc = "A lever-action rifle usually employed in frontier space for it's low cost and ease of use. Chambered in 10mm."
 	icon = 'icons/obj/guns/projectile/lever.dmi'
 	icon_state = "lever"
@@ -32,7 +32,7 @@
 	barrelvars = list(/obj/item/part/gun/barrel/magnum, /obj/item/part/gun/barrel/hrifle)
 
 /obj/item/gun/projectile/boltgun/lever/custer
-	name = "\"Custer\" repeating rifle"
+	name = "\"Vizcacha\" lever-action rifle"
 	desc = "A heavy duty lever-action rifle usually employed in frontier space for it's low cost and ease of use. Chambered in 8.6mm, designed to stop rogue synthetics and megafauna."
 	icon = 'icons/obj/guns/projectile/custer.dmi'
 	icon_state = "custer"

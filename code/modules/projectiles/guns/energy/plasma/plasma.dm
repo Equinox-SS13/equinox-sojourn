@@ -64,8 +64,8 @@
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
 
 /obj/item/gun/energy/plasma/martyr // or should it be  Zealot
-	name = "\"Martyr\" holdout pistol"
-	desc = "An \"New Testament\" weapon that uses advanced biomass-converted blasts of energized matter. It is a disposable holdout side arm, good enough to save you and be recycled."
+	name = "\"Martyr\" plasma pistol"
+	desc = "A church-made recyclable pistol."
 	icon = 'icons/obj/guns/energy/martyr.dmi'
 	icon_state = "martyr"
 	suitable_cell = /obj/item/cell/small    //so if people manage to get the cell out. shouldn't be a huge deal
@@ -98,7 +98,7 @@
 	wield_delay_factor = 0.2 // 20 vig
 
 /obj/item/gun/energy/plasma/super_heavy
-	name = "\"Ragefire\" plasma rifle"
+	name = "\"Ragefire\" plasma rifle"		//Remind me to come back to this with a name that isn't this edgy like relax Josh Killerfang (19/2/25)
 	desc = "An in-colony experimental plasma rifle that fires extremely large and devastating projectiles. Unstable."
 	icon = 'icons/obj/guns/energy/plasma.dmi'
 	icon_state = "plasma"
