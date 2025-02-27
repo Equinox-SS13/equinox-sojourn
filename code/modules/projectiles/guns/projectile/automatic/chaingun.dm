@@ -4,8 +4,7 @@
 
 /obj/item/gun/projectile/automatic/chaingun
 	name = "\"Fenrir\" heavy chaingun"
-	desc = "A massive single-barrel chaingun originally intended as a vehicle mounted weapon. Refitted for and commonly seen with SolFed powered infantry, it's a devastating tool for removing those stubborn stains on the universe. \
-	It is chambered in 8.6x70mm and has feeding systems for both drums and linked ammunition boxes. This one is fitted with a tactical sight and a gyrostabilizer. A weapon fit to slay even the hordes of Hell."
+	desc = "A vehicle mounted chaingun modified to be man portable, used as surplus by reservist and colonial powered infantry. Chambered in 8.6mm."
 	icon = 'icons/obj/guns/projectile/chaingun.dmi'
 	var/icon_base
 	icon_base = "gpmg"

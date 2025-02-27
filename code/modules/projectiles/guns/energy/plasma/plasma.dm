@@ -1,6 +1,6 @@
 /obj/item/gun/energy/plasma
 	name = "\"Dominion\" plasma rifle"
-	desc = "One of the last designs produced by the Old Testament, the \"Dominion\" uses advanced plasma generation technology to emit powerful blasts of energized matter or large, consuming fireballs. Due to its complexity and cost, it is usually reserved for specialists and elites."
+	desc = "An extremely high cost plasma rifle usually reserved for specialist units."
 	icon = 'icons/obj/guns/energy/pulse.dmi'
 	icon_state = "pulse"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -37,7 +37,7 @@
 
 
 /obj/item/gun/energy/plasma/mounted/blitz
-	name = "SDF PR \"Sprengen\""
+	name = "\"Burner\" integrated plasma rifle"		//ENOUGH WITH THE FUCKING GERMAN NAMES!!!! FUCKING ENOUGH!!!!!!!!!!! Changed to an English name.
 	desc = "A miniaturized plasma rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "plasma_turret"
 	charge_meter = FALSE
@@ -47,7 +47,7 @@
 
 /obj/item/gun/energy/plasma/destroyer
 	name = "\"Purger\" plasma rifle"
-	desc = "An older \"Old Testament\" brand plasma rifle, developed in direct response to compete against the highly successful \"Cassad\" design. Reliable and capable of firing suppressive bursts of lower-temperature plasma."
+	desc = "An old church-made plasma rifle originally made to compete with a similar design."
 	icon = 'icons/obj/guns/energy/destroyer.dmi'
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 7, MATERIAL_URANIUM = 5)
@@ -58,8 +58,8 @@
 	charge_cost = 200
 	init_recoil = LMG_RECOIL(2)
 	init_firemodes = list(
-		list(mode_name="DISINTEGRATE", mode_desc="Removes heresy from sight", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#ff1212"),
-		list(mode_name="CLEANSE", mode_desc="Cleanse the filth", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#00AAFF"),
+		list(mode_name="Charged Plasma", mode_desc="Fire a strong plasma bolt", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#b3ff00"),		//Cool it with the religious zealotry remarks
+		list(mode_name="Plasma", mode_desc="Fire a light plasma bolt", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#29c476"),
 	)
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
 
@@ -98,8 +98,8 @@
 	wield_delay_factor = 0.2 // 20 vig
 
 /obj/item/gun/energy/plasma/super_heavy
-	name = "\"Ragefire\" Experimental Plasma Gun"
-	desc = "A \"Soteria\" brand experimental weapon that uses coolant to fire deadly plasma projectiles without needing to cool down between shots, however the gun is extremely unstable without cooling."
+	name = "\"Ragefire\" plasma rifle"
+	desc = "An in-colony experimental plasma rifle that fires extremely large and devastating projectiles. Unstable."
 	icon = 'icons/obj/guns/energy/plasma.dmi'
 	icon_state = "plasma"
 	fire_sound = 'sound/weapons/energy/lasercannonfire.ogg'
@@ -127,7 +127,7 @@
 	var/explosion_f_size = 5
 
 	init_firemodes = list(
-		list(mode_name="Super-heavy Plasma", mode_desc="A massive plasma bolt to melt even plasteel", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#FFFF00"),
+		list(mode_name="Maraud", mode_desc="A plasma thoroid with enough energy behind it to melt plasteel.", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#33ff00"),
 	)
 
 /obj/item/gun/energy/plasma/super_heavy/examine(mob/user)
@@ -145,7 +145,7 @@
 	if(istype(W, /obj/item/reagent_containers)) // Is it something that hold chems ?
 		// Do we already have one inside?
 		if(container)
-			to_chat(user, "The [src.name] already got a beaker.")
+			to_chat(user, "The [src.name] already has a beaker.")
 			return
 		else
 			var/obj/item/reagent_containers/C = W

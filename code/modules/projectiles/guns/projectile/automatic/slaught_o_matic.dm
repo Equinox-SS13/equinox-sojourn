@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/slaught_o_matic
-	name = "\"Slaught-o-Matic\""
-	desc = "This disposable plastic handgun is mass-produced by H&S for civilian use. It often is used by street urchins, thugs, or terrorists on a budget. For what it's worth, it's not an awful handgun - but you only get one magazine before the gun locks up and becomes useless."
+	name = "\"Slaught-o-Matic\" disposable pistol"
+	desc = "A flimsy and disposable mass-produced pistol made almost entirely out of plastic. Settlements on the fringes of known space employ public vendors filled with these in case of alien invasion or pirate attacks. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/slaught_o_matic.dmi'
 	icon_state = "slaught"
 	item_state = "slaught"

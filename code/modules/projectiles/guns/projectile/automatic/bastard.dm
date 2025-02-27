@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/automatic/bastard
-	name = "\"Bastard\" SMG"
-	desc = "A weapon that invokes conflicting feelings. While the weapon looks to be welded, riveted and otherwise pieced together with scrap. \
-		 The SMG oddly appears to be chambered in 6.5mm and takes box magazines, firing from an open-bolt position. An odd mix of a sub-machine gun and a 'machine'-machine gun. \
-		 Leave it to the Marshals to create something so odd and cheap yet reliable. On the left side appears to be some fancy-looking script 'M' symbol."
+	name = "\"Bastard\" light machine gun"
+	desc = "A compact and unreliable machine gun carefully pieced together with a solyanka of scrap and leftover parts. Chambered in 6.5mm."
 	icon = 'icons/obj/guns/projectile/bastard.dmi'
 	icon_state = "bastard"
 	item_state = "bastard"
@@ -44,7 +42,7 @@
 
 /obj/item/part/gun/frame/bastard
 	name = "Bastard frame"
-	desc = "A Bastard SMG frame. For when you want a carbine but even smaller."
+	desc = "A Bastard LMG frame."
 	icon_state = "frame_bastard"
 	result = /obj/item/gun/projectile/automatic/bastard
 	resultvars = list(/obj/item/gun/projectile/automatic/bastard)
