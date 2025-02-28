@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/automatic/ak47
-	name = "\"Vekhný-4E\" infantry rifle"
+	name = "\"Večný-4E\" infantry rifle"
 	desc = "A modernized version of an outdated and unconventional infantry rifle with an integrated dotsight and lightweight construction. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/ak.dmi'
 	icon_state = "AK"
@@ -33,8 +33,8 @@
 
 //AK-47 base-frame
 /obj/item/part/gun/frame/ak47
-	name = "Vekhný frame"
-	desc = "A frame for a Vekhný line rifle."
+	name = "Večný frame"
+	desc = "A frame for a Večný line rifle."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/ak47/sa
@@ -44,7 +44,7 @@
 	barrelvars = list(/obj/item/part/gun/barrel/lrifle)
 
 /obj/item/gun/projectile/automatic/ak47/NM_colony
-	name = "\"Vekhný-4\" infantry rifle"
+	name = "\"Večný-4\" infantry rifle"
 	excelsior = FALSE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1)
 	price_tag = 800
@@ -101,7 +101,7 @@
 //AK-47 base-frame
 /obj/item/part/gun/frame/saiga
 	name = "Kanec frame"
-	desc = "A Vekhný frame chambered in 20mm, for a shotgun."
+	desc = "A Večný frame chambered in 20mm, for a shotgun."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/ak47/saiga
@@ -138,7 +138,7 @@
 	gun_parts = null
 
 /obj/item/gun/projectile/automatic/ak47/sa
-	name = "\"Vekhný-2\" infantry rifle"
+	name = "\"Večný-2\" infantry rifle"
 	desc = "An outdated and unconventional infantry rifle of outstanding price-performance production. Favored by low-budget mercenaries, independent petty armies, and frontiersmen. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/ak_wood.dmi'
 	icon_state = "AK"
@@ -148,15 +148,14 @@
 	price_tag = 900
 	init_recoil = RIFLE_RECOIL(0.9)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	saw_off = FALSE		//Temporary. I'll get the sawn off sprites done within the week.
+	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/automatic/ak47/sa/sawn
 	serial_type = "SA"
 	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/automatic/ak47/sa/sawn
-	name = "sawn-off \"Kalashnikov\" rifle"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-	A time and battle-tested AKMN rifle, crude and outdated by today's standards. Chambered in 7.62mm and haphazardly shortened. Rifle was fine."
+	name = "shortened \"Večný-2\" rifle"
+	desc = "An outdated and unconventional infantry rifle of outstanding price-performance production, cut down into a pistol of sorts. Favored by gangbangers and petty criminals. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/ak.dmi'
 	icon_state = "AK"
 	item_state = "AK"
@@ -175,8 +174,8 @@
 	gun_parts = list(/obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/stack/material/plasteel = 2)
 
 /obj/item/gun/projectile/automatic/ak47/sa/tac
-	name = "\"Vekhný-β\" boarding rifle"
-	desc = "An outdated infantry rifle in a modern and conventional bullpup configuration, featuring a shortened profile despite retaining /and/ expanding it's barrel length. Fitted with a dot sight and an underbarrel pump-action shotgun."
+	name = "\"Večný-β\" boarding rifle"
+	desc = "An outdated infantry rifle in a modern and conventional bullpup configuration, featuring a shortened profile despite retaining /and/ expanding it's barrel length. Fitted with a dot sight and a second trigger for an underbarrel pump-action shotgun."
 	icon = 'icons/obj/guns/projectile/ak_tact.dmi'
 	icon_state = "AK"
 	item_state = "AK"
