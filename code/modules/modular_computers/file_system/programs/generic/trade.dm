@@ -690,7 +690,6 @@
 				"name" =			"[TS.name]",
 				"description" =		"[TS.desc]",
 				"is_discovered" =	"[is_discovered]",
-				"rec_needed" = 		"[TS.recommendations_needed]",
 				"x" =				ts_tree_x,
 				"y" =				ts_tree_y,
 				"icon" =			"[TS.icon_states[2 - is_discovered]]"
