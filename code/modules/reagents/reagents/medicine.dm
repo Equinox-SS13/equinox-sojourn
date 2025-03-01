@@ -778,7 +778,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 	color = "#561EC3"
 	overdose = 20 // Higher overdose vs Vanilla
 	scannable = TRUE
-	nerve_system_accumulations = 50 // But also higher NSA
+	nerve_system_accumulations = 40 // But also higher NSA
 
 /datum/reagent/medicine/peridaxon/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	if(ishuman(M))
