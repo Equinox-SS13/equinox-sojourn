@@ -208,7 +208,7 @@
 	icon_state = "mpilot_b"
 	item_state = "mercpilot"
 	item_state_slots = list(
-		slot_w_uniform = mercpilot
+		"slot_w_uniform" = "mercpilot"
 	)
 
 /* /obj/item/clothing/under/skintight/mercpilot/verb/toggle_style()			//I'll fix this another day
