@@ -117,8 +117,8 @@
 /obj/item/reagent_containers/glass/beaker/hypocartridge/large/CMO
 	name = "mid 'hecate' cartridge"
 	icon_state = "hypoviallarge"
-	preloaded_reagents = list("nanosymbiotes" = 15, "oxyrush" = 15, "trauma_control_system" = 15)
-	label_text = "nanites"
+	preloaded_reagents = list("meralyne" = 45)
+	label_text = "meralyne"
 
 /obj/item/reagent_containers/glass/beaker/hypocartridge/large/polystem
 	name = "mid 'hecate' cartridge"
