@@ -1,6 +1,6 @@
 /obj/item/gun/energy/laser/makeshift
 	name = "makeshift laser carbine"
-	desc = "A makeshift laser carbine, rather wasteful on its charge, but none the less reliable"
+	desc = "A laser rifle cobbled together with copper and cheap lenses."
 	icon = 'icons/obj/guns/energy/makeshift_carbine.dmi'
 	icon_state = "makeshift"
 	item_state = "makeshift"

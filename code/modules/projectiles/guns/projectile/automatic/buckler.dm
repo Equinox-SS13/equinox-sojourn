@@ -1,10 +1,6 @@
 /obj/item/gun/projectile/automatic/buckler
 	name = "\"Buckler\" SMG"
-	desc = "A haphazard amalgamation of the practical experience of blackshield and the gunsmithing expertise of the marshals came to create this compact SMG. \
-	With the average trooper in mind, the 'Buckler' was designed for flexibility and low maintenance, \
-	with an extendable stock it can easily be stored and kept out of the hands of certain prospectors. \
-	Although the focus on ease-of-use and durability resulted in a slightly lackluster performance and muzzle velocity, \
-	causing issues with use in longer-range engagements."
+	desc = "A simple, durable colony-designed submachine gun specialty made for combat within maintenance corridors and tight hallways, fitted with a retractable stock. Chambered in .35 Auto."
 	icon = 'icons/obj/guns/projectile/buckler.dmi'
 	icon_state = "buckler"
 	item_state = "buckler"
