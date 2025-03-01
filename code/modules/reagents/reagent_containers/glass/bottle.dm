@@ -396,7 +396,7 @@
 
 /obj/item/reagent_containers/glass/bottle/narceptol
 	name = "Narceptol bottle"
-	desc = "A small bottle. Contains narceptol - used to permanently treat full body poisoning."
+	desc = "A small bottle. Contains narceptol - used to treat chemical poisoning."
 	icon_state = "bottle"
 	preloaded_reagents = list("narceptol" = 60)
 //
