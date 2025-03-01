@@ -312,4 +312,4 @@
 
 		desc = "Score Sheet of the Shift: [blurb]"
 	else
-		desc = "A helpful poster containing a resonance recipie already found in the SI Psionics Lab: Todays shift has no selected Score Sheet."
+		desc = "A helpful poster containing a resonance recipe already found in the SI Psionics Lab: Todays shift has no selected Score Sheet."
