@@ -1,7 +1,7 @@
 /obj/machinery/eternal_ascension_resonances
 	name = "EGO: E.A.R. T-01-92beta S-23"// EGO as in the ego, T as in Tech, S for Sanity
 	desc = "A grand work of SI's psionic advancements. Marble pillars that only can hold psionic catalysts, converting the power of many into one."
-	description_info = "Design and prototyped by a non psionic CRO, many personal touches are engraved in runes, fractal patterns and small engraving of a name starting with a stylized T."
+	description_info = "Designed and prototyped by a non-psionic CRO, many personal touches are engraved in runes, fractal patterns and small engraving of a name starting with a stylized T."
 	icon = 'icons/obj/psionic/occmachinery.dmi'
 	icon_state = "ear"
 	density = TRUE
@@ -55,7 +55,7 @@
 			if("Sure")
 				if(!active)
 					active = TRUE
-					to_chat(user, "As you press down a marbel plate the Pillars plasma bulbs start to dance inside the glass casings.")
+					to_chat(user, "As you press down a marble plate, the Pillars' plasma bulbs start to dance inside the glass casings.")
 					icon_state = "ear_active"
 					addtimer(CALLBACK(src, .proc/repice_index), wave_time)
 			else
@@ -96,7 +96,7 @@
 
 /obj/machinery/eternal_ascension_resonances/proc/add_cube(obj/item/device/psionic_catalyst/PC, mob/user)
 	if(anti_cheat)
-		to_chat(user, "Your already thinking of the Pillar to add a catalyst!")
+		to_chat(user, "You're already adding a catalyst to a Pillar!")
 		return
 
 	if(!PC.resonances)
@@ -113,7 +113,7 @@
 			if(!slot_one)
 				to_chat(user, "You add [PC] into the First Pillar.")
 			else
-				to_chat(user, "You carefully take out the override the resonance in [PC], First Pillar.")
+				to_chat(user, "You carefully take out then override the resonance in [PC], First Pillar.")
 			slot_one = PC.resonances
 			PC.resonances = null
 			anti_cheat = FALSE
@@ -122,7 +122,7 @@
 			if(!slot_two)
 				to_chat(user, "You add [PC]'resonance into the Second Pillar.")
 			else
-				to_chat(user, "You carefully take out the override the resonance in [PC], Second Pillar.")
+				to_chat(user, "You carefully take out then override the resonance in [PC], Second Pillar.")
 
 			slot_two = PC.resonances
 			PC.resonances = null
@@ -132,7 +132,7 @@
 			if(!slot_three)
 				to_chat(user, "You add [PC]'resonance into the Third Pillar.")
 			else
-				to_chat(user, "You carefully take out the override the resonance in [PC], Third Pillar.")
+				to_chat(user, "You carefully take out then override the resonance in [PC], Third Pillar.")
 
 			slot_three = PC.resonances
 			PC.resonances = null
@@ -140,9 +140,9 @@
 			return
 		if("Pillar Four")
 			if(!slot_four)
-				to_chat(user, "You add [PC]'resonance into the Forth Pillar.")
+				to_chat(user, "You add [PC]'resonance into the Fourth Pillar.")
 			else
-				to_chat(user, "You carefully take out the override the resonance in [PC], Forth Pillar.")
+				to_chat(user, "You carefully take out then override the resonance in [PC], Fourth Pillar.")
 
 			slot_four = PC.resonances
 			PC.resonances = null
