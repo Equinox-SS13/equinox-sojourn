@@ -1,8 +1,7 @@
 /obj/item/gun/projectile/automatic/luty
-	name = "Homemade \"Luty\" SMG"
-	desc = "A dead simple open-bolt automatic firearm, easily made and easily concealed.\
-			A gun that has gone by many names, from the STEN gun to the Carlo to the Swedish K. \
-			Some designs are too good to change."
+	name = "\"Ghost\" printed SMG"
+	desc = "\"Live free or die. These are not empty words.\"\
+	An extremely simple submachine gun that can be produced with no engineering experience and minimal technical knowledge. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/luty.dmi'
 	icon_state = "luty"
 	item_state = "luty"
@@ -31,12 +30,12 @@
 	wield_delay = 0 // No delay for this , its litteraly a junk gun
 
 /obj/item/part/gun/frame/luty
-	name = "Luty frame"
-	desc = "A Luty SMG. It rattles a bit, but it's okay. Just don't shake it too hard."
+	name = "Ghost gun frame"
+	desc = "The frame for a 3D printed gun."
 	icon_state = "frame_luty"
 	matter = list(MATERIAL_STEEL = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/luty)
-	gripvars = list(/obj/item/part/gun/grip/wood)
+	gripvars = list(/obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/smg/steel
 	barrelvars = list(/obj/item/part/gun/barrel/pistol/steel, /obj/item/part/gun/barrel/magnum/steel)	//9mm or 10mm.
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.

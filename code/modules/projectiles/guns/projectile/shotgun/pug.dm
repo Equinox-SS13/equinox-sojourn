@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/shotgun/pug
 	name = "\"Pug\" auto-shotgun"
-	desc = "This magazine-fed shotgun was designed for close quarters combat, nicknamed 'Striker' by boarding parties. \
-			Its robust and reliable design allows you to swap magazines on the go and dump as many shells at your foes as you want... \
-			if you can manage its recoil, of course. Compatible only with special M12 20-round 20mm drum magazines."
+	desc = "A magazine-fed semi-automatic boarding shotgun. Chambered in 20mm, designed for proprietary drum magazines."
 	icon = 'icons/obj/guns/projectile/pug.dmi'
 	icon_state = "pug"
 	w_class = ITEM_SIZE_BULKY
