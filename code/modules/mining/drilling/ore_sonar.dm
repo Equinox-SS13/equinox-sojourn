@@ -1,6 +1,6 @@
 /obj/item/device/ore_sonar
 	name = "ore sonar"
-	desc = "A solid and robust looking white device made to work in the toughest conditions. It's able to scan and print a readout of the local ore heatmap. It works off an internal battery that takes a very long time to recharge. A droopy eared rabbit shape is stamped onto its side."
+	desc = "A solid and robust looking white device made to work in the toughest conditions. It's able to scan and print a readout of the local ore heatmap. It works off an internal battery that takes a while to recharge."
 	icon_state = "ore-sonar"
 	item_state = "ore-sonar"
 	slot_flags = SLOT_BELT
@@ -11,9 +11,9 @@
 
 /obj/item/device/ore_sonar/attack_self(mob/living/carbon/user as mob)
 	if(world.time < cooldowntime)
-		to_chat(user, SPAN_NOTICE("Device is still recharging. Please allow 20 minutes between each use, babe."))
+		to_chat(user, SPAN_NOTICE("Device is still recharging. Please allow 5 minutes between each use."))
 		return
-	cooldowntime = world.time + 20 MINUTES
+	cooldowntime = world.time + 5 MINUTES
 	to_chat(user, SPAN_NOTICE("Scan Initated. Starting to print out results."))
 	var/turf/origin = get_turf(user)
 	var/dist_scan_x = world.maxx-TRANSITIONEDGE - origin.x
