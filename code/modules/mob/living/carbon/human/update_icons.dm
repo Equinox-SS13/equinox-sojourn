@@ -557,15 +557,26 @@ var/global/list/wings_icon_cache = list()
 		return ears_icon_cache[cache_key]
 
 	var/datum/sprite_accessory/ears/earstype = ears
-	var/icon/ears_icon = icon(earstype.icon, earstype.icon_state)
-	if(earstype.colored_layers)
-		ears_icon.Blend(ears_colors[1], earstype.blend)
-	for(var/i = 2, i <= earstype.colored_layers, i++)
-		var/icon/extra_overlay = icon(earstype.icon, (earstype.extra_overlay ? earstype.extra_overlay : earstype.icon_state)+"[(i-1)]")
-		extra_overlay.Blend(ears_colors[i], earstype.blend)
-		ears_icon.Blend(extra_overlay, ICON_OVERLAY)
+	var/mutable_appearance/ears_appearance = mutable_appearance(earstype.icon, earstype.icon_state)
 
-	var/ears_image = image(ears_icon)
+	if(earstype.colored_layers)
+		if(earstype.blend == ICON_ADD)
+			ears_appearance.color = color_to_full_rgba_matrix(ears_colors[1])
+		else
+			ears_appearance.color = ears_colors[1]
+
+	for(var/i = 2, i <= earstype.colored_layers, i++)
+		var/mutable_appearance/extra_overlay = mutable_appearance(earstype.icon, (earstype.extra_overlay ? earstype.extra_overlay : earstype.icon_state)+"[(i-1)]")
+		if(earstype.blend == ICON_ADD)
+			extra_overlay.color = color_to_full_rgba_matrix(ears_colors[i])
+		else
+			extra_overlay.color = ears_colors[i]
+		ears_appearance.add_overlay(extra_overlay)
+
+	//	var/mutable_appearance/emissive = emissive_appearance_copy(extra_overlay)
+	//	ears_appearance.add_overlay(emissive)
+
+	var/ears_image = image(ears_appearance)
 	ears_icon_cache[cache_key] = ears_image
 	return ears_image
 

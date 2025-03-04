@@ -1,4 +1,5 @@
 /mob/living/carbon/human
+	appearance_flags = KEEP_TOGETHER|TILE_BOUND|PIXEL_SCALE|LONG_GLIDE
 	//Hair colour and style
 	var/hair_color = "#000000"
 	var/h_style = "Bald"
