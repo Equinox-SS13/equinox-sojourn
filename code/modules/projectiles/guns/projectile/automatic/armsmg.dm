@@ -2,8 +2,8 @@
 	icon = 'icons/obj/guns/projectile/armsmg.dmi'
 	icon_state = "armsmg"
 	item_state = null
-	name = "embedded SMG"
-	desc = "A SMG deployed from your arm. The favourite hidden weapon of many brutish types. Takes all kinds of 9mm magazines."
+	name = "arm-mounted submachine gun"
+	desc = "A submachine gun deployed from an arm. The favourite hidden weapon of many brutish types. Takes any type of 9mm magazine."
 	w_class = ITEM_SIZE_NORMAL
 	can_dual = 1
 	caliber = CAL_PISTOL

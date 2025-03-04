@@ -1,10 +1,6 @@
 /obj/item/gun/projectile/automatic/omnirifle
-	name = "\"Omnirifle\""
-	desc = "A standard issue battle rifle issued to SolFed Marines, produced across the galaxy by state arsenals. \
-		 A weapon built for versatility and rugged reliability, it fires a variety of utility and specialized munitions. \
-		 Chambered in 8.6x70mm, its gaping bore allows virtually any imaginable payload, however the recoil and magazine suffer for it. \
-		 Certain munitions are physically demanding for even the strongest users without the aid of power armor or gun platforms. \
-		 This example has defaced serial numbers and added electro-penciled rack numbers."
+	name = "\"OMNI\" battle rifle"
+	desc = "The \"M13A\" is versatile, reliable battle rifle chambered in 8.6x70mm - most commonly seen in the hands of SolFed infantrymen. It's especially hard to control without servos or a static mount."
 	icon = 'icons/obj/guns/projectile/Omnirifle.dmi'
 	icon_state = "omnirifle"
 	item_state = "omnirifle"
@@ -63,11 +59,7 @@
 
 /obj/item/gun/projectile/automatic/omnirifle/scoped
 	name = "\"Longarm\" marksman rifle"
-	desc = "A heavy front line designated marksman rifle manufactured by H&S, also known as the M13A2 Special Purpose Rifle in its generic military form. \
-		 Either a copy or 'liberated' example, it fires a variety of utility and specialized munitions. \
-		 Chambered in 8.6x70mm, its gaping bore allows virtually any imaginable payload, however the recoil and magazine suffer for it. \
-		 This example is fitted with an advanced combat sight and limited to semiautomatic and burst modes. \
-		 Due to market competition on the Omnirifle platform, H&S allowed for an extra fee special limited edition custom prints."
+	desc = "A standard-issue M13A2 SPR fashioned out of an Omnirifle, tailored for higher accuracy and penetration as well as better target acquisition capabilities. Chambered in 8.6x70mm."
 	icon = 'icons/obj/guns/projectile/DMR.dmi'
 	icon_state = "DMR"
 	item_state = "DMR"
@@ -92,11 +84,8 @@
 	gun_parts = null //To prevent meme decon of uniques
 
 /obj/item/gun/projectile/automatic/omnirifle/scoped/fancy
-	name = "\"Osprey\" precision rifle"
-	desc = "Classic, elegant sporting rifle based on proven military technology. \
-		 A police model of the venerable M13A1 Special Purpose Rifle manufactured on Earth by Seinemetall Defense GmbH for both sportsmen and counter-terror agents, it fires a variety of utility and specialized munitions. \
-		 Chambered in 8.6x70mm, its gaping bore allows virtually any imaginable payload, however the recoil and magazine suffer for it. \
-		 This example is fitted with an high-zoom optic, elegant wood furnishing, and is limited to semiautomatic."
+	name = "\"Osprey\" sniper rifle"
+	desc = "A purpose-made variant of the M13 rifle adopted by police marksmen and counter-terror units. Chambered in 8.6x70mm."
 	icon = 'icons/obj/guns/projectile/Osprey.dmi'
 	icon_state = "osprey"
 	item_state = "osprey"
@@ -113,11 +102,8 @@
 
 
 /obj/item/gun/projectile/automatic/omnirifle/rds
-	name = "\"Warthog\" advanced rifle"
-	desc = "A heavy second-line rifle manufactured by H&S, as well as number of state arsenals. Designed for close range encounters and support fire. \
-		 A rifle fashioned for cover fire and cramped environments. Chambered in 8.6x70mm. \
-		 Its gaping bore packs a punch, however the recoil is incredibly violent and terrifying. \
-		 This one is fitted with a muzzle brake, fore grip, holographic sight, and limited to 3-round bursts, it's almost manageable. Almost."
+	name = "\"Warthog\" battle rifle"
+	desc = "A modified M13 battle rifle outfitted with a proprietary holographic sight, commonly issued to Blackshield NCOs. Chambered in 8.6x70mm."
 	icon = 'icons/obj/guns/projectile/Warthog.dmi'
 	icon_state = "warthog"
 	item_state = "warthog"
@@ -137,8 +123,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/omni = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/hrifle = 1)
 
 /obj/item/part/gun/frame/omni
-	name = "Omnirifle frame"
-	desc = "An Omnirifle frame. The ex-war criminal's delight. Includes advanced mechanisms not often seen in more 'common' arms."
+	name = "OMNI rifle frame"
+	desc = "The receiver group of an M13A battle rifle."
 	icon_state = "frame_omni"
 	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_DIAMOND = 3)
 	result = /obj/item/gun/projectile/automatic/omnirifle
@@ -148,12 +134,8 @@
 	barrelvars = list(/obj/item/part/gun/barrel/hrifle)
 
 /obj/item/gun/projectile/automatic/omnirifle/hustler
-	name = "\"Hustler\" breacher shotgun"
-	desc = "The breacher special, this brick of a gun is cobbled together by Marshal Gunsmiths with far too much time and far too few matching omni-rifle mechanisms and frames.\
-	Not entirely a novel design, hackjobs such as this were common in the worst theatres during The Harrowing; Where logistic complications and the reality of war necessitated\
-	pushing the  famously durable and versatile omni-frame to its absolute limits. While many of those designs would turn out to be ineffective, impractical or deadly for the user \
-	this one has worked out surprisingly well. The added weight and barrel length add stability and accuracy often lacking from other firearms chambered in the famously wiley 20mm \
-	allowing for a steady stream of heavy-caliber slugs to be thrown downrange albeit at the cost of weight and flexibility."
+	name = "\"Hustler\" shotgun"
+	desc = "A substantially heavier locally-made reproduction of the M13A OMNI rifle re-tooled and accessorized to fire shotgun rounds. Chambered in 20mm shells."
 	icon = 'icons/obj/guns/projectile/Hustler.dmi'
 	icon_state = "hustler"
 	item_state = "hustler"

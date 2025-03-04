@@ -3,9 +3,9 @@
 // Do note that pen_multiplier is a base of 1 from inheritance.
 
 /obj/item/gun/projectile/automatic/lmg
-	name = "SA \"SAW\""
-	desc = "An extremely rare HMG produced on a commision. Uses 7.62mm Rifle rounds."
-	description_info = "To reload, use an empty hand on it to open its cover, then again to take out the ammo box if any. Insert the linked box, then use in-hand to close it."
+	name = "\"Lobster-6\" machine gun"
+	desc = "A widespread and reliable machine gun model often seen in use by colonial militias and other irregular forces. Chambered in 7.62mm."
+	description_info = "To reload, use an empty hand on it to open it's cover, then again to take out the ammo box if any. Insert the new box, then use in-hand to close it. Make sure it's a linked ammo box and not a regular one."
 	icon = 'icons/obj/guns/projectile/l6.dmi'
 	var/icon_base
 	icon_base = "l6"
@@ -104,8 +104,8 @@
 
 // After the removal of the Unicorn, treat this as the "high-end of normal" for any future LMG's.
 /obj/item/gun/projectile/automatic/lmg/pk
-	name = "Pulemyot Kalashnikova"
-	desc = "\"Kalashnikov's Machinegun\", a well-made copy of what many consider to be the best traditional machinegun ever designed."
+	name = "PKM machine gun"
+	desc = "An extremely outdated medium machine gun often seen in the hands of rebels and criminals."
 	icon = 'icons/obj/guns/projectile/pk.dmi'
 	icon_base = "pk"
 	icon_state = "pk_closed"
@@ -120,8 +120,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/pk = 1, /obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/part/gun/frame/pk
-	name = "Pulemyot Kalashnikova frame"
-	desc = "A Pulemyot Kalashnikova LMG frame. A violent and beautiful spark of the past."
+	name = "PKM frame"
+	desc = "A PKM machine gun frame."
 	icon_state = "frame_pk"
 	result = /obj/item/gun/projectile/automatic/lmg/pk
 	resultvars = list(/obj/item/gun/projectile/automatic/lmg/pk)
@@ -131,9 +131,8 @@
 
 //This should be in its own file...
 /obj/item/gun/projectile/automatic/lmg/tk
-	name = "\"Takeshi\" suppression machinegun"
-	desc = "The \"Takeshi LMG\" is Seinemetall Defense GmbH's answer to any scenario that requires suppression or meat grinding, a fine oiled machine of war and death. \
-			Takes 6.5mm linked boxes as well as normal carbine magazines."
+	name = "\"Kāihuǒ\" light machine gun"
+	desc = "The modern infatryman's ubiquitous choice for a machine gun, the Kāihuǒ is praised for it's light weight and versatility. Chambered in 6.5mm, loading from either rifle magazines or boxes."
 	icon = 'icons/obj/guns/projectile/tk.dmi'
 	icon_base = "tk"
 	icon_state = "tk"
@@ -147,8 +146,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/tk = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 /obj/item/part/gun/frame/tk
-	name = "Takeshi frame"
-	desc = "A Takeshi LMG frame. A fine-oiled machine of war and death."
+	name = "Kāihuǒ frame"
+	desc = "A Kāihuǒ LMG frame. Popular for good reason."
 	icon_state = "frame_mg"
 	result = /obj/item/gun/projectile/automatic/lmg/tk
 	resultvars = list(/obj/item/gun/projectile/automatic/lmg/tk, /obj/item/gun/projectile/automatic/lmg/heroic)
@@ -188,10 +187,8 @@
 
 // I AM HEAVY WEAPONS GUY, AND THIS...IS MY WEAPON. - Seb
 /obj/item/gun/projectile/automatic/lmg/heroic
-	name = " \"Heroic\" General Purpose Machinegun"
-	desc = "The \"Heroic\" General Purpose Machinegun was created by Nadezhda Marshals in response to Blackshield's lack of suppressing fire armaments. \
-			Inspired by Seinemetall's Takeshi LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
-			Chambered in 7.62x39mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
+	name = " \"Heroic\" machine gun"
+	desc = "An in-colony general purpose machine gun, based on the proven Kāihuǒ design. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/heroic.dmi'
 	icon_base = "heroic" // Sprites by Albert7076
 	icon_state = "heroic"
