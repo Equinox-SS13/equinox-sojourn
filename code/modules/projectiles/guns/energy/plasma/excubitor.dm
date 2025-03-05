@@ -20,7 +20,7 @@
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	init_firemodes = list(
 		list(mode_name="plasma", mode_desc="Fire light plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF"),
-		list(mode_name="grenade", mode_desc="Fire a fragmenting explosive thoroid", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
+		list(mode_name="grenade", mode_desc="Fashion a frag grenade out of the gun's power cell", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
 	)
 	twohanded = TRUE
 	var/consume_cell = TRUE

@@ -24,7 +24,7 @@
 	init_firemodes = list(
 		list(mode_name="plasma bolt", mode_desc="Fire a bolt of plasma.", projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/pulse.ogg', charge_cost=120, fire_delay=8, icon="destroy", projectile_color = "#00AAFF"),
 		list(mode_name="laser", mode_desc="Fire a standard laser.", projectile_type=/obj/item/projectile/beam, fire_sound='sound/weapons/energy/laser_pistol.ogg', charge_cost=80, fire_delay=0.5, icon="kill", projectile_color = "#00AAFF"),
-		list(mode_name="ion shot", mode_desc="Fire an ionized thoroid to disable electronics.", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay=12, charge_cost=300, icon="charge", projectile_color = "#ff7f24"),
+		list(mode_name="ion shot", mode_desc="Fire an ionized toroid to disable electronics.", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay=12, charge_cost=300, icon="charge", projectile_color = "#ff7f24"),
 	)
 	serial_type = "NM"
 

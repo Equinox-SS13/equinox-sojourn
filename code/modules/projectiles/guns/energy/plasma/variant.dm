@@ -14,7 +14,7 @@
 
 	init_firemodes = list(
 		list(mode_name = "standard", mode_desc="Fire a single bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/pistol, fire_sound = 'sound/weapons/energy/hydrogen.ogg', icon = "destroy", heat_per_shot = 25, use_plasma_cost = 10),
-		list(mode_name = "Unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/pistol/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', icon = "vaporize", heat_per_shot = 40, use_plasma_cost = 20)
+		list(mode_name = "unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/pistol/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', icon = "vaporize", heat_per_shot = 40, use_plasma_cost = 20)
 	)
 
 	can_dual = TRUE
@@ -36,7 +36,7 @@
 	vent_level_timer = 10 SECONDS //10 seconds between vents, but builds heat a lot faster.
 	init_firemodes = list(
 		list(mode_name = "standard", mode_desc="Fire a single bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/cannon, fire_sound = 'sound/weapons/energy/hydrogen.ogg', fire_delay = 30, icon = "destroy", use_plasma_cost = 15),
-		list(mode_name = "Unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/cannon/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', fire_delay = 50, icon = "vaporize", use_plasma_cost = 30)
+		list(mode_name = "unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/cannon/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', fire_delay = 50, icon = "vaporize", use_plasma_cost = 30)
 	)
 	twohanded = TRUE
 

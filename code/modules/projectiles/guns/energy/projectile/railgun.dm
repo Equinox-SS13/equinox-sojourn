@@ -44,7 +44,7 @@
 	init_firemodes = list(
 		list(mode_name="standard", mode_desc="Fire a hypersonic metal shaving.", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
 		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
-		list(mode_name="Rail", mode_desc="Fire a hypersonic metal rail that will explode on impact.", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
+		list(mode_name="rail", mode_desc="Fire a hypersonic metal rail that will explode on impact. This consumes the power cell.", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
 	)
 	price_tag = 1250
 
@@ -85,9 +85,9 @@
 	init_recoil = RIFLE_RECOIL(1)
 	damage_multiplier = 1
 	init_firemodes = list(
-		list(mode_name="Undervolted", mode_desc="Fire a pointed metal rail.", projectile_type=/obj/item/projectile/bullet/shotgun/railgun, icon="kill"),
+		list(mode_name="standard", mode_desc="Fire a pointed metal rail.", projectile_type=/obj/item/projectile/bullet/shotgun/railgun, icon="kill"),
 		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag/railgun, icon="stun"),
-		list(mode_name="grenade", mode_desc="Fire a hypersonic metal rail that will explode on impact.", projectile_type=/obj/item/projectile/bullet/grenade, charge_cost=30000, icon="grenade")
+		list(mode_name="rail", mode_desc="Fire a hypersonic metal rail that will explode on impact. This destroys the power cell.", projectile_type=/obj/item/projectile/bullet/grenade, charge_cost=30000, icon="grenade")
 	)
 	consume_cell = FALSE
 	price_tag = 2250
@@ -183,7 +183,7 @@
 	slowdown_hold = 1.5
 	init_firemodes = list(
 		list(mode_name="powered-rod", mode_desc="fires a metal rod at incredible speeds", projectile_type=/obj/item/projectile/bullet/gauss, icon="kill"),
-		list(mode_name="fragmented scrap", mode_desc="fires a brittle, sharp piece of scrap-metal", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
+		list(mode_name="fragmented scrap", mode_desc="fires a brittle, sharp piece of scrap metal", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
 	)
 	serial_type = "AG"
 	consume_cell = FALSE

@@ -20,8 +20,8 @@
 	twohanded = TRUE
 	can_dual = FALSE
 	init_firemodes = list(
-		list(mode_name="Burn", mode_desc="A relatively light plasma round", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=1, fire_delay=4, charge_cost=15, icon="kill", projectile_color = "#0088ff"),
-		list(mode_name="Sear", mode_desc="A three-round burst of light plasma rounds.", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=3, fire_delay=12, burst_delay=1, charge_cost=15, icon="burst", projectile_color = "#0088ff"),
+		list(mode_name="burn", mode_desc="A relatively light plasma round", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=1, fire_delay=4, charge_cost=15, icon="kill", projectile_color = "#0088ff"),
+		list(mode_name="sear", mode_desc="A three-round burst of light plasma rounds.", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=3, fire_delay=12, burst_delay=1, charge_cost=15, icon="burst", projectile_color = "#0088ff"),
 		list(mode_name="INCINERATE", mode_desc=" relatively heavy shot of super-heated plasma that creates a fireball on impact", projectile_type=/obj/item/projectile/plasma/aoe/heat, fire_sound='sound/weapons/energy/incinerate.ogg', burst=1, fire_delay=20, charge_cost=90, icon="destroy", projectile_color = "#FFFFFF"),
 	)
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
@@ -58,7 +58,7 @@
 	charge_cost = 200
 	init_recoil = LMG_RECOIL(2)
 	init_firemodes = list(
-		list(mode_name="Charged Plasma", mode_desc="Fire a strong plasma bolt", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#b3ff00"),		//Cool it with the religious zealotry remarks
+		list(mode_name="charged plasma", mode_desc="Fire a strong plasma bolt", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#b3ff00"),		//Cool it with the religious zealotry remarks
 		list(mode_name="plasma", mode_desc="Fire a light plasma bolt", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#29c476"),
 	)
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
@@ -90,8 +90,8 @@
 	penetration_multiplier = 1
 
 	init_firemodes = list(
-		list(mode_name="Stun", mode_desc="A weakening bolt of plasma that disables people", projectile_type=/obj/item/projectile/plasma/stun, fire_sound='sound/weapons/energy/marauder.ogg', fire_delay=2, icon="stun", projectile_color = "#0000FF"),
-		list(mode_name="Melt", mode_desc="A heavier plasma bolt designed to melt through armor and flesh alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=14, icon="destroy", projectile_color = "#FFFFFF"),
+		list(mode_name="stun", mode_desc="A weakening bolt of plasma that disables people", projectile_type=/obj/item/projectile/plasma/stun, fire_sound='sound/weapons/energy/marauder.ogg', fire_delay=2, icon="stun", projectile_color = "#0000FF"),
+		list(mode_name="melt", mode_desc="A heavier plasma bolt designed to melt through armor and flesh alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=14, icon="destroy", projectile_color = "#FFFFFF"),
 	)
 
 	wield_delay = 0.3 SECOND
@@ -127,7 +127,7 @@
 	var/explosion_f_size = 5
 
 	init_firemodes = list(
-		list(mode_name="Maraud", mode_desc="A plasma thoroid with enough energy behind it to melt plasteel.", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#33ff00"),
+		list(mode_name="Maraud", mode_desc="A plasma toroid with enough energy behind it to melt plasteel.", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#33ff00"),
 	)
 
 /obj/item/gun/energy/plasma/super_heavy/examine(mob/user)

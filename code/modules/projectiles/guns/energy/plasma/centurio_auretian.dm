@@ -15,7 +15,7 @@
 	init_recoil = HANDGUN_RECOIL(0.2)
 	init_firemodes = list(
 		list(mode_name="plasma", mode_desc="Hard hitting plasma bolt that melts flesh and armor", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay = 9, icon="destroy", projectile_color = "#2bd37f"),
-		list(mode_name="EMP", mode_desc="An Ionized thoroid that disables electronics", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay = 25, icon="stun", projectile_color = "#99ffb2"),
+		list(mode_name="EMP", mode_desc="An ionized toroid that disables electronics", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay = 25, icon="stun", projectile_color = "#99ffb2"),
 		)
 	serial_type = "SI"
 	charge_cost = 50
