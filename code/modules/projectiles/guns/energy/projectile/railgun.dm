@@ -42,8 +42,8 @@
 	twohanded = FALSE
 	serial_type = "AG"
 	init_firemodes = list(
-		list(mode_name="Standard", mode_desc="Fire a hypersonic metal shaving.", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
-		list(mode_name="Rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
+		list(mode_name="standard", mode_desc="Fire a hypersonic metal shaving.", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
+		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
 		list(mode_name="Rail", mode_desc="Fire a hypersonic metal rail that will explode on impact.", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
 	)
 	price_tag = 1250
@@ -60,9 +60,9 @@
 	cell_type = /obj/item/cell/small/high //Two shots
 	twohanded = FALSE
 	init_firemodes = list(
-		list(mode_name="Standard", mode_desc="Fire a cloud of hypersonic metal shavings.", projectile_type=/obj/item/projectile/bullet/pellet/shotgun, charge_cost=100, icon="kill"),
-		list(mode_name="Rubber", mode_desc="Fire a regular shotgun beanbag pellet.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
-		list(mode_name="'Rail'", mode_desc="Fire an accelerated slug.", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=50, icon="destroy"),
+		list(mode_name="standard", mode_desc="Fire a cloud of hypersonic metal shavings.", projectile_type=/obj/item/projectile/bullet/pellet/shotgun, charge_cost=100, icon="kill"),
+		list(mode_name="rubber", mode_desc="Fire a regular shotgun beanbag pellet.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
+		list(mode_name="'rail'", mode_desc="Fire an accelerated slug.", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=50, icon="destroy"),
 	)
 	serial_type = "GP"
 	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_SCOPE)
@@ -86,7 +86,7 @@
 	damage_multiplier = 1
 	init_firemodes = list(
 		list(mode_name="Undervolted", mode_desc="Fire a pointed metal rail.", projectile_type=/obj/item/projectile/bullet/shotgun/railgun, icon="kill"),
-		list(mode_name="Less-lethal", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag/railgun, icon="stun"),
+		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag/railgun, icon="stun"),
 		list(mode_name="grenade", mode_desc="Fire a hypersonic metal rail that will explode on impact.", projectile_type=/obj/item/projectile/bullet/grenade, charge_cost=30000, icon="grenade")
 	)
 	consume_cell = FALSE

@@ -59,7 +59,7 @@
 	init_recoil = LMG_RECOIL(2)
 	init_firemodes = list(
 		list(mode_name="Charged Plasma", mode_desc="Fire a strong plasma bolt", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#b3ff00"),		//Cool it with the religious zealotry remarks
-		list(mode_name="Plasma", mode_desc="Fire a light plasma bolt", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#29c476"),
+		list(mode_name="plasma", mode_desc="Fire a light plasma bolt", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#29c476"),
 	)
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
 
