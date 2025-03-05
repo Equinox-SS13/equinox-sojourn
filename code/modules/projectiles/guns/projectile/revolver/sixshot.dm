@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver/sixshot
-	name = "\"Six-Shot\" revolving shotgun"
-	desc = "A unique, revolving shotgun using a revolver cylinder. You can't tell if the person who made it deserves an award or to be tried as a criminal."
+	name = "\"Six-Shot\" revolver shotgun"
+	desc = "A rare rifle-sized revolver fitted with a handguard and a stock. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/sixshot.dmi'
 	icon_state = "sixshot"
 	w_class = ITEM_SIZE_HUGE
@@ -34,9 +34,8 @@
 	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 
 /obj/item/gun/projectile/revolver/sixshot/conversion
-	name = "\"Ten-Shot\" conversion shotgun"
-	desc = "A unique, revolving shotgun using a revolver cylinder. You can't tell if the person who made it deserves an award or to be tried as a criminal. This one has been given a belt \
-	fed conversion that increases its capacity by four additional slugs."
+	name = "\"Ten-Shot\" revolver shotgun"
+	desc = "An unorthodox belt-fed revolver fitted with a stock and handguard. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/sixshotconversion.dmi'
 	icon_state = "sixshot_belt"
 	max_shells = 10
@@ -58,7 +57,7 @@
 
 /obj/item/gun/projectile/revolver/sixshot/sawn
 	name = "sawn-off \"Six-Shot\" revolving shotgun"
-	desc = "An absolutely mutilated Six-Shot revolving shotgun. The mad-man who did this lobbed off the stock into just a wood pistol grip and shortened the barrel to be barely longer than the cylinder."
+	desc = "A revolver rifle turned regular revolver again. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/sixshot.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL

@@ -2,9 +2,7 @@
 
 /obj/item/gun/energy/riot_autoshotgun
 	name = "intergrated \"State\" riot shotgun"
-	desc = "A Seinemetall Defense GmbH riot auto action shotgun, its uncommonly seen deployed in most police operation due to the success of the \"stolen\" \"Regulator\" design. \
-	This particular shotgun has been redesigned many times, never quite reaching a standard everyone was happy with, with some lauding it as confusing for a shotgun. \
-	This variant has been designed to flash-synthesise ammunition from an onboard cell, for Synthetic use."
+	desc = "An unorthodox semi-automatic riot shotgun custom fitted for use by a cyborg. Chambered in 20mm."
 	icon = 'icons/obj/robot_items.dmi'
 	icon_state = "riot_shotgun"
 	item_state = "riot_shotgun"

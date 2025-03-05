@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/silenced
 	name = "\"Rafale\" silenced pistol"
-	desc = "A high quality, specialty handgun exclusively produced (as the markings so proudly state) by Seinemetall Defense GmbH. Commonly used by police and SWAT teams during stealth operations. Uses 10mm Auto-Mag. Has an integrated silencer which cannot be removed."
+	desc = "A military-issue integrally suppressed pistol usually seen in use by colonial police and infantrymen. Chambered in 10mm."
 	icon = 'icons/obj/guns/projectile/rafale.dmi'
 	icon_state = "rafale"
 	item_state = "rafale"

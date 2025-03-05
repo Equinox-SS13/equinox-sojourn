@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/automatic/maxim
 	name = "Excelsior \"Maxim\" machine gun"
-	desc = "\"There is only one way in which the murderous death agonies of the old society and the bloody birth throes of the new society can be shortened, \
-			simplified and concentrated, and that way is revolutionary terror.\"\nAn old and unsurprisingly deprecated gun from the Excelsior. \
-			One of their most dangerous weapons, effective at dealing with crowds or suppressing firing lines. Uses the unique 7.62mm pan-magazines."
+	desc = "An extremely outdated top-loading heavy duty machine gun of relatively simple construction and design. Feeds from pan magazines."
 	icon = 'icons/obj/guns/projectile/maxim.dmi'
 	icon_state = "maxim"
 	item_state = "maxim"
@@ -41,8 +39,8 @@
 
 
 /obj/item/gun/projectile/automatic/maxim/NM_colony
-	name = "\"Oprichnik\" machine gun"
-	desc = "An old and unsurprisingly deprecated top feeding machine gun chambered in 7.62mm. A dangerous weapon effective at dealing with crowds or suppressing firing lines. Takes specialized pan-magazines from Excelsior Maxims, while being completely free from their taint."
+	name = "\"Maximillian\" machine gun"
+	desc = "An extremely outdated in-colony top-loading heavy duty machine gun of relatively simple construction and design. Feeds from pan magazines, this one's got a new paintjob."
 	icon = 'icons/obj/guns/projectile/maxim_colony.dmi'
 	icon_state = "maxim_bs"
 	item_state = "maxim_bs"
@@ -63,7 +61,7 @@
 
 /obj/item/part/gun/frame/maxim
 	name = "Maxim frame"
-	desc = "A Maxim HMG frame. Whatever happens, we have got the Maxim gun and they have not."
+	desc = "A Maxim machine gun frame. Whatever happens, we have the Maxim and they don't."
 	icon_state = "frame_maxim"
 	result = /obj/item/gun/projectile/automatic/maxim
 	gripvars = list(/obj/item/part/gun/grip/excel, /obj/item/part/gun/grip/black)

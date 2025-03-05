@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/c20r
-	name = "bullpup SMG"
-	desc = "The C-20r is a lightweight and rapid-firing SMG, for when you REALLY need someone dead. Fires either 9mm or 10mm depending on installed barrel. Has a 'Scarborough Arms - Per falcis, per pravitas' buttstock stamp."
+	name = "\"C-20r\" SMG"
+	desc = "A bullpup submachine gun that could be chambered in either 9mm Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads."
 	icon = 'icons/obj/guns/projectile/cr20.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -38,7 +38,7 @@
 
 /obj/item/part/gun/frame/c20r
 	name = "C20r frame"
-	desc = "A C20r SMG frame. The syndicate's bread and butter. Curiously, it has two sets of threads for a barrel in differing sizes."
+	desc = "A C20r SMG frame. It can be chambered in either 9mm Auto or 10mm Magnum."
 	icon_state = "frame_syndi"
 	nra = FALSE
 	result = /obj/item/gun/projectile/automatic/c20r
@@ -61,8 +61,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/automatic/c20r/sci
-	name = "Soteria \"Bullpip\" SMG"
-	desc = "A Soteria copy of the Scarborough Arms C-20r, not quite as good at punching through armor nor as deadly, but still reliable and versatile none the less as its often nicknamed the bullpip. Uses 9mm or 10mm depending on the installed barrel."
+	name = "Soteria \"C20-m\" SMG"
+	desc = "A bullpup submachine gun that could be chambered in either 9mm Auto or 10mm Magnum by virtue of it's peculiar hybrid barrel threads. This one seems to be a colony-made reproduction."
 	icon = 'icons/obj/guns/projectile/si_cr20.dmi'
 	damage_multiplier = 1.1
 	penetration_multiplier = 1.3
@@ -78,7 +78,7 @@
 
 /obj/item/part/gun/frame/c20r/sci
 	name = "C20m frame"
-	desc = "A C20m SMG frame. The syndicate's bread and butter, reverse-engineered. Curiously, it has two sets of threads for a barrel in differing sizes."
+	desc = "A reverse engineered C-20r frame. It can be chambered in either 9mm Auto or 10mm Magnum."
 	icon_state = "frame_sci"
 	result = /obj/item/gun/projectile/automatic/c20r/sci
 	resultvars = list(/obj/item/gun/projectile/automatic/c20r/sci)
