@@ -27,10 +27,10 @@
 	opacity = 1
 	transform = null
 
-//half-hearted port of TG's emissive thing
+//half-hearted port of TG's emissive thing. It is NOT the same thing, TG has a system of masks to colorize and block out emissives where they would be blocked. This just makes mutable_appearances render above the lighting plane in a convenient way.
 /proc/emissive_appearance_copy(mutable_appearance/to_use, atom/offset_spokesman, appearance_flags = (RESET_COLOR|KEEP_APART))
 	var/mutable_appearance/appearance = mutable_appearance(to_use.icon, to_use.icon_state, to_use.layer, ABOVE_LIGHTING_PLANE)
-	appearance.color = list(0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,1, 1,1,1,0)
+	appearance.color = to_use.color		//This would originally have been glob.emissive color, to turn it pure white and 100% alpha for... whatever TG uses it for. But meh.
 	appearance.pixel_x = to_use.pixel_x
 	appearance.pixel_y = to_use.pixel_y
 	return appearance
