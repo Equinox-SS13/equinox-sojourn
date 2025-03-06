@@ -207,6 +207,7 @@
 
 		to_chat(user, "The power stored in [PC] leaks out into the cold void as the [src] is tuned.")
 		PC.stored_power = null //Nom!
+		PC.resonances = "Null"
 		PC.icon_state = "psi_catalyst_dull"
 
 	..()
@@ -274,9 +275,9 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/vermicetol(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/vermicetol(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/vermicetol(src)
-	new /obj/item/reagent_containers/hypospray/autoinjector/large/varceptol(src)
-	new /obj/item/reagent_containers/hypospray/autoinjector/large/varceptol(src)
-	new /obj/item/reagent_containers/hypospray/autoinjector/large/varceptol(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/large/narceptol(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/large/narceptol(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/large/narceptol(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/blood(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/blood(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/large/blood(src)

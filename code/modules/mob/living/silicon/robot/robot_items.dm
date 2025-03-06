@@ -423,6 +423,8 @@
 	degradation = 0
 	sharp = 1
 	embed_mult = 0
+	max_health = 9999999 // Workaround to prevent borgtools from permanently breaking once upgrades are applied
+	workspeed = 1.25	// Better parity with regular crew
 
 /obj/item/tool/robotic_omni/surgery
 	name = "Surgery omni tool"
@@ -489,8 +491,8 @@
 						  QUALITY_DIGGING = 40)
 
 /obj/item/tool/robotic_omni/cleaner
-	name = "Borrow Omni tool"
-	desc = "Omni tool for Janitor borgs, mostly just for cutting up body and clearing borrows."
+	name = "Burrow Omni tool"
+	desc = "Omni tool for Janitor borgs, mostly just for cutting up body and clearing burrows."
 	icon_state = "engimplant"
 	tool_qualities = list(QUALITY_PRYING = 20,
 						  QUALITY_HAMMERING = 35, //For undoing random things like barrer placements
@@ -771,30 +773,9 @@
 		/obj/item/reagent_containers/food/snacks/meat
 	)
 
-/obj/item/storage/bag/robotic/trash
+/obj/item/storage/bag/trash/big/robotic
 	name = "internal trash container"
 	desc = "An internalized trash container for gathering trash. Become a walking trash can, today!"
-	icon = 'icons/obj/janitor.dmi'
-	icon_state = "trashbag0"
-	item_state = "trashbag"
-	w_class = ITEM_SIZE_BULKY
-	max_storage_space = DEFAULT_BULKY_STORAGE * 2
-	max_w_class = ITEM_SIZE_SMALL
-	can_hold = list(/obj/item) //hacky fix maybe to let them pick up items
-	cant_hold = list(/obj/item/disk/nuclear)
-
-/obj/item/storage/bag/robotic/trash/autoload(mob/user as mob)
-	return //Prevent the trash bag from autoloading everything during movement, for sanity.
-
-/obj/item/storage/bag/robotic/trash/update_icon()
-	if(contents.len == 0)
-		icon_state = "trashbag0"
-	else if(contents.len < 24)
-		icon_state = "trashbag1"
-	else if(contents.len < 42)
-		icon_state = "trashbag2"
-	else
-		icon_state = "trashbag3"
 
 /obj/item/storage/bag/robotic/sheetsnatcher
 	name = "heavy-duty sheet snatcher"
