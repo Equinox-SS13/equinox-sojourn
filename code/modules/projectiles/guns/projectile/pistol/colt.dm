@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/colt
 	name = "\"Colt\" pistol"
-	desc = "A cheap knock-off of an M1911 produced by Holland & Sullivan. Uses 9mm rounds."
+	desc = "A copy of an extremely outdated handgun. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/colt.dmi'
 	icon_state = "colt"
 	item_state = "colt"
@@ -23,7 +23,7 @@
 
 /obj/item/gun/projectile/colt/ten
 	name = "\"Delta Elite\" magnum pistol"
-	desc = "A classy high-powered automatic commissionedby Blackshield and based on the M1911 series handguns, with significant reinforcements produced by Scarborough Arms. Uses 10mm Auto-Mag."
+	desc = "A customized variant of an outdated handgun in tasteful black. Chambered in 10mm."
 	icon_state = "dark_delta"
 	item_state = "colt"
 	w_class = ITEM_SIZE_NORMAL
@@ -46,7 +46,7 @@
 
 /obj/item/gun/projectile/colt/liberty
 	name = "\"Liberty\" magnum pistol"
-	desc = "A common Nadezhda Marshal issue pistol chambered in 10mm Magnum. It appears to be loosely based off a Colt model, albeit with a changed slide, polymer grip and a built-in holographic sight."
+	desc = "An in-colony modification of the Colt pistol. Chambered in 10mm."
 	icon = 'icons/obj/guns/projectile/liberty.dmi'
 	icon_state = "liberty"
 	item_state = "liberty"
@@ -87,8 +87,8 @@
 	update_icon()
 
 /obj/item/part/gun/frame/colt
-	name = "Colt 1911 frame"
-	desc = "A Colt pistol frame. Winner of dozens of world wars, and loser of many more guerilla wars."
+	name = "Colt pistol frame"
+	desc = "A Colt pistol frame."
 	icon_state = "frame_1911"
 	result = /obj/item/gun/projectile/colt
 	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/rubber, /obj/item/part/gun/grip/black)

@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump/combat
-	name = "\"Regulator\" combat shotgun"
-	desc = "Designed for close quarters combat, the Regulator is widely regarded as a weapon of choice for protecting borders. \
-			One of the only decent ballistic weapons made by the Old Testament. Can hold up to 6+1 20mm shells in its tube magazine."
+	name = "\"Regulator\" shotgun"
+	desc = "A common pump-action shotgun made for anti-boarding and police use. Chambered in 20mm, fitted with a heat shield."
 	icon = 'icons/obj/guns/projectile/cshotgun.dmi'
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
@@ -17,7 +16,7 @@
 	init_recoil = RIFLE_RECOIL(1.2)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/shotgun/pump/combat/sawn
-	serial_type = "Absolute"
+	serial_type = "SD GmbH"
 
 	wield_delay = 1 SECOND
 	wield_delay_factor = 0.4 // 40 vig
@@ -35,8 +34,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/combat/sawn
 	name = "\"Regulator\" stakeout shotgun"
-	desc = "Designed for close encounters, the Regulator is widely regarded as a weapon of choice for protecting against boarders. \
-	Without its stock, it's much more compact, but much harder to use. Can hold up to 6+1 20mm shells in its tube magazine."
+	desc = "A common pump-action shotgun made for anti-boarding and police use. Chambered in 20mm, sawn off and without it's heat shield."
 	icon = 'icons/obj/guns/projectile/sawnoff/cshotgun.dmi'
 	gun_parts = list(/obj/item/part/gun/frame/regulator = 1, /obj/item/stack/material/plastic = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/stack/material/plasteel = 2)
 	icon_state = "short"
