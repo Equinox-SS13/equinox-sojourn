@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/mac
-	name = "\"MAC\" SMG"
-	desc = "A conceptual replica of an old and incredibly simple SMG. However, ergonomics were never good on the original, and recoil is rather significant. Essentially disposable. Uses 9mm."
+	name = "\"Mako\" SMG"
+	desc = "A very simple open-bolt SMG often used by criminals and two-bit wannabe gangsters. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/mac.dmi'
 	icon_state = "mac"
 	item_state = "mac"

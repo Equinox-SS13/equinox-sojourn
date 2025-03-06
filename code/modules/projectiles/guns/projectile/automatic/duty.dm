@@ -1,13 +1,6 @@
 /obj/item/gun/projectile/automatic/duty
 	name = "\"Duty\" carbine"
-	desc = "The Duty is a carbine designed by Marshall and Blackshield gunsmiths \
-	to suplement the ancient pattern boltguns as a standard issue rifle of Blackshield. \
-	Having the stopping power of the Kardashev-Mosin but with a faster fire rate and less recoil. \
-	The design took a lot of old world designs yet modernized it with the new caliber of 6.5mm \
-	and a light polymer body balanced with heavy steel and plasteel. \
-	A full production rifle, it also has melee capabilities with its bayonet \
-	and it can be reloaded with a stripper clip due to the adapter guide installed on the receiver. \
-	Overall a solid battle rifle for a Blackshield trooper."
+	desc = "A versatile mag-fed infantry rifle proprietary to the colony. Chambered in 6.5mm, fitted with a stripper clip guide."
 	icon = 'icons/obj/guns/projectile/duty.dmi'
 	icon_state = "duty"
 	item_state = "duty"
@@ -52,7 +45,7 @@
 
 /obj/item/part/gun/frame/discountnordwind
 	name = "Blackshield rifle frame"
-	desc = "A blackshield branded rifle frame used for their more 'modern' firearms. Can be assembled into a Duty or a Watchtower"
+	desc = "A lightweight rifle frame, matches the receiver profile of both the Duty and Watchtower rifles."
 	icon_state = "frame_serbrifle"
 	result = /obj/item/gun/projectile/automatic/duty
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/serb)

@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/thompson
-	name = "\"Chicago Typewriter\" SMG"
-	desc = "The \"Chicago Typewriter\", better known as the Thompson SMG, was a workhorse back in the olden-days on Sol. Used by mobsters and law enforcement alike.\
-		 While the gun was once religated to only stage work past the 20th century this relic has somehow made the rounds again through cheap, various licensed disks."
+	name = "\"Tommy\" SMG"
+	desc = "A reproduction Thompson SMG from the days of old, originally intended for use in combat recreations and rare in physical museums."
 	icon = 'icons/obj/guns/projectile/thompson.dmi'
 	icon_state = "thompson"
 	item_state = "thompson"
