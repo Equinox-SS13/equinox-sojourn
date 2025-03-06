@@ -1,6 +1,6 @@
 /obj/item/gun/energy/laser
 	name = "\"Lightfall\" laser rifle"
-	desc = "\"Old Testament\" brand laser carbine. Deadly and radiant, like the divine wrath it represents."
+	desc = "A reliable run of the mill church-made laser rifle."
 	icon = 'icons/obj/guns/energy/laser.dmi' // No longer scoped, stop the lies!
 	icon_state = "laser"
 	item_state = "laser"
@@ -36,8 +36,8 @@
 	serial_type = "SI"
 
 /obj/item/gun/energy/laser/mounted/blitz
-	name = "SDF LR \"Strahl\""
-	desc = "A miniaturized laser rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
+	name = "\"Ray\" mounted laser gun"		//What's up with you people and using random German words for gun names. Changed to English.
+	desc = "A laser pistol re-tooled for use by a cyborg."
 	icon_state = "laser_turret"
 	damage_multiplier = 0.9
 	charge_meter = FALSE
@@ -48,7 +48,7 @@
 
 /obj/item/gun/energy/laser/mounted/cyborg
 	name = "integrated \"Cog\" laser carbine"
-	desc = "A Greyson Positronic design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made."
+	desc = "A Cog laser rifle re-tooled for use by a cyborg."
 	icon = 'icons/obj/guns/energy/cog.dmi'
 	icon_state = "cog"
 	recharge_time = 4 //Time it takes for shots to recharge (in ticks)
@@ -58,19 +58,19 @@
 	charge_cost = 50
 
 /obj/item/gun/energy/laser/practice
-	name = "OT LG \"Lightfall\" - P"
-	desc = "A modified version of \"Old Testament\" brand laser carbine, this one fires less concentrated energy bolts, designed for target practice."
+	name = "\"Lightfall\" practice laser rifle"
+	desc = "A modified versiion of the Lightfall laser rifle firing weaker shots, intended for target practice."
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_WOOD = 2)
 	price_tag = 150
 	projectile_type = /obj/item/projectile/beam/practice
 
 /obj/item/gun/energy/captain
-	name = "\"Destiny\" energy pistol"
+	name = "\"Destiny\" vintage laser pistol"
 	icon = 'icons/obj/guns/energy/capgun.dmi'
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	item_charge_meter = TRUE
-	desc = "This self-recharging weapon is old, yet still robust and reliable. It's marked with an old Greyson Positronic brand, a distant reminder of what this corporation was, before it fell to ruin. Also has the ablity to have a Master Unmaker integrated into it."
+	desc = "An hand-made ornamental version of a an already rare self-recharging laser pistol."
 	force = WEAPON_FORCE_PAINFUL
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
@@ -93,9 +93,8 @@
 	wield_delay_factor = 0.2 // 20 vig
 
 /obj/item/gun/energy/zwang
-	name = "\"Zwang\" energy revolver"
-	desc = "The \"Zwang\" is a law enforcer's best friend of a sidearm. Carrying both an extremely effective lethal and non-lethal firemode. \
-	Luckily, it does not sacrifice style for efficiency. The 'cylinder' spins its cell while firing, mimicking a double-action revolver mechanism to make use of multiple connection points."
+	name = "\"Enforcer\" energy revolver"	//German name again but this time it's a cop gun dude BLOW UP!!!!		Changed name.
+	desc = "A dual-mode laser pistol styled after a traditional revolver for the sake of theatrics and cool factor."
 	icon = 'icons/obj/guns/energy/zwang.dmi'
 	icon_state = "zwang"
 	item_state = "zwang"

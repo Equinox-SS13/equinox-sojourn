@@ -1,7 +1,6 @@
 /obj/item/gun/energy/gun/nuclear
-	name = "\"EBR-IV\" Nuclear Particle Rifle"
-	desc = "A prototype of a 'self-sustaining' experimental breeder rifle feeding itself off a built-in nuclear reactor. Projecting either high powered tazer shots or deadly particle beams at will of it's user. \
-	Neither Soteria nor Sol Military take any responsiblity for deaths of it's users."
+	name = "\"EBR-4\" fission rifle"
+	desc = "An expensive and unreliable prototype dual-mode self-recharging nuclear gun."
 	icon = 'icons/obj/guns/energy/nucgun.dmi'
 	icon_state = "nucgun"
 	item_charge_meter = TRUE
