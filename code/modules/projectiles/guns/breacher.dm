@@ -168,7 +168,7 @@
 
 /obj/item/hatton_magazine/moebius
 	name = "\"Q-del\" gas tube"
-	dedsc = "A gas tube filled to capacity with superheated gas, meant to be loaded in a breaching tool. This one is in science colors."
+	desc = "A gas tube filled to capacity with superheated gas, meant to be loaded in a breaching tool. This one is in science colors."
 	icon_state = "Moebius_box1"
 	matter = list(MATERIAL_PLASMA = 10, MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 2)
 	charge = 2
