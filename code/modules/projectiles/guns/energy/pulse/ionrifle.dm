@@ -1,6 +1,6 @@
 /obj/item/gun/energy/ionrifle
 	name = "\"Halicon\" ion-rifle"
-	desc = "A man-portable anti-armor weapon designed to disable electronic threats. Not the best of it's type, but gets the job done."
+	desc = "A man-portable anti-armor weapon designed to disable electronic threats. Not the best of its type, but gets the job done."
 	icon = 'icons/obj/guns/energy/iongun.dmi'
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
