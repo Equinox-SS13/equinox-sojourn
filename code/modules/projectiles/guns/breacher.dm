@@ -56,7 +56,7 @@
 		user.put_in_hands(magazine)
 		magazine.update_icon()
 		magazine = null
-		to_chat(user, SPAN_NOTICE("You pull the gas tube out of breaching tool!"))
+		to_chat(user, SPAN_NOTICE("You pull the gas tube out of the [src]!"))
 	update_icon()
 	return
 
