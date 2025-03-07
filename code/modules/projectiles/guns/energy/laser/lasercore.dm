@@ -57,7 +57,7 @@
 
 /obj/item/gun/energy/lasercore/militia
 	name = "Militia \"Core\" laser rifle"
-	desc = "A slower-firing in-colony variant of the Laser Core rifle with minor improvements."
+	desc = "A slower-firing in-colony variant of the Laser Core rifle with minor improvements, such as reduced power consumption."
 	icon = 'icons/obj/guns/energy/lasercore_bs.dmi'
 	icon_state = "lcore"
 	item_state = "lcore"
