@@ -22,8 +22,7 @@
 
 /obj/item/gun/energy/bsrifle
 	name = "integrated \"STS\" Burst rifle"
-	desc = "A lightweight modified variant of the STS-PARA that has been modified to serve as the main-arm for a combat bot, much of its comfort features have been\
-	removed in order to maximize space for an integral flash-synthesizer hooked directly to its power, keeping it flush with ammo, so long as the power holds."
+	desc = "A modified variant of the STS rifle that has been modified to serve as the primary weapon for a combat robot, connected to a synthesizer."
 	icon = 'icons/obj/robot_items.dmi'
 	icon_state = "security_rifle"
 	item_state = "security_rifle"
