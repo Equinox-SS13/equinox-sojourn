@@ -49,7 +49,7 @@
 	price_tag = 1250
 
 /obj/item/gun/energy/laser/railgun/mounted
-	name = "\"Shrapnel\" mounted 'railgun'"
+	name = "\"Shrapnel\" mounted \'railgun\'"
 	desc = "An energy gun that employs a matter fabricator to mimic a railgun."
 	icon_state = "shrapnel"
 	self_recharge = 1
@@ -160,12 +160,10 @@
 	src.visible_message("\The [src]'s vents open valves atop of the exterior coil mounts, cooling itself down.")
 	playsound(usr.loc, 'sound/weapons/guns/interact/gauss_vent.ogg', 50, 1)
 */
-//Gauss-rifle type, snowflake launcher mixed with rail rifle and hydrogen gun code. Consumes matter-stack and cell charge to fire. - Rebel0				//Bro. What.
+//Gauss-rifle type, snowflake launcher mixed with rail rifle and hydrogen gun code. Consumes matter-stack and cell charge to fire. - Rebel0
 /obj/item/gun/energy/laser/railgun/gauss
 	name = "\"Bat'ko\" gauss rifle"
-	desc = "A rather heavy rifle sporting a cell-loading mount, an adjustable recoil-compensating stock, a hand-crank to manually chamber the next round and a series of coils lining its front. \
-	This strange gauss coil rifle has valves along the large, external coil mounts. To fire this gun requires constant venting, lest it overheats. \
-	At the stock a large script-styled 'M' appears to be engraved into it, a form of signature from its designer along with an artificer Guild logo."
+	desc = "A heavy cell-loaded gauss rifle fitted with a hand-crank to manually chamber the next round and a series of coils lining its front. This strange rifle has valves along the external coil mounts. Firing this gun requires constant venting."
 	icon = 'icons/obj/guns/energy/gauss.dmi'
 	icon_state = "gauss"
 	item_state = "gauss"
