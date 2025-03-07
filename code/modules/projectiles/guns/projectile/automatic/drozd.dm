@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/automatic/drozd
 	name = "Excelsior \"Drozd\" SMG"
 	desc = "\"The supremacy of the proletariat will cause them to vanish still faster.\"\
-	A specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines."
+		A specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines."
 	icon = 'icons/obj/guns/projectile/drozd.dmi'
 	icon_state = "drozd"
 	item_state = "drozd"
@@ -31,7 +31,7 @@
 
 /obj/item/gun/projectile/automatic/drozd/NM_colony
 	name = "\"Thrush\" SMG"
-	desc = "An in-colony specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines.."
+	desc = "An in-colony specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines."
 	icon = 'icons/obj/guns/projectile/drozd_bs.dmi'
 	icon_state = "drozd-bs"
 	item_state = "drozd-bs"
