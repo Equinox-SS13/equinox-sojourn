@@ -1,6 +1,6 @@
 /obj/item/gun/energy/centauri
 	name = "\"Centauri\" laser SMG"
-	desc = "A stable in-colony laser gun designed by the local science department. Slots medium cells."
+	desc = "A stable, plasma-cooled in-colony laser gun designed by the local science department. Slots medium cells."
 	icon = 'icons/obj/guns/energy/centauri.dmi'
 	icon_state = "centauri"
 	item_state = "centauri"
