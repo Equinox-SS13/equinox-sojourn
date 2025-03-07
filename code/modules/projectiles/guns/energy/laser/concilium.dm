@@ -1,6 +1,6 @@
 /obj/item/gun/energy/concillium
 	name = "\"Concillium\" laser rifle"
-	desc = "A church-made automatic laser rifle with poor accuracy and stopping power. Slots large power cells."
+	desc = "A church-made automatic laser rifle with a high rate of fire, but poor accuracy and stopping power. Slots large power cells."
 	icon = 'icons/obj/guns/energy/concilium.dmi'
 	icon_state = "concilium"
 	item_state = null	//so the human update icon uses the icon_state instead.
