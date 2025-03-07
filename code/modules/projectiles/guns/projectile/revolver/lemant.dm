@@ -40,7 +40,7 @@
 
 	init_firemodes = list(
 		SEMI_AUTO_SOMEDELAY,
-		list(mode_name="fire 20mm shell", mode_desc="Shoot the underbarrel shotgun shell",  burst=null, fire_delay=null, move_delay=null,  icon="grenade", use_launcher=1)
+		list(mode_name="fire 20mm shell", mode_desc="Shoot the  shotgun shell",  burst=null, fire_delay=null, move_delay=null,  icon="grenade", use_launcher=1)
 		)
 
 	init_recoil = HANDGUN_RECOIL(0.5)
@@ -167,7 +167,7 @@
 
 /obj/item/gun/projectile/revolver/deacon
 	name = "\"Deacon\" heavy revolver"
-	desc = "An anomalous weapon - taking after the shape of a Pilgrim revolver, in an extremely heavy configuration. Chambered in 12mm, loads grenades in it's underbarrel attachment."
+	desc = "An anomalous weapon - taking after the shape of a Pilgrim revolver, in an extremely heavy configuration. Chambered in 12mm, loads grenades in its underbarrel attachment."
 	icon = 'icons/obj/guns/projectile/lemant_blue.dmi'
 	icon_state = "lemant_blue"
 	item_state = "lemant_blue"
