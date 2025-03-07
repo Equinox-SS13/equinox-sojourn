@@ -4,7 +4,7 @@
 	icon_state = "carpediem"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "A ceremonial church-made energy rifle with powerful damage and a distinct lack of much else."
+	desc = "A ceremonial church-made energy rifle that deals considerable damage but lacks the kind of rate of fire to make it shine."
 	fire_sound = 'sound/weapons/energy/lasmusket_fire.ogg'
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
