@@ -31,7 +31,7 @@
 
 /obj/item/gun/projectile/revolver/lemant/belt
 	name = "\"Devout\" belt-fed revolver"
-	desc = "An in-colony version of the Pilgrim revolver that feeds from a belt instead of it's traditional nine-round chamber. Chambered in 10mm, takes a single 20mm shell - truly terrible."
+	desc = "An in-colony version of the Pilgrim revolver that feeds from a belt instead of its traditional nine-round chamber. Chambered in 10mm, takes a single 20mm shell - truly terrible."
 	icon = 'icons/obj/guns/projectile/lemant_way.dmi'
 	icon_state = "lemant_way"
 	item_state = "lemant_way"
