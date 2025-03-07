@@ -13,7 +13,7 @@ It also has more matterals then it takes to craft as a way to have a sunk cost.
 	icon_state = "abdication"
 	item_state = null
 	item_charge_meter = TRUE
-	desc = "An in-colony \"laser shotgun\" made by the science department, iterated on by engineering. Can fire a scatter of beams, a flare, or a powerful concentrated beam."
+	desc = "An in-colony \"laser shotgun\" made by the science department, iterated on by engineering. Can fire a scatter of beams, a flare, or a powerful concentrated beam that would empty the cell."
 	fire_sound = 'sound/weapons/energy/emitter2.ogg'
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/energy
 	can_dual = FALSE
