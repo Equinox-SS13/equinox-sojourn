@@ -18,7 +18,7 @@
 
 /obj/item/gun/energy/IRKDissolver //IRK = Irkalla, marker so people can have an easier time saying what I made
 	name = "\"Dissolver\" fission rifle" //Tactical Radiation Rifle Dissolver or for the whole 3 Star Trek enjoyers with us Thalaron Radiation Rifle	//Comment no longer relevant.
-	desc = "An in-colony modification of the EBR-4 fission rifle that lacks a stun setting and projects higher levels of radiation."	//The old description was so bad like holy fucking snowflake gun batman
+	desc = "An in-colony modification of the EBR-4 fission rifle that lacks a stun setting and projects higher levels of radiation."
 	icon = 'icons/obj/guns/energy/nucgun2.dmi'
 	icon_state = "nucgun2"
 	item_charge_meter = TRUE
