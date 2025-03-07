@@ -1,6 +1,6 @@
 /obj/item/gun/energy/gun
 	name = "\"Spider Rose\" energy pistol"
-	desc = "A versatile dual-mode energy handgun."
+	desc = "A versatile dual-mode energy handgun with variable power consumption."
 	icon = 'icons/obj/guns/energy/egun.dmi'
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -72,8 +72,8 @@
 		update_mode()
 
 /obj/item/gun/energy/gun/martin/upgraded
-	name = "Overclocked \"Martin\" energy pistol"
-	desc = "An overclocked variant of the Martin energy pistol."
+	name = "Optimized \"Martin\" energy pistol"
+	desc = "An optimized variant of the Martin energy pistol that consumes less power. Slots small cells."
 	icon_state = "PDWU"
 	charge_cost = 25
 	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_PLASTIC = 4, MATERIAL_SILVER = 2, MATERIAL_URANIUM = 1)
