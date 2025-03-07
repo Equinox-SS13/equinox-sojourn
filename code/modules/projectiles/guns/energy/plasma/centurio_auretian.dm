@@ -1,6 +1,6 @@
 /obj/item/gun/energy/centurio
 	name = "\"Century\" plasma pistol"
-	desc = "An in-colony compact dual-mode plasma gun."
+	desc = "A compact in-colony dual-mode plasma pistol of sturdy construction."
 	icon = 'icons/obj/guns/energy/toxgun.dmi'
 	icon_state = "toxgun"
 	w_class = ITEM_SIZE_NORMAL
