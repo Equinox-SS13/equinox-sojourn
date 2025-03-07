@@ -37,7 +37,7 @@
 
 
 /obj/item/gun/energy/plasma/mounted/blitz
-	name = "\"Burner\" integrated plasma rifle"		//ENOUGH WITH THE FUCKING GERMAN NAMES!!!! FUCKING ENOUGH!!!!!!!!!!! Changed to an English name.
+	name = "\"Burner\" integrated plasma rifle"		//ENOUGH WITH THE GERMAN NAMES! Changed to an English name.
 	desc = "A miniaturized plasma rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "plasma_turret"
 	charge_meter = FALSE
