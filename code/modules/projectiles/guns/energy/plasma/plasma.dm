@@ -1,6 +1,6 @@
 /obj/item/gun/energy/plasma
 	name = "\"Dominion\" plasma rifle"
-	desc = "An extremely high cost plasma rifle usually reserved for specialist units."
+	desc = "An extremely high cost plasma rifle usually reserved for specialist units, fitted with a three-position power selector."
 	icon = 'icons/obj/guns/energy/pulse.dmi'
 	icon_state = "pulse"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -22,7 +22,7 @@
 	init_firemodes = list(
 		list(mode_name="burn", mode_desc="A relatively light plasma round", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=1, fire_delay=4, charge_cost=15, icon="kill", projectile_color = "#0088ff"),
 		list(mode_name="sear", mode_desc="A three-round burst of light plasma rounds.", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=3, fire_delay=12, burst_delay=1, charge_cost=15, icon="burst", projectile_color = "#0088ff"),
-		list(mode_name="INCINERATE", mode_desc=" relatively heavy shot of super-heated plasma that creates a fireball on impact", projectile_type=/obj/item/projectile/plasma/aoe/heat, fire_sound='sound/weapons/energy/incinerate.ogg', burst=1, fire_delay=20, charge_cost=90, icon="destroy", projectile_color = "#FFFFFF"),
+		list(mode_name="INCINERATE", mode_desc="A relatively heavy shot of superheated plasma that creates a fireball on impact", projectile_type=/obj/item/projectile/plasma/aoe/heat, fire_sound='sound/weapons/energy/incinerate.ogg', burst=1, fire_delay=20, charge_cost=90, icon="destroy", projectile_color = "#FFFFFF"),
 	)
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
 	serial_type = "Absolute"
