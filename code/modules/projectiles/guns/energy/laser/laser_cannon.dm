@@ -1,6 +1,6 @@
 /obj/item/gun/energy/lasercannon
 	name = "\"Titanica\" laser cannon"
-	desc = "An early iteration of man-portable energy weapons, currently outdated and of horrible quality in comparison to it's successors."
+	desc = "An early iteration of man-portable energy weapons, currently outdated and of horrible quality in comparison to its successors."
 	icon = 'icons/obj/guns/energy/lascannon.dmi'
 	icon_state = "lasercannon"
 	item_state = "lasercannon"
