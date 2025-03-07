@@ -25,7 +25,7 @@
 
 /obj/item/gun/energy/plasma/auretian
 	name = "\"Auretian\" energy pistol"
-	desc = "An unreliable and complicated in-colony dual-mode energy gun that has both a laser emitter and a plasma chamber."
+	desc = "An unreliable and complicated in-colony dual-mode energy gun that has both a laser emitter and a plasma chamber, the first of which is substantially faster firing."
 	icon = 'icons/obj/guns/energy/brigador.dmi'
 	icon_state = "brigador"
 	charge_meter = FALSE
