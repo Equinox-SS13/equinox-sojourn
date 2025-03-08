@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/sbaw
-	name = "\"Mjolnir\" payload rifle"
-	desc = "A 20mm Smooth Bore Assault Weapon(SBAW), the distant relative of the Omnirifle series taking the big-bore utility platform to its logical conclusion. \
-	Taking the role of both assault shotgun and grenade launcher, it's a terrifying implement often used by shock troops to crack light vehicles, mechs, power armor, and infantry in defilade."
+	name = "\"Mjolnir\" assault shotgun"
+	desc = "A mag-fed semi-automatic shotgun with an underbarrel grenade launcher. Chambered in 20mm, fitted with a precision scope."
 	icon = 'icons/obj/guns/projectile/sbaw.dmi'
 	icon_state = "sbaw"
 	item_state = "sbaw"

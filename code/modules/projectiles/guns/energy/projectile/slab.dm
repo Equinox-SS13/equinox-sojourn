@@ -1,8 +1,6 @@
 /obj/item/gun/energy/laser/railgun/pistol/slab
 	name = "\"Slab\" rail pistol"
-	desc = "A variation upon the Guild's famous \"Myrmidon\" rail pistol, this weapon uses a minaturised fusion reactor based on Greyson Positronics schematics to collect microscopic amounts of scrap from the air \
-	and accelerate them to relativistic speeds. Unlike the standard model, this has two firemodes: \"lethal\" and \"more lethal\". It's slow to charge, due to needing consistent maintenance, but an experienced \
-	engineer could tune it back up with a multitool. Smells like copper and iron."
+	desc = "A dual-mode variation of the \"Myrmidon\" rail pistol fitted with a fixed clip of heatsinks, utilizing it's power cell to shave munitions off a solid block within the pistol itself."
 	icon = 'icons/obj/guns/energy/slab.dmi'
 	icon_state = "slab"
 	item_state = "slab"

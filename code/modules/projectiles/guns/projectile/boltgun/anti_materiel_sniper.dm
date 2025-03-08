@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/boltgun/heavysniper
 	name = "Anti-Materiel Rifle"
-	desc = "A heavy anti-materiel rifle fitted with a night-vision scope, it was originally designed for use against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. Fires armor piercing 14.5mm shells."
+	desc = "An exceedingly rare and expensive rifle originally intended for use against combat mech suits and rogue AI armour on Colonies in the fringe. Chambered in 14.5mm."
 	icon = 'icons/obj/guns/projectile/heavysniper.dmi'
 	icon_state = "heavysniper"
 	item_state = "heavysniper"
