@@ -2,9 +2,7 @@
 
 /obj/item/gun/energy/riot_autoshotgun
 	name = "intergrated \"State\" riot shotgun"
-	desc = "A Seinemetall Defense GmbH riot auto action shotgun, its uncommonly seen deployed in most police operation due to the success of the \"stolen\" \"Regulator\" design. \
-	This particular shotgun has been redesigned many times, never quite reaching a standard everyone was happy with, with some lauding it as confusing for a shotgun. \
-	This variant has been designed to flash-synthesise ammunition from an onboard cell, for Synthetic use."
+	desc = "An unorthodox semi-automatic riot shotgun custom fitted for use by a cyborg. Chambered in 20mm."
 	icon = 'icons/obj/robot_items.dmi'
 	icon_state = "riot_shotgun"
 	item_state = "riot_shotgun"
@@ -24,8 +22,7 @@
 
 /obj/item/gun/energy/bsrifle
 	name = "integrated \"STS\" Burst rifle"
-	desc = "A lightweight modified variant of the STS-PARA that has been modified to serve as the main-arm for a combat bot, much of its comfort features have been\
-	removed in order to maximize space for an integral flash-synthesizer hooked directly to its power, keeping it flush with ammo, so long as the power holds."
+	desc = "A modified variant of the STS rifle that has been modified to serve as the primary weapon for a combat robot, connected to a synthesizer."
 	icon = 'icons/obj/robot_items.dmi'
 	icon_state = "security_rifle"
 	item_state = "security_rifle"

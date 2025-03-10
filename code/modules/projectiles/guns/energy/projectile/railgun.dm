@@ -1,7 +1,7 @@
 // Houses the master railgun file to standardize it for all guns & not have issues with overheating.
 /obj/item/gun/energy/laser/railgun
-	name = "Prototype Railgun"
-	desc = "Older designs of the Reductor rail rifle, mixed with scrapped together assets and 3d printed parts, likely not meant to ever really fire but more of a proof of concept that more modern guns are based on. "
+	name = "old railgun"
+	desc = "An outdated experimental design for a railgun. "
 	icon = 'icons/obj/guns/energy/railpistol.dmi'
 	icon_state = "railpistol"
 	item_state = "railpistol"
@@ -23,8 +23,7 @@
 
 /obj/item/gun/energy/laser/railgun/pistol
 	name = "\"Myrmidon\" rail pistol"
-	desc = "\"Artificer's Guild\" brand rail pistol. This gun features a sleek and deadly design with the capability for lethal and non-lethal firing modes. A competant engineer can also overclock it using a wrench, \
-	consuming the cell within for an extra bullet or a powerful explosive round. For the law abiding engineer because rifles are too hard to hide."
+	desc = "An in-colony hybridized rail pistol that feeds from medium power cells."
 	icon = 'icons/obj/guns/energy/railpistol.dmi'
 	icon_state = "railpistol"
 	item_state = "railpistol"
@@ -43,15 +42,15 @@
 	twohanded = FALSE
 	serial_type = "AG"
 	init_firemodes = list(
-		list(mode_name="slug", mode_desc="fires a small metal chunk at light speeds", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
-		list(mode_name="Less-lethal", mode_desc="fires a small rubber chunk at light speeds. Still likely to ruin someones day.", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
-		list(mode_name="grenade", mode_desc="fires a frag synth-shell", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
+		list(mode_name="standard", mode_desc="Fire a hypersonic metal shaving.", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
+		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
+		list(mode_name="rail", mode_desc="Fire a hypersonic metal rail that will explode on impact. This consumes the power cell.", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
 	)
 	price_tag = 1250
 
 /obj/item/gun/energy/laser/railgun/mounted
-	name = "SDF SC \"Schrapnell\""
-	desc = "An energy-based railgun, employing a matter fabricator to pull shotgun rounds from thin air and energy before launching them at faster than light speeds. Has the ablity to have a Master Unmaker integrated into it."
+	name = "\"Shrapnel\" mounted \'railgun\'"
+	desc = "An energy gun that employs a matter fabricator to mimic a railgun."
 	icon_state = "shrapnel"
 	self_recharge = 1
 	use_external_power = 1
@@ -61,9 +60,9 @@
 	cell_type = /obj/item/cell/small/high //Two shots
 	twohanded = FALSE
 	init_firemodes = list(
-		list(mode_name="Buckshot", mode_desc="Fires a buckshot synth-shell", projectile_type=/obj/item/projectile/bullet/pellet/shotgun, charge_cost=100, icon="kill"),
-		list(mode_name="Beanbag", mode_desc="Fires a beanbag synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
-		list(mode_name="Blast", mode_desc="Fires a slug synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=50, icon="destroy"),
+		list(mode_name="standard", mode_desc="Fire a cloud of hypersonic metal shavings.", projectile_type=/obj/item/projectile/bullet/pellet/shotgun, charge_cost=100, icon="kill"),
+		list(mode_name="rubber", mode_desc="Fire a regular shotgun beanbag pellet.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
+		list(mode_name="'rail'", mode_desc="Fire an accelerated slug.", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=50, icon="destroy"),
 	)
 	serial_type = "GP"
 	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_SCOPE)
@@ -71,9 +70,8 @@
 
 //Re-wrote this to be it's own standalone gun to prevent cooling issues.
 /obj/item/gun/energy/laser/railgun/railrifle
-	name = "\"Reductor\" rail rifle"
-	desc = "\"Artificer's Guild\" brand rail gun. This gun features a sleek and deadly design with the capability for lethal and non-lethal firing modes. A competant engineer can also overclock it using a wrench, \
-	consuming the cell within for an extra bullet or a powerful explosive round."
+	name = "\"Reductor\" railgun"
+	desc = "An in-colony hybridized rifle-sized railgun that can be overclocked with a wrench."
 	icon = 'icons/obj/guns/energy/railgun.dmi'
 	icon_state = "railgun"
 	item_state = "railgun"
@@ -87,9 +85,9 @@
 	init_recoil = RIFLE_RECOIL(1)
 	damage_multiplier = 1
 	init_firemodes = list(
-		list(mode_name="slug", mode_desc="fires a large metal chunk at light speeds", projectile_type=/obj/item/projectile/bullet/shotgun/railgun, icon="kill"),
-		list(mode_name="Less-lethal", mode_desc="fires a rubber pellet at light speed. Still likely to ruin somones day.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag/railgun, icon="stun"),
-		list(mode_name="grenade", mode_desc="fires an explosive synth-shell", projectile_type=/obj/item/projectile/bullet/grenade, charge_cost=30000, icon="grenade")
+		list(mode_name="standard", mode_desc="Fire a pointed metal rail.", projectile_type=/obj/item/projectile/bullet/shotgun/railgun, icon="kill"),
+		list(mode_name="rubber", mode_desc="Fire a hypersonic rubber ball. We'll tell the police you had good intentions.", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag/railgun, icon="stun"),
+		list(mode_name="rail", mode_desc="Fire a hypersonic metal rail that will explode on impact. This destroys the power cell.", projectile_type=/obj/item/projectile/bullet/grenade, charge_cost=30000, icon="grenade")
 	)
 	consume_cell = FALSE
 	price_tag = 2250
@@ -102,7 +100,7 @@
 /obj/item/gun/energy/laser/railgun/railrifle/consume_next_projectile(mob/user)
 	if(!cell)
 		return null
-//commented out for now I wont remove the code incase someones willing to fix it. Currently does no damage to the user for overheating. -Benl8561
+//commented out for now I wont remove the code incase someones willing to fix it. Currently does no damage to the user for overheating. -Benl8561		//wonder how old this is lol
 /**
 	var/datum/component/heat/H = GetComponent(/datum/component/heat)
 	H.tickHeat()
@@ -165,9 +163,7 @@
 //Gauss-rifle type, snowflake launcher mixed with rail rifle and hydrogen gun code. Consumes matter-stack and cell charge to fire. - Rebel0
 /obj/item/gun/energy/laser/railgun/gauss
 	name = "\"Bat'ko\" gauss rifle"
-	desc = "A rather heavy rifle sporting a cell-loading mount, an adjustable recoil-compensating stock, a hand-crank to manually chamber the next round and a series of coils lining its front. \
-	This strange gauss coil rifle has valves along the large, external coil mounts. To fire this gun requires constant venting, lest it overheats. \
-	At the stock a large script-styled 'M' appears to be engraved into it, a form of signature from its designer along with an artificer Guild logo."
+	desc = "A heavy cell-loaded gauss rifle fitted with a hand-crank to manually chamber the next round and a series of coils lining its front. This strange rifle has valves along the external coil mounts. Firing this gun requires constant venting."
 	icon = 'icons/obj/guns/energy/gauss.dmi'
 	icon_state = "gauss"
 	item_state = "gauss"
@@ -185,7 +181,7 @@
 	slowdown_hold = 1.5
 	init_firemodes = list(
 		list(mode_name="powered-rod", mode_desc="fires a metal rod at incredible speeds", projectile_type=/obj/item/projectile/bullet/gauss, icon="kill"),
-		list(mode_name="fragmented scrap", mode_desc="fires a brittle, sharp piece of scrap-metal", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
+		list(mode_name="fragmented scrap", mode_desc="fires a brittle, sharp piece of scrap metal", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
 	)
 	serial_type = "AG"
 	consume_cell = FALSE

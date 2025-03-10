@@ -1,8 +1,6 @@
 /obj/item/gun/energy/centauri
-	name = "SI PDW \"Centauri\""
-	desc = "\"Soteria\" brand laser sub-machine gun with a great firerate. \
-	With a built in red dotted scope and plasma cooling build into the barrel makes recoil and sight not an issue. \
-	Unlike other more scrapped together laser sub-machine guns this one is built to not over-heat itself with added delays in firing."
+	name = "\"Centauri\" laser SMG"
+	desc = "A stable, plasma-cooled in-colony laser gun designed by the local science department. Slots medium cells."
 	icon = 'icons/obj/guns/energy/centauri.dmi'
 	icon_state = "centauri"
 	item_state = "centauri"

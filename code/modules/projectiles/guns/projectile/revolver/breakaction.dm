@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/revolver/rev10
 	name = "\"Frontier\" magnum revolver"
-	desc = "A well made police revolver used by many departments around the universal frontier. While the design appears to predate its production by H&S it has become iconic to their company for stopping power. \
-	It appears to take 10mm magnum rounds loaded via its break-action."
+	desc = "A reliable break-action revolver, still in relevance today for it's ease of use and dirt cheap price. Chambered in 10mm."
 	icon = 'icons/obj/guns/projectile/rev10.dmi'
 	icon_state = "rev10"
 	item_state = "rev10"
@@ -53,9 +52,8 @@
 	resultvars = list(/obj/item/gun/projectile/revolver/rev10, /obj/item/gun/projectile/revolver/rev10/rex10)
 
 /obj/item/gun/projectile/revolver/rev10/rex10
-	name = "\"Cowboy\" double-action revolver"
-	desc = "A relatively common gun around the frontier of the galaxy. This gun can be found worn by outlaws, criminals and small-time sheriffs or law enforcement. \
-	It lacks any serial markings; it's hard to tell who even produces these guns they're so common. But hey, easy reloading via its break-action!"
+	name = "\"Cowboy\" revolver"
+	desc = "A common break-action revolver for the aspiring outlaw or the intrepid gunslinger. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/rex10.dmi'
 	icon_state = "rex10"
 	item_state = "rex10"
@@ -73,11 +71,8 @@
 	serial_type = "H&S"
 
 /obj/item/gun/projectile/revolver/rev10/mateba
-	name = "\"Mateba\" autorevolver"
-	desc = "The \"Mateba\" autorevolver is a unique semiautomatic revolver chambered in 12mm whose patents were acquired by Seinemetall Defense GmbH for production. \
-			Its two-part frame is divided between cylinder and barrel, mounted atop rails on the lower grip, effectively reducing muzzle flip \
-			by aligning its bore with the operator's holding point, and sliding the whole mechanism back upon shooting thanks to its potent recoil compensator. \
-			Such a mechanism, sadly, limits the caliber of this gun to the highest bore despite having sported interchangeable barrels at some point."
+	name = "\"Matylda\" autorevolver"
+	desc = "A rare double-action revolver with a low bore axis and a specialized recoil mitigation system. Chambered in 12mm."
 	icon = 'icons/obj/guns/projectile/mateba.dmi'
 	icon_state = "mateba"
 	item_state = "mateba"
@@ -104,8 +99,8 @@
 	serial_type = "SD GmbH"
 
 /obj/item/part/gun/frame/mateba
-	name = "Mateba frame"
-	desc = "A \"Mateba\" autorevolver frame. A specialized, recoil-absorbing revolver frame for a potent firearm chambered in 12mm."
+	name = "Matylda frame"
+	desc = "A \"Matylda\" autorevolver frame. A specialized, recoil-absorbing revolver frame for a potent firearm chambered in 12mm."
 	icon_state = "frame_mateba"
 	result = /obj/item/gun/projectile/revolver/rev10/mateba
 	gripvars = list(/obj/item/part/gun/grip/wood)

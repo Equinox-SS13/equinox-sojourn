@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/boltgun/scout
-	name = "\"Scout\" heavy bolt-action rifle"
-	desc = "Weapon for hunting, sniping, and competition shooting. Chambered in 8.6x70mm Heavy Rifle rounds, it packs the reach, the punch and the accuracy for every occasion, however saying it kicks like a mule would only be a plain understatement."
+	name = "\"Magnum\" sniper rifle"
+	desc = "An extremely accurate bolt-action sniper rifle used by Colonial hostage rescue marksmen when the situation has absolutely no margin for error. Chambered in 8.6mm."
 	icon = 'icons/obj/guns/projectile/heavyboltgun.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
@@ -29,8 +29,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/scout = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/hrifle = 1)
 
 /obj/item/part/gun/frame/scout
-	name = "Scout frame"
-	desc = "A \"Scout\" heavy bolt-action rifle frame. For when you really want to put a hole in your target."
+	name = "Magnum rifle frame"
+	desc = "A \"Magnum\" bolt-action sniper rifle frame."
 	icon_state = "frame_scout"
 	resultvars = list(/obj/item/gun/projectile/boltgun/scout)
 	gripvars = list(/obj/item/part/gun/grip/rubber)
@@ -38,8 +38,8 @@
 	barrelvars = list(/obj/item/part/gun/barrel/hrifle)
 
 /obj/item/gun/projectile/boltgun/sawn/scout
-	name = "\"obrez\" heavy bolt-action rifle"
-	desc = "A crudely mangled and sawn-down 8.6x70mm bolt action rifle. Rifle was fine."
+	name = "\"Hand of God\" sawn-off sniper rifle"
+	desc = "A pocketable sawn-off bolt-action sniper rifle with an apt nickname, it's in the shooter's interest not to miss. Chambered in 8.6mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/heavyboltgun.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"

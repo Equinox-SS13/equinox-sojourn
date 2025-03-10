@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/shotgun/bull
 	name = "\"Bull\" shotgun"
-	desc = "A \"Holland & Sullivan\" double-barreled pump-action shotgun. A nightmare of engineering, this gun is often regarded as one of the worst firearms ever produced. \
-			Due to shorter than usual barrels, damages are somewhat lower and recoil suffers as a result. The ability to fire both barrels at once seems more of a gimmick than a feature. \
-			A number of scratches marr the finish by the ejection ports."
+	desc = "A short, tacky, low quality pump-action over/under double-barrel shotgun that can fire both barrels simultaneously. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/PeaceWalker.dmi'
 	icon_state = "PeaceWalker"
 	item_state = "PW"

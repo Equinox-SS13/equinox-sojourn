@@ -1,8 +1,7 @@
 // Welder that use plasma flasks
 /obj/item/tool/plasma_torch
 	name = "plasma torch"
-	desc = "A welder that uses a cryo-sealed hydrogen fuel cell to weld with the heat of a sun. While better than a conventional welders and even rivaling greyson prositronics its \
-	costly fuel supply and risks involved stopped the tool from ever seeing commercial success, a choice for a specialist and nobody else."
+	desc = "A welder that uses a cryo-sealed hydrogen fuel cells to weld with the heat of a sun. While better than a conventional welder, it's costly fuel and involved risks makes it a specialist's choice."
 	icon = 'icons/obj/guns/plasma/hydrogen.dmi'
 	icon_state = "welder"
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_MHYDROGEN = 1, MATERIAL_TRITIUM = 1)
