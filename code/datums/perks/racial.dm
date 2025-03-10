@@ -760,6 +760,9 @@
 		for(var/obj/item/organ/external/E in H.organs)
 			was_nonsolid = E.nonsolid
 			E.nonsolid = !E.nonsolid
+		if(world.time < cooldown_time)
+			to_chat(usr, SPAN_NOTICE("You can't change your body's opacity again this quickly!"))
+			return FALSE
 		cooldown_time = world.time + 1 MINUTES // Short cooldown to prevent spamming as it can be potentially expensive
 		H.alpha = was_nonsolid ? 255 : 210 // Yeah uh, the organ code doesn't really contribute to the overall alpha lmao
 		H.update_body()
