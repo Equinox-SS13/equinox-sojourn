@@ -27,8 +27,6 @@ Bullet also tend to have more armor against them do to this and can be douged un
 /obj/item/projectile/bullet/on_hit(atom/target)
 	if(testing)
 		return
-	if (..(target))
-		var/mob/living/L = target
 
 /obj/item/projectile/bullet/attack_mob(var/mob/living/target_mob, distance, miss_modifier)
 	if(penetrating > 0 && damage_types[BRUTE] > 20 && prob(damage_types[BRUTE]))

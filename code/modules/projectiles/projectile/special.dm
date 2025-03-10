@@ -61,7 +61,7 @@
 	damage_types = list(BRUTE = 30)
 
 /obj/item/projectile/bullet/rocket/scrap/on_impact(atom/target)
-    if(!testing)
+	if(!testing)
 		return
 	explosion(target, 0, 0, 2, 3)
 

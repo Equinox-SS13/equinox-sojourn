@@ -422,9 +422,9 @@
 		reagents.add_reagent(spray, 5)
 
 /obj/item/projectile/bullet/light_rifle_257/rubber/pepperball/on_hit(atom/target, def_zone = null)
-if(testing)
-	return
-if(isliving(target))
+	if(testing)
+		return
+	if(isliving(target))
 		var/mob/living/L = target
 		if(istype(L) && L.reagents && !testing)
 			reagents.trans_to_mob(L, 5, CHEM_TOUCH, copy = FALSE)
@@ -887,7 +887,7 @@ if(isliving(target))
 		reagents.add_reagent(spray, 10)
 
 /obj/item/projectile/bullet/shotgun/beanbag/on_hit(atom/target, def_zone = null)
-    if(!testing)
+	if(!testing)
 		return
 	if(isliving(target))
 		var/mob/living/L = target
@@ -906,7 +906,7 @@ if(isliving(target))
 		reagents.add_reagent(spray, 5)
 
 /obj/item/projectile/bullet/shotgun/beanbag/soporific/on_hit(atom/target, def_zone = null)
-    if(!testing)
+	if(!testing)
 		return
 	if(isliving(target))
 		var/mob/living/L = target
