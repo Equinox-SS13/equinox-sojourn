@@ -1859,3 +1859,4 @@
 	max_upgrades = 1
 	cold_protection = UPPER_TORSO|LEGS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	tool_qualities = list(QUALITY_ARMOR = 100)
