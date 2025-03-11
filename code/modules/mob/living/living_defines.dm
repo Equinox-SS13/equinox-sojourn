@@ -14,7 +14,7 @@
 	var/life_cycles_before_scan = 360
 
 	var/stasis = FALSE
-	var/AI_inactive = FALSE
+	var/AI_inactive = TRUE // Set it to inactive by default to reduce CPU load by A LOT. Removes infighting before players are there but who care.
 
 	var/inventory_shown = 1
 
