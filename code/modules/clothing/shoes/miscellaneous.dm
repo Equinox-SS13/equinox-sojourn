@@ -440,7 +440,6 @@
 	can_hold_knife = TRUE
 	armor_list = list(melee = 10, bullet = 0, energy = 15, bomb = 20, bio = 0, rad = 0)
 
-/*Moyo Boots*/
 
 /obj/item/clothing/shoes/moyo_boots
 	name = "moyo thighighs"
