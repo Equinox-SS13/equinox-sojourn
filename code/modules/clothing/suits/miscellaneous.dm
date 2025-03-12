@@ -499,14 +499,6 @@ obj/item/clothing/suit/gownrisque/alt
 	desc = "A light and open robe made of the same sleek material moyo usually use. This dress however is much darker and more fanciful, worthy of nobility."
 	icon_state = "moyo_formal"
 	item_state = "moyo_formal"
-	armor_list = list(
-		melee = 2,
-		bullet = 1,
-		energy = 1,
-		bomb = 0,
-		bio = 0,
-		rad = 0
-		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	min_cold_protection_temperature = T0C - 20

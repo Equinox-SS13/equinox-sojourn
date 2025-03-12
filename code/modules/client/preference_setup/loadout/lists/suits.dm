@@ -222,10 +222,3 @@
 /datum/gear/suit/moyo_formal
 	display_name ="abyssal robes"
 	path = /obj/item/clothing/suit/storage/moyo_formal
-
-/datum/gear/suit
-	display_name = "abyssal scout armor"
-	path = /obj/item/clothing/suit/armor/moyo_scout
-	slot = slot_wear_suit
-	sort_category = "Suits and Overwear"
-	cost = 3

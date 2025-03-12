@@ -119,4 +119,4 @@
 	path = /obj/item/clothing/shoes/moyo_boots
 	slot = slot_shoes
 	sort_category = "Shoes and Footwear"
-	cost = 2 //noslip and semi-insulated
+	cost = 2 //semi-insulated

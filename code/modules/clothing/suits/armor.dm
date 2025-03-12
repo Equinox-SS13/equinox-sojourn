@@ -1835,8 +1835,6 @@
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 40, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 
-//moyo gear
-
 /obj/item/clothing/suit/armor/moyo_scout
 	name = "abyssal scout armour"
 	desc = "Scout armour designed for mobility over protection, do not get shot in this. Made in the Abyss."
