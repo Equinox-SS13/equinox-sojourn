@@ -446,6 +446,5 @@
 	name = "moyo thighighs"
 	desc = "A pair of sleek thigh highs designed for deep ocean use. Non slip grips. Made in the Abyss."
 	icon_state = "moyo_boots"
-	item_flags = NOSLIP
 	siemens_coefficient = 0.3
 	can_hold_knife = TRUE
