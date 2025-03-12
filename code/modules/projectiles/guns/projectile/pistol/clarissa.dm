@@ -1,8 +1,7 @@
  //For loadouts so we dont give them a 1.1 damage mod pistol to people
 /obj/item/gun/projectile/clarissa
 	name = "\"Clarissa\" pistol"
-	desc = "A pocket pistol made on demand, it uses older designs of fully plastic pistols used by spies to take down a target while undercover as civilians,\
-	but now is commonly for self-defence. Due to its full plastic internals, it has low stopping power and is impossible to maintain. Uses 9mm rounds."
+	desc = "A somewhat flimsy sub-compact pistol, used commonly for self-defense on a budget. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/clarissa_black.dmi'
 	icon_state = "clarissa"
 	item_state = "clarissa"
@@ -62,7 +61,7 @@
 
 /obj/item/gun/projectile/makarov
 	name = "\"Makarov\" pistol"
-	desc = "Old-designed pistol used by space communists. Small and easily concealable. Uses 9mm rounds."
+	desc = "An extremely outdated pistol. Uses 9mm rounds."
 	icon = 'icons/obj/guns/projectile/makarov.dmi'
 	icon_state = "makarov"
 	w_class = ITEM_SIZE_SMALL
@@ -122,8 +121,8 @@
 	set_item_state(itemstring)
 
 /obj/item/gun/projectile/makarov/moebius
-	name = "SI HG 9mm \"Malpractice\"" // SI stands for Soteria Institution
-	desc = "A small, easily concealable, but somewhat underpowered gun produced by SI as based off the \"Little Comet\" but ended up being a copy of the \"Clarissa\" with white paint. Uses 9mm rounds."
+	name = "\"Malpractice\" pistol" // SI stands for Soteria Institution
+	desc = "An in-colony reproduction of the Clarissa pistol, for medical specialists. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/clarissa_white.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	price_tag = 200

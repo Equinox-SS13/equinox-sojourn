@@ -2,21 +2,18 @@
 /*
 Abdicator
 A powerful gun that is guild crafted only, and for a reason!
-This CQC powerhouse is master of running upto mobs and people alike to point blank unload them.
-Adding this to natural spawns would ruin its many balancing facters on being hard to craft well also powerful!
+This CQC powerhouse is master of running up to mobs and people alike to point blank them.
+Adding this to natural spawns would ruin it's balancing factors, particularly being powerful and hard to craft.
 It also has more matterals then it takes to craft as a way to have a sunk cost.
 */
 
 /obj/item/gun/energy/laser/railgun/abdicator
-	name = "\"Abdicator\" energy shotgun"
+	name = "\"Abdicator\" laser shotgun"
 	icon = 'icons/obj/guns/energy/abdication.dmi'
 	icon_state = "abdication"
 	item_state = null
 	item_charge_meter = TRUE
-	desc = "An energy shotgun that proves the oldest truth that the tallest buildings and most grand achievements are built by digging a deep foundation to set it upon. \
-	It fires a super heated blast of concentrated laser pellets in a similar fashion to the Reductor, but loses stopping power rapidly over a distance, so it is most effective at point blank range. \
-	Unlike the Reductor or Myrmidon, the secondary firing mode uses a chemical blend to fire flare rounds, offering some utility. When overclock, the battery is turned into a rocket propelled grenade, \
-	use with caution. This design was originally blue-printed by the Soteria before cooperation with the Guild allowed for it to see regular use in the hands of an experienced guild adept."
+	desc = "An in-colony \"laser shotgun\" made by the science department, iterated on by engineering. Can fire a scatter of beams, a flare, or a powerful concentrated beam that would empty the cell."
 	fire_sound = 'sound/weapons/energy/emitter2.ogg'
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/energy
 	can_dual = FALSE
@@ -35,9 +32,9 @@ It also has more matterals then it takes to craft as a way to have a sunk cost.
 	max_upgrades = 6 //Has 1 more mod slot
 
 	init_firemodes = list(
-		list(mode_name="laser pellets", mode_desc="fires a shower of spreading lasers", projectile_type=/obj/item/projectile/bullet/pellet/shotgun/energy, icon="kill"),
+		list(mode_name="scattershot", mode_desc="fires several lasers at once", projectile_type=/obj/item/projectile/bullet/pellet/shotgun/energy, icon="kill"),
 		list(mode_name="flare shell", mode_desc="fires an illuminating flare of variable colors", projectile_type=/obj/item/projectile/bullet/flare/chaos, charge_cost=100, icon="grenade"),
-		list(mode_name="grenade", mode_desc="fires an explosive synth-shell", projectile_type=/obj/item/projectile/bullet/rocket/railgun, charge_cost=30000, icon="grenade")
+		list(mode_name="raygun", mode_desc="fires an explosive laser beam", projectile_type=/obj/item/projectile/bullet/rocket/railgun, charge_cost=30000, icon="grenade")
 	)
 	consume_cell = FALSE
 	twohanded = TRUE

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/tesla_shotgun
-	name = "\"Nikolai's Fervor\" tesla shotgun"
-	desc = "An energy shotgun that drains power from a nearby APC to shoot electric blasts. May take time to charge and piss off your local guild adept."
+	name = "\"Nikola's Fervor\" tesla shotgun"
+	desc = "An energy shotgun that drains power from a nearby APC to shoot electric blasts."
 	icon = 'icons/obj/guns/energy/tesla_shotgun.dmi'
 	icon_state = "tesla_shotgun"
 	item_state = "tesla_shotgun"

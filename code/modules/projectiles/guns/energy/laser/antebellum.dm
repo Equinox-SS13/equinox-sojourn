@@ -1,12 +1,10 @@
 /obj/item/gun/energy/plasma/antebellum
-	name = "\"Antebellum\" laser blunderbuss"
+	name = "\"Antebellum\" plasma rifle"
 	icon = 'icons/obj/guns/energy/antebellum.dmi'
 	icon_state = "antebellum"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting Excelsior and psionic creatures. \
-	The Antebellum is a plasma shotgun that uses only Church-branded cells, consuming them and releasing their contents in a formidable burst of plasma and ionized shrapnel.\
-	This one bears a cruciform rosary, for good luck."
+	desc = "An in-colony dual-mode energy gun produced by the church. Fires from proprietary power cells."
 	fire_sound = 'sound/weapons/energy/laser_rifle.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_NORMAL
@@ -19,8 +17,8 @@
 	price_tag = 1250
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	init_firemodes = list(
-		list(mode_name="rapid fire", mode_desc="Light rapid plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/burn.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF", armor_penetration = 5),
-		list(mode_name="grenade", mode_desc="fires a frag biomatter-shell", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
+		list(mode_name="plasma rifle", mode_desc="Fire plasma bolts", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/burn.ogg', fire_delay=8, icon="stun", projectile_color = "#00FFFF"),
+		list(mode_name="grenade", mode_desc="Fashion a frag grenade out of the power cell", projectile_type=/obj/item/projectile/bullet/grenade/frag/nt, charge_cost=30000, icon="grenade"),
 	)
 	twohanded = FALSE
 	var/consume_cell = TRUE

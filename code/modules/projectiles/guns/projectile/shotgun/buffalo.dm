@@ -1,10 +1,6 @@
 /obj/item/gun/projectile/automatic/buff_autoshotgun
 	name = "\"Buffalo\" tactical shotgun" //With correct mods this can be better then the pug
-	desc = "Lightweight, ergonomic and with a fast cycling speed, this semi-automatic shotgun is a breacher's dream. \
-	The internal components are a work of art, able to operate smoothly no matter the circumstance. \
-	A discreet black finish coats its composite polymers and metallic alloys, Blackshield colors stamped to denote its origins. \
-	Under the ejection port stands the figure of a large Sablekyne, large horns pointing forward as they rage on. \
-	The last thing they saw coming. Best used with slugs rather than buckshot due to its rifling."
+	desc = "A lightweight and versatile semi-automatic breaching shotgun. Chambered in 20mm, fitted with a holographic sight."
 	icon = 'icons/obj/guns/projectile/buffalo.dmi'
 	icon_state = "buffalo"
 	item_state = "buffalo"

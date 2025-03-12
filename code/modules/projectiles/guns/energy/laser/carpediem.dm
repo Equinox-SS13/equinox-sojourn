@@ -1,11 +1,10 @@
 /obj/item/gun/energy/carpediem
-	name = "\"Carpediem\" laser musket"
+	name = "\"Carpe Diem\" laser rifle"
 	icon = 'icons/obj/guns/energy/carpediem.dmi'
 	icon_state = "carpediem"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting Excelsior and psionic creatures. \
-	The Carpediem Musket is a laser musket rifle designed for ceremonial usage, though it also packs an impressive punch- even if its rate of fire leaves a lot to be desired."
+	desc = "A ceremonial church-made energy rifle that deals considerable damage but lacks the kind of rate of fire to make it shine."
 	fire_sound = 'sound/weapons/energy/lasmusket_fire.ogg'
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_BULKY

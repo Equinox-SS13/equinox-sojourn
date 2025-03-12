@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump
 	name = "\"Grizzly\" shotgun"
-	desc = "A common open-source pump-action shotgun, a bastard child of the three primary pump shotguns on the market, all rolled together once their patents expired. Can hold up to 4+1 20mm shells in its tube magazine."
+	desc = "A run of the mill civilian pump-action shotgun. Chambered in 20mm, deadly, simple, and reliable."
 	icon = 'icons/obj/guns/projectile/shotgun.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
@@ -68,8 +68,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/shotgun/pump/sawn
-	name = "sawn-down \"Grizzly\" shotgun"
-	desc = "A common open-source pump-action shotgun, a bastard child of the three primary pump shotguns on the market, all rolled together once their patents expired. This one has been slightly cut down."
+	name = "sawn-off \"Grizzly\" shotgun"
+	desc = "A run of the mill civilian pump-action shotgun. Chambered in 20mm and shortened moderately by hand."
 	icon = 'icons/obj/guns/projectile/sawnoff/shotgun.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
@@ -87,8 +87,8 @@
 	wield_delay_factor = 0.3 // 30 vig
 
 /obj/item/gun/projectile/shotgun/pump/obrez
-	name = "obrez \"Grizzly\" shotgun"
-	desc = "A common open-source pump-action shotgun, hacked up, sawn down, and ready to rob a liquor store."
+	name = "\"Grizzly\" shotgun pistol"
+	desc = "A run of the mill civilian pump-action shotgun turned sidearm. Chambered in 20mm, ready to be shoved into a motorcycle holster."
 	icon = 'icons/obj/guns/projectile/sawnoff/shotgunobrez.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"

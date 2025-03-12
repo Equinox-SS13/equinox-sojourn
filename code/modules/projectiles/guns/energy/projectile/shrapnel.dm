@@ -1,7 +1,6 @@
 /obj/item/gun/energy/shrapnel
 	name = "\"Shellshock\" scrap rifle"
-	desc = "A slapped together junk design made as a copy of the far superior Reductor rail gun. It's projectiles fire slower and it has a wider delay between shots with the \
-	same issue of burning batteries out. The matter contained in empty cells can be converted directly into ammunition as well, if the safety bolts are loosened properly."
+	desc = "A slapped together junk design made as a copy of the Reductor railgun. It's projectiles are overall slower and more inaccurate. The matter contained in empty cells can be converted directly into ammunition if the safety bolts are loosened properly."
 	icon = 'icons/obj/guns/energy/energyshotgun.dmi'
 	icon_state = "eshotgun"
 	item_state = "eshotgun"

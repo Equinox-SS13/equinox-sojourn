@@ -1,6 +1,6 @@
 /obj/item/gun/energy/ionrifle
 	name = "\"Halicon\" ion-rifle"
-	desc = "The OT IR Halicon is a man-portable anti-armor weapon designed to disable mechanical threats, produced by Old Testament. Not the best of its type, but gets the job done."
+	desc = "A man-portable anti-armor weapon designed to disable electronic threats. Not the best of its type, but gets the job done."
 	icon = 'icons/obj/guns/energy/iongun.dmi'
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
@@ -28,8 +28,7 @@
 
 /obj/item/gun/energy/ionpistol
 	name = "\"Aedes\" ion-pistol"
-	desc = "A compact ion pistol produced by Seinemetall Defense GmbH, used primarly by police specialist units to disable energy weapons or electronics. \
-	It's sleek compact and design allows for it to be holsterable."
+	desc = "A compact ion pistol, used primarily by police specialist units to disable energy weapons or electronics."
 	icon = 'icons/obj/guns/energy/ionpistol.dmi'
 	icon_state = "ionpistol"
 	item_state = "ionpistol"

@@ -2,8 +2,8 @@
 
 /obj/item/gun/projectile/automatic/pulse_rifle
 	name = "Pulse Rifle"
-	desc = "A pulse-action air-cooled, caseless, automatic assault rifle made by an unknown manufacturer. This weapon is very rare, but deadly efficient. \
-		It's used by elite mercenaries, assassins, or bald marines. Makes you feel like a space marine when you hold it."
+	desc = "\"All right sweethearts, you heard the man and you know the drill. Assholes and elbows!\"\
+	A fully automatic pulse-action rifle with an insanely high magazine capacity and an in-built bullet counter. Chambered in 10x24mm."
 	icon = 'icons/obj/guns/projectile/dallas.dmi'
 	icon_state = "dallas"
 	item_state = "dallas"

@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/shotgun/slidebarrel
 	name = "slide barrel shotgun"
-	desc = "Held together by duct tape and murderous intent, this makeshift shotgun holds a single shot in its sliding barrel. \
-			The crude mechanism forces you to manually eject each fired round, but at least it fits in a holster for a quickdraw surprise."
+	desc = "A crude scrap shotgun. Chambered in 20mm, fits one shot."
 	icon = 'icons/obj/guns/projectile/slideshotgun.dmi'
 	icon_state = "abeinator"
 	item_state = "abeinator"
@@ -46,12 +45,12 @@
 	bolt_open = !bolt_open
 	if(bolt_open)
 		playsound(src.loc, 'sound/weapons/guns/interact/batrifle_magout.ogg', 75, 1)
-		to_chat(user, SPAN_NOTICE("You pull the barrel open."))
+		to_chat(user, SPAN_NOTICE("You pull the barrel out."))
 		unload_ammo(user, allow_dump=1)
 		side_loading(user)
 	else
 		playsound(src.loc, 'sound/weapons/guns/interact/lmg_cock.ogg', 75, 1)
-		to_chat(user, SPAN_NOTICE("You slide the barrel closed."))
+		to_chat(user, SPAN_NOTICE("You push the barrel in."))
 		bolt_open = 0
 	add_fingerprint(user)
 	update_icon()

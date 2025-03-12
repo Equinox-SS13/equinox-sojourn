@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/greasegun
-	name = "M3 \"Grease Gun\" assault SMG"
-	desc = "An old, handy firearm hailing from Sol. Despite it's inredibly dated design it has maintained use within the Sol Federal Stockpiles due to its compactness and sub-sonic rounds. \
-		 It appears to be made for urban combat with a built in silencer and chambered in 9mm; taking specifically only SMG magazines. Reliable but slow firing."
+	name = "\"Greaser\" SMG"
+	desc = "A slow-firing integrally suppressed submachine gun made out of mostly sheet metal. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/greasegun.dmi'
 	icon_state = "greasegun"
 	item_state = "greasegun"
@@ -44,8 +43,8 @@
 	item_state = itemstring
 
 /obj/item/part/gun/frame/grease
-	name = "Grease Gun frame"
-	desc = "A Grease Gun SMG frame. Cheap? Yes, but also effective."
+	name = "Greaser frame"
+	desc = "A cheap frame for a Greaser SMG."
 	icon_state = "frame_grease"
 	result = /obj/item/gun/projectile/automatic/greasegun
 	gripvars = list(/obj/item/part/gun/grip/black)

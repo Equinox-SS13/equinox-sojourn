@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump/swat
 	name = "\"SWAT\" combat shotgun"
-	desc = "The prototype of a Seinemetall Defense GmbH original idea of the \"State\" reinvented to be the be all end all law enforcement shotgun. \
-			The \"SWAT\" main appeal other then pure stopping power is the built in pistol to shoot three round for clearing down range targets trying to run away. \
-			Can hold up to 7+1 20mm shells in its tube magazine, and 9 10x24 rounds in its underslung pistol."
+	desc = "A prototype law enforcement shotgun with an overbarrel caseless burst-fire rifle. Chambered in 20mm and 10x24mm."
 	icon = 'icons/obj/guns/projectile/swat.dmi' //Sprites by Toriate#0657 many loves and thanks to this amazing spriter!
 	icon_state = "swat"
 	item_state = "swat"
@@ -17,9 +15,9 @@
 	damage_multiplier = 1.3
 	penetration_multiplier = 1.3
 	init_recoil = RIFLE_RECOIL(0.6)
-	saw_off = FALSE //No
-	folding_stock = TRUE //we can fold are stocks
-	gun_parts = null //no deconstructing
+	saw_off = FALSE
+	folding_stock = TRUE //we can fold our stock
+	gun_parts = null
 
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
@@ -37,7 +35,7 @@
 	var/datum/firemode/cur_mode = firemodes[sel_mode]
 
 	if(cur_mode.settings["use_launcher"])
-		//We trigger like this three times, and then if nothing is inside the pistol swap back to are normal shotgun mode
+		//We trigger this three times, and then if nothing is inside the pistol we swap back to shotgun mode
 		pistol.Fire(target, user, params, pointblank, reflex)
 		if(!pistol.contents)
 			switch_firemodes() //switch back automatically
