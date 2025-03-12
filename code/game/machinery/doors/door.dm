@@ -459,7 +459,7 @@
 	if(!can_open(forced))
 		return
 	operating = TRUE
-	if(usr.client && istype(usr, /mob/living/carbon/human)) // Don't let mob activate themselves
+	if(usr && usr.client && istype(usr, /mob/living/carbon/human)) // Don't let mob activate themselves
 		activate_mobs_in_range(src, 10)
 
 	set_opacity(0)
