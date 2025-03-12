@@ -220,5 +220,5 @@
 	path = /obj/item/clothing/suit/storage/boxer_jacket
 
 /datum/gear/suit/moyo_formal
-	display_name ="abyssal robes"
+	display_name = "abyssal robes"
 	path = /obj/item/clothing/suit/storage/moyo_formal
