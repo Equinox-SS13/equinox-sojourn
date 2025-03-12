@@ -338,6 +338,6 @@
 	desc = "Sleek and skintight, the staple work gloves for moyos everywhere, they are about as insulating as a wetsuit. Made in the Abyss."
 	icon_state = "moyo_gloves" // Sprite by Crumpaloo
 	item_state = "moyo_gloves"
-	siemens_coefficient = 0.3
+	siemens_coefficient = 0.5
 	permeability_coefficient = 0.01
 	price_tag = 300
