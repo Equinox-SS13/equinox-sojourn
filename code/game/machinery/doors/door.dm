@@ -459,7 +459,8 @@
 	if(!can_open(forced))
 		return
 	operating = TRUE
-	activate_mobs_in_range(src, 10)
+	if(usr.client && istype(usr, /mob/living/carbon/human)) // Don't let mob activate themselves
+		activate_mobs_in_range(src, 10)
 
 	set_opacity(0)
 	if(istype(src, /obj/machinery/door/airlock/multi_tile/metal))
