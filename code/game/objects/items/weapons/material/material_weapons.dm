@@ -44,6 +44,7 @@
 	else
 		force = material.get_blunt_damage()
 	force = round(force*force_divisor)
+	force_unwielded = force
 	throwforce = round(material.get_blunt_damage()*thrown_force_divisor)
 	//spawn(1)
 	//	world << "[src] has force [force] and throwforce [throwforce] when made from default material [material.name]"
@@ -60,6 +61,36 @@
 		if(material.products_need_process())
 			START_PROCESSING(SSobj, src)
 		update_force()
+
+/obj/item/material/refresh_upgrades()
+	damtype = initial(damtype)
+	force = initial(force)
+	armor_penetration = initial(armor_penetration)
+	item_flags = initial(item_flags)
+	name = initial(name)
+	max_upgrades = initial(max_upgrades)
+	allow_greyson_mods = initial(allow_greyson_mods)
+	color = initial(color)
+	sharp = initial(sharp)
+	extended_reach = initial(extended_reach)
+	no_swing = initial(no_swing)
+
+	if(alt_mode_active)
+		alt_mode_activeate_two()
+
+	if(isliving(loc) && extended_reach)
+		var/mob/living/location_of_item = loc
+		if(location_of_item.stats.getPerk(PERK_NATURAL_STYLE))
+			extended_reach += 1
+
+	if(wielded)
+		if(force_wielded_multiplier)
+			force = force * force_wielded_multiplier
+		else //This will give items wielded 30% more damage. This is balanced by the fact you cannot use your other hand.
+			force = (force * 1.3) //Items that do 0 damage will still do 0 damage though.
+		name = "[name] (Wielded)"
+
+	return
 
 /obj/item/material/Destroy()
 	STOP_PROCESSING(SSobj, src)
