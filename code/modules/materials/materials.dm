@@ -568,7 +568,6 @@ var/list/name_to_material
 /material/plastic
 	name = MATERIAL_PLASTIC
 	stack_type = /obj/item/stack/material/plastic
-	flags = MATERIAL_BRITTLE
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
 	icon_colour = "#CCCCCC"
