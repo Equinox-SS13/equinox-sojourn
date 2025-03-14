@@ -19,7 +19,7 @@
 	if(remainder != 0)
 		log_debug("Item: [type] Initial amount:[amount] Remainder: [remainder]")
 		amount -= remainder
-		new /obj/item/material/shard(get_turf(src), default_type, remainder)
+		new /obj/item/tool/material/shard(get_turf(src), default_type, remainder)
 		if(amount == 0)
 			qdel(src)
 			return

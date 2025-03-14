@@ -331,10 +331,10 @@
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these...;Need knives? Got you covered."
 	icon_state = "dinnerware"
 	products = list(/obj/item/tray = 8,
-					/obj/item/material/kitchen/utensil/fork = 6,
+					/obj/item/tool/material/kitchen/utensil/fork = 6,
 					/obj/item/tool/knife = 6,
-					/obj/item/material/kitchen/utensil/spoon = 6,
-					/obj/item/material/kitchen/rollingpin = 3,
+					/obj/item/tool/material/kitchen/utensil/spoon = 6,
+					/obj/item/tool/material/kitchen/rollingpin = 3,
 					/obj/item/spatula = 6,
 					/obj/item/reagent_containers/dropper = 3,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 6,
@@ -387,10 +387,10 @@
 	icon_state = "dinnerware"
 	products = list(
 					/obj/item/tray = 8,
-					/obj/item/material/kitchen/utensil/fork = 6,
+					/obj/item/tool/material/kitchen/utensil/fork = 6,
 					/obj/item/tool/knife = 6,
-					/obj/item/material/kitchen/utensil/spoon = 6,
-					/obj/item/material/kitchen/rollingpin = 3,
+					/obj/item/tool/material/kitchen/utensil/spoon = 6,
+					/obj/item/tool/material/kitchen/rollingpin = 3,
 					/obj/item/spatula = 6,
 					/obj/item/reagent_containers/dropper = 3,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 6,
@@ -434,10 +434,10 @@
 					/obj/item/reagent_containers/food/condiment/pack/vinegar = 10)
 	contraband = list(/obj/item/tool/knife/butch = 2)
 	prices = list(/obj/item/tray = 35,
-					/obj/item/material/kitchen/utensil/fork = 3,
+					/obj/item/tool/material/kitchen/utensil/fork = 3,
 					/obj/item/tool/knife = 35,
-					/obj/item/material/kitchen/utensil/spoon = 3,
-					/obj/item/material/kitchen/rollingpin = 9,
+					/obj/item/tool/material/kitchen/utensil/spoon = 3,
+					/obj/item/tool/material/kitchen/rollingpin = 9,
 					/obj/item/spatula = 12,
 					/obj/item/reagent_containers/dropper = 10,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 15,

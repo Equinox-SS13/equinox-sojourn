@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ah" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/deepmaint)
 "bN" = (
@@ -50,9 +50,9 @@
 /area/deepmaint)
 "dF" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/deepmaint)
 "dT" = (
@@ -169,7 +169,7 @@
 	dir = 4;
 	pixel_x = 15
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/random/medical_lowcost/low_chance,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
@@ -266,11 +266,11 @@
 /obj/item/frame/light{
 	pixel_y = -15
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
 "zT" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/blood/gibs/xeno,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
@@ -310,7 +310,7 @@
 "CC" = (
 /obj/structure/table/reinforced,
 /obj/machinery/reagentgrinder,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
 "CK" = (
@@ -323,8 +323,8 @@
 /area/deepmaint)
 "Eb" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/deepmaint)
 "Ej" = (
@@ -355,7 +355,7 @@
 	dir = 2
 	},
 /obj/structure/windoor_assembly,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/blood/gibs/xeno,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
@@ -413,8 +413,8 @@
 /area/deepmaint)
 "JJ" = (
 /obj/structure/bed/chair/office/dark,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
@@ -448,7 +448,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/deepmaint)
 "Or" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "OD" = (
@@ -544,7 +544,7 @@
 	dir = 1;
 	pixel_y = 15
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white,
 /area/deepmaint)
 

@@ -118,8 +118,8 @@
 		if(!(stat & BROKEN))
 			broken()
 		else
-			new /obj/item/material/shard(src.loc)
-			new /obj/item/material/shard(src.loc)
+			new /obj/item/tool/material/shard(src.loc)
+			new /obj/item/tool/material/shard(src.loc)
 			qdel(src)
 			return
 	return
@@ -178,13 +178,13 @@
 	switch(severity)
 		if(1.0)
 			if(prob(15))
-				new /obj/item/material/shard( src.loc )
+				new /obj/item/tool/material/shard( src.loc )
 			qdel(src)
 			return
 
 		if(2.0)
 			if (prob(25))
-				new /obj/item/material/shard( src.loc )
+				new /obj/item/tool/material/shard( src.loc )
 				qdel(src)
 				return
 
@@ -444,7 +444,7 @@
 			if (src.stat & BROKEN)
 				to_chat(user, SPAN_NOTICE("The broken glass falls out."))
 				var/obj/structure/computerframe/A = new /obj/structure/computerframe( src.loc )
-				new /obj/item/material/shard( src.loc )
+				new /obj/item/tool/material/shard( src.loc )
 				var/obj/item/circuitboard/solar_control/M = new /obj/item/circuitboard/solar_control( A )
 				for (var/obj/C in src)
 					C.loc = src.loc

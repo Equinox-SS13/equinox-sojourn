@@ -1448,14 +1448,14 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "fO" = (
 /obj/structure/table/onestar,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/tool/material/kitchen/utensil/fork/plastic,
+/obj/item/tool/material/kitchen/utensil/spoon/plastic,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/outside/one_star/fo_internal)
 "fP" = (
 /obj/structure/table/onestar,
 /obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/outside/one_star/fo_internal)
 "fQ" = (

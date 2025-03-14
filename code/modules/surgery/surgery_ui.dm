@@ -211,7 +211,7 @@
 
 				if(wait)
 					if(prob(FAILCHANCE_NORMAL + usr.stats.getStat(target_stat))) //Relatively easy skill-check, but still chance to fail if under 40 Bio. 0 Bio = 60% success rate, 40 bio = 100% success rate, etc.
-						for(var/obj/item/material/shard/shrapnel/shrapnel in src.implants)
+						for(var/obj/item/tool/material/shard/shrapnel/shrapnel in src.implants)
 							implants -= shrapnel
 							shrapnel.loc = get_turf(src)
 						to_chat(user, SPAN_WARNING("You have removed shrapnel from [get_surgery_name()]."))

@@ -2726,7 +2726,7 @@
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "xc" = (
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "xf" = (
@@ -3726,7 +3726,7 @@
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "KG" = (
 /obj/item/toy/plushie/carp,
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /turf/simulated/floor/beach/sand,
 /area/nadezhda/outside/forest/hunting_lodge)
 "KR" = (

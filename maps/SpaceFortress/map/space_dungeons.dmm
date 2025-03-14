@@ -62,7 +62,7 @@
 /area/outpost/abandoned_fortress/powered)
 "an" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "ao" = (
@@ -167,7 +167,7 @@
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress/powered)
 "aR" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/awaymission/spacebattle/syndicate7)
 "aS" = (
@@ -713,7 +713,7 @@
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "dy" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
 /area/outpost/abandoned_fortress/powered)
@@ -1130,7 +1130,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "fM" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/steel/cargo,
 /area/outpost/abandoned_fortress/powered)
 "fN" = (
@@ -1145,7 +1145,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "fP" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate7)
 "fQ" = (
@@ -2117,7 +2117,7 @@
 /turf/simulated/floor/reinforced,
 /area/outpost/abandoned_fortress/powered)
 "lj" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress/powered)
 "lk" = (
@@ -2478,7 +2478,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
 "mT" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "mU" = (
@@ -2507,7 +2507,7 @@
 	id = "genlab";
 	name = "containment blast door"
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/structure/grille/broken,
 /turf/simulated/floor/tiled/white,
 /area/outpost/abandoned_fortress/powered)
@@ -2652,7 +2652,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "nA" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white,
 /area/awaymission/spacebattle/syndicate7)
 "nB" = (
@@ -3103,7 +3103,7 @@
 	pixel_x = 5
 	},
 /obj/machinery/light,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate2)
 "pR" = (
@@ -3252,7 +3252,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/awaymission/spacebattle/syndicate7)
 "qF" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/hull,
 /area/space)
 "qH" = (
@@ -3266,7 +3266,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "qK" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "qP" = (
@@ -3578,7 +3578,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "sA" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/space,
 /area/space)
 "sC" = (
@@ -3835,7 +3835,7 @@
 "tF" = (
 /obj/machinery/door/firedoor,
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/outpost/abandoned_fortress/powered)
 "tG" = (
@@ -4277,7 +4277,7 @@
 /area/awaymission/spacebattle/syndicate2)
 "vK" = (
 /obj/effect/floor_decal/industrial/warningwhite/full,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "vL" = (
@@ -4400,7 +4400,7 @@
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress/powered)
 "wn" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/space,
 /area/space)
 "wp" = (
@@ -4640,7 +4640,7 @@
 	name = "containment blast door"
 	},
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/outpost/abandoned_fortress/powered)
 "xu" = (
@@ -4826,7 +4826,7 @@
 /turf/simulated/wall/r_wall,
 /area/awaymission/spacebattle/syndicate7)
 "yr" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/rock,
 /area/space)
 "yt" = (
@@ -6089,7 +6089,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Fl" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress/powered)
 "Fm" = (
@@ -6642,7 +6642,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Ii" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "Im" = (
@@ -7535,7 +7535,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Mu" = (
 /obj/effect/floor_decal/industrial/warningwhite/full,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate7)
 "Mx" = (
@@ -7709,7 +7709,7 @@
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Ny" = (
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /turf/simulated/floor/rock,
 /area/space)
 "Nz" = (
@@ -7926,7 +7926,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Oy" = (
 /obj/item/moneybag/vault,
-/obj/item/material/sword/gold,
+/obj/item/tool/material/sword/gold,
 /obj/item/toy/plushie/carp/gold,
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/dark/golden,
@@ -8324,7 +8324,7 @@
 /obj/item/melee/energy/sword/pirate,
 /obj/item/card/emag,
 /obj/item/gun/energy/ionrifle,
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /obj/item/gun/energy/sniperrifle,
 /obj/item/card/emag,
 /obj/item/melee/energy/sword/pirate,
@@ -8555,7 +8555,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/awaymission/spacebattle/syndicate1)
 "RE" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/space,
 /area/space)
 "RH" = (
@@ -8814,7 +8814,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "SS" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/plating/under,
 /area/space)
 "ST" = (
@@ -8842,7 +8842,7 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Ta" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Tb" = (
@@ -9395,7 +9395,7 @@
 /turf/simulated/floor/tiled/white,
 /area/awaymission/spacebattle/syndicate1)
 "VP" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/danger,
 /area/awaymission/spacebattle/syndicate7)
 "VQ" = (

@@ -482,7 +482,7 @@
 
 	//And if there's any remainder, we eject that as a shard
 	if (remainder)
-		new /obj/item/material/shard(drop_location(), MATERIAL_COMPRESSED_MATTER, _amount = remainder)
+		new /obj/item/tool/material/shard(drop_location(), MATERIAL_COMPRESSED_MATTER, _amount = remainder)
 
 	//The stored material gets the amount (whole+remainder) subtracted
 	stored_material[MATERIAL_COMPRESSED_MATTER] -= amount

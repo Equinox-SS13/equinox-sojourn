@@ -194,7 +194,7 @@ obj/item/clothing/suit/gownrisque/alt
 	/obj/item/storage/secure,
 	/obj/item/storage/toolbox,
 	/obj/item/storage/briefcase,
-	/obj/item/material,
+	/obj/item/tool/material,
 	/obj/item/device)
 
 /obj/item/clothing/suit/storage/punkvest

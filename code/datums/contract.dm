@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"Spy-bug microphone" = /obj/item/device/spy_bug,
 		"Warlock velvet posion wine" = /obj/item/reagent_containers/food/drinks/bottle/pwine,
 		"explosive ordinance storage box" = /obj/item/storage/box/explosive,
-		"Frenchman butterfly knife" = /obj/item/material/butterfly/frenchman,
+		"Frenchman butterfly knife" = /obj/item/tool/material/butterfly/frenchman,
 		"Destiny antique laser gun" = /obj/item/gun/energy/captain,
 		"Hand teleporter device" = /obj/item/hand_tele,
 		"Omnirifle" = /obj/item/gun/projectile/automatic/omnirifle,

@@ -40,7 +40,7 @@ uniquic_armor_act
 			var/armor = getarmor_organ(organ, ARMOR_BULLET)
 			if(prob((20 + max(P.damage_types[BRUTE] - armor, -10) * P.embed_mult)))
 				if(!P.shrapnel_type)
-					var/obj/item/material/shard/shrapnel/SP = new()
+					var/obj/item/tool/material/shard/shrapnel/SP = new()
 					SP.name = (P.name != "shrapnel")? "[P.name] shrapnel" : "shrapnel"
 					SP.desc = "[SP.desc] It looks like it was fired from [P.shot_from]."
 					SP.loc = organ

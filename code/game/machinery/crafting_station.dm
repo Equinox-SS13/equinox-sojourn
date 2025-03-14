@@ -105,7 +105,7 @@
 		var/list/recipe_data = recipe.get_ui_data(user, productivity_bonus)
 
 		recipes += list(recipe_data)
-	
+
 	data["recipes"] = recipes
 	return data
 
@@ -148,7 +148,7 @@
 	switch(action)
 		if("craft")
 			var/type = text2path(params["type"])
-			
+
 			var/datum/recipe_crafting_station/recipe = GLOB.all_crafting_station_recipes[type]
 			if(!istype(recipe))
 				to_chat(usr, SPAN_DANGER("BUG: [type] is an unrecogized crafting recipe."))
@@ -169,7 +169,7 @@
 				var/list/costs = recipe.get_cost(usr, productivity_bonus)
 				for(var/mat in costs)
 					materials_stored[mat] -= costs[mat]
-				
+
 				recipe.make_result(usr, src, productivity_bonus)
 				. = TRUE
 
@@ -271,7 +271,7 @@
 
 	//And if there's any remainder, we eject that as a shard
 	if(remainder)
-		new /obj/item/material/shard(drop_location(), material, _amount = remainder)
+		new /obj/item/tool/material/shard(drop_location(), material, _amount = remainder)
 
 	//The stored material gets the amount (whole+remainder) subtracted
 	materials_stored[material] -= amount

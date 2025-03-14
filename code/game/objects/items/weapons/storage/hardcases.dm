@@ -474,7 +474,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		/obj/item/stack/material,
 		/obj/item/clothing/head/welding,
 		/obj/item/weldpack,
-		/obj/item/material,
+		/obj/item/tool/material,
 		/obj/item/stack/nanopaste,
 		/obj/item/tool,
 		/obj/item/device,

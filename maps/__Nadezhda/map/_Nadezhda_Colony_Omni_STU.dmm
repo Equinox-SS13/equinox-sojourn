@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aaa" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "aab" = (
@@ -2297,7 +2297,7 @@
 	name = "Security Training"
 	})
 "avV" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "avW" = (
@@ -6067,7 +6067,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/material/wirerod,
+/obj/item/tool/material/wirerod,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/under,
@@ -6917,7 +6917,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/marble,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/bar)
@@ -9801,7 +9801,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/command/cbo)
 "bWX" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/random/spider_trap_burrowing/low_chance,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
@@ -10049,7 +10049,7 @@
 /obj/random/furniture/pottedplant,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb2,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/dungeon/outside/farm)
 "bZs" = (
@@ -14702,7 +14702,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/quartermaster/miningdock)
 "cUM" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
@@ -18786,7 +18786,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/hallway/surface/section1)
 "dKl" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "dKm" = (
@@ -20367,7 +20367,7 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/rnd/docking)
 "dZL" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -20696,7 +20696,7 @@
 	pixel_x = 4
 	},
 /obj/item/tool/knife,
-/obj/item/material/kitchen/utensil/spoon,
+/obj/item/tool/material/kitchen/utensil/spoon,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/command/captain/quarters)
 "eda" = (
@@ -21130,7 +21130,7 @@
 "egs" = (
 /obj/structure/table/marble,
 /obj/item/reagent_containers/food/condiment/flour,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/food/condiment/flour,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
@@ -25092,7 +25092,7 @@
 /turf/simulated/floor/fixed/hydrotile,
 /area/nadezhda/engineering/engine_room)
 "eVw" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "eVx" = (
@@ -33871,7 +33871,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/nadezhda/security/armoryshop)
 "gAY" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
@@ -35106,7 +35106,7 @@
 	desc = "A dubious mix of... stuff in broth.";
 	name = "hobo stew"
 	},
-/obj/item/material/kitchen/utensil/spoon,
+/obj/item/tool/material/kitchen/utensil/spoon,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/maintenance/undergroundfloor1north)
@@ -37891,8 +37891,8 @@
 /area/nadezhda/command/captain/quarters)
 "hoK" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "hoL" = (
@@ -40675,7 +40675,7 @@
 "hSw" = (
 /obj/structure/table/rack/shelf,
 /obj/item/clothing/suit/armor/vest/handmade/full,
-/obj/item/material/baseballbat,
+/obj/item/tool/material/baseballbat,
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -41676,7 +41676,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/nadezhda/crew_quarters/dorm4)
 "icS" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/nadezhda/maintenance/undergroundfloor1north)
@@ -44044,7 +44044,7 @@
 	id = "buffet2";
 	name = "buffet"
 	},
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
@@ -44113,7 +44113,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "iCY" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -48265,7 +48265,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
@@ -49604,7 +49604,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/marble,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /obj/machinery/door/firedoor,
 /obj/structure/sink{
 	pixel_y = 25
@@ -49933,7 +49933,7 @@
 /area/nadezhda/maintenance/undergroundfloor1west)
 "jHI" = (
 /obj/structure/table/woodentable,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/absolutism/vectorrooms)
 "jHL" = (
@@ -52424,9 +52424,9 @@
 /area/nadezhda/quartermaster/hangarsupply)
 "kgm" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "kgn" = (
@@ -55825,7 +55825,7 @@
 /area/nadezhda/maintenance/undergroundfloor1west)
 "kNx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/steel/bar_flat,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -61881,7 +61881,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -63161,7 +63161,7 @@
 /area/nadezhda/engineering/atmos)
 "mjm" = (
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/tool/knife,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -64177,7 +64177,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "msh" = (
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /obj/effect/decal/cleanable/rubble,
 /obj/random/material_ore,
 /turf/simulated/floor/asteroid,
@@ -64751,7 +64751,7 @@
 	id = "bar1";
 	name = "glass shutter"
 	},
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/bar)
@@ -66200,7 +66200,7 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
@@ -66511,7 +66511,7 @@
 /area/nadezhda/crew_quarters)
 "mPo" = (
 /obj/structure/table,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -70387,10 +70387,10 @@
 /area/nadezhda/maintenance/guild)
 "nDV" = (
 /obj/item/stack/rods,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/rubble,
 /obj/random/traps/wire_splicing/low_chance,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -73730,7 +73730,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/nadezhda/engineering/engine_room)
 "ojP" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -79510,7 +79510,7 @@
 /obj/structure/table/rack/shelf,
 /obj/item/reagent_containers/food/snacks/openable,
 /obj/item/reagent_containers/food/snacks/openable,
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /turf/simulated/floor/plating/under,
 /area/mine/gulag)
 "ptA" = (
@@ -83100,7 +83100,7 @@
 /area/nadezhda/outside/forest)
 "qex" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "qez" = (
@@ -89512,7 +89512,7 @@
 /turf/simulated/floor/wood,
 /area/nadezhda/command/fo)
 "rpR" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
@@ -91180,7 +91180,7 @@
 /area/nadezhda/dungeon/outside/campground)
 "rFA" = (
 /obj/structure/girder,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/grille,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/plating/under,
@@ -91618,7 +91618,7 @@
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/maintenance/guild)
 "rKp" = (
-/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/tool/material/kitchen/utensil/spoon/plastic,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/colony)
@@ -95375,7 +95375,7 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
@@ -95722,7 +95722,7 @@
 "szv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
 "szA" = (
@@ -96898,7 +96898,7 @@
 /area/eris/crew_quarters/plasma_tag)
 "sOo" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "sOt" = (
@@ -99313,7 +99313,7 @@
 /area/shuttle/rocinante_shuttle_area)
 "tmv" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "tmw" = (
@@ -99986,7 +99986,7 @@
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = -4
 	},
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/atomic_distillery,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/command/captain/quarters)
@@ -100876,7 +100876,7 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/absolutism/bioreactor)
 "tCR" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
@@ -105540,8 +105540,8 @@
 /area/nadezhda/maintenance/guild)
 "uzo" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "uzq" = (
@@ -111010,7 +111010,7 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "vzg" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -111864,7 +111864,7 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "vIc" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -112012,7 +112012,7 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "vJN" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -114404,7 +114404,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/storage/box/drinkingglasses,
 /turf/simulated/floor/tiled/cafe,
@@ -117650,7 +117650,7 @@
 /area/nadezhda/outside/forest)
 "wKQ" = (
 /obj/effect/decal/cleanable/generic,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -119952,7 +119952,7 @@
 "xkG" = (
 /obj/structure/table/bar_special,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1west)

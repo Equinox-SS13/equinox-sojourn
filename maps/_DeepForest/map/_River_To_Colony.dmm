@@ -338,7 +338,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "fW" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "fZ" = (
@@ -1060,7 +1060,7 @@
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop)
 "rl" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/invislight,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
@@ -1197,7 +1197,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/colony/exposedsun/crashed_shop)
 "ts" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/metal,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
@@ -1728,7 +1728,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Bz" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/lattice,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
@@ -2342,7 +2342,7 @@
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/workshop)
 "LE" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/low_wall,
 /obj/structure/invislight,
 /obj/structure/invislight,
@@ -2387,7 +2387,7 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/colony/exposedsun/crashed_shop)
 "LY" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/colony/exposedsun/crashed_shop)
 "LZ" = (
@@ -2463,7 +2463,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/colony/exposedsun/crashed_shop/workshop)
 "MU" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/low_wall,
 /obj/structure/invislight,
 /turf/simulated/floor/plating/under,
@@ -3060,7 +3060,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Wu" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
@@ -3135,7 +3135,7 @@
 /turf/simulated/floor/asteroid/grass/jungle,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Xp" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/random/scrap/dense_weighted,
 /obj/structure/invislight,
 /turf/simulated/floor/plating/under,

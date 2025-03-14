@@ -281,8 +281,8 @@
 		return
 
 	// Eating with forks
-	if(istype(W,/obj/item/material/kitchen/utensil))
-		var/obj/item/material/kitchen/utensil/U = W
+	if(istype(W,/obj/item/tool/material/kitchen/utensil))
+		var/obj/item/tool/material/kitchen/utensil/U = W
 		if(U.scoop_food)
 			if(!U.reagents)
 				U.create_reagents(5)
@@ -1708,14 +1708,14 @@
 
 // Dough + rolling pin = flat dough
 /obj/item/reagent_containers/food/snacks/dough/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/kitchen/rollingpin))
+	if(istype(W,/obj/item/tool/material/kitchen/rollingpin))
 		new /obj/item/reagent_containers/food/snacks/sliceable/flatdough(src)
 		to_chat(user, "You flatten the dough.")
 		qdel(src)
 
 // Dough slice + rolling pin = flat dough slice
 /obj/item/reagent_containers/food/snacks/doughslice/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/kitchen/rollingpin))
+	if(istype(W,/obj/item/tool/material/kitchen/rollingpin))
 		new /obj/item/reagent_containers/food/snacks/flatdoughslice(src)
 		to_chat(user, "You flatten the dough slice.")
 		qdel(src)
@@ -1887,7 +1887,7 @@
 	matter = list(MATERIAL_BIOMATTER = 3)
 
 /obj/item/reagent_containers/food/snacks/rawcutlet/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/kitchen/rollingpin))
+	if(istype(W,/obj/item/tool/material/kitchen/rollingpin))
 		new /obj/item/reagent_containers/food/snacks/patty_raw(src)
 		to_chat(user, "You pound the meat into a patty.") // You can finally pound your own meat.
 		qdel(src)

@@ -41,7 +41,7 @@ list(<CWJ_STEP_CLASS><_OPTIONAL>, <REQUIRED_ARGS>, <CUSTOM_ARGS>=value)
 			Uses an item on the recipe. The object is not consumed.
 			<REQUIRED_ARGS>:
 				type_path - the type path of the item being added.
-			Example: list(CWJ_USE_ITEM, /obj/item/material/kitchen/rollingpin) #Use a rolling pin on the container
+			Example: list(CWJ_USE_ITEM, /obj/item/tool/material/kitchen/rollingpin) #Use a rolling pin on the container
 
 		CWJ_USE_STOVE
 			Cook the cooking container on a stove. Keep it on too long, it burns.

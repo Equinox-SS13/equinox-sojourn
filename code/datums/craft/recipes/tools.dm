@@ -8,7 +8,7 @@
 	name = "shiv"
 	result = /obj/item/tool/knife/shiv
 	steps = list(
-		list(/obj/item/material/shard, 1, "time" = 30),
+		list(/obj/item/tool/material/shard, 1, "time" = 30),
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 
@@ -162,7 +162,7 @@
 		list(QUALITY_WIRE_CUTTING, 10, 20),
 		list(/obj/item/stack/rods, 2, 30)
 	)
-	
+
 /datum/craft_recipe/tool/improv_charger
 	name = "improvised crank charger"
 	result = /obj/item/device/manual_charger/improv

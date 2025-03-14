@@ -5351,14 +5351,14 @@
 /obj/random/furniture/pottedplant,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb2,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/dungeon/outside/farm)
 "alN" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "alO" = (
@@ -5964,8 +5964,8 @@
 /area/nadezhda/maintenance/junk)
 "amZ" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "ana" = (
@@ -19455,7 +19455,7 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aTy" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/dungeon/outside/abandoned_solars)
@@ -19464,7 +19464,7 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aTA" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/dungeon/outside/abandoned_solars)
@@ -19547,7 +19547,7 @@
 /turf/simulated/floor/tiled,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aTU" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/dungeon/outside/abandoned_solars)
@@ -19586,7 +19586,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aUd" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "aUe" = (
@@ -19619,7 +19619,7 @@
 /turf/simulated/floor/tiled,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aUk" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aUl" = (
@@ -19646,7 +19646,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/fnest)
 "aUr" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -19686,12 +19686,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/dungeon/outside/abandoned_solars)
 "aUv" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "aUw" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "aUx" = (
@@ -20132,8 +20132,8 @@
 /area/nadezhda/dungeon/outside/burned_outpost)
 "aVW" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "aVX" = (
@@ -21360,7 +21360,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "bab" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/tiled/techmaint,
@@ -22940,7 +22940,7 @@
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/snacks/meat,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/machinery/light_switch{
 	pixel_y = 30
 	},
@@ -26281,7 +26281,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "bqv" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "bqw" = (

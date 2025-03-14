@@ -23,7 +23,7 @@
 	armor_penetration = 15
 	check_armour = ARMOR_BULLET
 	embed = TRUE
-	shrapnel_type = /obj/item/material/shard/ameridian
+	shrapnel_type = /obj/item/tool/material/shard/ameridian
 	affective_damage_range = 2
 	affective_ap_range = 2
 

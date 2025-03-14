@@ -570,13 +570,13 @@
 			H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/tool_breaker, "TOOL_BREAKER", skill_gained = 1, learner = H)
 
 		to_chat(user, SPAN_DANGER("Your [src] broke!"))
-		new /obj/item/material/shard/shrapnel(user.loc)
+		new /obj/item/tool/material/shard/shrapnel(user.loc)
 		playsound(get_turf(src), 'sound/effects/impacts/thud1.ogg', 50, 1 -3)
 		user.unEquip(src)
 		qdel(src)
 		return
 
-	new /obj/item/material/shard/shrapnel(get_turf(src))
+	new /obj/item/tool/material/shard/shrapnel(get_turf(src))
 	if(istype(loc, /obj/machinery/door/airlock))
 		var/obj/machinery/door/airlock/AD = loc
 		AD.take_out_wedged_item()

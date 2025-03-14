@@ -1,4 +1,4 @@
-/obj/item/material/butterflyconstruction
+/obj/item/tool/material/butterflyconstruction
 	name = "unfinished concealed knife"
 	desc = "An unfinished concealed knife, it looks like the screws need to be tightened."
 	icon = 'icons/obj/buildingobject.dmi'
@@ -6,14 +6,14 @@
 	force_divisor = 0.1
 	thrown_force_divisor = 0.1
 
-/obj/item/material/butterflyconstruction/attackby(obj/item/W as obj, mob/user as mob)
+/obj/item/tool/material/butterflyconstruction/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/tool/screwdriver))
 		to_chat(user, "You finish the concealed blade weapon.")
-		new /obj/item/material/butterfly(user.loc, material.name)
+		new /obj/item/tool/material/butterfly(user.loc, material.name)
 		qdel(src)
 		return
 
-/obj/item/material/butterflyblade
+/obj/item/tool/material/butterflyblade
 	name = "knife blade"
 	desc = "A knife blade. Unusable as a weapon without a grip."
 	icon = 'icons/obj/buildingobject.dmi'
@@ -21,7 +21,7 @@
 	force_divisor = 0.1
 	thrown_force_divisor = 0.1
 
-/obj/item/material/butterflyhandle
+/obj/item/tool/material/butterflyhandle
 	name = "concealed knife grip"
 	desc = "A plasteel grip with screw fittings for a blade."
 	icon = 'icons/obj/buildingobject.dmi'
@@ -29,16 +29,16 @@
 	force_divisor = 0.1
 	thrown_force_divisor = 0.1
 
-/obj/item/material/butterflyhandle/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/butterflyblade))
-		var/obj/item/material/butterflyblade/B = W
+/obj/item/tool/material/butterflyhandle/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W,/obj/item/tool/material/butterflyblade))
+		var/obj/item/tool/material/butterflyblade/B = W
 		to_chat(user, "You attach the two concealed blade parts.")
-		new /obj/item/material/butterflyconstruction(user.loc, B.material.name)
+		new /obj/item/tool/material/butterflyconstruction(user.loc, B.material.name)
 		qdel(W)
 		qdel(src)
 		return
 
-/obj/item/material/wirerod
+/obj/item/tool/material/wirerod
 	name = "wired rod"
 	desc = "A rod with some wire wrapped around the top. It'd be easy to attach something to the top bit."
 	icon_state = "wiredrod"
@@ -51,10 +51,10 @@
 	force_divisor = 0.1
 	thrown_force_divisor = 0.1
 
-/obj/item/material/wirerod/attackby(var/obj/item/I, mob/user as mob)
+/obj/item/tool/material/wirerod/attackby(var/obj/item/I, mob/user as mob)
 	..()
 	var/obj/item/finished
-	if(istype(I, /obj/item/material/shard))
+	if(istype(I, /obj/item/tool/material/shard))
 		finished = new /obj/item/tool/spear(get_turf(user))
 		to_chat(user, SPAN_NOTICE("You fasten \the [I] to the top of the rod with the cable."))
 	else if((QUALITY_CUTTING in I.tool_qualities) || (QUALITY_WIRE_CUTTING in I.tool_qualities))

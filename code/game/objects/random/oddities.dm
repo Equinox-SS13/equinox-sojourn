@@ -134,7 +134,7 @@
 				/obj/item/shield/riot/mass_grave = 1,
 				/obj/item/tool/sword/saber/nightmare_saber = 1,
 				/obj/item/tool/crit_pipe_bluecross = 1,
-				//obj/item/material/butterfly/frenchman = 1,
+				//obj/item/tool/material/butterfly/frenchman = 1,
 				//Gun/Tool Mods
 				/obj/item/gun_upgrade/mechanism/brass_kit = 1,
 				//Armor

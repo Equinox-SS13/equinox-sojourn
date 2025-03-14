@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////// Material Claymores ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-/obj/item/material/sword
+/obj/item/tool/material/sword
 	name = "claymore"
 	desc = "What are you standing around staring at this for? Get to killing!"
 	icon_state = "claymore"
@@ -18,42 +18,42 @@
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	default_material = MATERIAL_STEEL
 
-/obj/item/material/sword/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
+/obj/item/tool/material/sword/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_parry_check(user, attacker, damage_source) && prob(50))
 		user.visible_message(SPAN_DANGER("\The [user] parries [attack_text] with \the [src]!"))
 		playsound(user.loc, 'sound/weapons/punchmiss.ogg', 50, 1)
 		return 1
 	return 0
 
-/obj/item/material/sword/gold
+/obj/item/tool/material/sword/gold
 	default_material = MATERIAL_GOLD
 
-/obj/item/material/sword/plastic
+/obj/item/tool/material/sword/plastic
 	default_material = MATERIAL_PLASTIC
 
-/obj/item/material/sword/uranium
+/obj/item/tool/material/sword/uranium
 	default_material = MATERIAL_URANIUM
 
-/obj/item/material/sword/plasteel
+/obj/item/tool/material/sword/plasteel
 	default_material = MATERIAL_PLASTEEL
 
-/obj/item/material/sword/platinum
+/obj/item/tool/material/sword/platinum
 	default_material = MATERIAL_PLATINUM
 
-/obj/item/material/sword/iron
+/obj/item/tool/material/sword/iron
 	default_material = MATERIAL_IRON
 
-/obj/item/material/sword/silver
+/obj/item/tool/material/sword/silver
 	default_material = MATERIAL_SILVER
 
-/obj/item/material/sword/diamond
+/obj/item/tool/material/sword/diamond
 	default_material = MATERIAL_DIAMOND
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////// Material  Katana's ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-/obj/item/material/sword/katana
+/obj/item/tool/material/sword/katana
 	name = "katana"
 	desc = "Woefully underpowered in D20. This one looks pretty sharp."
 	icon_state = "katana"
@@ -61,33 +61,33 @@
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	slot_flags = SLOT_BELT | SLOT_BACK
 
-/obj/item/material/sword/katana/update_icon()
+/obj/item/tool/material/sword/katana/update_icon()
     ..()
     cut_overlays()
     var/image/I = image(icon, icon_state = "katana_handle")
     I.appearance_flags = RESET_COLOR | DEFAULT_APPEARANCE_FLAGS
     add_overlay(I)
 
-/obj/item/material/sword/katana/gold
+/obj/item/tool/material/sword/katana/gold
 	default_material = MATERIAL_GOLD
 
-/obj/item/material/sword/katana/plastic
+/obj/item/tool/material/sword/katana/plastic
 	default_material = MATERIAL_PLASTIC
 
-/obj/item/material/sword/katana/uranium
+/obj/item/tool/material/sword/katana/uranium
 	default_material = MATERIAL_URANIUM
 
-/obj/item/material/sword/katana/plasteel
+/obj/item/tool/material/sword/katana/plasteel
 	default_material = MATERIAL_PLASTEEL
 
-/obj/item/material/sword/katana/platinum
+/obj/item/tool/material/sword/katana/platinum
 	default_material = MATERIAL_PLATINUM
 
-/obj/item/material/sword/katana/iron
+/obj/item/tool/material/sword/katana/iron
 	default_material = MATERIAL_IRON
 
-/obj/item/material/sword/katana/silver
+/obj/item/tool/material/sword/katana/silver
 	default_material = MATERIAL_SILVER
 
-/obj/item/material/sword/katana/diamond
+/obj/item/tool/material/sword/katana/diamond
 	default_material = MATERIAL_DIAMOND
