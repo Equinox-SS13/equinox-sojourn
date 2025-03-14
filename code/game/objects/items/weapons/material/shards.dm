@@ -8,14 +8,13 @@
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_TINY
-	hardness_tool_qualities = (QUALITY_CUTTING = 0.05)
+	hardness_tool_qualities = list(QUALITY_CUTTING = 0.05)
 	force_divisor = 0.2 // 6 with hardness 30 (glass)
 	thrown_force_divisor = 0.4 // 4 with weight 15 (glass)
 	item_state = "shard-glass"
 	attack_verb = list("stabbed", "slashed", "sliced", "cut")
 	default_material = MATERIAL_GLASS
-	unbreakable = 1 //It's already broken.
-	drops_debris = 0
+	degradation = 0 //It's already broken.
 	var/amount = 0
 
 /obj/item/tool/material/shard/New(var/newloc, var/material_key, var/_amount)
@@ -37,7 +36,7 @@
 	add_new_transformation(/datum/transform_type/shard/variable_size)
 	update_icon()
 
-/obj/item/tool/material/shard/set_material(var/new_material, var/update)
+/obj/item/tool/material/shard/set_material_by_name(var/new_material, var/update)
 	..(new_material)
 	if(!istype(material))
 		return

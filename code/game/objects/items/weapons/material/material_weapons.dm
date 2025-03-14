@@ -50,7 +50,7 @@
 	//spawn(1)
 	//	world << "[src] has force [force] and throwforce [throwforce] when made from default material [material.name]"
 
-/obj/item/tool/material/set_stats_from_material()
+/obj/item/tool/material/proc/set_stats_from_material()
 	name = "[material.display_name] [initial(name)]"
 	max_health = material.integrity * 3 //this gives 450 health for most tools, 50 better than default. wood, plastic etc. are less
 	health = max_health
@@ -60,6 +60,9 @@
 		color = material.icon_colour
 	if(material.products_need_process())
 		START_PROCESSING(SSobj, src)
+
+	if(!islist(tool_qualities)) //if we don't exist...
+		tool_qualities = list()
 	for(var/quality in weight_tool_qualities)
 		tool_qualities |= quality
 		tool_qualities[quality] = max(round(weight_tool_qualities[quality] * material.get_weight()), 0)

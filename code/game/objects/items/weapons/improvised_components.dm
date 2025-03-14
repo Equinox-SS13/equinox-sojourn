@@ -31,7 +31,7 @@
 
 /obj/item/tool/material/butterflyhandle/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/tool/material/butterflyblade))
-		varerial/butterflyblade/B = W
+		var/obj/item/tool/material/butterflyblade/B = W
 		to_chat(user, "You attach the two concealed blade parts.")
 		new /obj/item/tool/material/butterflyconstruction(user.loc, B.material.name)
 		qdel(W)

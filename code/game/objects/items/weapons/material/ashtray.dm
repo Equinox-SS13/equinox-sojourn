@@ -70,11 +70,6 @@ var/global/list/ashtray_cache = list()
 		src.visible_message("[user] places [W] in [src].")
 		add_fingerprint(user)
 		update_icon()
-	else
-		health = max(0,health - W.force)
-		to_chat(user, "You hit [src] with [W].")
-		if (health < 1)
-			shatter()
 	return
 
 /obj/item/tool/material/ashtray/throw_impact(atom/hit_atom)
@@ -84,8 +79,5 @@ var/global/list/ashtray_cache = list()
 			src.visible_message(SPAN_DANGER("\The [src] slams into [hit_atom], spilling its contents!"))
 		for (var/obj/item/clothing/mask/smokable/cigarette/O in contents)
 			O.loc = src.loc
-		if (health < 1)
-			shatter()
-			return
 		update_icon()
 	return ..()

@@ -6,7 +6,7 @@
 	hitsound = null
 	clickdelay_offset = FAST_WEAPON_COOLDOWN
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 5)
-	hardness_tool_qualities = (QUALITY_CUTTING = 0.3, QUALITY_WIRE_CUTTING = 0.15) //20, 10 with hardness 60 (steel)
+	hardness_tool_qualities = list(QUALITY_CUTTING = 0.3, QUALITY_WIRE_CUTTING = 0.15) //20, 10 with hardness 60 (steel)
 	var/active = 0
 	var/backstab_damage = 10
 	w_class = ITEM_SIZE_SMALL
@@ -50,7 +50,6 @@
 		hitsound = 'sound/weapons/bladeslice.ogg'
 		icon_state += "_open"
 		w_class = ITEM_SIZE_NORMAL
-		tool_qualities = list(QUALITY_CUTTING = 20, QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5)
 		attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	else
 		force = WEAPON_FORCE_WEAK
@@ -66,7 +65,7 @@
 	name = "switchblade"
 	desc = "A classic switchblade with gold engraving. Just holding it makes you feel like a gangster."
 	icon_state = "switchblade"
-	unbreakable = 1
+	degradation = 0 //unbreakable
 
 /obj/item/tool/material/butterfly/attack_self(mob/user)
 	active = !active

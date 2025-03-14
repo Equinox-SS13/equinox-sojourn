@@ -2,7 +2,7 @@
 	name = "shuriken"
 	desc = "A sharp, perfectly weighted piece of metal."
 	icon_state = "star"
-	hardness_tool_qualities = (QUALITY_CUTTING = 0.05)
+	hardness_tool_qualities = list(QUALITY_CUTTING = 0.05)
 	force_divisor = 0.1 // 6 with hardness 60 (steel)
 	thrown_force_divisor = 0.75 // 15 with weight 20 (steel)
 	throw_speed = 10
