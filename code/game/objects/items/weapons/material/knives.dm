@@ -6,7 +6,7 @@
 	hitsound = null
 	clickdelay_offset = FAST_WEAPON_COOLDOWN
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 5)
-	hardness_tool_qualities = (QUALITY_CUTTING = 0.3, QUALITY_WIRE_CUTTING = 0.15)
+	hardness_tool_qualities = (QUALITY_CUTTING = 0.3, QUALITY_WIRE_CUTTING = 0.15) //20, 10 with hardness 60 (steel)
 	var/active = 0
 	var/backstab_damage = 10
 	w_class = ITEM_SIZE_SMALL

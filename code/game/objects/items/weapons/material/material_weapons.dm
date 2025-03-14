@@ -65,7 +65,9 @@
 		tool_qualities[quality] = max(round(weight_tool_qualities[quality] * material.get_weight()), 0)
 	for(var/quality in hardness_tool_qualities)
 		tool_qualities |= quality
-		tool_qualities[quality] += round(hardness_tool_qualities[quality] * get_hardness.get_weight())
+		tool_qualities[quality] += round(hardness_tool_qualities[quality] * material.get_hardness())
+
+	workspeed += max(round(material.get_hardness() / 60), 0) //harder tools work faster. or something
 	update_force()
 
 /obj/item/tool/material/proc/set_material_by_name(var/new_material)
@@ -85,7 +87,7 @@
 		set_stats_from_material()
 
 
-//This is a complete override of parent, because we need to move where appval is called. Whoops.
+//This is a complete override of parent, because we need to move where appval is called. Yay.
 /obj/item/tool/material/refresh_upgrades()
 //First of all, lets reset any var that could possibly be altered by an upgrade
 	degradation = initial(degradation)
