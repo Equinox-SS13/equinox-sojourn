@@ -561,7 +561,7 @@
 	desc = "A borosilicate alloy window. It seems to be quite strong."
 	basestate = "pwindow"
 	icon_state = "plasmawindow"
-	shardtype = /obj/item/tool/material//shard/plasma
+	shardtype = /obj/item/tool/material/shard/plasma
 	glasstype = /obj/item/stack/material/glass/plasmaglass
 	maximal_heat = T0C + 5227  // Safe use temperature at 5500 kelvin. Easy to remember.
 	damage_per_fire_tick = 1.5 // Lowest per-tick damage so overheated supermatter chambers have some time to respond to it. Will still shatter before a delam.
@@ -611,7 +611,7 @@
 	desc = "A borosilicate alloy window, with rods supporting it. It seems to be very strong."
 	basestate = "rpwindow"
 	icon_state = "plasmarwindow"
-	shardtype = /obj/item/tool/material//shard/plasma
+	shardtype = /obj/item/tool/material/shard/plasma
 	glasstype = /obj/item/stack/material/glass/plasmarglass
 	maximal_heat = T0C + 99453 // Safe use temperature at 100,000 kelvin. I think?
 	damage_per_fire_tick = 1.5

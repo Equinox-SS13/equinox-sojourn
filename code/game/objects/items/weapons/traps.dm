@@ -415,7 +415,7 @@ Very rarely it might escape
 	visible_message(SPAN_DANGER("\the [src] shatters into fragments!"))
 	new /obj/item/stack/material/steel(loc, 10)
 	new /obj/item/tool/material/shard/shrapnel(loc)
-	new /obj/item/tool/material//shard/shrapnel(loc)
+	new /obj/item/tool/material/shard/shrapnel(loc)
 	qdel(src)
 
 /**********************************

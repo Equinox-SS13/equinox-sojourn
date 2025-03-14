@@ -237,7 +237,7 @@
 
 	//And if there's any remainder, we eject that as a shard
 	if(remainder)
-		new erial/shard(drop_location(), material, _amount = remainder)
+		new /obj/item/tool/material/shard(drop_location(), material, _amount = remainder)
 
 	//The stored material gets the amount (whole+remainder) subtracted
 	stored_material[material] -= amount

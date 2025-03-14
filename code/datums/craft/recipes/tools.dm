@@ -8,7 +8,7 @@
 	name = "shiv"
 	result = /obj/item/tool/knife/shiv
 	steps = list(
-		list(erial/shard, 1, "time" = 30),
+		list(/obj/item/tool/material/shard, 1, "time" = 30),
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 

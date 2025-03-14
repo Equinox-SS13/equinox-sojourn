@@ -114,7 +114,7 @@
 				C.loc = src.loc
 			if (src.stat & BROKEN)
 				to_chat(user, SPAN_NOTICE("The broken glass falls out."))
-				new erial/shard(src.loc)
+				new /obj/item/tool/material/shard(src.loc)
 				A.state = 3
 				A.icon_state = "3"
 			else

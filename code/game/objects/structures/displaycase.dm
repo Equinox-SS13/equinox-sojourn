@@ -56,7 +56,7 @@
 			src.density = FALSE
 			src.destroyed = TRUE
 			src.locked = FALSE
-			new /obj/item/tool/material//shard( src.loc )
+			new /obj/item/tool/material/shard( src.loc )
 			playsound(src, "shatter", 70, 1)
 			sanity_damage = 0.5 //Broken window theory
 			update_icon()

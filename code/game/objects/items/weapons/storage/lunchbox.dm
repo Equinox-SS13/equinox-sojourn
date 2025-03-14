@@ -15,7 +15,7 @@
 	price_tag = 5
 	can_hold = list(
 		/obj/item/reagent_containers/food,
-		erial/kitchen/utensil,
+		/obj/item/tool/material/kitchen/utensil,
 		/obj/item/tool/knife
 		)
 

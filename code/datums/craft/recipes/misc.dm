@@ -1,6 +1,6 @@
 /datum/craft_recipe/ashtray
 	name = "ashtray"
-	result = erial/ashtray
+	result = /obj/item/tool/material/ashtray
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
 	)

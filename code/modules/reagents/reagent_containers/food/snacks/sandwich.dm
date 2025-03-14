@@ -32,7 +32,7 @@
 	if(src.contents.len > sandwich_limit)
 		to_chat(user, "\red If you put anything else on \the [src] it's going to collapse.")
 		return
-	else if(istype(W,/obj/item/tool/material//shard))
+	else if(istype(W,/obj/item/tool/material/shard))
 		to_chat(user, SPAN_NOTICE("You hide [W] in \the [src]."))
 		user.drop_from_inventory(W, src)
 		update()
@@ -91,7 +91,7 @@
 /obj/item/reagent_containers/food/snacks/csandwich/attack(mob/M as mob, mob/user as mob, def_zone)
 	var/obj/item/shard
 	for(var/obj/item/O in contents)
-		if(istype(O,/obj/item/tool/material//shard))
+		if(istype(O,/obj/item/tool/material/shard))
 			shard = O
 			break
 

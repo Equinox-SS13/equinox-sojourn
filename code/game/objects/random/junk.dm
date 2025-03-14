@@ -7,7 +7,7 @@
 		/obj/item/device/radio/headset = 0.01, //So we are not ALWAYS an uplink
 		/obj/item/device/radio/headset/uplink = 0.001, //Idea is that someone had to discard this into a trash pile
 		/obj/item/tool/material/shard = 5,
-		/obj/item/tool/material//shard/shrapnel = 8,
+		/obj/item/tool/material/shard/shrapnel = 8,
 		/obj/item/scrap_lump = 1,
 		/obj/item/reagent_containers/pill/floorpill = 8,
 		/obj/item/stack/material/cardboard = 3,

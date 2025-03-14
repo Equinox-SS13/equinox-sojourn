@@ -58,7 +58,7 @@
 			if(stat & BROKEN)
 				to_chat(user, SPAN_NOTICE("The broken glass falls out."))
 				var/obj/structure/computerframe/A = new /obj/structure/computerframe( loc )
-				new erial/shard( loc )
+				new /obj/item/tool/material/shard( loc )
 
 				//generate appropriate circuitboard. Accounts for /pod/old computer types
 				var/obj/item/circuitboard/pod/M = null

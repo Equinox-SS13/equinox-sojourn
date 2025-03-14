@@ -120,7 +120,7 @@
 		else if(istype(W,/obj/item/tool/material/shard/shrapnel))
 			if(metal)
 				metal.add_charge(1000)
-		else if(istype(W,/obj/item/tool/material//shard))
+		else if(istype(W,/obj/item/tool/material/shard))
 			if(glass)
 				glass.add_charge(1000)
 		else if(istype(W,/obj/item/tool/broken_bottle))

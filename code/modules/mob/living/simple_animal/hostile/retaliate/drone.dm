@@ -187,13 +187,13 @@
 		O = new /obj/item/tool/material/shard(src.loc)
 		step_to(O, get_turf(pick(view(7, src))))
 		if(prob(75))
-			O = new /obj/item/tool/material//shard(src.loc)
+			O = new /obj/item/tool/material/shard(src.loc)
 			step_to(O, get_turf(pick(view(7, src))))
 		if(prob(50))
-			O = new /obj/item/tool/material//shard(src.loc)
+			O = new /obj/item/tool/material/shard(src.loc)
 			step_to(O, get_turf(pick(view(7, src))))
 		if(prob(25))
-			O = new /obj/item/tool/material//shard(src.loc)
+			O = new /obj/item/tool/material/shard(src.loc)
 			step_to(O, get_turf(pick(view(7, src))))
 
 		//rods

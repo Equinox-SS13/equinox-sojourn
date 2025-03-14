@@ -28,7 +28,7 @@
 	return
 
 /obj/machinery/door/window/proc/shatter(var/display_message = 1)
-	new erial/shard(src.loc)
+	new /obj/item/tool/material/shard(src.loc)
 	var/obj/item/stack/cable_coil/CC = new /obj/item/stack/cable_coil(src.loc)
 	CC.amount = 2
 	var/obj/item/airlock_electronics/ae

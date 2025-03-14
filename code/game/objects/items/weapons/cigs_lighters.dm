@@ -124,7 +124,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		if(ishuman(loc))
 			var/mob/living/carbon/human/H = loc
 			if(!H.stat)
-				for(varerial/ashtray/A in view(1, loc))
+				for(var/obj/item/tool/material/ashtray/A in view(1, loc))
 					if(A.contents.len < A.max_butts)
 						A.attackby(src, loc)
 						return
