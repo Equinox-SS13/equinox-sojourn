@@ -262,7 +262,7 @@
 		eat(user, I)
 		return
 	// Some item types are consumed by default
-	else if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
+	else if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/tool/material/shard))
 		eat(user, I)
 		return
 
@@ -949,7 +949,7 @@
 
 	//And if there's any remainder, we eject that as a shard
 	if(remainder)
-		new /obj/item/material/shard(drop_location(), material, _amount = remainder)
+		new /obj/item/tool/material//shard(drop_location(), material, _amount = remainder)
 
 	//The stored material gets the amount (whole+remainder) subtracted
 	stored_material[material] -= amount

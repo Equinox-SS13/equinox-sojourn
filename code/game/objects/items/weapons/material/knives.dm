@@ -1,10 +1,12 @@
-/obj/item/material/butterfly
+/obj/item/tool/material/butterfly
 	name = "butterfly knife"
 	desc = "A basic metal blade concealed in a lightweight plasteel grip. Small enough when folded to fit in a pocket."
 	icon_state = "butterflyknife"
 	item_state = null
 	hitsound = null
 	clickdelay_offset = FAST_WEAPON_COOLDOWN
+	tool_qualities = list(QUALITY_SCREW_DRIVING = 5)
+	hardness_tool_qualities = (QUALITY_CUTTING = 0.3, QUALITY_WIRE_CUTTING = 0.15)
 	var/active = 0
 	var/backstab_damage = 10
 	w_class = ITEM_SIZE_SMALL
@@ -13,7 +15,8 @@
 	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (steel)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 
-/obj/item/material/butterfly/resolve_attackby(atom/target, mob/user)
+
+/obj/item/tool/material/butterfly/resolve_attackby(atom/target, mob/user)
 	. = ..()
 	if(!(iscarbon(target) || isanimal(target)))
 		return
@@ -38,7 +41,7 @@
 	else
 		M.apply_damages(backstab_damage,0,0,0,0,0,user.targeted_organ)
 
-/obj/item/material/butterfly/update_force()
+/obj/item/tool/material/butterfly/update_force()
 	if(active)
 		edge = 1
 		sharp = 1
@@ -59,13 +62,13 @@
 		tool_qualities = list()
 		attack_verb = list("patted", "tapped")
 
-/obj/item/material/butterfly/switchblade
+/obj/item/tool/material/butterfly/switchblade
 	name = "switchblade"
 	desc = "A classic switchblade with gold engraving. Just holding it makes you feel like a gangster."
 	icon_state = "switchblade"
 	unbreakable = 1
 
-/obj/item/material/butterfly/attack_self(mob/user)
+/obj/item/tool/material/butterfly/attack_self(mob/user)
 	active = !active
 	if(active)
 		to_chat(user, SPAN_NOTICE("You flip out \the [src]."))
@@ -76,7 +79,7 @@
 	add_fingerprint(user)
 
 
-/obj/item/material/butterfly/frenchman //rare contraband spawn
+/obj/item/tool/material/butterfly/frenchman //rare contraband spawn
 	name = "\"Frenchman\" butterfly blade"
 	desc = "A french flag has been embossed on the handle, the deftness of this blade and how supremely lethal its diamond edged blade is would make this perfect for sinking said blade \
 			into a monsters back... or another colonist."

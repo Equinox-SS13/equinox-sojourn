@@ -4791,7 +4791,7 @@
 /turf/simulated/mineral/random/rogue,
 /area/nadezhda/outside/forest/beast_cave_dark)
 "sw" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest/beast_cave_light)
 "sx" = (
@@ -4913,7 +4913,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/nadezhda/outside/forest/beast_cave_dark)
 "sT" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/blood/tracks/footprints,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/asteroid/grass,
@@ -4947,12 +4947,12 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/nadezhda/outside/forest/beast_cave_dark)
 "sZ" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest/beast_cave_dark)
 "ta" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/blood/tracks/footprints,
 /obj/effect/damagedfloor/fire,
 /obj/effect/decal/cleanable/blood/drip,
@@ -5005,7 +5005,7 @@
 /area/nadezhda/outside/forest/beast_cave_dark)
 "tk" = (
 /obj/effect/damagedfloor/fire,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest/beast_cave_dark)
@@ -5057,7 +5057,7 @@
 /area/nadezhda/outside/forest/beast_cave_dark)
 "tt" = (
 /obj/effect/damagedfloor/fire,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/nadezhda/outside/forest/beast_cave_dark)
@@ -5186,7 +5186,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/nadezhda/outside/forest/beast_cave_light)
 "tR" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/invislightsmall,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest/beast_cave_light)

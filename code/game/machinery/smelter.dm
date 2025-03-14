@@ -186,7 +186,7 @@
 	if(istype(smelting, /obj/item/stack/ore))
 		return 20
 
-	if(istype(smelting, /obj/item/material/shard))
+	if(istype(smelting, /obj/item/tool/material/shard))
 		return 20
 
 	// Just one material - makes smelting easier

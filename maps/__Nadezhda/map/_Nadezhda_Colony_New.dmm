@@ -699,7 +699,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/nadezhda/absolutism/bioreactor)
 "ahG" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
 /obj/structure/disposalpipe/segment{
@@ -1415,7 +1415,7 @@
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/surfaceeast)
 "aoO" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /obj/structure/flora/big/rocks1,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -3901,7 +3901,7 @@
 	},
 /area/nadezhda/maintenance/undergroundfloor1west)
 "aOE" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/maintenance/undergroundfloor2north)
@@ -5737,7 +5737,7 @@
 /area/nadezhda/medical/ward)
 "big" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor2north)
@@ -8382,7 +8382,7 @@
 	name = "Residential District Maintenance"
 	})
 "bIH" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -18596,7 +18596,7 @@
 /area/nadezhda/maintenance/undergroundfloor1west)
 "dJg" = (
 /obj/effect/spider/stickyweb,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/maintenance/undergroundfloor2west)
@@ -23613,7 +23613,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "eIN" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/steel/bar_flat,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -24258,7 +24258,7 @@
 /area/nadezhda/outside/inside_colony)
 "eNY" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/campground)
@@ -29220,10 +29220,10 @@
 /area/shuttle/surface_transport_lz)
 "fMv" = (
 /obj/item/stack/rods,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/rubble,
 /obj/random/traps/wire_splicing/low_chance,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -29408,7 +29408,7 @@
 "fOO" = (
 /obj/random/spider_trap/low_chance,
 /obj/effect/spider/stickyweb,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/maintenance/undergroundfloor2west)
@@ -33514,7 +33514,7 @@
 "gDI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/kitchen/utensil/fork,
+/obj/item/tool/material/kitchen/utensil/fork,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/colony)
@@ -34550,7 +34550,7 @@
 /turf/simulated/floor/industrial/ceramic,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "gPj" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor2north)
@@ -35814,7 +35814,7 @@
 	name = "Residential District Maintenance"
 	})
 "hcb" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -38324,7 +38324,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/item/tool/broken_bottle,
 /turf/simulated/floor/tiled/steel/bar_flat,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -38592,8 +38592,8 @@
 /area/nadezhda/outside/inside_colony)
 "hDr" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor2west)
@@ -41195,7 +41195,7 @@
 /area/nadezhda/outside/forest)
 "ibt" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor2west)
@@ -44762,7 +44762,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/inside_colony)
 "iMj" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "iMl" = (
@@ -48536,7 +48536,7 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/nadezhda/maintenance/undergroundfloor2east)
 "jzw" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/bluecorner,
@@ -49148,7 +49148,7 @@
 /turf/simulated/floor/rock,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "jFR" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "jFS" = (
@@ -57202,7 +57202,7 @@
 	})
 "lpA" = (
 /obj/structure/girder,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/grille,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/plating/under,
@@ -68963,7 +68963,7 @@
 /area/nadezhda/medical/organ_lab)
 "nBZ" = (
 /obj/structure/table/bar_special,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1west)
@@ -72493,7 +72493,7 @@
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = -4
 	},
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/atomic_distillery,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/command/captain/quarters)
@@ -72837,7 +72837,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/nadezhda/security/armory)
 "omy" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild2,
@@ -72866,7 +72866,7 @@
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "onb" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "one" = (
@@ -73762,7 +73762,7 @@
 	dir = 4
 	},
 /obj/structure/table/steel_reinforced,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/plating,
 /area/nadezhda/security/maingate)
 "ovS" = (
@@ -75188,7 +75188,7 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "oJL" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
 /obj/structure/disposalpipe/segment{
@@ -76320,7 +76320,7 @@
 /area/nadezhda/quartermaster/miningdock)
 "oVh" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -77622,7 +77622,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/security/maingate/east)
 "pix" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_platform,
@@ -78544,7 +78544,7 @@
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "prX" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "prZ" = (
@@ -79342,7 +79342,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/command/teleporter)
 "pzz" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor2north)
 "pzI" = (
@@ -81953,7 +81953,7 @@
 	})
 "pYF" = (
 /obj/structure/multiz/stairs/enter/bottom,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/maintenance/undergroundfloor2north)
 "pYG" = (
@@ -83867,7 +83867,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/medical/morgue)
 "qrS" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/random/spider_trap_burrowing/low_chance,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
@@ -85012,7 +85012,7 @@
 /area/nadezhda/command/gmaster)
 "qDG" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "qDM" = (
@@ -85575,7 +85575,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
 /obj/item/tool/knife/butch,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/wood/wild4,
 /area/nadezhda/maintenance/undergroundfloor2east)
@@ -87105,8 +87105,8 @@
 /area/nadezhda/medical/sleeper)
 "qZO" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "qZP" = (
@@ -87266,7 +87266,7 @@
 	})
 "rbP" = (
 /obj/effect/spider/stickyweb,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -89789,7 +89789,7 @@
 /area/nadezhda/dungeon/outside/burned_outpost)
 "rBL" = (
 /obj/structure/bonfire/permanent,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock,
 /area/nadezhda/maintenance{
@@ -90315,7 +90315,7 @@
 /area/nadezhda/security/barracks)
 "rHX" = (
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/food/condiment/flour,
 /obj/item/reagent_containers/food/condiment/flour,
 /obj/item/reagent_containers/food/condiment/cookingoil,
@@ -94798,7 +94798,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/crew_quarters/pool)
 "syU" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/nadezhda/maintenance/undergroundfloor2north)
@@ -95862,7 +95862,7 @@
 /area/nadezhda/absolutism/bioreactor)
 "sKZ" = (
 /obj/structure/table,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cargo,
@@ -96345,7 +96345,7 @@
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/medical/sleeper)
 "sQg" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/maintenance{
@@ -99081,7 +99081,7 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/nadezhda/engineering/atmos)
 "tuU" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/nadezhda/maintenance{
@@ -100304,7 +100304,7 @@
 /area/nadezhda/command/merchant)
 "tFM" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
@@ -101448,9 +101448,9 @@
 /area/nadezhda/crew_quarters)
 "tQf" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "tQg" = (
@@ -104020,7 +104020,7 @@
 	name = "Residential District Maintenance"
 	})
 "uof" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "uoh" = (
@@ -106964,7 +106964,7 @@
 	pixel_x = 4
 	},
 /obj/item/tool/knife,
-/obj/item/material/kitchen/utensil/spoon,
+/obj/item/tool/material/kitchen/utensil/spoon,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/command/captain/quarters)
 "uSk" = (
@@ -107696,7 +107696,7 @@
 	name = "Residential District Maintenance"
 	})
 "uZi" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/wood/wild5,
 /area/nadezhda/dungeon/outside/campground)
 "uZs" = (
@@ -108183,7 +108183,7 @@
 /area/nadezhda/crew_quarters/kitchen)
 "veQ" = (
 /obj/structure/table/woodentable,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/absolutism/vectorrooms)
 "veU" = (
@@ -112618,7 +112618,7 @@
 /area/nadezhda/maintenance/undergroundfloor1north)
 "vVi" = (
 /obj/effect/decal/weldable/cracks,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/grey_slates_long,
@@ -113583,7 +113583,7 @@
 /turf/unsimulated/wall/jungle,
 /area/nadezhda/outside/forest)
 "wez" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/item/tool/broken_bottle,
 /obj/effect/spider/stickyweb,
 /obj/structure/disposalpipe/segment{
@@ -114666,7 +114666,7 @@
 	},
 /obj/effect/spider/stickyweb,
 /obj/structure/grille/broken,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/maintenance/undergroundfloor2west)
@@ -115360,7 +115360,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/security/secrecroom)
 "wvM" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/bricks,
 /area/nadezhda/maintenance/undergroundfloor1north)
@@ -118623,8 +118623,8 @@
 /area/nadezhda/command/tcommsat/computer)
 "xfe" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "xff" = (
@@ -121796,7 +121796,7 @@
 "xJC" = (
 /obj/random/furniture/pottedplant,
 /obj/effect/decal/cleanable/cobweb2,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/dungeon/outside/farm)
 "xJD" = (
@@ -123397,7 +123397,7 @@
 /area/nadezhda/outside/inside_colony)
 "xZU" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor2north)
 "xZX" = (

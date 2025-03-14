@@ -167,7 +167,7 @@
 /obj/structure/table/rack/shelf,
 /obj/item/reagent_containers/food/snacks/mre,
 /obj/item/reagent_containers/food/snacks/mre,
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /turf/simulated/floor/plating/under,
 /area/mine/gulag_base)
 "oeF" = (
@@ -183,7 +183,7 @@
 /turf/simulated/floor/asteroid,
 /area/mine/gulag)
 "rLe" = (
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid,
 /area/mine/gulag)

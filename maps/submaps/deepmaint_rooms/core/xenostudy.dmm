@@ -4,7 +4,7 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/deepmaint)
 "bi" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/steel,
 /area/deepmaint)
 "bO" = (
@@ -187,7 +187,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/deepmaint)
 "qG" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/reinforced,
 /area/deepmaint)
 "qP" = (
@@ -426,9 +426,9 @@
 /area/deepmaint)
 "Jn" = (
 /obj/structure/low_wall,
-/obj/item/material/shard/plasma,
-/obj/item/material/shard/plasma,
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/deepmaint)
@@ -593,9 +593,9 @@
 /turf/simulated/floor/tiled/steel,
 /area/deepmaint)
 "VY" = (
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/reinforced,
 /area/deepmaint)
 "Wy" = (

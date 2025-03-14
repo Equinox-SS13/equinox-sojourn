@@ -32,7 +32,7 @@
 
 /datum/design/autolathe/misc/ashtray
 	name = "ashtray"
-	build_path = /obj/item/material/ashtray
+	build_path = /obj/item/tool/material/ashtray
 
 /datum/design/autolathe/misc/cane
 	name = "cane"

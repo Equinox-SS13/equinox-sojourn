@@ -818,7 +818,7 @@ This function completely restores a damaged organ to perfect condition.
 		owner.visible_message("<span class='danger'>\The [W] sticks in the wound!</span>")
 	implants += W
 
-	if(!istype(W, /obj/item/material/shard/shrapnel))
+	if(!istype(W, /obj/item/tool/material/shard/shrapnel))
 		embedded += W
 		add_verb(owner, /mob/proc/yank_out_object)
 

@@ -753,7 +753,7 @@
 /turf/simulated/floor/tiled/steel/cargo,
 /area/nadezhda/outside/one_star/fo_internal)
 "gg" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/remains/human,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/outside/one_star/fo_internal)
@@ -2318,7 +2318,7 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "sD" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/metal,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/nadezhda/outside/one_star/fo_internal)
@@ -3039,7 +3039,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/nadezhda/outside/one_star/fo_internal)
 "xL" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/outside/one_star/fo_internal)
@@ -3385,7 +3385,7 @@
 /turf/simulated/floor/carpet,
 /area/nadezhda/outside/one_star/fo_internal)
 "Aa" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/derelict,
 /area/nadezhda/outside/one_star/fo_internal)
 "Ab" = (
@@ -4663,7 +4663,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/nadezhda/outside/one_star/fo_internal)
 "KX" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/metal,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/outside/one_star/fo_internal)
@@ -4704,7 +4704,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/nadezhda/outside/one_star/fo_internal)
 "Lh" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/outside/one_star/fo_internal)
 "Lp" = (
@@ -5453,7 +5453,7 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "QS" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/nadezhda/outside/one_star/fo_internal)
 "QY" = (
@@ -5686,7 +5686,7 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "Tc" = (
 /obj/effect/decal/cleanable/spiderling_remains,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/derelict,
 /area/nadezhda/outside/one_star/fo_internal)
 "Te" = (
@@ -6047,7 +6047,7 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "VR" = (
 /obj/structure/girder,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/nadezhda/outside/one_star/fo_internal)
 "VT" = (
@@ -6355,8 +6355,8 @@
 /area/nadezhda/outside/one_star/fo_internal)
 "Yd" = (
 /obj/structure/table/onestar,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/tool/material/kitchen/utensil/fork/plastic,
+/obj/item/tool/material/kitchen/utensil/spoon/plastic,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/outside/one_star/fo_internal)
 "Ye" = (
@@ -6581,7 +6581,7 @@
 "ZS" = (
 /obj/structure/table/onestar,
 /obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/outside/one_star/fo_internal)
 "ZT" = (

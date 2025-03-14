@@ -49,7 +49,7 @@
 			SPAN_DANGER("[user] has disarmed \the [src] and it falls apart."),
 			SPAN_DANGER("You have disarmed \the [src] and it falls apart!")
 			)
-		new /obj/item/material/shard/shrapnel/scrap(src.loc)
+		new erial/shard/shrapnel/scrap(src.loc)
 		new /obj/item/grenade/explosive(src.loc)
 		qdel(src)
 		return

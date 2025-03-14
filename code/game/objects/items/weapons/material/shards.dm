@@ -1,6 +1,6 @@
 // Glass shards
 
-/obj/item/material/shard
+/obj/item/tool/material/shard
 	name = "shard"
 	icon = 'icons/obj/shards.dmi'
 	desc = "Made of nothing. How does this even exist?" // set based on material, if this desc is visible it's a bug (shards default to being made of glass)
@@ -17,7 +17,7 @@
 	drops_debris = 0
 	var/amount = 0
 
-/obj/item/material/shard/New(var/newloc, var/material_key, var/_amount)
+/obj/item/tool/material/shard/New(var/newloc, var/material_key, var/_amount)
 	if (_amount)
 		amount = max(round(_amount, 0.01), 0.01) //We won't ever need to physically represent less than 1% of a material unit
 	.=..()
@@ -36,7 +36,7 @@
 	add_new_transformation(/datum/transform_type/shard/variable_size)
 	update_icon()
 
-/obj/item/material/shard/set_material(var/new_material, var/update)
+/obj/item/tool/material/shard/set_material(var/new_material, var/update)
 	..(new_material)
 	if(!istype(material))
 		return
@@ -57,7 +57,7 @@
 	else
 		qdel(src)
 
-/obj/item/material/shard/update_icon()
+/obj/item/tool/material/shard/update_icon()
 	if(material)
 		color = material.icon_colour
 		// 1-(1-x)^2, so that glass shards with 0.3 opacity end up somewhat visible at 0.51 opacity
@@ -78,14 +78,14 @@
 
 	. = ..()
 
-/obj/item/material/shard/attackby(obj/item/I, mob/user)
+/obj/item/tool/material/shard/attackby(obj/item/I, mob/user)
 	if(QUALITY_WELDING in I.tool_qualities)
 		merge_shards(I, user)
 		return
 	return ..()
 
 //Allows you to weld together similar shards in a tile to create useful sheets
-/obj/item/material/shard/proc/merge_shards(obj/item/I, mob/user)
+/obj/item/tool/material/shard/proc/merge_shards(obj/item/I, mob/user)
 	if (!istype(loc, /turf))
 		to_chat(user, SPAN_WARNING("You need to lay the shards down on a surface to do this!"))
 		return
@@ -94,7 +94,7 @@
 	var/total = amount
 
 	//Loop through all the other shards in the tile and cache them
-	for (var/obj/item/material/shard/S in loc)
+	for (var/obj/item/tool/material/shard/S in loc)
 		if (S.material.name == material.name && S != src)
 			shards.Add(S)
 			total += S.amount
@@ -110,7 +110,7 @@
 	to_chat(user, SPAN_NOTICE("You start welding the [name]s into useful material sheets..."))
 
 	//Do a tool operation for each shard
-	for (var/obj/item/material/shard/S in shards)
+	for (var/obj/item/tool/material/shard/S in shards)
 		if(I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_WELDING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 			//We meld each shard with ourselves
 			amount += S.amount
@@ -131,7 +131,7 @@
 			break
 
 
-/obj/item/material/shard/Crossed(AM as mob|obj)
+/obj/item/tool/material/shard/Crossed(AM as mob|obj)
 	..()
 	if(isliving(AM))
 		var/mob/M = AM
@@ -168,11 +168,11 @@
 			return
 
 // Preset types - left here for the code that uses them
-/obj/item/material/shard/shrapnel
+/obj/item/tool/material/shard/shrapnel
 	name = "shrapnel" //Needed for crafting
 	var/gun_number = ""
 
-/obj/item/material/shard/shrapnel/attackby(obj/item/I, mob/user)
+/obj/item/tool/material/shard/shrapnel/attackby(obj/item/I, mob/user)
 	..()
 	if(istype(I, /obj/item/device/bullet_scanner))
 		if(gun_number)
@@ -181,19 +181,19 @@
 		else
 			to_chat(user, "<span class='info'>Bullet Hole Caliberation: ERROR.</span>")
 
-/obj/item/material/shard/shrapnel/New(loc)
+/obj/item/tool/material/shard/shrapnel/New(loc)
 
 	..(loc, MATERIAL_STEEL)
 
-/obj/item/material/shard/shrapnel/scrap
+/obj/item/tool/material/shard/shrapnel/scrap
 	name = "scrap metal"
 	amount = 1
 
-/obj/item/material/shard/plasma/New(loc)
+/obj/item/tool/material/shard/plasma/New(loc)
 	..(loc, MATERIAL_PLASMAGLASS)
 
-/obj/item/material/shard/ameridian
+/obj/item/tool/material/shard/ameridian
 	name = "ameridian"
 
-/obj/item/material/shard/ameridian/New(loc)
+/obj/item/tool/material/shard/ameridian/New(loc)
 	..(loc, MATERIAL_AMERIDIAN)

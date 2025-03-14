@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	var/list/loot_list = list(
 		/obj/random/material,
 		/obj/item/stack/rods/random,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/random/gun_parts,
 		/obj/random/junk/nondense = 2,
 		/obj/random/pack/rare = 0.4
@@ -65,7 +65,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	switch(severity)
 		if(1)
 			for(var/i in 1 to 12)
-				var/projtype = pick(/obj/item/stack/rods, /obj/item/material/shard)
+				var/projtype = pick(/obj/item/stack/rods, /obj/item/tool/material/shard)
 				var/obj/item/projectile = new projtype(loc)
 				projectile.throw_at(locate(loc.x + rand(40) - 20, loc.y + rand(40) - 20, loc.z), 81, pick(1,3,80,80))
 		if(2)
@@ -353,7 +353,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/medical = 4,
 		/obj/random/surgery_tool,
 		/obj/item/stack/rods/random,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/random/junk/nondense,
 		/obj/random/pack/rare = 0.3
 	)
@@ -369,7 +369,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/item/stack/material/steel/random,
 		/obj/item/stack/material/plasteel/random = 0.6,
 		/obj/item/stack/rods/random,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/random/junk/nondense,
 		/obj/random/material_ore,
 		/obj/random/pack/rare = 0.3,
@@ -386,7 +386,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/junkfood = 5,
 		/obj/random/junkfood,
 		/obj/random/booze,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/random/junk/nondense,
 		/obj/random/pack/rare = 0.3
 	)
@@ -402,7 +402,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/pack/gun_loot = 8,
 		/obj/random/powercell,
 		/obj/random/mecha_equipment = 2,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/item/stack/material/steel/random,
 		/obj/item/stack/material/plasteel/random = 0.6,
 		/obj/random/junk/nondense,
@@ -451,7 +451,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/common_oddities = 0.5,
 		/obj/random/cigarettes = 0.3,
 		/obj/random/material_ore,
-		/obj/item/material/shard,
+		/obj/item/tool/material/shard,
 		/obj/random/pack/rare = 0.3
 	)
 

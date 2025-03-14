@@ -70,7 +70,7 @@
 
 /obj/machinery/door/blast/shutters/glass/Destroy()
 	playsound(loc, 'sound/effects/Glassbr3.ogg', 75, 1)
-	new /obj/item/material/shard(src.loc)
+	new erial/shard(src.loc)
 	return ..()
 
 /obj/machinery/door/blast/shutters/glass/update_icon()

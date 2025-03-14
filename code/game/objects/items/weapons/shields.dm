@@ -48,9 +48,9 @@
 /obj/item/shield/proc/breakShield(mob/user)
 	if(user)
 		to_chat(user, SPAN_DANGER("Your [src] broke!"))
-		new /obj/item/material/shard/shrapnel(user.loc)
+		new /obj/item/tool/material/shard/shrapnel(user.loc)
 	else
-		new /obj/item/material/shard/shrapnel(get_turf(src))
+		new /obj/item/tool/material//shard/shrapnel(get_turf(src))
 	playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1 -3)
 	spawn(2) qdel(src)
 	return

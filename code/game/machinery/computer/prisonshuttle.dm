@@ -39,7 +39,7 @@ var/prison_shuttle_timeleft = 0
 
 				if (src.stat & BROKEN)
 					to_chat(user, SPAN_NOTICE("The broken glass falls out."))
-					new /obj/item/material/shard( src.loc )
+					new erial/shard( src.loc )
 					A.state = 3
 					A.icon_state = "3"
 				else

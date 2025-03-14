@@ -420,7 +420,7 @@ proc/do_surgery(mob/living/carbon/M, mob/living/user, obj/item/tool)
 
 //This checks to see shrapnel in the person, used in surgery to remove them all.
 /obj/item/organ/external/proc/shrapnel_check()
-	if(locate(/obj/item/material/shard/shrapnel) in implants)
+	if(locate(/obj/item/tool/material/shard/shrapnel) in implants)
 		return TRUE
 
 	return FALSE

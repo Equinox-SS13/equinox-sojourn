@@ -27,7 +27,7 @@
 /obj/structure/displaycase/ex_act(severity)
 	switch(severity)
 		if (1)
-			new /obj/item/material/shard( src.loc )
+			new /obj/item/tool/material/shard( src.loc )
 			if (occupied)
 				new /obj/item/gun/energy/captain( src.loc )
 				occupied = FALSE
@@ -56,7 +56,7 @@
 			src.density = FALSE
 			src.destroyed = TRUE
 			src.locked = FALSE
-			new /obj/item/material/shard( src.loc )
+			new /obj/item/tool/material//shard( src.loc )
 			playsound(src, "shatter", 70, 1)
 			sanity_damage = 0.5 //Broken window theory
 			update_icon()

@@ -190,7 +190,7 @@ var/list/name_to_material
 	return 0
 
 // Weapons handle applying a divisor for this value locally.
-/material/proc/get_blunt_damage()
+/material/proc/get_weight()
 	return weight //todo
 
 // Return the matter comprising this material.
@@ -204,7 +204,7 @@ var/list/name_to_material
 	return temp_matter
 
 // As above.
-/material/proc/get_edge_damage()
+/material/proc/get_hardness()
 	return hardness //todo
 
 // Snowflakey, only checked for alien doors at the moment.
@@ -247,7 +247,7 @@ var/list/name_to_material
 // As above.
 /material/proc/place_shard(target, amount=1)
 	if(shard_type)
-		return new /obj/item/material/shard(target, src.name, amount)
+		return new /obj/item/tool/material/shard(target, src.name, amount)
 
 // Used by walls and weapons to determine if they break or not.
 /material/proc/is_brittle()

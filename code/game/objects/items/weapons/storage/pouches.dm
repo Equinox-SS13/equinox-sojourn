@@ -372,7 +372,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 		/obj/item/circuitboard,
 		/obj/item/tool,
 		/obj/item/stack/material,
-		/obj/item/material,
+		erial,
 		/obj/item/stack/rods,
 		/obj/item/device/lighting/toggleable/flashlight,
 		/obj/item/stack/cable_coil,

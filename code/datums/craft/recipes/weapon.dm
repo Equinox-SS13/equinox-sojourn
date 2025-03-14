@@ -5,7 +5,7 @@
 
 /datum/craft_recipe/weapon/baseballbat
 	name = "baseball bat"
-	result = /obj/item/material/baseballbat
+	result = erial/baseballbat
 	icon_state = "woodworking"
 	steps = list(
 		list(CRAFT_MATERIAL, 6, MATERIAL_WOOD)
@@ -13,7 +13,7 @@
 
 /datum/craft_recipe/weapon/rollingpin
 	name = "rolling pin"
-	result = /obj/item/material/kitchen/rollingpin
+	result = erial/kitchen/rollingpin
 	icon_state = "woodworking"
 	steps = list(
 		list(CRAFT_MATERIAL, 2, MATERIAL_WOOD)
@@ -40,14 +40,14 @@
 
 /datum/craft_recipe/weapon/knife_blade
 	name = "butterfly knife blade"
-	result = /obj/item/material/butterflyblade
+	result = erial/butterflyblade
 	steps = list(
 		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL)
 	)
 
 /datum/craft_recipe/weapon/knife_grip
 	name = "butterfly knife grip"
-	result = /obj/item/material/butterflyhandle
+	result = erial/butterflyhandle
 	steps = list(
 		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL)
 	)
@@ -75,7 +75,7 @@
 
 /datum/craft_recipe/weapon/fork
 	name = "fork"
-	result = /obj/item/material/kitchen/utensil/fork
+	result = erial/kitchen/utensil/fork
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
 	)
@@ -308,7 +308,7 @@
 		list(/obj/item/stack/rods, 2, "time" = 30),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10),
-		list(/obj/item/material/shard, 1, "time" = 10)
+		list(erial/shard, 1, "time" = 10)
 	)
 
 /datum/craft_recipe/weapon/steel_spear
@@ -419,7 +419,7 @@
 
 /datum/craft_recipe/weapon/spoon
 	name = "spoon"
-	result = /obj/item/material/kitchen/utensil/spoon
+	result = erial/kitchen/utensil/spoon
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
 	)

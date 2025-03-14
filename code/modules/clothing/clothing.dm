@@ -573,9 +573,9 @@ BLIND     // can't see anything
 	if(!knifes)
 		knifes = list(
 			/obj/item/tool/knife,
-			/obj/item/material/shard,
-			/obj/item/material/butterfly,
-			/obj/item/material/kitchen/utensil,
+			/obj/item/tool/material/shard,
+			/obj/item/tool/material/butterfly,
+			/obj/item/tool/material/kitchen/utensil,
 			/obj/item/tool/knife/tacknife,
 			/obj/item/tool/knife/shiv
 		)
@@ -633,7 +633,7 @@ BLIND     // can't see anything
 		/obj/item/storage/sheath,
 		/obj/item/gun,
 		/obj/item/melee,
-		/obj/item/material,
+		/obj/item/tool/material,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
 		/obj/item/handcuffs,

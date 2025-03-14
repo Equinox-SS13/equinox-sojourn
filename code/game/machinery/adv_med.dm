@@ -373,7 +373,7 @@
 					var/obj/item/implant/device = I
 					other_wounds += "[device.get_scanner_name()] detected"
 					continue
-				if(istype(I, /obj/item/material/shard/shrapnel))
+				if(istype(I, /obj/item/tool/material/shard/shrapnel))
 					other_wounds += "Embedded shrapnel"
 					continue
 				if(istype(I, /obj/item/implant))

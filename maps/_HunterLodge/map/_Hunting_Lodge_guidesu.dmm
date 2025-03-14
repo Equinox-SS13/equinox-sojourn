@@ -2609,7 +2609,7 @@
 "HJ" = (
 /obj/item/trash/cigbutt/cigarbutt,
 /obj/structure/table/woodentable,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "HK" = (
@@ -2630,7 +2630,7 @@
 "HR" = (
 /obj/structure/table/marble,
 /obj/item/reagent_containers/food/condiment/flour,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/food/condiment/flour,
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/outside/forest/hunting_lodge)
@@ -3066,7 +3066,7 @@
 /turf/simulated/floor/asteroid/grass/colonialjungle2,
 /area/nadezhda/outside/forest/hunting_lodge)
 "Tv" = (
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /obj/item/toy/plushie/carp,
 /turf/simulated/floor/beach/sand,
 /area/nadezhda/outside/forest/hunting_lodge)

@@ -398,7 +398,7 @@
 	pixel_x = 5
 	},
 /obj/machinery/light,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/template_noop)
 "vS" = (

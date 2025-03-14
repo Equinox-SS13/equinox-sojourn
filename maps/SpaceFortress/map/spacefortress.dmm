@@ -2702,15 +2702,15 @@
 /turf/simulated/floor/plating,
 /area/outpost/abandoned_fortress)
 "ie" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/outpost/abandoned_fortress)
 "if" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress)
 "ig" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/outpost/abandoned_fortress)
 "ih" = (

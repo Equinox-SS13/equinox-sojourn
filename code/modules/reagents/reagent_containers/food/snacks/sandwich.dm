@@ -6,7 +6,7 @@
 		qdel(W)
 		qdel(src)
 
-	if(istype(W,/obj/item/material/shard) || istype(W,/obj/item/reagent_containers/food/snacks))
+	if(istype(W,/obj/item/tool/material/shard) || istype(W,/obj/item/reagent_containers/food/snacks))
 		var/obj/item/reagent_containers/food/snacks/csandwich/S = new(get_turf(src))
 		S.attackby(W,user)
 		qdel(src)
@@ -32,7 +32,7 @@
 	if(src.contents.len > sandwich_limit)
 		to_chat(user, "\red If you put anything else on \the [src] it's going to collapse.")
 		return
-	else if(istype(W,/obj/item/material/shard))
+	else if(istype(W,/obj/item/tool/material//shard))
 		to_chat(user, SPAN_NOTICE("You hide [W] in \the [src]."))
 		user.drop_from_inventory(W, src)
 		update()
@@ -91,7 +91,7 @@
 /obj/item/reagent_containers/food/snacks/csandwich/attack(mob/M as mob, mob/user as mob, def_zone)
 	var/obj/item/shard
 	for(var/obj/item/O in contents)
-		if(istype(O,/obj/item/material/shard))
+		if(istype(O,/obj/item/tool/material//shard))
 			shard = O
 			break
 

@@ -3,8 +3,8 @@
 	icon_state = "tool-red"
 
 /obj/random/knife/item_to_spawn()
-	return pickweight(list(/obj/item/material/butterfly = 1,
-				/obj/item/material/butterfly/switchblade = 2,
+	return pickweight(list(erial/butterfly = 1,
+				erial/butterfly/switchblade = 2,
 				/obj/item/tool/knife = 1,
 				/obj/item/tool/knife/boot = 0.5,
 				/obj/item/tool/knife/hook = 2,
@@ -28,30 +28,30 @@
 	icon_state ="tool-red"
 
 /obj/random/mat_katana/item_to_spawn()
-	return pickweight(list(/obj/item/material/sword/katana = 2,
-				/obj/item/material/sword/katana/iron = 3,
-				/obj/item/material/sword/katana/plasteel = 3,
-				/obj/item/material/sword/katana/silver = 2,
-				/obj/item/material/sword/katana/gold = 2,
-				/obj/item/material/sword/katana/platinum = 1,
-				/obj/item/material/sword/katana/uranium = 1,
-				/obj/item/material/sword/katana/plastic = 1,
-				/obj/item/material/sword/katana/diamond = 0.1))
+	return pickweight(list(erial/sword/katana = 2,
+				erial/sword/katana/iron = 3,
+				erial/sword/katana/plasteel = 3,
+				erial/sword/katana/silver = 2,
+				erial/sword/katana/gold = 2,
+				erial/sword/katana/platinum = 1,
+				erial/sword/katana/uranium = 1,
+				erial/sword/katana/plastic = 1,
+				erial/sword/katana/diamond = 0.1))
 
 /obj/random/claymore
 	name = "random claymore"
 	icon_state = "tool-red"
 
 /obj/random/claymore/item_to_spawn()
-	return pickweight(list(/obj/item/material/sword = 2,
-				/obj/item/material/sword/iron = 3,
-				/obj/item/material/sword/plasteel = 3,
-				/obj/item/material/sword/silver = 2,
-				/obj/item/material/sword/gold = 2,
-				/obj/item/material/sword/platinum = 1,
-				/obj/item/material/sword/uranium = 1,
-				/obj/item/material/sword/plastic = 1,
-				/obj/item/material/sword/diamond = 0.1))
+	return pickweight(list(erial/sword = 2,
+				erial/sword/iron = 3,
+				erial/sword/plasteel = 3,
+				erial/sword/silver = 2,
+				erial/sword/gold = 2,
+				erial/sword/platinum = 1,
+				erial/sword/uranium = 1,
+				erial/sword/plastic = 1,
+				erial/sword/diamond = 0.1))
 
 /obj/random/melee
 	name = "random bludgeon"
@@ -70,7 +70,7 @@
 				/obj/item/shield/buckler/handmade = 0.5,
 				/obj/item/shield/riot/tray = 0.2,
 				/obj/item/shield/riot/lid = 0.2,
-				/obj/item/material/baseballbat = 2))
+				erial/baseballbat = 2))
 
 /obj/random/melee/low_chance
 	name = "low chance random bludgeon"

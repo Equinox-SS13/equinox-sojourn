@@ -527,7 +527,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_dress_old, R_FUN, FALSE)
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/color/black(M), slot_shoes)
 			M.equip_to_slot_or_del(new /obj/item/clothing/head/rank/chef(M), slot_head)
 
-			M.equip_to_slot_or_del(new /obj/item/material/kitchen/rollingpin(M), slot_r_hand)
+			M.equip_to_slot_or_del(new erial/kitchen/rollingpin(M), slot_r_hand)
 			M.equip_to_slot_or_del(new /obj/item/tool/knife(M), slot_l_hand)
 			M.equip_to_slot_or_del(new /obj/item/tool/knife(M), slot_r_store)
 			M.equip_to_slot_or_del(new /obj/item/tool/knife(M), slot_s_store)

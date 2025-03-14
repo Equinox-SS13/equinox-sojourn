@@ -88,7 +88,7 @@
 /datum/transform_type/shard/variable_size/update_values()
 
 	. = ..()
-	var/obj/item/material/shard/our_shard = (value_target?.resolve())
+	var/obj/item/tool/material/shard/our_shard = (value_target?.resolve())
 
 	if (!our_shard)
 		return

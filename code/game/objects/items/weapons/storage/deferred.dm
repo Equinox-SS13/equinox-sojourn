@@ -411,7 +411,7 @@
 	initial_contents = list(
 		/obj/item/tool/knife = 1,
 		/obj/item/tool/knife/butch = 1,
-		/obj/item/material/kitchen/rollingpin = 1,
+		erial/kitchen/rollingpin = 1,
 		/obj/item/packageWrap = 1,
 		/obj/item/reagent_containers/food/condiment/saltshaker = 1,
 		/obj/item/reagent_containers/food/condiment/peppermill = 1,

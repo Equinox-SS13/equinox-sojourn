@@ -3074,7 +3074,7 @@
 /turf/unsimulated/mineral,
 /area/nadezhda/outside/forest/river_forest_light)
 "Mc" = (
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /turf/simulated/floor/beach/water/ocean,
 /area/nadezhda/outside/forest/river_forest_light)
 "Me" = (
@@ -4137,7 +4137,7 @@
 /area/nadezhda/outside/forest/river_forest_light)
 "YG" = (
 /obj/item/trash/plate,
-/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/tool/material/kitchen/utensil/fork/plastic,
 /obj/item/reagent_containers/food/snacks/appletart,
 /turf/simulated/floor/carpet/gaycarpet,
 /area/nadezhda/outside/forest/river_forest_light)

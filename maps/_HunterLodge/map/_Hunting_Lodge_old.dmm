@@ -68,7 +68,7 @@
 /turf/simulated/floor/beach/water/ocean,
 /area/nadezhda/outside/forest/hunting_lodge)
 "ar" = (
-/obj/item/material/harpoon,
+/obj/item/tool/material/harpoon,
 /obj/item/toy/plushie/carp,
 /turf/simulated/floor/beach/sand,
 /area/nadezhda/outside/forest/hunting_lodge)
@@ -2125,7 +2125,7 @@
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "gA" = (
 /obj/structure/table/woodentable,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/wood,
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "gB" = (

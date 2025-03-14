@@ -540,7 +540,7 @@ datum/chemical_reaction/slime/spawn2
 
 /datum/chemical_reaction/slime/peace_obedience/on_reaction(var/datum/reagents/holder)
 	..()
-	var/obj/item/material/baseballbat/N = new /obj/item/material/baseballbat
+	varerial/baseballbat/N =l/material/baseballbat
 	N.loc = get_turf(holder.my_atom)
 
 //Adamantine

@@ -2778,7 +2778,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "agB" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/random/spider_trap_burrowing/low_chance,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
@@ -5447,7 +5447,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/nadezhda/absolutism/storage)
 "aNk" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -14552,7 +14552,7 @@
 /obj/random/furniture/pottedplant,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb2,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/dungeon/outside/farm)
 "jwf" = (
@@ -15391,8 +15391,8 @@
 /area/nadezhda/hallway/surface/section1)
 "kse" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "ktC" = (
@@ -16583,7 +16583,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/nadezhda/hallway/surface/section1)
 "lKX" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "lLo" = (
@@ -19336,8 +19336,8 @@
 /area/nadezhda/outside/meadow)
 "oIT" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "oJb" = (
@@ -21766,9 +21766,9 @@
 /area/nadezhda/outside/forest)
 "qQH" = (
 /obj/structure/grille/broken,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard/shrapnel,
-/obj/item/material/shard,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/farm)
 "qQK" = (
@@ -22484,7 +22484,7 @@
 "rEC" = (
 /obj/structure/catwalk,
 /obj/structure/table/rack/shelf,
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /turf/simulated/floor/plating/under,
 /area/mine/gulag)
 "rEU" = (
@@ -24239,7 +24239,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "trY" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
@@ -24747,7 +24747,7 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "tUo" = (
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "tUs" = (
@@ -27954,7 +27954,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/meadow)
 "wYf" = (
-/obj/item/material/kitchen/utensil/spoon/mre,
+/obj/item/tool/material/kitchen/utensil/spoon/mre,
 /obj/effect/decal/cleanable/rubble,
 /obj/random/material_ore,
 /turf/simulated/floor/asteroid,
@@ -28086,7 +28086,7 @@
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/snacks/meat,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/machinery/light_switch{
 	pixel_y = 30
 	},

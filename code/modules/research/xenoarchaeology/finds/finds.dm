@@ -165,11 +165,11 @@
 		if(3)
 			item_type = "[pick("fork","spoon","knife")]"
 			if(prob(25))
-				new_item = new /obj/item/material/kitchen/utensil/fork(src.loc)
+				new_item = new /obj/item/tool/material/kitchen/utensil/fork(src.loc)
 			else if(prob(50))
 				new_item = new /obj/item/tool/knife(src.loc)
 			else
-				new_item = new /obj/item/material/kitchen/utensil/spoon(src.loc)
+				new_item = new /obj/item/tool/material/kitchen/utensil/spoon(src.loc)
 			new_item.price_tag = rand(250,600) //Legit no use
 			additional_desc = "[pick("It's like no [item_type] you've ever seen before",\
 			"It's a mystery how anyone is supposed to eat with this",\
@@ -330,9 +330,9 @@
 			new_item.price_tag = rand(550,1100)
 		if(21 to 22)
 			if(prob(50))
-				new_item = new /obj/item/material/shard(src.loc)
+				new_item = new /obj/item/tool/material/shard(src.loc)
 			else
-				new_item = new /obj/item/material/shard/plasma(src.loc)
+				new_item = new /obj/item/tool/material//shard/plasma(src.loc)
 			apply_prefix = 0
 			apply_image_decorations = 0
 			apply_material_decorations = 0

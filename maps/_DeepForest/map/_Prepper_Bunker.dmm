@@ -170,7 +170,7 @@
 "aF" = (
 /obj/structure/table/rack/shelf,
 /obj/item/circuitboard/apc,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/circuit,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/dungeon/outside/prepper/vault/floor5)
@@ -183,7 +183,7 @@
 /obj/item/tool_upgrade/augment/holding_tank,
 /obj/item/frame/air_alarm,
 /obj/item/airalarm_electronics,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/metal,
 /obj/structure/cable/ender{
 	id = "preppergrid"
@@ -830,8 +830,8 @@
 /area/nadezhda/dungeon/outside/prepper/vault/entryway)
 "cK" = (
 /obj/structure/table,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "cN" = (
@@ -1012,7 +1012,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor5)
 "dZ" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard/plasma,
+/obj/item/tool/material/shard/plasma,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/nadezhda/dungeon/outside/prepper/vault/floor5)
@@ -1324,7 +1324,7 @@
 /turf/simulated/floor/asteroid/grass/dry,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "hs" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/railing/grey,
 /turf/simulated/floor/asteroid/grass/dry,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
@@ -2256,7 +2256,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "lZ" = (
 /obj/structure/girder/displaced,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "ma" = (
@@ -2271,9 +2271,9 @@
 "mc" = (
 /obj/machinery/door/blast/regular/open,
 /obj/structure/low_wall,
-/obj/item/material/shard,
-/obj/item/material/shard,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "md" = (
@@ -3503,7 +3503,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "rC" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/mineral,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "rD" = (
@@ -3674,7 +3674,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "sd" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "se" = (
@@ -3832,7 +3832,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "sD" = (
 /obj/structure/table,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/ammo/shotgun,
 /turf/simulated/floor/tiled/dark,
@@ -4773,18 +4773,18 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "vg" = (
 /obj/structure/table/rack,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/trash/material/metal,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
@@ -5130,8 +5130,8 @@
 "xs" = (
 /obj/structure/boulder,
 /obj/random/junk,
-/obj/item/material/shard,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "xt" = (
@@ -5228,7 +5228,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "xH" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/structure/toilet{
 	dir = 8
 	},
@@ -7234,7 +7234,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "Gc" = (
 /obj/structure/table/standard,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/item/stack/cable_coil/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
@@ -7332,7 +7332,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "Gw" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "Gx" = (
@@ -7421,7 +7421,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "GL" = (
 /obj/effect/decal/mecha_wreckage/ripley,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "GM" = (
@@ -7447,7 +7447,7 @@
 /turf/simulated/floor/tiled/white/panels,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "GQ" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/mecha_wreckage/ripley/firefighter,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
@@ -7542,7 +7542,7 @@
 "Hm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/item/material/shard/shrapnel,
+/obj/item/tool/material/shard/shrapnel,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "Hn" = (
@@ -7738,7 +7738,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "HT" = (
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
@@ -7855,7 +7855,7 @@
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "In" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "Io" = (
@@ -7880,12 +7880,12 @@
 "Ir" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "Is" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/dungeon/outside/prepper/vault/floor4)

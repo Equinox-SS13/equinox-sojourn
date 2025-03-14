@@ -172,7 +172,7 @@
 /area/template_noop)
 "pb" = (
 /obj/structure/table/woodentable,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /obj/item/storage/fancy/cigarettes/frozen,
 /obj/random/cloth/belt/low_chance,
 /turf/simulated/floor/carpet,

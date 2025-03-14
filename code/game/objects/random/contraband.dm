@@ -10,11 +10,11 @@
 				/obj/item/storage/pill_bottle/happy = 2,
 				/obj/item/storage/pill_bottle/zoom = 2,
 				/obj/item/contraband/poster = 5,
-				/obj/item/material/butterfly = 2,
-				/obj/item/material/butterflyblade = 3,
-				/obj/item/material/butterflyhandle = 3,
-				/obj/item/material/wirerod = 3,
-				/obj/item/material/butterfly/switchblade = 1,
+				erial/butterfly = 2,
+				erial/butterflyblade = 3,
+				erial/butterflyhandle = 3,
+				erial/wirerod = 3,
+				erial/butterfly/switchblade = 1,
 				/obj/item/clothing/mask/chameleon = 1,
 				/obj/item/clothing/glasses/chameleon = 1,
 				/obj/item/clothing/gloves/chameleon = 1,
@@ -26,7 +26,7 @@
 				/obj/item/gun/energy/chameleon = 2,
 				/obj/item/reagent_containers/syringe/drugs = 1,
 				/obj/item/reagent_containers/syringe/drugs_recreational = 1,
-				/obj/item/material/butterfly/frenchman = 1))
+				erial/butterfly/frenchman = 1))
 
 /obj/random/contraband/low_chance
 	name = "low chance random illegal item"

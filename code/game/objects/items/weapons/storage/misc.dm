@@ -50,7 +50,7 @@
 	can_hold = list(
 		/obj/item/reagent_containers/food/snacks,
 		/obj/item/storage/fancy/mre_cracker,
-		/obj/item/material/kitchen/utensil/spoon/mre
+		erial/kitchen/utensil/spoon/mre
 	)
 	var/open = FALSE
 
@@ -69,7 +69,7 @@
 	new /obj/item/reagent_containers/food/snacks/openable/can(src)
 	new /obj/item/storage/fancy/mre_cracker(src)
 	new /obj/item/reagent_containers/food/snacks/openable/mre(src)
-	new /obj/item/material/kitchen/utensil/spoon/mre(src)
+	new erial/kitchen/utensil/spoon/mre(src)
 	if(prob(50))
 		new /obj/item/reagent_containers/food/snacks/mre_paste(src)
 	else

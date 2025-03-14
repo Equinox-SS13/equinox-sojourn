@@ -2663,7 +2663,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/storage/box/drinkingglasses,
 /turf/simulated/floor/tiled/cafe,
@@ -13913,12 +13913,12 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/nadezhda/engineering/atmos)
 "aAU" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "aAV" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "aAW" = (
@@ -14118,7 +14118,7 @@
 	id = "bar";
 	name = "glass shutter"
 	},
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/wood,
 /area/nadezhda/crew_quarters/kitchen)
 "aBw" = (
@@ -14707,7 +14707,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "aDi" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/nadezhda/maintenance/undergroundfloor1north)
@@ -15726,7 +15726,7 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aGi" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -17023,7 +17023,7 @@
 /obj/structure/flora/small/trailrockb5,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/rock,
 /area/nadezhda/maintenance/undergroundfloor1south)
@@ -17453,7 +17453,7 @@
 	desc = "A dubious mix of... stuff in broth.";
 	name = "hobo stew"
 	},
-/obj/item/material/kitchen/utensil/spoon,
+/obj/item/tool/material/kitchen/utensil/spoon,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/common_oddities/low_chance,
 /turf/simulated/floor/tiled/techmaint,
@@ -18354,7 +18354,7 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOf" = (
@@ -18389,7 +18389,7 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOk" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOl" = (
@@ -18448,12 +18448,12 @@
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aOt" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOu" = (
 /obj/structure/low_wall,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aOv" = (
@@ -18871,12 +18871,12 @@
 /area/nadezhda/medical/cryo)
 "aPK" = (
 /obj/structure/table,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aPL" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/nadezhda/maintenance/undergroundfloor1south)
@@ -19121,7 +19121,7 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aQC" = (
 /obj/effect/decal/weldable/cracks,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -19164,7 +19164,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aQJ" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /turf/simulated/floor/wood,
 /area/nadezhda/maintenance/undergroundfloor1north)
 "aQK" = (
@@ -19285,7 +19285,7 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "aRd" = (
 /obj/structure/girder,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/grille,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/plating/under,
@@ -20031,7 +20031,7 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aTp" = (
 /obj/structure/girder,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/structure/grille,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/plating/under,
@@ -20430,7 +20430,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
@@ -20638,7 +20638,7 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aUV" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
 /turf/simulated/floor/tiled/steel/bar_dance,
@@ -21173,7 +21173,7 @@
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aWv" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
@@ -21431,7 +21431,7 @@
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aXd" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
 /turf/simulated/floor/tiled/steel/bar_flat,
@@ -21442,7 +21442,7 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aXf" = (
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/broken_bottle,
@@ -22266,7 +22266,7 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aZy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/steel/bar_flat,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aZz" = (
@@ -22378,7 +22378,7 @@
 "aZS" = (
 /obj/structure/table/bar_special,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "aZT" = (
@@ -26542,10 +26542,10 @@
 /area/nadezhda/maintenance/undergroundfloor1south)
 "blG" = (
 /obj/item/stack/rods,
-/obj/item/material/shard/shrapnel/scrap,
+/obj/item/tool/material/shard/shrapnel/scrap,
 /obj/effect/decal/cleanable/rubble,
 /obj/random/traps/wire_splicing/low_chance,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -32981,7 +32981,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/wood,
 /area/nadezhda/crew_quarters/kitchen)
 "euf" = (
@@ -37362,7 +37362,7 @@
 /area/nadezhda/crew_quarters/hydroponics)
 "hkA" = (
 /obj/item/remains/mouse,
-/obj/item/material/shard,
+/obj/item/tool/material/shard,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -39917,7 +39917,7 @@
 	name = "glass shutter"
 	},
 /obj/structure/table/marble,
-/obj/item/material/ashtray,
+/obj/item/tool/material/ashtray,
 /turf/simulated/floor/wood,
 /area/nadezhda/crew_quarters/bar)
 "iYM" = (
@@ -46490,7 +46490,7 @@
 /area/nadezhda/crew_quarters/podrooms)
 "nlD" = (
 /obj/structure/table/marble,
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
 "nlI" = (
@@ -62021,7 +62021,7 @@
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = -4
 	},
-/obj/item/material/kitchen/rollingpin,
+/obj/item/tool/material/kitchen/rollingpin,
 /obj/item/reagent_containers/atomic_distillery,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/command/captain/quarters)

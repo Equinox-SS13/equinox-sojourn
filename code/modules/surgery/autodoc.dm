@@ -95,7 +95,7 @@
 				patchnote.surgery_operations |= AUTODOC_FRACTURE
 		if(AUTODOC_EMBED_OBJECT in possible_operations)
 			if(external.implants)
-				if(locate(/obj/item/material/shard/shrapnel) in external.implants)
+				if(locate(/obj/item/tool/material/shard/shrapnel) in external.implants)
 					patchnote.surgery_operations |= AUTODOC_EMBED_OBJECT
 
 		if(external.wounds.len)
@@ -143,7 +143,7 @@
 
 	else if(patchnote.surgery_operations & AUTODOC_EMBED_OBJECT)
 		to_chat(patient, SPAN_NOTICE("Removing embedded objects from the patient's [external]."))
-		for(var/obj/item/material/shard/shrapnel/shrap in external.implants)
+		for(var/obj/item/tool/material/shard/shrapnel/shrap in external.implants)
 			external.remove_item(shrap, patient, FALSE)
 		patchnote.surgery_operations &= ~AUTODOC_EMBED_OBJECT
 

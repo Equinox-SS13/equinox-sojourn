@@ -404,7 +404,7 @@ Sword holsters
 	icon_state = "saya"
 	overlay_state = "saya"
 	slot = "utility"
-	can_hold = list(/obj/item/tool/sword/katana_makeshift, /obj/item/tool/sword/katana, /obj/item/material/sword/katana, /obj/item/tool/sword/katana/nano, /obj/item/tool/cheap/katana) // Only straight swords.
+	can_hold = list(/obj/item/tool/sword/katana_makeshift, /obj/item/tool/sword/katana, erial/sword/katana, /obj/item/tool/sword/katana/nano, /obj/item/tool/cheap/katana) // Only straight swords.
 
 /obj/item/clothing/accessory/holster/saber/saya/update_icon()
 	..()
