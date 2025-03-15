@@ -174,6 +174,7 @@
 /turf/simulated/mineral/attackby(obj/item/I, mob/living/user)
 	// Yes this is spaghetti but short of an entire rewrite of mine_turf attackby this is the only way to stop mining turf
 	if(istype(I, /obj/item/mecha_parts/mecha_equipment/))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) // Short cooldown on mech to make it not overwhelmingly quick vs foot mining
 		var/obj/item/mecha_parts/mecha_equipment/M = I
 		if(!M.chassis)
 			to_chat(user, SPAN_DANGER("You cannot use this tool by hand!"))
