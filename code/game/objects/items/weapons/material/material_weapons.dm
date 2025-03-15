@@ -44,6 +44,7 @@
 	else
 		force = material.get_blunt_damage()
 	force = round(force*force_divisor)
+	force_unwielded = force
 	throwforce = round(material.get_blunt_damage()*thrown_force_divisor)
 	//spawn(1)
 	//	world << "[src] has force [force] and throwforce [throwforce] when made from default material [material.name]"
@@ -60,6 +61,25 @@
 		if(material.products_need_process())
 			START_PROCESSING(SSobj, src)
 		update_force()
+
+/obj/item/material/proc/set_material_by_type(var/material/new_material)
+	material = new_material
+	if(!material)
+		qdel(src)
+	else
+		name = "[material.display_name] [initial(name)]"
+		health = round(material.integrity/10)
+		if(applies_material_colour)
+			color = material.icon_colour
+		if(material.products_need_process())
+			START_PROCESSING(SSobj, src)
+		update_force()
+
+/obj/item/material/refresh_upgrades()
+	..()
+	set_material_by_type(material)
+	update_force()
+
 
 /obj/item/material/Destroy()
 	STOP_PROCESSING(SSobj, src)

@@ -81,5 +81,6 @@
 	desc = "A french flag has been embossed on the handle, the deftness of this blade and how supremely lethal its diamond edged blade is would make this perfect for sinking said blade \
 			into a monsters back... or another colonist."
 	icon_state = "frenchmen"
+	default_material = MATERIAL_DIAMOND
 	matter = list(MATERIAL_SILVER = 2, MATERIAL_PLASTEEL = 10, MATERIAL_DIAMOND = 3)
 	backstab_damage = 25
