@@ -308,3 +308,10 @@
 	 * final offset of the projectile. Make sure to sync with initial_firing_offset.
 	**/
 	var/current_firing_offset = 2
+
+	var/fancy_attack_overlay //Overlay icon for when we attack something
+	var/fancy_attack_shading = "#C4A484" //When a new attack animation is spawned we use this colour -whitescale
+	var/randomize_attack_effect_location = TRUE //Used for fancy_attack_overlay shifting of pixels
+
+//SoJ edit
+

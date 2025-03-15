@@ -702,6 +702,7 @@
 	chems = list()
 	var/list/possible_chems = list(
 		"woodpulp",
+		"clothfiber",
 		"bicaridine",
 		"hyperzine",
 		"cryoxadone",
@@ -1051,6 +1052,28 @@
 	set_trait(TRAIT_PLANT_ICON,"stalk2")
 	set_trait(TRAIT_WATER_CONSUMPTION, 6)
 	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.15)
+
+/datum/seed/linen
+	name = "linen"
+	seed_name = "linen"
+	display_name = "linen stalks"
+	chems = list("clothfiber" = list(10,1))
+	kitchen_tag = "linen"
+	// companions = list("tower cap") - Companion plant not ported yet
+
+/datum/seed/linen/New()
+	..()
+	set_trait(TRAIT_MATURATION,8)
+	set_trait(TRAIT_PRODUCTION,1)
+	set_trait(TRAIT_YIELD,5)
+	set_trait(TRAIT_POTENCY,1)
+	set_trait(TRAIT_PRODUCT_ICON,"rice")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#e3d6c2")
+	set_trait(TRAIT_PLANT_COLOUR,"#d0ba98")
+	set_trait(TRAIT_PLANT_ICON,"stalk2")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6)
+	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.15)
+
 
 /datum/seed/carrots
 	name = "carrot"
