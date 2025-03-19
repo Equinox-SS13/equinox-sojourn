@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/scaffold
-	name = "Greyson Positronic \"Scaffold\" caseless rifle"
-	desc = "A old and lost gun design of a caseless rifle by Greyson Positronic, its high fire rate stopping power and more make it the perfect frame for war. \
-	Its'caliber is 10mm and shockingly can be fitted with a silencer, has room for a scope and the ablity for a Master Unmaker to be integrated into it."
+	name = "\"Scaffold\" infantry rifle"
+	desc = "A lost, forgotten infantry rifle design by Greyson Positronics. Chambered in 10x24mm."
 	icon = 'icons/obj/guns/projectile/scaffold.dmi'
 	icon_state = "scaffold"
 	item_state = "scaffold"

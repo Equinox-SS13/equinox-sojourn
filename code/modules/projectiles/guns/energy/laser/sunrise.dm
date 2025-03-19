@@ -1,9 +1,6 @@
 /obj/item/gun/energy/sunrise
 	name = "\"Sunrise\" laser SMG"
-	desc = "The \"Sunrise\" laser SMG is a Nadezhda Marshal's special in terms of its creation.\
-	This once dated SMG design has been completely stripped down and shoved full of hardware from a Firestorm and Discolaser.\
-	However parts themselves appear to have been modified to allow for the beams to keep much of their power through high-focused lenses!\
-	Etched into the guns receiver on the left side is a script \"M\" letter."
+	desc = "An in-colony hybridized modification of the Firestorm laser gun. Has no mounting slots for any type of upgrade."
 	icon = 'icons/obj/guns/energy/sunrise.dmi'
 	icon_state = "sunrise"
 	item_state = "sunrise"
@@ -14,7 +11,7 @@
 	can_dual = FALSE
 	twohanded = TRUE
 	projectile_type = /obj/item/projectile/beam/midlaser
-	projectile_color = "#C48A18"
+	projectile_color = "#ee6322"
 	cell_type = /obj/item/cell/medium
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 4, MATERIAL_GLASS = 10, MATERIAL_URANIUM = 2)

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/crossbow
 	name = "\"Nemesis\" energy crossbow"
-	desc = "An Old Testament mini energy crossbow, currently produced only in small batches. Small, portable, and self-charging, it's great for wilderness survival."
+	desc = "A church-made energy crossbow. Small, portable, and self recharging."
 	icon = 'icons/obj/guns/energy/crossbow.dmi'
 	icon_state = "crossbow"
 	w_class = ITEM_SIZE_SMALL
@@ -31,8 +31,8 @@
 	serial_shown = FALSE
 
 /obj/item/gun/energy/crossbow/largecrossbow
-	name = "\"Themis\" energy crossbow"
-	desc = "An aging Old Testament energy crossbow, currently produced only in small batches. Favored for game hunting."
+	name = "\"Themis\" energy rifle crossbow"
+	desc = "A large and church-made aptly named 'rifle crossbow' due to it's size. More powerful than it's brother."
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_NORMAL
 	matter = list(MATERIAL_PLASTEEL = 35, MATERIAL_PLASTIC = 20, MATERIAL_SILVER = 9, MATERIAL_URANIUM = 9)

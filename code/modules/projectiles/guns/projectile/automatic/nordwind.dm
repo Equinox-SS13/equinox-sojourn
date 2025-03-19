@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/nordwind
 	name = "\"Nordwind\" precision rifle"
-	desc = "A \"Nordwind\" high-end police-grade marksman rifle manufactured by Seinemetall Defense GmbH equiped with a night-vision scope. Primarily used by law enforcement, counter-terror units, and private security. Uses 7.62mm Rifle rounds."
+	desc = "A high-end marksman rifle used by colonial police SWAT teams. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/nordwind.dmi'
 	icon_state = "nordwind"
 	item_state = "nordwind"
@@ -36,7 +36,7 @@
 
 /obj/item/part/gun/frame/nord
 	name = "Wind-series frame"
-	desc = "A generic -Wind series rifle frame. Simply use a drill-bit or a buffer to your desired caliber! Includes several advanced mechanisms not often seen in lower-end weapons"
+	desc = "A generic -Wind series rifle frame."
 	icon_state = "frame_wind"
 	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_DIAMOND = 2)
 	result = /obj/item/gun/projectile/automatic/nordwind
@@ -47,8 +47,7 @@
 
 /obj/item/gun/projectile/automatic/nordwind/strelki
 	name = "\"Strelki\" precision rifle"
-	desc = "A Strelki precision rifle, an inexpensive rifle of decent quality made by Hunt Inc.\
-			Its mostly wooden design and its usage of 7.62mm rounds make it the ideal weapon for a hunter tired of a crude bolt action. The frontier's favorite sniper!"
+	desc = "An inexpensive marksman rifle made for the outdoors. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/strelki.dmi'
 	icon_state = "strelki"
 	item_state = "strelki"
@@ -96,8 +95,7 @@
 
 /obj/item/gun/projectile/automatic/nordwind/strelki/sawn
 	name = "\"Strelki\" precision rifle"
-	desc = "A Strelki precision rifle, an inexpensive rifle of dubious quality made by Hunt Inc.\
-			Someone has decided it's a good idea to take off the scope, saw off most of the wood and put a barrel shroud on it? Why in Gods name. ."
+	desc = "An inexpensive marksman rifle made for the outdoors. Chambered in 7.62mm, this one was sawn down."
 	icon = 'icons/obj/guns/projectile/sawnoff/strelki.dmi'
 	icon_state = "strelki"
 	item_state = "strelki"
@@ -117,7 +115,7 @@
 
 /obj/item/part/gun/frame/strelki
 	name = "Strelki frame"
-	desc = "A Strelki rifle frame. The finest among hunters and operators alike, known for building cheap Strelki rifles or more expensive Duty rifles."
+	desc = "A Strelki rifle frame, very similar to the Duty rifle."
 	icon_state = "frame_orrifle"
 	result = /obj/item/gun/projectile/automatic/nordwind/strelki
 	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/black)
@@ -127,9 +125,8 @@
 
 
 /obj/item/gun/projectile/automatic/nordwind/watchtower
-	name = "\"Watchtower\" DMR"
-	desc = "A designated marksman rifle designed in cooperation between the marshals and the blackshield, made with lightweight materials and simple, easy to maintain components. \
-	A favorite of troopers who prefer to friendly fire rather than to be friendly fired."
+	name = "\"Watchtower\" marksman rifle"
+	desc = "An in-colony designated marksman rifle based on the Nordwind platform. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/watchtower.dmi'
 	icon_state = "watchtower"
 	item_state = "watchtower"

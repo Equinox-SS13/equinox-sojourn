@@ -1,6 +1,6 @@
 /obj/item/gun/energy/lasercore
-	name = "\"Laser Core\" laser carbine"
-	desc = "A high-powered laser carbine made by H&S. It was hailed back in its prime for its high-powered shots and compactness. However, it really consumes power."
+	name = "\"Core\" laser rifle"
+	desc = "A high-power laser rifle with a folding stock and a scope fitting."
 	icon = 'icons/obj/guns/energy/lasercore.dmi'
 	icon_state = "lcore"
 	item_state = "lcore"
@@ -9,7 +9,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
 	projectile_type = /obj/item/projectile/beam/heavylaser
-	projectile_color = "#0000FF"
+	projectile_color = "#2b2bff"
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 8, MATERIAL_SILVER = 10, MATERIAL_GOLD = 2)
 	charge_cost = 120
 	fire_delay = 10
@@ -56,12 +56,12 @@
 	set_item_state(itemstring)
 
 /obj/item/gun/energy/lasercore/militia
-	name = "Blackshield \"Laser Core\" carbine"
-	desc = "A high-powered laser carbine made by H&S and modified by the Marshals. Hailed in its prime for its high power and compactness, notable improvements have been made to its energy efficiency and it bears blackshield IFF stripes. however it is somewhat slower to fire."
+	name = "Militia \"Core\" laser rifle"
+	desc = "A slower-firing in-colony variant of the Laser Core rifle with minor improvements, such as reduced power consumption."
 	icon = 'icons/obj/guns/energy/lasercore_bs.dmi'
 	icon_state = "lcore"
 	item_state = "lcore"
-	projectile_color = "#6f5791"
+	projectile_color = "#3ab0ff"
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 8, MATERIAL_SILVER = 10, MATERIAL_GOLD = 2)
 	charge_cost = 100
 	fire_delay = 13
@@ -73,11 +73,8 @@
 	serial_type = "NM"
 
 /obj/item/gun/energy/lasercore/militia/blaster
-	name = "\"Gleam\" Laser Rifle"
-	desc = "An old and venerable design from arms giants H&S. Originally pitched as a high-end upgrade to the 'Laser Core' available to those Federation forces \
-	with both the need and finances to afford it. Insanely tempermental, these weapons while an improvement in almost every way over their base platform are infamous \
-	for its high maintenance, requiring both frequent and expensive parts replacement to remain up to spec. This one still bears the scar of its H&S serial which appears\
-	to have been 'drawn over' with an electro-stensil."
+	name = "\"Gleam\" laser rifle"
+	desc = "An expensive, specialized variant of the Core laser rifle designed for government contractors and aristocrats, victim to incredibly demanding maintenance costs."
 	icon = 'icons/obj/guns/energy/gleam.dmi' //Credit to Aurora for the sprite that I shamelessly kitbashed to serve my costs.
 	icon_state = "gleam"
 	item_state = "gleam"

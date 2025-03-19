@@ -1,6 +1,6 @@
 /obj/item/gun/energy/centurio
-	name = "\"Centurio\" plasma pistol"
-	desc = "A specialized firearm designed to fire lethal plasma rounds or a slow wave of ion particles."
+	name = "\"Century\" plasma pistol"
+	desc = "A compact in-colony dual-mode plasma pistol of sturdy construction."
 	icon = 'icons/obj/guns/energy/toxgun.dmi'
 	icon_state = "toxgun"
 	w_class = ITEM_SIZE_NORMAL
@@ -14,8 +14,8 @@
 	damage_multiplier = 1
 	init_recoil = HANDGUN_RECOIL(0.2)
 	init_firemodes = list(
-		list(mode_name="melt", mode_desc="Hard hitting plasma bolt that melts flesh and armor alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay = 9, icon="destroy", projectile_color = "#006633"),
-		list(mode_name="ion shot", mode_desc="An iodizing shot to disable cells, electronics and cybernetics ", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay = 25, icon="stun", projectile_color = "#ff7f24"),
+		list(mode_name="plasma", mode_desc="Hard hitting plasma bolt that melts flesh and armor", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay = 9, icon="destroy", projectile_color = "#2bd37f"),
+		list(mode_name="EMP", mode_desc="An ionized toroid that disables electronics", projectile_type=/obj/item/projectile/ion, fire_sound='sound/effects/supermatter.ogg', fire_delay = 25, icon="stun", projectile_color = "#99ffb2"),
 		)
 	serial_type = "SI"
 	charge_cost = 50
@@ -25,8 +25,7 @@
 
 /obj/item/gun/energy/plasma/auretian
 	name = "\"Auretian\" energy pistol"
-	desc = "\"Soteria\" brand energy pistol, for personal overprotection. It has the advantage of using laser and plasma firing methods, \
-	with the former firing rapid weaker shots able to pass through glass or grilles and the latter firing slower but higher damage armor penetrating shots."
+	desc = "An unreliable and complicated in-colony dual-mode energy gun that has both a laser emitter and a plasma chamber, the first of which is substantially faster firing."
 	icon = 'icons/obj/guns/energy/brigador.dmi'
 	icon_state = "brigador"
 	charge_meter = FALSE
@@ -44,8 +43,8 @@
 	gun_tags = list(GUN_LASER, GUN_ENERGY)
 
 	init_firemodes = list(
-		list(mode_name="plasma", mode_desc="Hard hitting plasma bolt that melts flesh and armor alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/melt.ogg', fire_delay=9, icon="destroy", projectile_color = "#00FFFF"),
-		list(mode_name="laser", mode_desc="Weak laser to pierce armor and skin", projectile_type=/obj/item/projectile/beam/midlaser, fire_sound='sound/weapons/energy/laser_pistol.ogg', fire_delay=0.5, icon="kill", projectile_color = "#00AAFF"),
+		list(mode_name="plasma", mode_desc="Hard hitting plasma bolt that melts flesh and armor", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/melt.ogg', fire_delay=9, icon="destroy", projectile_color = "#32da99"),
+		list(mode_name="laser", mode_desc="Standard laser bolt", projectile_type=/obj/item/projectile/beam/midlaser, fire_sound='sound/weapons/energy/laser_pistol.ogg', fire_delay=0.5, icon="kill", projectile_color = "#d11d1d"),
 	)
 	serial_type = "SI"
 
