@@ -1,0 +1,58 @@
+/mob/living/carbon/superior_animal/ant/juvenile
+	name = "Juvenile Ant"
+	desc = "A tiny ant. It never stays still for long."
+	icon_state = "roachling"
+
+	turns_per_move = 3
+	maxHealth = 10 * ROACH_HEALTH_MOD
+	health = 10 * ROACH_HEALTH_MOD
+	move_to_delay = 3.5
+
+	knockdown_odds = 3
+	melee_damage_lower = 2
+	melee_damage_upper = 3
+
+	armor = list(melee = 1, bullet = 0, energy = 0, bomb = 0, bio = 5, rad = 0, agony = 0)
+
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat/ant
+	meat_amount = 1
+	eating_time = 90 SECONDS //Takes less time
+	life_cycles_before_sleep = 800 //We need more time to eat
+	probability_egg_laying = 95 //We are the quickest are we dont want to waste eggs!
+	var/amount_grown = 0
+	var/big_boss = FALSE
+
+
+/mob/living/carbon/superior_animal/ant/juvenile/Life()
+	.=..()
+	if(!stat)
+		amount_grown += rand(0,2) // Roachling growing up
+
+		if(amount_grown >= 50) // Old enough to turn into an adult
+			var/spawn_type
+			if (fed > 0) // If has eaten a corpse
+				if (big_boss == TRUE && prob(fed))	// has eaten a fuhrer roach or equivalent and has eaten a bunch otherwise
+					spawn_type = /mob/living/carbon/superior_animal/ant/queen	// or got lucky
+				else
+					spawn_type = pickweight(list(/mob/living/carbon/superior_animal/ant = 0.5,
+						/mob/living/carbon/superior_animal/ant/tank = 4,
+						/mob/living/carbon/superior_animal/ant/toxic = 6,
+						/mob/living/carbon/superior_animal/ant/nanite = 0.5,
+						/mob/living/carbon/superior_animal/ant/hunter = 2,
+						/mob/living/carbon/superior_animal/ant/support = 6,
+						/mob/living/carbon/superior_animal/ant/female = 2))
+			else
+				spawn_type = pickweight(list(/mob/living/carbon/superior_animal/ant = 9,
+					/mob/living/carbon/superior_animal/ant/tank = 2,
+					/mob/living/carbon/superior_animal/ant/toxic = 2,
+					/mob/living/carbon/superior_animal/ant/nanite = 2,
+					/mob/living/carbon/superior_animal/ant/hunter = 4,
+					/mob/living/carbon/superior_animal/ant/support = 4,
+					/mob/living/carbon/superior_animal/ant/female = 0.5))
+
+			if (ispath(spawn_type, /mob/living/carbon/superior_animal/ant))
+				new spawn_type(src.loc, src, list("friends" = src.friends.Copy()))
+			else if(ispath(spawn_type, /mob))
+				var/mob/living/carbon/superior_animal/ant/ant = new spawn_type(src.loc, src)
+				ant.friends += src.friends
+			qdel(src)

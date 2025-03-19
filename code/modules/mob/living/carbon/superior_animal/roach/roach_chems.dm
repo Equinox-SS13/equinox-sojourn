@@ -1,7 +1,7 @@
 /datum/reagent/toxin/blattedin
 	name = "Blattedin"
 	id = "blattedin"
-	description = "A powerful toxin produced by those omnipresent roaches."
+	description = "A powerful toxin produced by the local insects."
 	taste_description = "chicken"
 	reagent_state = LIQUID
 	color = "#0F4800"
@@ -15,6 +15,10 @@
 /datum/reagent/toxin/blattedin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(istype(M, /mob/living/carbon/superior_animal/roach))
 		var/mob/living/carbon/superior_animal/roach/bug = M
+		bug.heal_organ_damage(heal_strength*removed)
+	//Eqinox Edit: Adding Ants
+	if(istype(M, /mob/living/carbon/superior_animal/ant))
+		var/mob/living/carbon/superior_animal/ant/bug = M
 		bug.heal_organ_damage(heal_strength*removed)
 	else if(M.species?.reagent_tag == IS_CHTMANT || (ROACH_BLOOD in M.mutations))
 		M.adjustOxyLoss(-0.6)
@@ -32,7 +36,7 @@
 
 /datum/reagent/toxin/blattedin/on_mob_add(mob/living/L)
 	..()
-	if(istype(L, /mob/living/carbon/superior_animal/roach))
+	if(istype(L, /mob/living/carbon/superior_animal/roach) || istype(L, /mob/living/carbon/superior_animal/ant))
 		var/mob/living/carbon/superior_animal/roach/bug = L
 		if(bug.stat == DEAD)
 			if((bug.blattedin_revives_left >= 0) && prob(70))//Roaches sometimes can come back to life from healing vapors
@@ -43,10 +47,11 @@
 	bug.blattedin_revives_left = max(0, bug.blattedin_revives_left - 1)
 	bug.rejuvenate()
 
+
 /datum/reagent/toxin/diplopterum
 	name = "Diplopterum"
 	id = "diplopterum"
-	description = "Can be found in tissues of the roaches."
+	description = "Can be found in tissues of insects."
 	taste_description = "sludge"
 	reagent_state = LIQUID
 	color = "#c9bed2"
@@ -92,7 +97,7 @@
 /datum/reagent/toxin/seligitillin
 	name = "Seligitillin"
 	id = "seligitillin"
-	description = "Promotes blood clotting. Harvested from Seuche roaches."
+	description = "Promotes blood clotting. Harvested from Seuche roaches and Matabele ants."
 	taste_description = "plague"
 	reagent_state = LIQUID
 	color = "#6d33b4"
@@ -137,7 +142,7 @@
 /datum/reagent/toxin/starkellin
 	name = "Starkellin"
 	id = "starkellin"
-	description = "Harvested from Panzer roaches."
+	description = "Harvested from Panzer roaches and Guard ants."
 	taste_description = "metal"
 	reagent_state = LIQUID
 	color = "#736bbe"
@@ -174,7 +179,7 @@
 /datum/reagent/toxin/gewaltine
 	name = "Gewaltine"
 	id = "gewaltine"
-	description = "Harvested from Jager roaches."
+	description = "Harvested from Jager roaches and Soldier ants."
 	taste_description = "raw meat"
 	reagent_state = LIQUID
 	color = "#9452ba"
@@ -213,9 +218,9 @@
 	M.adjustCloneLoss(2)
 
 /datum/reagent/toxin/fuhrerole
-	name = "Fuhrerole"
+	name = "Regentol"
 	id = "fuhrerole"
-	description = "Harvested from Fuhrer roaches."
+	description = "Harvested from Fuhrer roaches and ant Queens."
 	taste_description = "third reich"
 	reagent_state = LIQUID
 	color = "#a6b85b"
