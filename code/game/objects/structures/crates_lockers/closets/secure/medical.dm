@@ -154,6 +154,7 @@
 	new /obj/item/clothing/accessory/stethoscope(src)
 	new /obj/item/clothing/gloves/latex/nitrile(src)
 	new /obj/item/clothing/accessory/holster/medical(src)
+	new /obj/item/storage/hypospraykit/paramedic(src) //Equinox edit: basic med loadout, 45u
 
 /obj/structure/closet/secure_closet/reinforced/CMO
 	name = "Soteria Biolab Overseer's locker"
@@ -189,7 +190,6 @@
 	new /obj/item/clothing/shoes/color/brown(src)
 	new /obj/item/device/radio/headset/heads/cmo(src)
 	new /obj/item/device/flash(src)
-	new /obj/item/reagent_containers/hypospray(src)
 	new /obj/item/storage/pouch/medical_supply(src)
 	new /obj/item/clothing/shoes/reinforced/medical(src)
 	new /obj/item/clothing/gloves/latex/nitrile(src)
@@ -202,6 +202,7 @@
 	new /obj/item/clothing/accessory/holster/saber/rapiermed/occupied(src)
 	new /obj/item/clothing/accessory/holster/medical(src)
 	new /obj/item/clothing/suit/storage/vest/paramedic(src)
+	new /obj/item/storage/hypospraykit/cmo(src) //Equinox edit: new hyposprays
 
 /obj/structure/closet/secure_closet/animal
 	name = "animal control closet"
