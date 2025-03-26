@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/boltgun/flare_gun
-	name = "H&S .22 \"Dazzlation\" light pistol"
-	desc = "\"Dazzlation\" is also known as a flare gun made of plastic with some steel interworkings."
+	name = "H&S .22 \"Dazzlation\" flare gun"
+	desc = "A cheap flare gun made of plastic with some steel interworkings."
 	icon = 'icons/obj/guns/projectile/flaregun.dmi'
 	icon_state = "flaregun"
 	item_state = "pistol"

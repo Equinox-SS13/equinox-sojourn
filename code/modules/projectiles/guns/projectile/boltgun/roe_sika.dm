@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/boltgun/light
-	name = "\"Roe\" light boltgun"
-	desc = "Weapon for hunting, sniping, and competition shooting. Chambered in 6.5mm, it's a common varmint and plinking rifle."
+	name = "\"Roe\" varmint rifle"
+	desc = "A commercial and widespread civilian rifle made for hunting and competition shooting. Chambered in 6.5mm."
 	icon = 'icons/obj/guns/projectile/lightboltgun_wood.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
@@ -21,8 +21,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/roe = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 /obj/item/gun/projectile/boltgun/sawn/light
-	name = "\"obrez\" light boltgun"
-	desc = "A crudly mangled and sawn-down 6.5mm bolt action rifle. Rifle was fine."
+	name = "\"Roebrez\" pistol"
+	desc = "A stripped and sawn-off Roe varmint rifle. Chambered in 6.5mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/boltgun_wood.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"

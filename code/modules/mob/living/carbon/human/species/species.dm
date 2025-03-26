@@ -14,7 +14,6 @@
 
 	var/default_form = FORM_HUMAN	//If nothing else sets it, what do we look like.
 	var/obligate_form = FALSE		//If true, character creation will force the use of either this form or its subforms.
-	var/obligate_name = TRUE		//If true, forces the character's species name and name color to conform.
 
 	var/list/permitted_ears  = null
 	var/list/permitted_tail  = null
@@ -81,7 +80,6 @@
 	var/warning_high_pressure = WARNING_HIGH_PRESSURE // High pressure warning.
 	var/warning_low_pressure = WARNING_LOW_PRESSURE   // Low pressure warning.
 	var/hazard_low_pressure = HAZARD_LOW_PRESSURE     // Dangerously low pressure.
-	var/eyes_are_impermeable = FALSE         		  // If TRUE, this species' eyes are not damaged by plasma.
 	var/light_dam                                     // If set, mob will be damaged in light over this value and heal in light below its negative.
 	var/body_temperature = 310.15	                  // Non-IS_SYNTHETIC species will try to stabilize at this temperature.
 	                                                  // (also affects temperature processing)

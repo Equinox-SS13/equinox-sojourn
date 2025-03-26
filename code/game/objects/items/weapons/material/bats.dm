@@ -8,13 +8,11 @@
 	hitsound = 'sound/weapons/blunthit.ogg' // Ouch!
 	default_material = MATERIAL_WOOD
 	force_divisor = 0.84           // 15 when unwielded 22 when wielded with weight 18 (wood)
+	force_wielded_multiplier = 1.5
 	slot_flags = SLOT_BACK
 	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
 
-/obj/item/material/baseballbat/update_force()
-	..()
-	force_unwielded = force
-	force_wielded = force * 1.5
+
 
 //Predefined materials go here.
 /obj/item/material/baseballbat/metal/New(var/newloc)

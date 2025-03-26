@@ -89,10 +89,14 @@
 	has_resources = 1
 
 /turf/simulated/mineral/Initialize()
-	.=..()
+	. = ..()
 	icon_state = "rock[rand(0,4)]"
 	spawn(0)
 		MineralSpread()
+
+/turf/simulated/mineral/examine()
+	. = ..()
+	to_chat(usr, SPAN_NOTICE("You can mine it by walking into it with a digging tool in your active hand. Or in an exosuit with an active drill."))
 
 /turf/simulated/mineral/can_build_cable()
 	return !density
@@ -127,14 +131,10 @@
 	. = ..()
 	if(ishuman(AM))
 		var/mob/living/carbon/human/H = AM
-		if(istype(H.l_hand,/obj/item))
-			var/obj/item/I = H.l_hand
-			if((QUALITY_DIGGING in I.tool_qualities) && (!H.hand))
-				attackby(I,H)
-		if(istype(H.r_hand,/obj/item))
-			var/obj/item/I = H.r_hand
-			if((QUALITY_DIGGING in I.tool_qualities) && (H.hand))
-				attackby(I,H)
+		var/obj/item/W = H.get_active_hand()
+		if(istype(W,/obj/item))
+			if(QUALITY_DIGGING in W.tool_qualities)
+				attackby(W,H)
 
 	else if(isrobot(AM))
 		var/mob/living/silicon/robot/R = AM
@@ -145,8 +145,10 @@
 
 	else if(istype(AM,/obj/mecha))
 		var/obj/mecha/M = AM
-		if(istype(M.selected,/obj/item/mecha_parts/mecha_equipment/tool/drill))
-			M.selected.action(src)
+		var/mob/living/user = M.occupant // Need to pass it in for stats, also means mech user skill technically matter, at least for mining
+		// i.e. 30 ROB = instant mining with default drill
+		if(istype(M.selected,/obj/item/mecha_parts/mecha_equipment/tool/drill) && M.occupant)
+			M.selected.action(src, user) // Can't figure out how to 3x1 this later
 
 /turf/simulated/mineral/proc/MineralSpread()
 	if(mineral && mineral.spread)
@@ -170,6 +172,13 @@
 
 //Not even going to touch this pile of spaghetti
 /turf/simulated/mineral/attackby(obj/item/I, mob/living/user)
+	// Yes this is spaghetti but short of an entire rewrite of mine_turf attackby this is the only way to stop mining turf
+	if(istype(I, /obj/item/mecha_parts/mecha_equipment/))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) // Short cooldown on mech to make it not overwhelmingly quick vs foot mining
+		var/obj/item/mecha_parts/mecha_equipment/M = I
+		if(!M.chassis)
+			to_chat(user, SPAN_DANGER("You cannot use this tool by hand!"))
+			return
 
 	var/tool_type = I.get_tool_type(user, list(QUALITY_DIGGING, QUALITY_EXCAVATION), src, CB = CALLBACK(src,PROC_REF(check_radial_dig)))
 	switch(tool_type)
@@ -321,7 +330,7 @@
 		var/obj/item/device/measuring_tape/P = I
 		user.visible_message(SPAN_NOTICE("\The [user] extends [P] towards [src]."),SPAN_NOTICE("You extend [P] towards [src]."))
 		if(do_after(user,25, src))
-			to_chat(user, SPAN_NOTICE("\icon[P] [src] has been excavated to a depth of [2*excavation_level]cm."))
+			to_chat(user, SPAN_NOTICE("\icon[P] [src] has been excavated to a depth of [excavation_level]cm."))
 		return
 
 	else

@@ -1223,6 +1223,26 @@ proc/is_hot(obj/item/W as obj)
 		if(NORTHWEST)
 			return SOUTHEAST
 
+// Get neighboring cardinal / ordinal direction. Return 2
+/proc/get_neighbor_directions(var/dir)
+	switch(dir)
+		if(NORTH)
+			return list(NORTHEAST, NORTHWEST)
+		if(NORTHEAST)
+			return list(NORTH, EAST)
+		if(EAST)
+			return list(NORTHEAST, SOUTHEAST)
+		if(SOUTHEAST)
+			return list(EAST, SOUTH)
+		if(SOUTH)
+			return list(SOUTHEAST, SOUTHWEST)
+		if(SOUTHWEST)
+			return list(SOUTH, WEST)
+		if(WEST)
+			return list(SOUTHWEST, NORTHWEST)
+		if(NORTHWEST)
+			return list(WEST, NORTH)
+
 /*
 Checks if that loc and dir has a item on the wall
 */

@@ -3,8 +3,8 @@
 //There's also a robot version which uses power instead of gas tubes.
 
 /obj/item/hatton
-	name = "Artificer's Guild BT \"Hatton\""
-	desc = "More an instrument than a weapon, this breaching tool was designed for emergency situations."
+	name = "Breaching Tool \"Hatton\""
+	desc = "A breaching tool designed to wedge into an airlock or against a wall, using superheated compressed gas to \"dematerialize\" the non-biological target. Loaded with gas tubes."
 	icon = 'icons/obj/guns/breacher.dmi'
 	icon_state = "Hatton_Hammer_1"
 	item_state = "Hatton_Hammer_1"
@@ -56,7 +56,7 @@
 		user.put_in_hands(magazine)
 		magazine.update_icon()
 		magazine = null
-		to_chat(user, SPAN_NOTICE("You pull the magazine out of \the [src]!"))
+		to_chat(user, SPAN_NOTICE("You pull the gas tube out of the [src]!"))
 	update_icon()
 	return
 
@@ -144,7 +144,8 @@
 
 // Magazine
 /obj/item/hatton_magazine
-	name = "Artificer's Guild BT \"Hatton\" gas tube"
+	name = "\"Hatton\" gas tube"
+	desc = "A gas tube filled to capacity with superheated gas, meant to be loaded in a breaching tool."	//gang who the fuck added breaching tools and got to the magazines and said "nah no description needed"
 	icon = 'icons/obj/guns/breacher.dmi'
 	icon_state = "Hatton_box1"
 	w_class = ITEM_SIZE_SMALL
@@ -166,7 +167,8 @@
 		icon_state = "Hatton_box0"
 
 /obj/item/hatton_magazine/moebius
-	name = "Soteria BT \"Q-del\" gas tube"
+	name = "\"Q-del\" gas tube"
+	desc = "A gas tube filled to capacity with superheated gas, meant to be loaded in a breaching tool. This one is in science colors."
 	icon_state = "Moebius_box1"
 	matter = list(MATERIAL_PLASMA = 10, MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 2)
 	charge = 2
@@ -201,9 +203,7 @@
 
 /obj/item/hatton/moebius
 	name = "Soteria BT \"Q-del\""
-	desc = {"This breaching tool was reverse engineered from the \"Hatton\" design.
-	Despite the Artificer's Guild \"Hatton\" being traded on the free market through guild channels,
-	this device suffers from a wide number of reliability issues stemming from it being lathe printed."}
+	desc = "An in-colony breaching tool designed to wedge into an airlock or against a wall, using superheated compressed gas to \"dematerialize\" the non-biological target. Loaded with gas tubes, made by the science department."
 	icon_state = "Moebius_Hammer_1"
 	item_state = "Moebius_Hammer_1"
 	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_SILVER = 5, MATERIAL_PLASTIC = 5)

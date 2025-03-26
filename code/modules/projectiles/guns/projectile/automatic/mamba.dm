@@ -3,7 +3,7 @@
 /////////////////////////
 /obj/item/gun/projectile/automatic/mamba
 	name = "\"Mamba\" carbine"
-	desc = "Produced cheaply, versatile and made for mass usage are all traits of the 6.5mm \"Mamba\" carbine. Made by Nadezhda Marshal gunsmiths to be used in both close and mid-range combat the Mamba sports a folding adjustable stock and a holographic sight."
+	desc = "A cheap in-colony rifle made for mass production. Chambered in 6.5mm."
 	icon_state = "mamba"
 	item_state = "mamba"
 	icon = 'icons/obj/guns/projectile/mamba.dmi'
@@ -65,7 +65,7 @@
 /////////////////////////////////////////
 /obj/item/gun/projectile/automatic/mamba/copperhead
 	name = "\"Copperhead\" battle rifle"
-	desc = "The \"Copperhead\" rifle appears to be a design based off the Nadezhda Marshal's \"Mamba\" carbine, chambered in 7.62mm and sporting a carry handle the Copperhead is intended both as a squad support weapon and as a battle rifle, sporting a recoil compensating stock as well as an underbarrel grenade launcher to ensure both uses."
+	desc = "An up-sized version of the in-colony Mamba rifle. Re-tooled to chamber 7.62mm, with an underbarrel grenade launcher attached."
 	icon_state = "copperhead"
 	item_state = "copperhead"
 	icon = 'icons/obj/guns/projectile/copperhead.dmi'
@@ -134,8 +134,8 @@
 //7.62mm Python//
 /////////////////
 /obj/item/gun/projectile/automatic/mamba/python
-	name = "\"Python\" heavy sniper"
-	desc = "A fine work of the Nadezhda Marshal gunsmiths is the Python, a heavy rifle with a state of the art smart scope displaying wind speeds, built in range finding, nightvision capability, and an internal stabilization system. Chambered in 7.62mm for stability, the normally mediocre round punches above its weight to compete with larger 8.6x70mm rifles."
+	name = "\"Python\" marksman rifle"
+	desc = "A modified Mamba carbine designed with accuracy in mind, fitted with magnetic conductors for increased damage and a scope with an integrated interface. Chambered in 7.62mm."
 	icon_state = "python"
 	item_state = "python"
 	icon = 'icons/obj/guns/projectile/python.dmi'
@@ -167,7 +167,7 @@
 
 /obj/item/part/gun/frame/mamba
 	name = "Mamba frame"
-	desc = "An Mamba carbine frame. A sleek operator's dream."
+	desc = "The frame of a Mamba carbine."
 	icon_state = "frame_mamba"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/mamba

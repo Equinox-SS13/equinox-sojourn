@@ -1,6 +1,6 @@
 /obj/item/gun/energy/plasma
 	name = "\"Dominion\" plasma rifle"
-	desc = "One of the last designs produced by the Old Testament, the \"Dominion\" uses advanced plasma generation technology to emit powerful blasts of energized matter or large, consuming fireballs. Due to its complexity and cost, it is usually reserved for specialists and elites."
+	desc = "An extremely high cost plasma rifle usually reserved for specialist units, fitted with a three-position power selector."
 	icon = 'icons/obj/guns/energy/pulse.dmi'
 	icon_state = "pulse"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -20,9 +20,9 @@
 	twohanded = TRUE
 	can_dual = FALSE
 	init_firemodes = list(
-		list(mode_name="Burn", mode_desc="A relatively light plasma round", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=1, fire_delay=4, charge_cost=15, icon="kill", projectile_color = "#0088ff"),
-		list(mode_name="Sear", mode_desc="A three-round burst of light plasma rounds.", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=3, fire_delay=12, burst_delay=1, charge_cost=15, icon="burst", projectile_color = "#0088ff"),
-		list(mode_name="INCINERATE", mode_desc=" relatively heavy shot of super-heated plasma that creates a fireball on impact", projectile_type=/obj/item/projectile/plasma/aoe/heat, fire_sound='sound/weapons/energy/incinerate.ogg', burst=1, fire_delay=20, charge_cost=90, icon="destroy", projectile_color = "#FFFFFF"),
+		list(mode_name="burn", mode_desc="A relatively light plasma round", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=1, fire_delay=4, charge_cost=15, icon="kill", projectile_color = "#0088ff"),
+		list(mode_name="sear", mode_desc="A three-round burst of light plasma rounds.", projectile_type=/obj/item/projectile/plasma/light, fire_sound='sound/weapons/energy/melt.ogg', burst=3, fire_delay=12, burst_delay=1, charge_cost=15, icon="burst", projectile_color = "#0088ff"),
+		list(mode_name="INCINERATE", mode_desc="A relatively heavy shot of superheated plasma that creates a fireball on impact", projectile_type=/obj/item/projectile/plasma/aoe/heat, fire_sound='sound/weapons/energy/incinerate.ogg', burst=1, fire_delay=20, charge_cost=90, icon="destroy", projectile_color = "#FFFFFF"),
 	)
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
 	serial_type = "Absolute"
@@ -37,7 +37,7 @@
 
 
 /obj/item/gun/energy/plasma/mounted/blitz
-	name = "SDF PR \"Sprengen\""
+	name = "\"Burner\" integrated plasma rifle"		//ENOUGH WITH THE GERMAN NAMES! Changed to an English name.
 	desc = "A miniaturized plasma rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "plasma_turret"
 	charge_meter = FALSE
@@ -47,7 +47,7 @@
 
 /obj/item/gun/energy/plasma/destroyer
 	name = "\"Purger\" plasma rifle"
-	desc = "An older \"Old Testament\" brand plasma rifle, developed in direct response to compete against the highly successful \"Cassad\" design. Reliable and capable of firing suppressive bursts of lower-temperature plasma."
+	desc = "An old church-made plasma rifle originally made to compete with a similar design."
 	icon = 'icons/obj/guns/energy/destroyer.dmi'
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 7, MATERIAL_URANIUM = 5)
@@ -58,14 +58,14 @@
 	charge_cost = 200
 	init_recoil = LMG_RECOIL(2)
 	init_firemodes = list(
-		list(mode_name="DISINTEGRATE", mode_desc="Removes heresy from sight", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#ff1212"),
-		list(mode_name="CLEANSE", mode_desc="Cleanse the filth", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#00AAFF"),
+		list(mode_name="charged plasma", mode_desc="Fire a strong plasma bolt", projectile_type=/obj/item/projectile/plasma/aoe/heat/strong, fire_sound='sound/weapons/energy/incinerate.ogg', fire_delay=20, charge_cost=200, icon="destroy", projectile_color = "#b3ff00"),		//Cool it with the religious zealotry remarks
+		list(mode_name="plasma", mode_desc="Fire a light plasma bolt", mode_type = /datum/firemode/automatic, projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=4, charge_cost=35, icon="burst", projectile_color = "#29c476"),
 	)
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
 
 /obj/item/gun/energy/plasma/martyr // or should it be  Zealot
-	name = "\"Martyr\" holdout pistol"
-	desc = "An \"New Testament\" weapon that uses advanced biomass-converted blasts of energized matter. It is a disposable holdout side arm, good enough to save you and be recycled."
+	name = "\"Martyr\" plasma pistol"
+	desc = "A church-made recyclable pistol."
 	icon = 'icons/obj/guns/energy/martyr.dmi'
 	icon_state = "martyr"
 	suitable_cell = /obj/item/cell/small    //so if people manage to get the cell out. shouldn't be a huge deal
@@ -90,16 +90,16 @@
 	penetration_multiplier = 1
 
 	init_firemodes = list(
-		list(mode_name="Stun", mode_desc="A weakening bolt of plasma that disables people", projectile_type=/obj/item/projectile/plasma/stun, fire_sound='sound/weapons/energy/marauder.ogg', fire_delay=2, icon="stun", projectile_color = "#0000FF"),
-		list(mode_name="Melt", mode_desc="A heavier plasma bolt designed to melt through armor and flesh alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=14, icon="destroy", projectile_color = "#FFFFFF"),
+		list(mode_name="stun", mode_desc="A weakening bolt of plasma that disables people", projectile_type=/obj/item/projectile/plasma/stun, fire_sound='sound/weapons/energy/marauder.ogg', fire_delay=2, icon="stun", projectile_color = "#0000FF"),
+		list(mode_name="melt", mode_desc="A heavier plasma bolt designed to melt through armor and flesh alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=14, icon="destroy", projectile_color = "#FFFFFF"),
 	)
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 
 /obj/item/gun/energy/plasma/super_heavy
-	name = "\"Ragefire\" Experimental Plasma Gun"
-	desc = "A \"Soteria\" brand experimental weapon that uses coolant to fire deadly plasma projectiles without needing to cool down between shots, however the gun is extremely unstable without cooling."
+	name = "\"Ragefire\" plasma rifle"		//Remind me to come back to this with a name that isn't this edgy like relax Josh Killerfang (19/2/25)
+	desc = "An in-colony experimental plasma rifle that fires extremely large and devastating projectiles. Unstable."
 	icon = 'icons/obj/guns/energy/plasma.dmi'
 	icon_state = "plasma"
 	fire_sound = 'sound/weapons/energy/lasercannonfire.ogg'
@@ -127,7 +127,7 @@
 	var/explosion_f_size = 5
 
 	init_firemodes = list(
-		list(mode_name="Super-heavy Plasma", mode_desc="A massive plasma bolt to melt even plasteel", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#FFFF00"),
+		list(mode_name="Maraud", mode_desc="A plasma toroid with enough energy behind it to melt plasteel.", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#33ff00"),
 	)
 
 /obj/item/gun/energy/plasma/super_heavy/examine(mob/user)
@@ -145,7 +145,7 @@
 	if(istype(W, /obj/item/reagent_containers)) // Is it something that hold chems ?
 		// Do we already have one inside?
 		if(container)
-			to_chat(user, "The [src.name] already got a beaker.")
+			to_chat(user, "The [src.name] already has a beaker.")
 			return
 		else
 			var/obj/item/reagent_containers/C = W

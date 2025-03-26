@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump/hunter_crossbow
-	name = "bolt lance"
-	desc = "A modified crossbow powered by an internal battery device that rapidly winds up a hydraulic winch to deliver a devastating, superheated bolt shot. \
-	Hand-crafted by the local Hunting Lodge, it uses a design commonly found on Onkarth, the homeworld of the Sablekyne."
+	name = "rod crossbow"
+	desc = "A modified crossbow powered by an internal battery device that rapidly winds up a hydraulic winch to deliver a devastating superheated bolt. This design comes from the recovered schematics of colonial resistance fighters in Kanthyr-17."
 	icon = 'icons/obj/guns/projectile/hunter_crossbow.dmi'
 	icon_state = "hunter_crossbow"
 	item_state = "hunter_crossbow"

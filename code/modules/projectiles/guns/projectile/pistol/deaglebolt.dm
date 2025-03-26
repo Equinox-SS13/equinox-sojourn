@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/deaglebolt
 	name = "\"Triple Primary\" heavy pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	This particular pistol is the pinnacle of gunsmithing, featuring an advanced chamber switching magwell capable of fitting pistol, magnum, and kurtz rounds. A bit flashy, but hands down \
-	one of the greatest pistols ever made in terms of versatility."
+	desc = "An anomalous weapon that takes after the appearance of the Basilisk, with the ability to swap it's chamber on demand. Chambered in 9mm, 10mm, and 12mm."
 	icon = 'icons/obj/guns/projectile/deaglebolt.dmi'
 	icon_state = "deagle"
 	item_state = "deagle"
@@ -29,23 +27,23 @@
 
 /obj/item/gun/projectile/deaglebolt/verb/change_caliber()
 	set name = "Change Caliber"
-	set desc = "For when you need to change your guns caliber, handy when you have more ammo of one type."
+	set desc = "Adapt the chamber of your weapon for a new caliber on the fly."
 	set category = "Object"
 
 	playsound(src.loc, 'sound/weapons/guns/interact/chaingun_cock.ogg', 100, 1)
 	if(caliber == CAL_50)
 		caliber = CAL_PISTOL
 		fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'
-		visible_message(SPAN_NOTICE("\The [usr] clicks a button on \the [src], a beep and a metallic whirr are heard before it changes to 9mm pistol caliber!"), \
+		visible_message(SPAN_NOTICE("\The [usr] flicks a switch to the third position on \the [src], a beep and a metallic whirr are heard before the screen says '9MM'"), \
 		SPAN_NOTICE("You hear something metallic whirr and beep."))
 	else if(caliber == CAL_PISTOL)
 		caliber = CAL_MAGNUM
 		fire_sound = 'sound/weapons/guns/fire/1911_fire.ogg'
-		visible_message(SPAN_NOTICE("\The [usr] clicks a button on \the [src], a beep and a metallic whirr are heard before it changes to 10mm magnum caliber!"), \
+		visible_message(SPAN_NOTICE("\The [usr] flicks a switch to the second position on \the [src], a beep and a metallic whirr are heard before the screen says '10MM'!"), \
 		SPAN_NOTICE("You hear something metallic whirr and beep."))
 	else if (caliber == CAL_MAGNUM)
 		caliber = CAL_50
 		fire_sound = initial(fire_sound)
-		visible_message(SPAN_NOTICE("\The [usr] clicks a button on \the [src], a beep and a metallic whirr are heard before it changes to 12mm heavy pistol caliber!"), \
+		visible_message(SPAN_NOTICE("\The [usr] flicks a switch to the first position on \the [src], a beep and a metallic whirr are heard before the screen says '12MM'!"), \
 		SPAN_NOTICE("You hear something metallic whirr and beep."))
 	refresh_upgrades()

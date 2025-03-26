@@ -1,6 +1,6 @@
 /obj/item/gun/energy/mindflayer
-	name = "\"M1ndFL4Y3r\" neuro-laser rifle"
-	desc = "A custom-built conversion of X-RAY using some god knows what to make it work. It's beams pierce the mind of it's targets making them gaze into the oblivion at moments notice."
+	name = "\"Mindflayer\" neuro-laser rifle"
+	desc = "A peculiar modification of the x-ray rifle that invades the target's mind."
 	icon = 'icons/obj/guns/energy/xray.dmi'
 	icon_state = "xray"
 	projectile_type = /obj/item/projectile/beam/mindflayer

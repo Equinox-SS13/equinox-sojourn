@@ -31,23 +31,6 @@
 
 
 /datum/category_item/player_setup_item/augmentation/modifications/content(var/mob/user)
-	if(!pref.preview_icon)
-		pref.update_preview_icon(naked = TRUE)
-	if ((pref.preview_dir== EAST) && (!pref.preview_east))
-		pref.mannequin = get_mannequin(pref.client_ckey)
-		pref.mannequin.delete_inventory(TRUE)
-		if(SSticker.current_state > GAME_STATE_STARTUP)
-			pref.dress_preview_mob(pref.mannequin, TRUE)
-		pref.mannequin.dir = EAST
-		pref.preview_east = getFlatIcon(pref.mannequin, EAST)
-		pref.preview_east.Scale(pref.preview_east.Width() * 2, pref.preview_east.Height() * 2)
-		user << browse_rsc(pref.preview_east, "new_previewicon[EAST].png")
-
-	if(pref.preview_north && pref.preview_south  && pref.preview_west)
-		user << browse_rsc(pref.preview_north, "new_previewicon[NORTH].png")
-		user << browse_rsc(pref.preview_south, "new_previewicon[SOUTH].png")
-		user << browse_rsc(pref.preview_west, "new_previewicon[WEST].png")
-
 	var/dat = list()
 
 	dat += "<style>div.block{margin: 3px 0px;padding: 4px 0px;}"
@@ -55,7 +38,7 @@
 	dat += "a.Organs_active {background: #cc5555;}</style>"
 
 	dat +=  "<script language='javascript'> [js_byjax] function set(param, value) {window.location='?src=\ref[src];'+param+'='+value;}</script>"
-	dat += "<table style='max-height:400px;height:410px; margin-left:250px; margin-right:250px'>"
+	dat += "<table style='max-height:400px;height:410px; margin-left:24px; margin-right:24px'>"
 	dat += "<tr style='vertical-align:top'>"
 	if(pref.modifications_allowed())
 		dat += "<td><div style='max-width:230px;width:230px;height:100%;overflow-y:auto;border-right:1px solid;padding:3px'>"
@@ -80,8 +63,9 @@
 			dat += "<a href='?src=\ref[src];color=[organ]'><span class='color_holder_box' style='background-color:[pref.modifications_colors[organ]]'></span></a>"
 		dat += "<br>[disp_name]<br>"
 
-	dat += "</td><td style='width:80px;'><center><img src=new_previewicon[pref.preview_dir].png height=64 width=64>"
-	dat += "<br><center><a href='?src=\ref[src];rotate=right'>&lt;&lt;</a> <a href='?src=\ref[src];rotate=left'>&gt;&gt;</a></center></td>"
+	// This take place of the original preview icon
+	dat += "</td><td style='width:80px;'>"
+	dat += "<br><center></center></td>"
 	dat += "<td style='width:115px; text-align:left'>"
 
 	for(var/organ in pref.l_organs)
@@ -178,22 +162,5 @@
 			pref.modifications_data[pref.current_organ] = mod
 			pref.check_child_modifications(pref.current_organ)
 		return TOPIC_REFRESH_UPDATE_PREVIEW
-
-	else if(href_list["rotate"])
-		if(href_list["rotate"] == "right")
-			pref.preview_dir = turn(pref.preview_dir,-90)
-		else
-			pref.preview_dir = turn(pref.preview_dir,90)
-		if ((pref.preview_dir == EAST) && (!pref.preview_east))
-			pref.mannequin = get_mannequin(pref.client_ckey)
-			pref.mannequin.delete_inventory(TRUE)
-			if(SSticker.current_state > GAME_STATE_STARTUP)
-				pref.dress_preview_mob(pref.mannequin, TRUE)
-			pref.mannequin.dir = EAST
-			pref.preview_east = getFlatIcon(pref.mannequin, EAST)
-			pref.preview_east.Scale(pref.preview_east.Width() * 2, pref.preview_east.Height() * 2)
-			user << browse_rsc(pref.preview_east, "new_previewicon[EAST].png")
-
-		return TOPIC_REFRESH
 
 	return ..()

@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/automatic/ak47
-	name = "Excelsior \"Kalashnikov\" rifle"
-	desc = "\"We stand for organised terror - this should be frankly admitted. Terror is an absolute necessity during times of revolution.\"\
-		 A copy of the Kalashnikov pattern, shortened into a mid-length rifle and chambered in 7.62mm. This is an abysmal, printed copy."
+	name = "\"Večný-4E\" infantry rifle"
+	desc = "A modernized version of an outdated and unconventional infantry rifle with an integrated dotsight and lightweight construction. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/ak.dmi'
 	icon_state = "AK"
 	item_state = "AK"
@@ -34,8 +33,8 @@
 
 //AK-47 base-frame
 /obj/item/part/gun/frame/ak47
-	name = "AK frame"
-	desc = "An AK rifle frame. The eternal firearm."
+	name = "Večný frame"
+	desc = "A frame for a Večný line rifle."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/ak47/sa
@@ -45,8 +44,7 @@
 	barrelvars = list(/obj/item/part/gun/barrel/lrifle)
 
 /obj/item/gun/projectile/automatic/ak47/NM_colony
-	name = "polymer \"Kalashnikov\" rifle"
-	desc = " A copy of the Kalashnikov pattern, shortened into a mid-length rifle and chambered in 7.62mm. \nThis abysmal, printed copy of a Kalashnikov has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	name = "\"Večný-4\" infantry rifle"
 	excelsior = FALSE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1)
 	price_tag = 800
@@ -74,8 +72,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/automatic/ak47/saiga
-	name = "Excelsior \"Saiga 12\" shotgun"
-	desc = "\"Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win...\"\nA bulked up and modified version of the Kalashnikov made to fire 20mm shotgun shells, taking magazines similar to the Sol Federation SBAW design."
+	name = "\"Kanec\" combat shotgun"
+	desc = "Literally \"Boar\". A reliable semi-automatic mag-fed shotgun based on the Vekhný rifle platform."
 	icon = 'icons/obj/guns/projectile/saiga12.dmi'
 	icon_state = "saiga"
 	item_state = "saiga"
@@ -89,8 +87,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/saiga = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 /obj/item/gun/projectile/automatic/ak47/saiga/NM_colony
-	name = "\"Saigini 12\" shotgun"
-	desc = "A bulked up and modified version of the Kalashnikov made to fire 20mm shotgun shells, taking magazines similar to the Sol Federation SBAW design. \nThis model of the \"Saiga\" shotgun has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	name = "\"Kanec-2\" combat shotgun"
+	desc = "A reliable semi-automatic mag-fed shotgun based on the Vekhný rifle platform. This in-colony model is fitted with a foregrip and a dot sight, as well as lighter furniture."
 	icon_state = "saiga-bs"
 	item_state = "saiga-bs"
 	penetration_multiplier = 0.9 //Non-Excelsior varient, it's powerful as is. Pug on crack.
@@ -102,8 +100,8 @@
 
 //AK-47 base-frame
 /obj/item/part/gun/frame/saiga
-	name = "Saiga frame"
-	desc = "A Saiga shotgun frame. Based off the timeless AK design."
+	name = "Kanec frame"
+	desc = "A Večný frame chambered in 20mm, for a shotgun."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/ak47/saiga
@@ -113,9 +111,9 @@
 	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 
 /obj/item/gun/projectile/automatic/ak47/akl
-	name = "\"Legkiy-Kalashnikov\" laser"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-	A modernized experimental version of an old Kalashnikov design, desginated to take .223 laser ammuniton. The future is now, comrade."
+	name = "\"AK-L\" laser rifle"
+	desc = "\"I'm going to the one place that hasn't been corrupted by capitalism... SPACE!\"\
+	A time and battle-tested AK pattern rifle, converted to fire specialized laser ammunition - in the vein of a cheesy 80's action movie."
 	icon = 'icons/obj/guns/projectile/akl.dmi'
 	icon_state = "AKL"
 	item_state = "AKL"
@@ -140,9 +138,8 @@
 	gun_parts = null
 
 /obj/item/gun/projectile/automatic/ak47/sa
-	name = "\"Kalashnikov\" rifle"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-		 A copy of the AKM pattern, shortened into a mid-length rifle and chambered in 7.62mm. The left arm of the unfree world."
+	name = "\"Večný-2\" infantry rifle"
+	desc = "An outdated and unconventional infantry rifle of outstanding price-performance production. Favored by low-budget mercenaries, independent petty armies, and frontiersmen. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/ak_wood.dmi'
 	icon_state = "AK"
 	item_state = "AK"
@@ -157,9 +154,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/automatic/ak47/sa/sawn
-	name = "sawn-off \"Kalashnikov\" rifle"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-	A copy of the AKM pattern chambered in 7.62mm and crudely sawed down to a shadow of its former self. Rifle was fine. Was."
+	name = "shortened \"Večný-2\" rifle"
+	desc = "An outdated and unconventional infantry rifle of outstanding price-performance production, cut down into a pistol of sorts. Favored by gangbangers and petty criminals. Chambered in 7.62mm."
 	icon = 'icons/obj/guns/projectile/sawnoff/ak.dmi'
 	icon_state = "AK"
 	item_state = "AK"
@@ -178,10 +174,8 @@
 	gun_parts = list(/obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/stack/material/plasteel = 2)
 
 /obj/item/gun/projectile/automatic/ak47/sa/tac
-	name = "Breacher \"Kalashnikov\" rifle"
-	desc = "The breacher, or the 'tactical' variant of the AKM pattern Kalash is rather similar to its basic counterparts. \
-	Sporting a polymer frame, this Kalash also comes kitted with an internally loaded shotgun attachment to its underbarrel. \
-	Comfortable to shoot, versatile, and able to clear a room with ease."
+	name = "\"Večný-β\" boarding rifle"
+	desc = "An outdated infantry rifle in a modern and conventional bullpup configuration, featuring a shortened profile despite retaining /and/ expanding it's barrel length. Fitted with a dot sight and a second trigger for an underbarrel pump-action shotgun."
 	icon = 'icons/obj/guns/projectile/ak_tact.dmi'
 	icon_state = "AK"
 	item_state = "AK"
@@ -222,8 +216,8 @@
 		..()
 
 /obj/item/gun/projectile/automatic/underslung/shotgun_3
-	name = "built in shotgun"
-	desc = "Not much more than a tube and a firing mechanism, this shotgun is designed to be fitted to another gun."
+	name = "underbarrel shotgun"
+	desc = "An underbarrel shotgun chambered in 20mm."
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	bulletinsert_sound = 'sound/weapons/guns/interact/shotgun_insert.ogg'
 	w_class = ITEM_SIZE_NORMAL
@@ -243,11 +237,8 @@
 		)
 
 /obj/item/gun/projectile/automatic/ak47/makeshift
-	name = "Homemade \"Kalashnikov\" rifle"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-			This is a copy of an ancient semi-automatic rifle chambered for 7.62mm. If it won't fire, percussive maintenance should get it working again. \
-			It is known for its easy maintenance, and low price. This gun is not in active military service anymore, but has become ubiquitous among criminals and insurgents. \
-			This crude copy shows just how forgiving the design can be."
+	name = "Crude \"Kalashnikov\" rifle"
+	desc = "A time and battle-tested AKMN rifle, crude and outdated by today's standards. Chambered in 7.62mm and manufactured with severe lack of concern for safety and sanity."
 	icon = 'icons/obj/guns/projectile/ak_homemade.dmi'
 	w_class = ITEM_SIZE_HUGE
 	init_recoil = RIFLE_RECOIL(0.7)
@@ -288,8 +279,8 @@
 	set_item_state(itemstring)
 
 /obj/item/part/gun/frame/kalash
-	name = "Homemade Kalash frame"
-	desc = "A homemade Kalash rifle frame. Cobbled together, but as good as new. Sort of."
+	name = "Kalashnikov frame"
+	desc = "A frame for an ancient weapons system better suited for a wall mount. The receiver can take either a 6.5mm or 7.62mm barrel."
 	icon_state = "frame_kalash"
 	matter = list(MATERIAL_STEEL = 10)
 	resultvars = list(/obj/item/gun/projectile/automatic/ak47/makeshift)

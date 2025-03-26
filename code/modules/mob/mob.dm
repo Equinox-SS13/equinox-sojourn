@@ -951,6 +951,8 @@ All Canmove setting in this proc is temporary. This var should not be set from h
 	if(HUDtech.Find("pain"))
 		flick("weak_pain", HUDtech["pain"])
 
+/mob/proc/GetVoice()
+	return name
 
 /mob/proc/get_visible_implants()
 	var/list/visible_implants = list()
@@ -1328,12 +1330,15 @@ mob/proc/yank_out_object()
 			in_use = 0
 
 
-//SoJ
+/mob/is_incorporeal()
+	return incorporeal_move
+
 
 /mob/proc/give_health_via_stats()
 	if(maxHealth && stats)
-		health += src.stats.getStat(STAT_ANA)
-		maxHealth += src.stats.getStat(STAT_ANA)
-		if(maxHealth > 300) //soft cap to keep players from becoming killable only by organ damage or pain.
-			health = 300
-			maxHealth = 300
+		if(!(src.stats.getStat(STAT_ANA) < 0))	//If a player has negative ANA we don't want them losing health when they focus on an oddity.
+			health += src.stats.getStat(STAT_ANA)
+			maxHealth += src.stats.getStat(STAT_ANA)
+			if(maxHealth > 300) //soft cap to keep players from becoming killable only by organ damage or pain.
+				health = 300
+				maxHealth = 300

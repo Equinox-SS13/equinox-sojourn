@@ -1,6 +1,6 @@
 /obj/item/gun/energy/xray
-	name = "\"X-RAY\" laser rifle"
-	desc = "A brandless modern laser rifle capable of delivering powered blasts even across solid surfaces accompanied by signature high pitched screech. Due to this it has been banned from commercial use but still finds itself in hands of many mercenary groups."
+	name = "\"ACR\" x-ray gun"
+	desc = "An illegal, unreliable, and highly specialized energy rifle that fires beams capable of phasing through spaceship-rated plasteel and similar metals."
 	icon = 'icons/obj/guns/energy/xray.dmi'
 	icon_state = "xray"
 	item_state = "xray"
@@ -17,8 +17,8 @@
 	serial_shown = FALSE
 
 /obj/item/gun/energy/IRKDissolver //IRK = Irkalla, marker so people can have an easier time saying what I made
-	name = "\"TRR-II\" Dissolver" //Tactical Radiation Rifle Dissolver or for the whole 3 Star Trek enjoyers with us Thalaron Radiation Rifle
-	desc = "The fruit of a collaboration of SI and Guild; The TRR-II Dissolver is build upon an EBR-4 Nuclear rifle. Using several components of SI and Guild this weapon effectively looses its stun mode but gains a penetrating beam mode of some sort. Some quirk with the enhancements provided by SI with the Guilds ingenuity resulted in the weapon also being able to fire debilitating kinetic blasts. Every setting but DEBILITATE seems to irradiate any target hit. It is unclear how exactly the reactor of the weapon works."
+	name = "\"Dissolver\" fission rifle" //Tactical Radiation Rifle Dissolver or for the whole 3 Star Trek enjoyers with us Thalaron Radiation Rifle	//Comment no longer relevant.
+	desc = "An in-colony modification of the EBR-4 fission rifle that lacks a stun setting and projects higher levels of radiation."
 	icon = 'icons/obj/guns/energy/nucgun2.dmi'
 	icon_state = "nucgun2"
 	item_charge_meter = TRUE
@@ -40,7 +40,7 @@
 		list(mode_name="DISSOLVE", projectile_type=/obj/item/projectile/beam/IRKdissolver, fire_sound='sound/weapons/energy/SuperHeavyLaser.ogg', fire_delay=8, icon="kill"),
 		list(mode_name="DESOLATE", projectile_type=/obj/item/projectile/beam/IRKdesolator, fire_sound='sound/weapons/energy/vaporize.ogg', fire_delay=10, icon="vaporize"),
 	)
-	
+
 	var/lightfail = 0
 	serial_type = "SI"
 
@@ -90,6 +90,6 @@
 		itemstring += "_doble"
 
 	icon_state = iconstring
-	set_item_state(itemstring)	
+	set_item_state(itemstring)
 
-	
+

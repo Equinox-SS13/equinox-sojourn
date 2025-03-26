@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/spring
-	name = "Greyson Positronic \"Spring\" pistol"
-	desc = "GP \"Spring\" pistol, lost tech of a high power pistol using only 9mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
+	name = "\"Spring\" pistol"
+	desc = "An experimental front-loaded handgun. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/spring.dmi'
 	icon_state = "spring"
 	damage_multiplier = 1.1

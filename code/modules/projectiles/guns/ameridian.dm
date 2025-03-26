@@ -1,9 +1,8 @@
 // Ameridian-based Weaponry require an ameridian core to be usable and consume liquid ameridian as ammo.
 
 /obj/item/gun/ameridian
-	name = "ameridian cog"
-	desc = "A gun using liquid ameridian to shoot a beam of deadly radiation. It require an ameridian core & liquid ameridian to work.\
-			It looks awfully similar to a cog."
+	name = "Ameridian \"Cog\""
+	desc = "A gun that uses ameridian to fire radiation beams. Requires ameridian as ammunition and an ameridian core."
 	icon = 'icons/obj/guns/ameridian/ameridian_cog.dmi'
 	icon_state = "ameridian_cog"
 	item_state = "ameridian_cog"
@@ -69,8 +68,8 @@
 
 // Ameridian shard launcher. Launches solid fragment of ameridian that can embed
 /obj/item/gun/matter/ameridian
-	name = "ameridian shard launcher"
-	desc = "A gun that fire shards of solid ameridian."
+	name = "Ameridian launcher"
+	desc = "A gun that fires solid shards of ameridian.."
 	icon = 'icons/obj/guns/ameridian/ameridian_cog.dmi'
 	icon_state = "ameridian_cog"
 	item_state = "ameridian_cog"

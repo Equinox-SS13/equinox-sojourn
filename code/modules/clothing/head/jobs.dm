@@ -340,6 +340,8 @@ obj/item/clothing/head/beret/syndicate/verb/toggle_style()
 	options["rapid response"] = "medical_evil"
 	options["nursing"] = "medical_nurse"
 	options["nursing rapid response"] = "medical_nurse_evil"
+	options["chemist"] = "chemistry"
+	options["chemist rapid response"] = "chemistry_evil"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
