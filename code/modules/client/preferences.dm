@@ -35,6 +35,14 @@
 	var/datum/category_collection/player_setup_collection/player_setup
 	var/datum/browser/panel
 	var/categoriesChanged = "All"
+	var/list/char_render_holders		//Should only be a key-value list of north/south/east/west = obj/screen.
+	var/static/list/preview_screen_locs = list(
+		"1" = "character_preview_map:1,5:-12",
+		"2" = "character_preview_map:1,3:15",
+		"4"  = "character_preview_map:1:7,2:10",
+		"8"  = "character_preview_map:1:-7,1:5",
+		"BG" = "character_preview_map:1,1 to 1,5"
+	)
 
 /datum/preferences/New(client/C)
 	if(istype(C))
@@ -51,6 +59,10 @@
 		else
 			SScharacter_setup.prefs_awaiting_setup += src
 	..()
+
+/datum/preferences/Destroy()
+	. = ..()
+	QDEL_LIST_ASSOC_VAL(char_render_holders)
 
 /datum/preferences/proc/setup()
 //	if(!length(GLOB.skills))
@@ -97,6 +109,10 @@
 		load_preferences()
 		load_and_update_character()
 
+	if(!char_render_holders)
+		update_preview_icon()
+	show_character_previews()
+
 	var/dat = "<html><body><center>"
 
 	if(path)
@@ -116,9 +132,11 @@
 	dat += player_setup.content(user)
 
 	dat += "</html></body>"
-	var/datum/browser/popup = new(user, "Character Setup","Character Setup", 1200, 800, src)
+	winshow(user, "preferences_window", TRUE)
+	var/datum/browser/popup = new(user, "preferences_browser", "Character Setup", 1200, 800)
 	popup.set_content(dat)
-	popup.open()
+	popup.open(FALSE) // Skip registring onclose on the browser pane
+	onclose(user, "preferences_window", src) // We want to register on the window itself
 
 /datum/preferences/proc/process_link(mob/user, list/href_list)
 
@@ -131,6 +149,10 @@
 		else
 			to_chat(user, SPAN_DANGER("The forum URL is not set in the server configuration."))
 			return
+	else if(href_list["close"])
+		// User closed preferences window, cleanup anything we need to.
+		clear_character_previews()
+		return 1
 	ShowChoices(usr)
 	return 1
 
@@ -411,3 +433,40 @@
 	panel = new(user, "Character Slots", "Character Slots", 300, 390, src)
 	panel.set_content(dat)
 	panel.open()
+
+/datum/preferences/proc/update_character_previews(mutable_appearance/MA)
+	if(!client)
+		return
+
+	var/obj/screen/BG = LAZYACCESS(char_render_holders, "BG")
+	if(!BG)
+		BG = new
+		BG.plane = BACKGROUND_LAYER
+		BG.icon = mutable_appearance('icons/effects/96x64.dmi', bgstate) // Original code used icon, MA to ensure it is actually mutable
+		LAZYSET(char_render_holders, "BG", BG)
+		client.screen |= BG
+	BG.icon_state = bgstate
+	BG.screen_loc = preview_screen_locs["BG"]
+
+	for(var/D in global.cardinal)
+		var/obj/screen/O = LAZYACCESS(char_render_holders, "[D]")
+		if(!O)
+			O = new
+			LAZYSET(char_render_holders, "[D]", O)
+			client.screen |= O
+		O.appearance = MA
+		O.dir = D
+		O.screen_loc = preview_screen_locs["[D]"]
+
+/datum/preferences/proc/show_character_previews()
+	if(!client || !char_render_holders)
+		return
+	for(var/render_holder in char_render_holders)
+		client.screen |= char_render_holders[render_holder]
+
+/datum/preferences/proc/clear_character_previews()
+	for(var/index in char_render_holders)
+		var/obj/screen/S = char_render_holders[index]
+		client?.screen -= S
+		qdel(S)
+	char_render_holders = null

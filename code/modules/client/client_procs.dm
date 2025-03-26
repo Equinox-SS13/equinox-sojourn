@@ -357,6 +357,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	clients -= src
 	directory -= ckey
 	log_access("Logout: [key_name(src)]")
+	QDEL_LIST_ASSOC_VAL(char_render_holders)
 	if(holder)
 		holder.owner = null
 		admins -= src
