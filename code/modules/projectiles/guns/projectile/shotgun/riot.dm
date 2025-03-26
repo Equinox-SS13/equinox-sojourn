@@ -1,8 +1,6 @@
 /obj/item/gun/projectile/automatic/riot_autoshotgun
-	name = "\"State\" riot shotgun" //With correct mods this can be better then the pug
-	desc = "A Seinemetall Defense GmbH riot auto action shotgun, its uncommonly seen deployed in most police operation due to the success of the \"stolen\" \"Regulator\" design. \
-	This particular shotgun has been redesigned many times, never quite reaching a standard everyone was happy with, with some lauding it as confusing for a shotgun. \
-	Holds up to eight 20mm shells in a tube magazine."
+	name = "\"State\" riot shotgun"
+	desc = "An unorthodox top-loading semi-automatic riot shotgun. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/milshotgun.dmi'
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
@@ -34,20 +32,18 @@
 	gun_parts = list(/obj/item/part/gun/frame/opshot = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 /obj/item/gun/projectile/automatic/riot_autoshotgun/robo
-	name = "intergrated \"State\" riot shotgun"
-	desc = "A Seinemetall Defense GmbH riot auto action shotgun, its uncommonly seen deployed in most police operation due to the success of the \"stolen\" \"Regulator\" design. \
-	This particular shotgun has been redesigned many times, never quite reaching a standard everyone was happy with, with some lauding it as confusing for a shotgun. \
-	Holds up to six 20mm shells in a tube magazine."
+	name = "integrated \"State\" riot shotgun"
+	desc = "A modified arm mounted riot shotgun. Chambered in 20mm."
 	icon = 'icons/obj/robot_items.dmi'
 	icon_state = "riot_shotgun"
 	item_state = "riot_shotgun"
-	damage_multiplier = 0.7 //Pug has 0.7 do to its fire normal modes
+	damage_multiplier = 0.7
 	init_recoil = RIFLE_RECOIL(0)
 	max_shells = 6
-	load_method = SINGLE_CASING|SPEEDLOADER //So boxes of ammo work
+	load_method = SINGLE_CASING|SPEEDLOADER
 
 /obj/item/gun/projectile/automatic/riot_autoshotgun/robo/single_shot
-	name = "intergrated single barrel shotgun"
+	name = "integrated single barrel shotgun"
 	desc = "A auto ejecting single barrel shotgun for mining borgs to handle pesky critters in the underground."
 	icon_state = "miner_shotgun"
 	item_state = "miner_shotgun"
@@ -56,8 +52,7 @@
 
 /obj/item/gun/projectile/automatic/riot_autoshotgun/opshot
 	name = "\"Operator\" combat shotgun"
-	desc = "The \"Operator\" shotgun appears to be a well designed model of shotgun complete with a polymer grip, holographic sights and a collapsing stock.  \
-			Designed by Nadezhda Marshal gunsmiths and surplus parts of the \"Mamba\" series of firearms, this shotgun appears to be perfect for both close and medium range engagements."
+	desc = "A modified in-colony State top-loading riot shotgun. Chambered in 20mm, fitted with aftermarket parts."
 	icon = 'icons/obj/guns/projectile/operator.dmi'
 	icon_state = "operator"
 	item_state = "oporator"
@@ -72,7 +67,7 @@
 	penetration_multiplier = 1
 	zoom_factors = list(0.2)
 	init_recoil = RIFLE_RECOIL(1.4)
-	folding_stock = TRUE //we can fold our stocks
+	folding_stock = TRUE //we can fold our stock
 	can_dual = FALSE
 
 	wield_delay = 0.8 SECOND
@@ -80,8 +75,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/opshot = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 /obj/item/part/gun/frame/opshot
-	name = "Operator frame"
-	desc = "An Operator revolver frame. For the slickest of operators."
+	name = "State frame"
+	desc = "A State riot shotgun frame."
 	icon_state = "frame_gladstone"
 	result = /obj/item/gun/projectile/automatic/riot_autoshotgun/opshot
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)

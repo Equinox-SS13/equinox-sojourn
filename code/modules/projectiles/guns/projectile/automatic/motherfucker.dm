@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/motherfucker
 	name = "\"Punch Hole\" motherfucker"
-	desc = "A six barrel, pump action carbine, shakes like the devil but will turn anything you aim at into swiss cheese."
+	desc = "A makeshift pump-action six-barreled /thing/. Chambered in 9mm."
 	icon = 'icons/obj/guns/projectile/motherfucker.dmi'
 	icon_state = "motherfucker"
 	item_state = "motherfucker"

@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/automatic/vintorez
 	name = "Excelsior \"Vintorez\" silenced rifle"
 	desc = "\"We have no compassion and we ask no compassion from you. When our turn comes, we shall not make excuses for the terror.\"\
-	A powerful armor-piercing marksman rifle with an integrated silencer. Utilises a defunct design, but remains a popular armament. Uses 7.62mm Rifle rounds."
+	An extremely outdated yet moderately popular marksman rifle. Chambered in 7.62mm, and comes with an integral suppressor."
 	icon = 'icons/obj/guns/projectile/vintorez.dmi'
 	icon_state = "vintorez"
 	item_state = "vintorez"
@@ -35,8 +35,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/vintorez = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/automatic/vintorez/NM_colony
-	name = "\"Val\" silenced rifle"
-	desc = "A powerful armor-piercing marksman rifle with an integrated silencer. Utilises a defunct design, but remains a popular armament. Uses 7.62mm Rifle rounds.\nThis model of the \"Vintorez\" rifle has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	name = "\"Valor\" silenced rifle"
+	desc = "An extremely outdated in-colony infantry rifle based on the Vintorez. Chambered for 7.62mm, and comes with an integral suppressor."
 	icon = 'icons/obj/guns/projectile/vintorez_bs.dmi'
 	icon_state = "vintorez_bs"
 	item_state = "vintorez_bs"

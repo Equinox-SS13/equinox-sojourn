@@ -1,7 +1,6 @@
 /obj/item/gun/projectile/revolver/lemant
 	name = "\"Pilgrim\" magnum revolver"
-	desc = "Designed by the Old Testament to have good utility and plenty of shots, at the cost of requireing each spent shell individually be removed, and can't be speed loaded. \
-	This signature weapon from New Byzantine holds nine 10mm rounds and one single action underslung 20mm shell."
+	desc = "An extremely outdated single-action revolver with a single-shot underbarrel shotgun. Chambered in 10mm, takes a single 20mm shell."
 	icon = 'icons/obj/guns/projectile/lemant.dmi'
 	icon_state = "lemant"
 	item_state = "lemant"
@@ -31,10 +30,8 @@
 	var/reload_delay = 5 // Delay between bullets when reloading from a box.
 
 /obj/item/gun/projectile/revolver/lemant/belt
-	name = "\"Pilgrim Devout\" magnum revolver"
-	desc = "Artificer Guild's revamped design of the Pilgrim to have even more shots before requiring to reload. \
-	Even with the belt design this revolver requires each spent shell individually be removed, and can't be speed loaded. \
-	Holds seventeen 10mm rounds and one single action underslung 20mm shell."
+	name = "\"Devout\" belt-fed revolver"
+	desc = "An in-colony version of the Pilgrim revolver that feeds from a belt instead of its traditional nine-round chamber. Chambered in 10mm, takes a single 20mm shell - truly terrible."
 	icon = 'icons/obj/guns/projectile/lemant_way.dmi'
 	icon_state = "lemant_way"
 	item_state = "lemant_way"
@@ -43,7 +40,7 @@
 
 	init_firemodes = list(
 		SEMI_AUTO_SOMEDELAY,
-		list(mode_name="fire 20mm shell", mode_desc="Shoot the underbarrel shotgun shell",  burst=null, fire_delay=null, move_delay=null,  icon="grenade", use_launcher=1)
+		list(mode_name="fire 20mm shell", mode_desc="Shoot the  shotgun shell",  burst=null, fire_delay=null, move_delay=null,  icon="grenade", use_launcher=1)
 		)
 
 	init_recoil = HANDGUN_RECOIL(0.5)
@@ -170,8 +167,7 @@
 
 /obj/item/gun/projectile/revolver/deacon
 	name = "\"Deacon\" heavy revolver"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	Some pilgrims find what they are looking for..."
+	desc = "An anomalous weapon - taking after the shape of a Pilgrim revolver, in an extremely heavy configuration. Chambered in 12mm, loads grenades in its underbarrel attachment."
 	icon = 'icons/obj/guns/projectile/lemant_blue.dmi'
 	icon_state = "lemant_blue"
 	item_state = "lemant_blue"

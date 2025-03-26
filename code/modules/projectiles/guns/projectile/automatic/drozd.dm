@@ -1,8 +1,7 @@
 /obj/item/gun/projectile/automatic/drozd
 	name = "Excelsior \"Drozd\" SMG"
-	desc = "\"The supremacy of the proletariat will cause them to vanish still faster.\"\nAn excellent, fully automatic compact submachinegun. \
-			Famous for its perfomance in close quarters, and used by communist cells such as Excelsior. \
-			Chambered in 10mm, it takes both pistol and SMG magazines."
+	desc = "\"The supremacy of the proletariat will cause them to vanish still faster.\"\
+		A specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines."
 	icon = 'icons/obj/guns/projectile/drozd.dmi'
 	icon_state = "drozd"
 	item_state = "drozd"
@@ -31,8 +30,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/drozd = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)
 
 /obj/item/gun/projectile/automatic/drozd/NM_colony
-	name = "\"Kompleks\" SMG"
-	desc = "An excellent, fully automatic compact submachinegun. Famous for its perfomance in close quarters. Uses 10mm rounds and can take a variety of pistol and SMG magazines.\nThis model of the \"Drozd\" SMG has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	name = "\"Thrush\" SMG"
+	desc = "An in-colony specialty-made submachine gun for ship boarding and extended urban deployments. Chambered in 10mm, and able to feed from both pistol and SMG magazines."
 	icon = 'icons/obj/guns/projectile/drozd_bs.dmi'
 	icon_state = "drozd-bs"
 	item_state = "drozd-bs"

@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
-	desc = "An immortal classic in 20mm smoothbore."
+	desc = "The coach's choice: a side-by-side double-barrel shotgun. Chambered in 20mm."
 	icon = 'icons/obj/guns/projectile/dshotgun.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -65,7 +65,7 @@
 	bolt_open = !bolt_open
 	if(bolt_open)
 		playsound(src.loc, 'sound/weapons/guns/interact/shotgun_break.ogg', 75, 1)
-		to_chat(user, SPAN_NOTICE("You snap the barrel open."))
+		to_chat(user, SPAN_NOTICE("You break the barrel open."))
 		unload_ammo(user, allow_dump=1)
 	else
 		playsound(src.loc, 'sound/weapons/guns/interact/shotgun_close.ogg', 75, 1)
@@ -76,13 +76,13 @@
 
 /obj/item/gun/projectile/shotgun/doublebarrel/special_check(mob/user)
 	if(bolt_open)
-		to_chat(user, SPAN_WARNING("You can't fire [src] while the barrel is open!"))
+		to_chat(user, SPAN_WARNING("You can't fire [src] while the chamber is open!"))
 		return 0
 	return ..()
 
 /obj/item/gun/projectile/shotgun/doublebarrel/load_ammo(var/obj/item/A, mob/user)
 	if(!bolt_open)
-		to_chat(user, SPAN_WARNING("You can't load [src] while the barrel is closed!"))
+		to_chat(user, SPAN_WARNING("You can't load [src] while the chamber is closed!"))
 		return
 	..()
 
@@ -122,13 +122,13 @@
 	wield_delay = 0 SECOND //KER-BLAM!!!
 
 /obj/item/gun/projectile/shotgun/doublebarrel/axe
-	name = "axe double-barreled shotgun"
-	desc = "A mutilated clasic shotgun chambered in 20mm, this one complete with an axe head towards the barrels!"
+	name = "\"Saw\" shotgun"
+	desc = "A saw shotgun. Not a sawn-off shotgun, a saw shotgun. Chambered in 20mm."
 	icon_state = "bshotgun"
 	item_state = "bshotgun"
-	damage_multiplier = 0.8 //slightly weaker due to the fact - you know, you put a fucking axe on it.
+	damage_multiplier = 0.8
 	init_recoil = RIFLE_RECOIL(1)
 	saw_off = FALSE
-	sharp = TRUE //Duh, it's an axe.
+	sharp = TRUE
 	force = WEAPON_FORCE_ROBUST
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG,GUN_BAYONET)

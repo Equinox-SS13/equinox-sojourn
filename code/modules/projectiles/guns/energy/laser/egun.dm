@@ -1,6 +1,6 @@
 /obj/item/gun/energy/gun
 	name = "\"Spider Rose\" energy pistol"
-	desc = "Spider Rose is a versatile energy based sidearm, capable of switching between low and high capacity projectile settings. In other words: Stun or Kill."
+	desc = "A versatile dual-mode energy handgun with variable power consumption."
 	icon = 'icons/obj/guns/energy/egun.dmi'
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -35,7 +35,7 @@
 
 /obj/item/gun/energy/gun/martin
 	name = "\"Martin\" energy pistol"
-	desc = "Martin is essentialy a downscaled Spider Rose, made for security employees and civilians to use it as a personal self defence weapon."
+	desc = "A compact pocket-sized dual-mode laser pistol. Slots small cells."
 	icon = 'icons/obj/guns/energy/pdw.dmi'
 	icon_state = "PDW"
 	item_state = "gun"
@@ -72,8 +72,8 @@
 		update_mode()
 
 /obj/item/gun/energy/gun/martin/upgraded
-	name = "Overclocked \"Martin\" energy pistol"
-	desc = "An overclocked varient of the Martin energy pistol, allowing for more efficent energy consumption and a slightly intensified lens."
+	name = "Optimized \"Martin\" energy pistol"
+	desc = "An optimized variant of the Martin energy pistol that consumes less power. Slots small cells."
 	icon_state = "PDWU"
 	charge_cost = 25
 	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_PLASTIC = 4, MATERIAL_SILVER = 2, MATERIAL_URANIUM = 1)
@@ -90,10 +90,10 @@
 		add_overlay("taser_pdwu")
 	else
 		add_overlay("lazer_pdwu")
-		
+
 /obj/item/gun/energy/ntpistol
 	name = "\"Serenity\" energy pistol"
-	desc = "\"New Testament\" brand laser pistol. Small and easily concealable, it's still a reasonable punch for a laser weapon. Refurbished after numerous copyright allegations."
+	desc = "An in-colony reasonably powerful laser pistol patented by the church. Slots small cells."
 	icon = 'icons/obj/guns/energy/ntpistol.dmi'
 	icon_state = "ntpistol"
 	item_state = "ntpistol"

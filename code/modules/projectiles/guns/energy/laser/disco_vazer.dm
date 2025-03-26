@@ -1,8 +1,6 @@
 /obj/item/gun/energy/lasersmg
-	name = "Disco Vazer \"Lasblender\""
-	desc = "This conversion of the \"Texan\" that enables it to shoot lasers. Unlike in other laser weapons, the process of creating a laser is based on a chain reaction of localized micro-explosions. \
-	While this method is charge-effective, it worsens accuracy, and the chain-reaction makes the gun always fire in bursts. A viable choice for those who have lots of batteries and few bullets. \
-	Sometimes jokingly called the \"Disco Vazer\"."
+	name = "\"Disco Vazer\" laser pistol"
+	desc = "A uniquely constructed burst-fire laser machine pistol built on an SMG frame. Slots medium cells from the bottom."
 	icon = 'icons/obj/guns/energy/lasersmg-1.dmi'
 	icon_state = "lasersmg"
 	item_state = "lasersmg"

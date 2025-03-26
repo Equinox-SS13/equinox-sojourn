@@ -1,8 +1,6 @@
 /obj/item/gun/hydrogen/pistol
-	name = "\improper \"Classia\" hydrogen-plasma pistol"
-	desc = "A volatile but powerful weapon that uses hydrogen flasks to fire destructive plasma bolts. The brainchild of Soteria Director Nakharan Mkne, meant to compete with and exceed capabilities of Absolutist \
-	own plasma weapon designs, it succeeded. However, it did so by being extremely dangerous, requiring an intelligent and careful operator who can correctly manage the weapon's extreme heat generation over heating without being \
-	burnt to a crisp. This variant is a pistol, capable of fitting a holster for discrete travel and easy drawing."
+	name = "\improper \"Classia\" hydrogen pistol"
+	desc = "An unstable experimental energy pistol that requires active temperature management from it's user. Fires bolts of Hydrogen plasma."
 	icon = 'icons/obj/guns/plasma/hydrogen.dmi'
 	icon_state = "pistol"
 	twohanded = FALSE
@@ -15,8 +13,8 @@
 	heat_per_shot = 25
 
 	init_firemodes = list(
-		list(mode_name = "standard", mode_desc="A large ball of hydrogen to blow up bulwarks or weak targets", projectile_type = /obj/item/projectile/hydrogen/pistol, fire_sound = 'sound/weapons/energy/hydrogen.ogg', icon = "destroy", heat_per_shot = 25, use_plasma_cost = 10),
-		list(mode_name = "overclock", mode_desc="A large ball of volatile hydrogen to blow up cover or targets", projectile_type = /obj/item/projectile/hydrogen/pistol/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', icon = "vaporize", heat_per_shot = 40, use_plasma_cost = 20)
+		list(mode_name = "standard", mode_desc="Fire a single bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/pistol, fire_sound = 'sound/weapons/energy/hydrogen.ogg', icon = "destroy", heat_per_shot = 25, use_plasma_cost = 10),
+		list(mode_name = "unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/pistol/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', icon = "vaporize", heat_per_shot = 40, use_plasma_cost = 20)
 	)
 
 	can_dual = TRUE
@@ -24,10 +22,8 @@
 	wield_delay_factor = 0.2 // 20 vig
 
 /obj/item/gun/hydrogen/cannon
-	name = "\improper \"Sollex\" hydrogen-plasma cannon"
-	desc = "A volatile but powerful weapon that uses hydrogen flasks to fire destructive plasma bolts. The brainchild of Soteria Director Nakharan Mkne, meant to compete with and exceed capabilities of Absolutist \
-	own plasma weapon designs, it succeeded. However, it did so by being extremely dangerous, requiring an intelligent and careful operator who can correctly manage the weapon's extreme heat generation over heating without being \
-	burnt to a crisp."
+	name = "\improper \"Sollex\" hydrogen gun"
+	desc = "An unstable experimental energy cannon that requires active temperature management from it's user. Fires bolts of Hydrogen plasma."
 	icon = 'icons/obj/guns/plasma/hydrogen.dmi'
 	icon_state = "cannon"
 	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_MHYDROGEN = 2, MATERIAL_TRITIUM = 1)
@@ -39,8 +35,8 @@
 	heat_per_shot = 50
 	vent_level_timer = 10 SECONDS //10 seconds between vents, but builds heat a lot faster.
 	init_firemodes = list(
-		list(mode_name = "standard", mode_desc="A large ball of hydrogen to blow up bulwarks or weak targets", projectile_type = /obj/item/projectile/hydrogen/cannon, fire_sound = 'sound/weapons/energy/hydrogen.ogg', fire_delay = 30, icon = "destroy", use_plasma_cost = 15),
-		list(mode_name = "overclock", mode_desc="A large ball of volatile hydrogen to blow up cover or targets", projectile_type = /obj/item/projectile/hydrogen/cannon/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', fire_delay = 50, icon = "vaporize", use_plasma_cost = 30)
+		list(mode_name = "standard", mode_desc="Fire a single bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/cannon, fire_sound = 'sound/weapons/energy/hydrogen.ogg', fire_delay = 30, icon = "destroy", use_plasma_cost = 15),
+		list(mode_name = "unstable", mode_desc="Fire a large bolt of ionized hydrogen.", projectile_type = /obj/item/projectile/hydrogen/cannon/max, fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg', fire_delay = 50, icon = "vaporize", use_plasma_cost = 30)
 	)
 	twohanded = TRUE
 

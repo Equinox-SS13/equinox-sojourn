@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver/deckard
 	name = "\"Deckard\" heavy revolver"
-	desc = "A rare, custom-built revolver formerly used within Sol by the early Turing Police, gifted by the Mar'qua Technocracy. Use when there is no time for the Voight-Kampff test. Uses 12mm."
+	desc = "A custom-built revolver formerly by the early Turing Police. Chambered in 12mm, when there's no time for the Voight-Kampff test."
 	icon = 'icons/obj/guns/projectile/deckard.dmi'
 	icon_state = "deckard"
 	caliber = CAL_50
