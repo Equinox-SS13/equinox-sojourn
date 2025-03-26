@@ -133,3 +133,5 @@
 	var/last_completed_asset_job = 0
 
 	var/obj/screen/click_catcher/void
+
+	var/list/char_render_holders

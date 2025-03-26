@@ -17,6 +17,8 @@
 	var/reinforced = FALSE
 	var/reinforcement_security = 0 // extra health from being reinforced, hardcoded to 40 on add
 	var/icon_modifier = ""	//adds string to icon path for color variations
+	can_buckle = TRUE //Equinox Edit/Addition
+	buckle_require_restraints = 1 //Equinox Edit/Addition. Yes, It needs to be 1, not TRUE for some fuck reason.
 
 /obj/structure/railing/grey
 	name = "grey railing"

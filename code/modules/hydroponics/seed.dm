@@ -427,6 +427,7 @@
 	if(additional_chems)
 		var/list/possible_chems = list(
 			"woodpulp",
+			"clothfiber",
 			"bicaridine",
 			"hyperzine",
 			"cryoxadone",

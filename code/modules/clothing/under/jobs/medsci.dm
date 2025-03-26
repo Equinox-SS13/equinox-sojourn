@@ -124,6 +124,8 @@
 	options["rapid response"] = "medical_evil"
 	options["nursing"] = "medical_nurse"
 	options["nursing rapid response"] = "medical_nurse_evil"
+	options["chemist"] = "chemistry"
+	options["chemist rapid response"] = "chemistry_evil"
 	options["unofficial skirt 1"] = "mediskirt"
 	options["unofficial skirt 2"] = "mediskirt_alt"
 
