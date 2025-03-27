@@ -67,15 +67,27 @@
 	bitesize = 6
 	preloaded_reagents = list("protein" = 4, "blattedin" = 8, "diplopterum" = 7)
 
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
+
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche
 	preloaded_reagents = list("protein" = 2, "blattedin"= 12, "seligitillin" = 8, "diplopterum" = 6)
 	// The roach that produces giant clouds of blattedin doesn't contain any blattedin in it's system? Tweaked. To compensate, making Jagers give even less blatt
 
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
+
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer
 	preloaded_reagents = list("protein" = 8, "blattedin" = 12, "starkellin" = 15, "diplopterum" = 4)
 
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
+
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer
 	preloaded_reagents = list("protein" = 6, "seligitillin" = 6, "fuhrerole" = 12, "diplopterum" = 6)
+
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser
 	preloaded_reagents = list("protein" = 6, "blattedin" = 12, "seligitillin" = 6, "starkellin" = 15, "fuhrerole" = 12, "diplopterum" = 6)
@@ -83,8 +95,14 @@
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager
 	preloaded_reagents = list("protein" = 6, "blattedin" = 2, "gewaltine" = 8, "diplopterum" = 2)
 
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
+
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk
 	preloaded_reagents = list("protein" = 6, "blattedin" = 6, "gewaltine" = 6, "uncap nanites" = 2, "nanites" = 3)
+
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk/ant
+	desc = "A slab of yellowish meat cut from an ant. Delicious, if you don't mind the taste of acids."
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/glowing
 	preloaded_reagents = list("protein" = 4, "blattedin" = 8, "diplopterum" = 7, MATERIAL_URANIUM = 5) // half a uranium per roach
