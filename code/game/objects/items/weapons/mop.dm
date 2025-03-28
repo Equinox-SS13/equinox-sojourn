@@ -137,7 +137,7 @@
 
 /obj/item/mop/guild
 	name = "articulated mop"
-	desc = "An Artificer's Guild-modified mop. Sports a piston-actuated mop head, a chemosynthesizer unit and a clean white finish. Uses M cells."
+	desc = "An Artificer's Guild-modified mop. Sports a piston-actuated mop head, telescoping design, a chemosynthesizer unit and a clean white finish. Uses M cells."
 	icon = 'icons/obj/janitor.dmi'
 	icon_state = "engimop"
 	force = WEAPON_FORCE_WEAK+1
