@@ -53,7 +53,6 @@
 /obj/item/tool/material/proc/set_stats_from_material()
 	name = "[material.display_name] [initial(name)]"
 	max_health = material.integrity * 3 //this gives 450 health for most tools, 50 better than default. wood, plastic etc. are less
-	health = max_health
 	if(material.is_brittle())
 		degradation = round(material.integrity / 2) //we break in 2-3 hits if we're brittle
 	if(applies_material_colour)
@@ -61,8 +60,7 @@
 	if(material.products_need_process())
 		START_PROCESSING(SSobj, src)
 
-	if(!islist(tool_qualities)) //if we don't exist...
-		tool_qualities = list()
+	tool_qualities = initial(tool_qualities)
 	for(var/quality in weight_tool_qualities)
 		tool_qualities |= quality
 		tool_qualities[quality] = max(round(weight_tool_qualities[quality] * material.get_weight()), 0)

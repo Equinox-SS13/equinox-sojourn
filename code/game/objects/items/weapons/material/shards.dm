@@ -20,7 +20,7 @@
 /obj/item/tool/material/shard/New(var/newloc, var/material_key, var/_amount)
 	if (_amount)
 		amount = max(round(_amount, 0.01), 0.01) //We won't ever need to physically represent less than 1% of a material unit
-	.=..()
+	..()
 	//Material will be set during the parent callstack
 	if (!material)
 		qdel(src)
@@ -36,8 +36,8 @@
 	add_new_transformation(/datum/transform_type/shard/variable_size)
 	update_icon()
 
-/obj/item/tool/material/shard/set_material_by_name(var/new_material, var/update)
-	..(new_material)
+/obj/item/tool/material/shard/set_stats_from_material()
+	..()
 	if(!istype(material))
 		return
 
@@ -62,17 +62,16 @@
 		color = material.icon_colour
 		// 1-(1-x)^2, so that glass shards with 0.3 opacity end up somewhat visible at 0.51 opacity
 		alpha = 255 * (1 - (1 - material.opacity)*(1 - material.opacity))
+		if (amount > 0.7)
+			icon_state = "[material.shard_icon]["large"]"
+		else if (amount < 0.4)
+			icon_state = "[material.shard_icon]["medium"]"
+		else
+			icon_state = "[material.shard_icon]["small"]"
 	else
 		color = "#ffffff"
 		alpha = 255
 
-
-	if (amount > 0.7)
-		icon_state = "[material.shard_icon]["large"]"
-	else if (amount < 0.4)
-		icon_state = "[material.shard_icon]["medium"]"
-	else
-		icon_state = "[material.shard_icon]["small"]"
 	//variable rotation based on randomness
 	add_new_transformation(/datum/transform_type/random_rotation)
 

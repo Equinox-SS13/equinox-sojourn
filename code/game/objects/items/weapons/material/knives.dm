@@ -41,17 +41,18 @@
 	else
 		M.apply_damages(backstab_damage,0,0,0,0,0,user.targeted_organ)
 
-/obj/item/tool/material/butterfly/update_force()
+/obj/item/tool/material/butterfly/proc/update_active()
 	if(active)
 		edge = 1
 		sharp = 1
-		..() //Updates force.
+		refresh_upgrades()
 		throwforce = max(3,force-3)
 		hitsound = 'sound/weapons/bladeslice.ogg'
 		icon_state += "_open"
 		w_class = ITEM_SIZE_NORMAL
 		attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	else
+		refresh_upgrades()
 		force = WEAPON_FORCE_WEAK
 		edge = 0
 		sharp = 0
@@ -74,7 +75,7 @@
 		playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
 	else
 		to_chat(user, SPAN_NOTICE("\The [src] can now be concealed."))
-	update_force()
+	update_active()
 	add_fingerprint(user)
 
 
@@ -83,5 +84,6 @@
 	desc = "A french flag has been embossed on the handle, the deftness of this blade and how supremely lethal its diamond edged blade is would make this perfect for sinking said blade \
 			into a monsters back... or another colonist."
 	icon_state = "frenchmen"
+	default_material = MATERIAL_DIAMOND
 	matter = list(MATERIAL_SILVER = 2, MATERIAL_PLASTEEL = 10, MATERIAL_DIAMOND = 3)
 	backstab_damage = 25
