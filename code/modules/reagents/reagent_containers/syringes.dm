@@ -225,7 +225,7 @@
 								to_chat(user, "<span class='[pain > 50 ? "danger" : "warning"]'>Your amateur actions caused you [pain > 50 ? "a lot of " : ""]pain.</span>")
 				else
 					to_chat(target, SPAN_NOTICE("You feel a tiny prick!"))
-			if(istype(target, /obj/item/reagent_containers/food/snacks))
+			else if(istype(target, /obj/item/reagent_containers/food/snacks))
 				var/cheesecheck = FALSE
 				var/blamereagent
 				var/list/blacklistedreagents = list("water", "nutriment")
