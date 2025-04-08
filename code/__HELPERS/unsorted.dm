@@ -183,9 +183,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 			return 1
 	return 0
 
-/proc/sign(x)
-	return x!=0?x/abs(x):0
-
 /proc/spow(x,y)
 	return (sign(x) * (abs(x) ** y))
 
